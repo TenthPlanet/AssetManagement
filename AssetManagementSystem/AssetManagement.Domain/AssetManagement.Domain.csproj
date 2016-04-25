@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DC002E7-EFFC-4386-B8C2-1B76FDAE9768}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetManagement.Domain</RootNamespace>
+    <AssemblyName>AssetManagement.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IAuthProvider.cs" />
+    <Compile Include="Abstract\ICatergoryRepository.cs" />
+    <Compile Include="Abstract\IEmployeeRepository.cs" />
+    <Compile Include="Abstract\IGenericEntity.cs" />
+    <Compile Include="Abstract\IKeyboardRepository.cs" />
+    <Compile Include="Abstract\ILaptopRepository.cs" />
+    <Compile Include="Abstract\IMonitorRepository.cs" />
+    <Compile Include="Abstract\IMouseRepository.cs" />
+    <Compile Include="Abstract\IPCRepository.cs" />
+    <Compile Include="Abstract\IPrinterRepository.cs" />
+    <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\IStockRepository.cs" />
+    <Compile Include="Concrete\CatergoryRepository.cs" />
+    <Compile Include="Concrete\EmployeeRepository.cs" />
+    <Compile Include="Concrete\FormsAuthProvider.cs" />
+    <Compile Include="Concrete\GenericEntity.cs" />
+    <Compile Include="Concrete\KeyboardRepository.cs" />
+    <Compile Include="Concrete\LaptopRepository.cs" />
+    <Compile Include="Concrete\MonitorRepository.cs" />
+    <Compile Include="Concrete\MouseRepository.cs" />
+    <Compile Include="Concrete\PCRepository.cs" />
+    <Compile Include="Concrete\PrinterRepository.cs" />
+    <Compile Include="Concrete\GenericRepository.cs" />
+    <Compile Include="Concrete\StockRepository.cs" />
+    <Compile Include="Context\AssetManagementEntities.cs" />
+    <Compile Include="Entities\AssetsDomain.cs" />
+    <Compile Include="Entities\EmployeeDomain.cs" />
+    <Compile Include="Migrations\201603251109023_NewDatabase.cs" />
+    <Compile Include="Migrations\201603251109023_NewDatabase.Designer.cs">
+      <DependentUpon>201603251109023_NewDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603261114465_AddStock.cs" />
+    <Compile Include="Migrations\201603261114465_AddStock.Designer.cs">
+      <DependentUpon>201603261114465_AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603261200332_UpdateDB.cs" />
+    <Compile Include="Migrations\201603261200332_UpdateDB.Designer.cs">
+      <DependentUpon>201603261200332_UpdateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603270746553_addFullName.cs" />
+    <Compile Include="Migrations\201603270746553_addFullName.Designer.cs">
+      <DependentUpon>201603270746553_addFullName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603290349188_AddArchive.cs" />
+    <Compile Include="Migrations\201603290349188_AddArchive.Designer.cs">
+      <DependentUpon>201603290349188_AddArchive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603300200433_addTelephone.cs" />
+    <Compile Include="Migrations\201603300200433_addTelephone.Designer.cs">
+      <DependentUpon>201603300200433_addTelephone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603300249571_DateAssigned.cs" />
+    <Compile Include="Migrations\201603300249571_DateAssigned.Designer.cs">
+      <DependentUpon>201603300249571_DateAssigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603300313212_addModel.cs" />
+    <Compile Include="Migrations\201603300313212_addModel.Designer.cs">
+      <DependentUpon>201603300313212_addModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603302051497_AddPending.cs" />
+    <Compile Include="Migrations\201603302051497_AddPending.Designer.cs">
+      <DependentUpon>201603302051497_AddPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603302303103_AttrHistory.cs" />
+    <Compile Include="Migrations\201603302303103_AttrHistory.Designer.cs">
+      <DependentUpon>201603302303103_AttrHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603311051358_ChangeID.cs" />
+    <Compile Include="Migrations\201603311051358_ChangeID.Designer.cs">
+      <DependentUpon>201603311051358_ChangeID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604012257434_dateAddedDisposal.cs" />
+    <Compile Include="Migrations\201604012257434_dateAddedDisposal.Designer.cs">
+      <DependentUpon>201604012257434_dateAddedDisposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251022550_CostPrice.cs" />
+    <Compile Include="Migrations\201604251022550_CostPrice.Designer.cs">
+      <DependentUpon>201604251022550_CostPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251108376_RemoveAttr.cs" />
+    <Compile Include="Migrations\201604251108376_RemoveAttr.Designer.cs">
+      <DependentUpon>201604251108376_RemoveAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickResolver\AssetResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603251109023_NewDatabase.resx">
+      <DependentUpon>201603251109023_NewDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603261114465_AddStock.resx">
+      <DependentUpon>201603261114465_AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603261200332_UpdateDB.resx">
+      <DependentUpon>201603261200332_UpdateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603270746553_addFullName.resx">
+      <DependentUpon>201603270746553_addFullName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603290349188_AddArchive.resx">
+      <DependentUpon>201603290349188_AddArchive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603300200433_addTelephone.resx">
+      <DependentUpon>201603300200433_addTelephone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603300249571_DateAssigned.resx">
+      <DependentUpon>201603300249571_DateAssigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603300313212_addModel.resx">
+      <DependentUpon>201603300313212_addModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603302051497_AddPending.resx">
+      <DependentUpon>201603302051497_AddPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603302303103_AttrHistory.resx">
+      <DependentUpon>201603302303103_AttrHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603311051358_ChangeID.resx">
+      <DependentUpon>201603311051358_ChangeID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604012257434_dateAddedDisposal.resx">
+      <DependentUpon>201604012257434_dateAddedDisposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251022550_CostPrice.resx">
+      <DependentUpon>201604251022550_CostPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251108376_RemoveAttr.resx">
+      <DependentUpon>201604251108376_RemoveAttr.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

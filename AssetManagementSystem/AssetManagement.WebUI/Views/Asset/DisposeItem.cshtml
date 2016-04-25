@@ -1,0 +1,20 @@
+﻿@model AssetManagement.Domain.Entities.Asset
+
+@{
+    ViewBag.Title = "Dispose Item";
+}
+<div style="margin-bottom:8%;"></div>
+
+<h3>Dispose Asset</h3>
+
+<h3>Dispose asset @Model.assetNumber assigned to @Model.Employee.fullname ...</h3>
+<div>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Dispose" class="btn btn-default" /> |
+            @Html.ActionLink("Cancel", "Assigned", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>

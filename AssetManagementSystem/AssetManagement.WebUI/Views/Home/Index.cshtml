@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div style="margin-bottom:12%;"></div>
+
+<div>
+    <center>
+        <h1>Welcome to this lame website!</h1>
+        <div>
+            @{
+                if (User.Identity.IsAuthenticated)
+                {
+                    <h4>You're logged in as: @User.Identity.Name</h4>
+                }
+                else
+                {
+                    @Html.ActionLink("Login", "Login", "Home", new { @class = "btn btn-default" })
+                }
+
+
+
+            }
+        </div>
+    </center>
+</div>
+

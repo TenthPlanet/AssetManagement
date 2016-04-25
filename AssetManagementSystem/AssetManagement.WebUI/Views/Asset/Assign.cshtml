@@ -1,0 +1,88 @@
+﻿@model AssetManagement.WebUI.ViewModel.Asset.AssignViewModel
+
+@{
+    ViewBag.Title = "Assign";
+}
+<div style="margin-bottom:8%;"></div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h3>Assign Assets</h3>
+        <hr />
+
+        @Html.ValidationSummary(true)
+        
+        @if (@TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (@ViewBag.Message != null)
+{
+    <div class="alert alert-danger">@ViewBag.Message</div>
+}
+        
+        <div style="margin-bottom:4%;"></div>
+        
+        <div class="form-group">
+            @Html.Label("Employee", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.employeeID, new SelectList(ViewBag.Employee, "employeeNumber", "fullname"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Printers", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.printerID, new SelectList(ViewBag.Printers, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Laptops", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               @Html.DropDownListFor(x => x.laptopID, new SelectList(ViewBag.Laptops, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Monitors", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.monitorID, new SelectList(ViewBag.Monitors, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("PC Tower", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.pcBoxID, new SelectList(ViewBag.PCs, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Keyboards", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.keyboardID, new SelectList(ViewBag.Keyboards, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Mouse", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.mouseID, new SelectList(ViewBag.Mice, "assetNumber", "assetNumber"), "Select...")
+            </div>
+        </div>
+        <br/>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Assign" class="btn btn-primary" />
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("Assigned Assets", "Assigned", "Asset", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+}
