@@ -69,8 +69,8 @@ namespace AssetManagement.WebUI.Controllers
                              
                          }).FirstOrDefault(m => m.employeeNumber.Equals(id));
 
-            //var monitor = db.Monitors.FirstOrDefault(x => x.employeeNumber.Equals(id));
-            //TempData["Monitor"] = "Asset Number: " + monitor.assetNumber;
+            var monitor = db.Monitors.FirstOrDefault(x => x.employeeNumber.Equals(id));
+            TempData["Monitor"] = "Asset Number: " + monitor.assetNumber;
             return View(model);
         }
 
