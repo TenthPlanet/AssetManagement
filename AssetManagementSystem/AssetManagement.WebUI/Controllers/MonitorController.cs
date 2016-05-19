@@ -21,6 +21,7 @@ namespace AssetManagement.WebUI.Controllers
         }
         private readonly IMonitorRepository _repo;
         private readonly AssetManagementEntities context = new AssetManagementEntities();
+        Stock st = new Stock();
 
         public MonitorController(IMonitorRepository _repo)
         {
@@ -35,6 +36,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.MM = context.Stocks.ToList().Where(x => x.category == "Monitor");
             return View();
         }
 
@@ -42,6 +44,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(MonitorViewModel viewmodel)
         {
+            ViewBag.MM = context.Stocks.ToList().Where(x => x.category == "Monitor");
             if (ModelState.IsValid)
             {
                 try
@@ -86,6 +89,7 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+            ModelState.Clear(); 
             return View(viewmodel);
         }
 	}

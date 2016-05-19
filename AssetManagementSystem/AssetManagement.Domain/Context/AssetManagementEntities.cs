@@ -28,6 +28,8 @@ namespace AssetManagement.Domain.Context
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Archive> Archives { get; set; }
         public DbSet<OwnershipHistory> Ownerships { get; set; }
+
+        public DbSet<Ticket> Tickets { get; set; }
         
     }
 }

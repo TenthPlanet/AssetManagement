@@ -90,6 +90,7 @@
     <Compile Include="Abstract\IPrinterRepository.cs" />
     <Compile Include="Abstract\IGenericRepository.cs" />
     <Compile Include="Abstract\IStockRepository.cs" />
+    <Compile Include="Abstract\ITicketRepository.cs" />
     <Compile Include="Concrete\CatergoryRepository.cs" />
     <Compile Include="Concrete\EmployeeRepository.cs" />
     <Compile Include="Concrete\FormsAuthProvider.cs" />
@@ -102,65 +103,11 @@
     <Compile Include="Concrete\PrinterRepository.cs" />
     <Compile Include="Concrete\GenericRepository.cs" />
     <Compile Include="Concrete\StockRepository.cs" />
+    <Compile Include="Concrete\TicketRepository.cs" />
     <Compile Include="Context\AssetManagementEntities.cs" />
     <Compile Include="Entities\AssetsDomain.cs" />
     <Compile Include="Entities\EmployeeDomain.cs" />
-    <Compile Include="Migrations\201603251109023_NewDatabase.cs" />
-    <Compile Include="Migrations\201603251109023_NewDatabase.Designer.cs">
-      <DependentUpon>201603251109023_NewDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603261114465_AddStock.cs" />
-    <Compile Include="Migrations\201603261114465_AddStock.Designer.cs">
-      <DependentUpon>201603261114465_AddStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603261200332_UpdateDB.cs" />
-    <Compile Include="Migrations\201603261200332_UpdateDB.Designer.cs">
-      <DependentUpon>201603261200332_UpdateDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603270746553_addFullName.cs" />
-    <Compile Include="Migrations\201603270746553_addFullName.Designer.cs">
-      <DependentUpon>201603270746553_addFullName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603290349188_AddArchive.cs" />
-    <Compile Include="Migrations\201603290349188_AddArchive.Designer.cs">
-      <DependentUpon>201603290349188_AddArchive.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603300200433_addTelephone.cs" />
-    <Compile Include="Migrations\201603300200433_addTelephone.Designer.cs">
-      <DependentUpon>201603300200433_addTelephone.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603300249571_DateAssigned.cs" />
-    <Compile Include="Migrations\201603300249571_DateAssigned.Designer.cs">
-      <DependentUpon>201603300249571_DateAssigned.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603300313212_addModel.cs" />
-    <Compile Include="Migrations\201603300313212_addModel.Designer.cs">
-      <DependentUpon>201603300313212_addModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603302051497_AddPending.cs" />
-    <Compile Include="Migrations\201603302051497_AddPending.Designer.cs">
-      <DependentUpon>201603302051497_AddPending.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603302303103_AttrHistory.cs" />
-    <Compile Include="Migrations\201603302303103_AttrHistory.Designer.cs">
-      <DependentUpon>201603302303103_AttrHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201603311051358_ChangeID.cs" />
-    <Compile Include="Migrations\201603311051358_ChangeID.Designer.cs">
-      <DependentUpon>201603311051358_ChangeID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604012257434_dateAddedDisposal.cs" />
-    <Compile Include="Migrations\201604012257434_dateAddedDisposal.Designer.cs">
-      <DependentUpon>201604012257434_dateAddedDisposal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604251022550_CostPrice.cs" />
-    <Compile Include="Migrations\201604251022550_CostPrice.Designer.cs">
-      <DependentUpon>201604251022550_CostPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604251108376_RemoveAttr.cs" />
-    <Compile Include="Migrations\201604251108376_RemoveAttr.Designer.cs">
-      <DependentUpon>201604251108376_RemoveAttr.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Entities\HelpdeskDomain.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
@@ -168,50 +115,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603251109023_NewDatabase.resx">
-      <DependentUpon>201603251109023_NewDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603261114465_AddStock.resx">
-      <DependentUpon>201603261114465_AddStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603261200332_UpdateDB.resx">
-      <DependentUpon>201603261200332_UpdateDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603270746553_addFullName.resx">
-      <DependentUpon>201603270746553_addFullName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603290349188_AddArchive.resx">
-      <DependentUpon>201603290349188_AddArchive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603300200433_addTelephone.resx">
-      <DependentUpon>201603300200433_addTelephone.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603300249571_DateAssigned.resx">
-      <DependentUpon>201603300249571_DateAssigned.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603300313212_addModel.resx">
-      <DependentUpon>201603300313212_addModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603302051497_AddPending.resx">
-      <DependentUpon>201603302051497_AddPending.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603302303103_AttrHistory.resx">
-      <DependentUpon>201603302303103_AttrHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201603311051358_ChangeID.resx">
-      <DependentUpon>201603311051358_ChangeID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604012257434_dateAddedDisposal.resx">
-      <DependentUpon>201604012257434_dateAddedDisposal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604251022550_CostPrice.resx">
-      <DependentUpon>201604251022550_CostPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604251108376_RemoveAttr.resx">
-      <DependentUpon>201604251108376_RemoveAttr.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

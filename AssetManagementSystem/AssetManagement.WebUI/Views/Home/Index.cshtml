@@ -1,12 +1,13 @@
 ﻿
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_home.cshtml";
 }
 <div style="margin-bottom:12%;"></div>
 
 <div>
     <center>
-        <h1>Welcome to this lame website!</h1>
+        <h1>Welcome to Asset Management</h1>
         <div>
             @{
                 if (User.Identity.IsAuthenticated)
@@ -15,7 +16,8 @@
                 }
                 else
                 {
-                    @Html.ActionLink("Login", "Login", "Home", new { @class = "btn btn-default" })
+                    @Html.ActionLink("Login", "Login", "Account", new { @class = "btn btn-default" })
+                
                 }
 
 

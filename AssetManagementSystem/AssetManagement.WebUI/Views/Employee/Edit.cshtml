@@ -2,8 +2,8 @@
 
 @{
     ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
-
 
 
 @using (Html.BeginForm())
@@ -11,7 +11,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <div style="margin-bottom:8%;"></div>
+        <div style="margin-bottom:10%;"></div>
         <h3>Edit @Model.firstName @Model.lastName</h3>
         <hr />
         @Html.ValidationSummary(true)

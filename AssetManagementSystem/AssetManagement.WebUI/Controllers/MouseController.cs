@@ -35,6 +35,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.MouseM = db.Stocks.ToList().Where(x => x.category == "Mouse");
             return View();
         }
 
@@ -42,6 +43,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(MouseViewModel viewmodel)
         {
+            ViewBag.MouseM = db.Stocks.ToList().Where(x => x.category == "Mouse");
             if (ModelState.IsValid)
             {
                 try
@@ -73,6 +75,7 @@ namespace AssetManagement.WebUI.Controllers
                         _repository.Save();
                         db.SaveChanges();
                         TempData["Success"] = "Asset has been added!";
+                        ModelState.Clear();
                     }
                     else
                     {
@@ -84,7 +87,8 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
-            return View();
+            
+            return View(viewmodel);
         }
 	}
 }

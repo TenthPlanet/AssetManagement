@@ -34,6 +34,7 @@ namespace AssetManagement.WebUI.Controllers
         }
         public ActionResult Add()
         {
+            ViewBag.PCM = db.Stocks.ToList().Where(x => x.category == "PCBox");
             return View();
         }
 
@@ -41,13 +42,14 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(PCViewModel viewmodel)
         {
+            ViewBag.PCM = db.Stocks.ToList().Where(x=>x.category=="PCBox");
             if (ModelState.IsValid)
             {
                 try
                 {
                     var stock = db.Stocks.FirstOrDefault(m => m.model.Equals(viewmodel.modelName)
                         && m.manufacturer.Equals(viewmodel.manufacturer)
-                        && m.category.Equals("Tower"));
+                        && m.category.Equals("PCBox"));
 
 
                     if (stock != null && stock.quantity != 0)
@@ -88,6 +90,7 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+            ModelState.Clear();
             return View(viewmodel);
         }
 	}

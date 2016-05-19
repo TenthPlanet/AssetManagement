@@ -2,13 +2,21 @@
 
 @{
     ViewBag.Title = "Dispose Item";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
-<div style="margin-bottom:8%;"></div>
+<div style="margin-bottom:10%;"></div>
 
-<h3>Dispose Asset</h3>
+<h3 class="page-header">
+    <i class="fa fa-file-text-o"></i>
+    Dispose Asset<br />
+    Dispose asset @Model.assetNumber assigned to @Model.Employee.fullname ...
+</h3>
 
-<h3>Dispose asset @Model.assetNumber assigned to @Model.Employee.fullname ...</h3>
-<div>
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-desktop"></i>Assets</li>
+    <li><i class="fa fa-list-alt"></i>Dispose Asset</li>
+</ol><div>
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 

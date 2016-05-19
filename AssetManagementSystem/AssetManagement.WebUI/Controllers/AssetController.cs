@@ -21,7 +21,7 @@ namespace AssetManagement.WebUI.Controllers
 
         //
         // GET: /Asset/
-        public ViewResult Index()
+        public ActionResult Index()
         {
 
             var assets = (from a in list.Assets()
@@ -88,7 +88,7 @@ namespace AssetManagement.WebUI.Controllers
                               dateadded = a.dateadded,
                               warranty = a.warranty,
                               assetstatus = a.assignstatus,
-                              owner = e.firstName +" "+ e.lastName,
+                              owner = e.firstName + " " + e.lastName,
                               assigneddate = Convert.ToDateTime(a.assigndate).ToShortDateString(),
                               assetID = a.assetID
                           })
@@ -116,7 +116,7 @@ namespace AssetManagement.WebUI.Controllers
                                  manufacturer = a.manufacturer,
                                  dateadded = a.dateadded,
                                  depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
-                                 assetstatus = a.assignstatus, 
+                                 assetstatus = a.assignstatus,
                                  costprice = a.costprice.ToString("R0.00")
                              })
                          .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)))
@@ -188,7 +188,7 @@ namespace AssetManagement.WebUI.Controllers
 
                 if (employee != null)
                 {
-                    if (printer != null) 
+                    if (printer != null)
                     {
                         Asset assetPrinter = context.Assets.SingleOrDefault(x => x.assetNumber == printer.assetNumber);
                         if (assetPrinter != null)
@@ -271,7 +271,7 @@ namespace AssetManagement.WebUI.Controllers
                     {
                         ViewBag.Message = "Select item(s) to assign...";
                     }
-                    
+
                 }
                 else { ViewBag.Message = "Select employee to assign item(s) to..."; }
 
@@ -279,7 +279,7 @@ namespace AssetManagement.WebUI.Controllers
 
                 if (employee != null)
                 {
-                    if (printer != null || laptop != null || monitor != null || pcs != null || keyboard != null || mouse != null) 
+                    if (printer != null || laptop != null || monitor != null || pcs != null || keyboard != null || mouse != null)
                     {
                         TempData["Success"] = "Assignment to " + employee.firstName + " " + employee.lastName + " successful!";
                     }
@@ -320,12 +320,12 @@ namespace AssetManagement.WebUI.Controllers
             var mouse = context.Mice.FirstOrDefault(x => x.assetID == id);
             var printer = context.Printers.FirstOrDefault(x => x.assetID == id);
 
-            
+
 
             if (laptop != null && asset != null)
             {
-                var archive = new Archive 
-                { 
+                var archive = new Archive
+                {
                     assetNumber = laptop.assetNumber,
                     category = laptop.catergory,
                     dateAdded = laptop.dateAdded,
@@ -406,7 +406,7 @@ namespace AssetManagement.WebUI.Controllers
                 context.Archives.Add(archive);
                 context.Printers.Remove(printer);
             }
-            
+
 
             context.Assets.Remove(asset);
             context.SaveChanges();
@@ -520,7 +520,7 @@ namespace AssetManagement.WebUI.Controllers
                 context.Assets.Remove(asset);
                 context.SaveChanges();
 
-                TempData["Success"] = "Item returned to inventory.";
+                TempData["Success"] = "Item returned to Stock.";
                 return RedirectToAction("Index");
             }
             return View();
@@ -576,7 +576,7 @@ namespace AssetManagement.WebUI.Controllers
                     laptop.assignStatus = 0;
                     laptop.assigndate = null;
                     laptop.employeeNumber = null;
-                    context.Ownerships.Add(ownership); 
+                    context.Ownerships.Add(ownership);
                 }
 
                 if (monitor != null)
@@ -683,6 +683,169 @@ namespace AssetManagement.WebUI.Controllers
             TempData["Success"] = "Asset dealocation successful...";
             return RedirectToAction("Assigned");
         }
-	}
+        public ActionResult AssignAsset(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var asset = context.Assets.Single(a => a.assetID == id);
 
+            if (asset == null)
+            {
+                return HttpNotFound();
+            }
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AssignAsset(int? id, string employeenumber)
+        {
+            var Employee = context.Employees.SingleOrDefault(emp => emp.employeeNumber.Equals(employeenumber));
+            var asset = context.Assets.SingleOrDefault(a => a.assetID == id);
+
+            var printer = context.Printers.Find(asset.assetNumber);
+            var laptop = context.Laptops.Find(asset.assetNumber);
+            var monitor = context.Monitors.Find(asset.assetNumber);
+            var pcs = context.PCBoxes.Find(asset.assetNumber);
+            var keyboard = context.Keyboards.Find(asset.assetNumber);
+            var mouse = context.Mice.Find(asset.assetNumber);
+
+            if (Employee != null)
+            {
+                if (printer != null)
+                {
+                    printer.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    printer.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    printer.assigndate = asset.assigndate;
+                }
+
+                if (laptop != null)
+                {
+                    laptop.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    laptop.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    laptop.assigndate = asset.assigndate;
+                }
+                if (monitor != null)
+                {
+                    monitor.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    monitor.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    monitor.assigndate = asset.assigndate;
+
+                }
+                if (pcs != null)
+                {
+                    pcs.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    pcs.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    pcs.assigndate = asset.assigndate;
+
+                }
+                if (keyboard != null)
+                {
+
+                    keyboard.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    keyboard.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    keyboard.assigndate = asset.assigndate;
+                }
+                if (mouse != null)
+                {
+
+                    mouse.employeeNumber = Employee.employeeNumber;
+                    asset.assignstatus = 1;
+                    mouse.assignStatus = asset.assignstatus;
+                    asset.employeeNumber = Employee.employeeNumber;
+                    asset.assigndate = DateTime.Now;
+                    mouse.assigndate = asset.assigndate;
+                }
+                if (employeenumber == null)
+                {
+                    ViewBag.Message = "Enter employee's full name...";
+                }
+                context.SaveChanges();
+                TempData["Success"] = "Asset successfully assigned...";
+                return RedirectToAction("Index");
+
+            }
+            return View();
+
+        }
+        public JsonResult GetEmployees(string term)
+        {
+            List<string> employees;
+            employees = context.Employees.Where(x => x.employeeNumber.StartsWith(term))
+                .Select(n => n.employeeNumber).ToList();
+            return Json(employees, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Report(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            var asset = context.Assets.Single(a => a.assetID == id);
+
+            if (asset == null)
+            {
+                return HttpNotFound();
+            }
+            var result = (from a in list.Assets()
+                          join e in list.Employees()
+                          on a.employeeNumber equals e.employeeNumber
+                          select new AssetReport
+                          {
+                              serialNumber = a.serialNumber,
+                              assetNumber = a.assetNumber,
+                              catergory = a.catergory,
+                              warranty = a.warranty,
+                              manufacturer = a.manufacturer,
+                              dateadded = a.dateadded,
+                              depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                              assetstatus = a.assignstatus,
+                              costprice = (a.costprice).ToString("R0.00"),
+                              owner = e.fullname,
+                              assetID = a.assetID,
+                              assigneddate = a.assigndate,
+                              sellprice = (a.costprice - al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00")
+                          }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
+
+
+
+            return View(result);
+
+            //var assets = (from a in list.Assets()
+            //              join e in list.Employees() on a.employeeNumber equals e.employeeNumber
+            //              select new AssetListViewModel
+            //              {
+            //                  serialNumber = a.serialNumber,
+            //                  assetNumber = a.assetNumber,
+            //                  catergory = a.catergory,
+            //                  warranty = a.warranty,
+            //                  manufacturer = a.manufacturer,
+            //                  dateadded = a.dateadded,
+            //                  depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+            //                  assetstatus = a.assignstatus,
+            //                  costprice = (a.costprice).ToString("R0.00")
+            //              })
+            //              .ToList()
+            //              .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)));
+            //ViewBag.Category = context.Categories.ToList();
+            //return View(assets);
+        }
+    }
 }

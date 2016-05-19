@@ -2,16 +2,27 @@
 
 @{
     ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
 
-<div style="margin-bottom:8%;"></div>
+<div style="margin-bottom:10%;"></div>
+<h3 class="page-header">
+    <i class="fa fa-file-text"></i>
+    Stock
+</h3>
+
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-desktop"></i>Stock</li>
+    <li><i class="fa fa-list-alt"></i>Add Stock</li>
+</ol>
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h3>Asset Inventory</h3>
+        <h3>Add Stock</h3>
         <hr />
         @Html.ValidationSummary(true)
 
@@ -34,7 +45,7 @@
             cats.Add(new SelectListItem { Text = "Laptop", Value = "Laptop" });
             cats.Add(new SelectListItem { Text = "Printer", Value = "Printer" });
             cats.Add(new SelectListItem { Text = "Monitor", Value = "Monitor" });
-            cats.Add(new SelectListItem { Text = "Tower", Value = "Tower" });
+            cats.Add(new SelectListItem { Text = "PCBox", Value = "PCBox" });
             cats.Add(new SelectListItem { Text = "Keyboard", Value = "Keyboard" });
             cats.Add(new SelectListItem { Text = "Mouse", Value = "Mouse" });
     
@@ -70,7 +81,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Add" class="btn btn-primary" />
             </div>
         </div>
     </div>

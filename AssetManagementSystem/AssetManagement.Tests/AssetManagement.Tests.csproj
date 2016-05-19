@@ -109,12 +109,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AssetManagement.WebUI\AssetManagement.WebUI.csproj">
-      <Project>{6A2C7891-BB7B-4244-951D-1336EA79BE48}</Project>
-      <Name>AssetManagement.WebUI</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

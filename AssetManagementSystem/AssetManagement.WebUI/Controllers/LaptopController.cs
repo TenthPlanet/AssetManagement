@@ -35,6 +35,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Laptop");
             return View();
         }
 
@@ -42,6 +43,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(LaptopViewModel viewmodel)
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x=>x.category=="Laptop");
             if (ModelState.IsValid)
             {
                 try
@@ -89,6 +91,7 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+            ModelState.Clear();
             return View(viewmodel);
         }
 	}

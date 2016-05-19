@@ -2,11 +2,21 @@
 
 @{
     ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
 
-<div style="margin-bottom:8%;"></div>
+<div style="margin-bottom:10%;"></div>
+      <h3 class="page-header">
+          <i class="fa fa-file-text-o"></i>
+             Assigned Assets - @ViewBag.Items Items(s)
+           </h3>
 
-<h3>Assigned Assets - @ViewBag.Items Item(s)</h3>
+       <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+             <li><i class="fa fa-desktop"></i>Assets</li>
+            <li><i class="fa fa-list-alt"></i>ASSIGNED ASSET</li>
+         </ol>
+ 
 @if (@TempData["Success"] != null)
 {
     <div class="alert alert-success">@TempData["Success"]</div>
@@ -18,7 +28,7 @@
         {
             @Html.AntiForgeryToken()
             <th>
-                @Html.Label("Search Asset")
+                @Html.Label("Search by Asset Number")
                 @Html.TextBox("search")
             </th>
             <th>
@@ -49,6 +59,7 @@
         <th>
             @Html.DisplayName("Date Assigned")
         </th>
+        <th>Action</th>
     </tr>
 
     @foreach (var item in Model)
@@ -73,9 +84,21 @@
                 @Html.DisplayFor(modelItem => item.assigneddate)
             </td>
             <td>
-                @Html.ActionLink("Dispose", "DisposeItem", new { id = item.assetID }) |
-                @Html.ActionLink("Deallocate", "Deallocate", new { id = item.assetID })
+                <div class="btn-group">
 
+                    <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
+                        <span class="icon_lightbulb_alt"></span>
+                        Options
+                    </a>
+                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">@Html.ActionLink("Dispose", "DisposeItem", new { id = item.assetID })</a></li>
+                        <li><a href="">@Html.ActionLink("Deallocate", "Deallocate", new { id = item.assetID })</a></li>
+                        <li><a href="">@Html.ActionLink("View Report", "Report", new { id = item.assetID })</a></li>
+                        <li class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
+                    </ul>
+                </div>
             </td>
         </tr>
     }

@@ -57,7 +57,7 @@ namespace AssetManagement.WebUI.Controllers
                 {
 
                     Stock stck = context.Stocks.FirstOrDefault(x => x.model.Equals(viewmodel.Model)
-                        && x.manufacturer.Equals(viewmodel.Manaufacturer));
+                        && x.manufacturer.Equals(viewmodel.Manaufacturer) && x.category.Equals(viewmodel.Catergory));
 
                     if (stck != null)
                     {

@@ -1,4 +1,20 @@
-﻿<style>
+﻿@using Microsoft.AspNet.Identity
+
+
+@{
+    AssetManagement.Domain.Context.AssetManagementEntities context = new AssetManagement.Domain.Context.AssetManagementEntities();
+
+    string newname = User.Identity.GetUserName();
+
+    foreach (var name in context.Employees)
+    {
+        if (name.employeeNumber.Equals(User.Identity.GetUserName()))
+        {
+            newname = name.firstName.Substring(0, 1) + ". " + name.lastName;
+        }
+    }
+}
+<style>
     #fix-it {
         margin-top: 10px;
     }
@@ -7,13 +23,12 @@
 @if (Request.IsAuthenticated)
 {
     <text>
-        @*<span>Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })</span>*@
-        @*@User.Identity.Name*@
+       <span class="navbar-link" id="fix-it"> @Html.ActionLink(newname, "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</span>
 
-        @using (Html.BeginForm("LogOff", "Home", FormMethod.Post, new { id = "logoutForm" }))
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
         {
             @Html.AntiForgeryToken()
-    <a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-link" id="fix-it">Logoff</a>
+    <a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-link" id="fix-it">Sign out</a>
         }
     </text>
 }

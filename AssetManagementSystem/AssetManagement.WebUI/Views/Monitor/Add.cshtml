@@ -1,9 +1,14 @@
 ﻿@model AssetManagement.WebUI.ViewModel.MonitorViewModel
 
+
 @{
     ViewBag.Title = "Add Monitor";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
 <style>
     #urlddl {
         width: 18%;
@@ -17,9 +22,34 @@
         }
 </style>
 
-<div style="margin-bottom:8%;"></div>
+<div style="margin-bottom:10%;"></div>
 
-<div>
+<div class="btn-group">
+
+    <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
+        <span class="icon_lightbulb_alt"></span>
+        Choose Asset
+    </a>
+    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="~/Keyboard/Add">Keyboard</a></li>
+        <li><a href="~/Laptop/Add">Laptop</a></li>
+        <li><a href="~/Monitor/Add">Monitor</a></li>
+        <li><a href="~/Mouse/Add">Mouse</a></li>
+        <li><a href="~/PC/Add">PC</a></li>
+        <li><a href="~/Printer/Add">Printer</a></li>
+        <li class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
+    </ul>
+</div>
+
+
+
+
+@*<div>
+
+
+
     @Html.DropDownList(
       "url", new SelectList(new[]
             {
@@ -33,7 +63,7 @@
         "Choose asset...",
             new { id = "urlddl", @class = "btn btn-default" }
       )
-</div>
+</div>*@
 
 @using (Html.BeginForm()) 
 {
@@ -65,23 +95,15 @@
         <div class="form-group">
             @Html.LabelFor(model => model.manufacturer, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.manufacturer)
+                @Html.DropDownListFor(model => model.manufacturer, new SelectList(ViewBag.MM, "manufacturer", "manufacturer"), "Select Manufacturer", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.manufacturer)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.warranty, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.warranty,new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @{
-                    List<SelectListItem> w = new List<SelectListItem>();
-
-                    w.Add(new SelectListItem { Text = "6 months", Value = "6 months" });
-                    w.Add(new SelectListItem { Text = "12 months", Value = "12 months" });
-                    w.Add(new SelectListItem { Text = "18 months", Value = "18 months" });
-                    w.Add(new SelectListItem { Text = "24 months", Value = "24 months" });
-                }
-                @Html.DropDownListFor(m => m.warranty, w, "Select...")
+                @Html.EditorFor(m => m.warranty)
                 @Html.ValidationMessageFor(model => model.warranty)
             </div>
         </div>
@@ -105,7 +127,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.modelName)
+                @Html.DropDownListFor(model => model.modelName,new SelectList(ViewBag.MM,"model", "model"),"Select Model",new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.modelName)
             </div>
         </div>
@@ -129,6 +151,8 @@
         </div>
     </div>
 }
+
+
 <script type="text/javascript">
     $(function () {
         $('#urlddl').change(function () {
@@ -139,4 +163,8 @@
         });
     });
 </script>
-
+<script>
+  $(function() {
+      $("#dateAdded").datepicker();
+  });
+</script>

@@ -34,6 +34,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.PrM = context.Stocks.ToList().Where(x => x.category == "Printer");
             return View();
         }
 
@@ -41,6 +42,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(PrinterViewModel viewmodel)
         {
+            ViewBag.PrM = context.Stocks.ToList().Where(x => x.category == "Printer");
             if (ModelState.IsValid)
             {
                 try
@@ -84,6 +86,7 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+            ModelState.Clear();
             return View(viewmodel);
         }
 	}

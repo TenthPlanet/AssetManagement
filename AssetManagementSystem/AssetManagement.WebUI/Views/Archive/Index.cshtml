@@ -2,11 +2,18 @@
 
 @{
     ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
 
-<div style="margin-bottom:8%;"></div>
-<h3>Asset Ownership History</h3>
+<div style="margin-bottom:10%;"></div>
+       <h3 class="page-header"><i class="fa fa-list-alt"></i>Asset Ownership History</h3>
 
+        <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+              <li><i class="fa fa-desktop"></i>Archive</li>
+              <li><i class="fa fa-list-alt"></i>List</li>
+           </ol>
+          <hr />
 <p style="float:right;">
     @Html.ActionLink("Disposed assets", "Disposed", null, new { @class = "btn btn-default" })
 </p>

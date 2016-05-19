@@ -37,6 +37,7 @@ namespace AssetManagement.Domain.Entities
         public virtual ICollection<Mouse> Mice { get; set; }
         public virtual ICollection<Monitor> Monitors { get; set; }
         public virtual ICollection<Asset> Assets { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
 
         public int departmentID { get; set; }
         public virtual Department Departments { get; set; }

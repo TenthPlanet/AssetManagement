@@ -35,6 +35,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.KeyBM = context.Stocks.ToList().Where(x => x.category == "Keyboard");
             return View();
         }
 
@@ -42,6 +43,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(KeyboardViewModel viewmodel)
         {
+            ViewBag.KeyBM = context.Stocks.ToList().Where(x => x.category == "Keyboard");
             if (ModelState.IsValid)
             {
                 try
@@ -85,6 +87,7 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+            ModelState.Clear();
             return View(viewmodel);
         }
 	}

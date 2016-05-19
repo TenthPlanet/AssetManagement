@@ -12,7 +12,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "SuperAdmin")]
     public class EmployeeController : Controller
     {
 
@@ -111,8 +111,8 @@ namespace AssetManagement.WebUI.Controllers
                     };
                     repository.Insert(department, employee);
                     repository.Save();
-
                     TempData["Success"] = employee.firstName + " " + employee.lastName + " has successfully been added!";
+                    return RedirectToAction("Index");
                 }
                 catch (Exception e)
                 {
@@ -120,6 +120,7 @@ namespace AssetManagement.WebUI.Controllers
                 }
               
             }
+            ModelState.Clear();
             return View(employeemodel);
         }
 
