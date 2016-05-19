@@ -9,6 +9,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using AssetManagement.Business;
+using System.Data.Entity;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -846,6 +847,34 @@ namespace AssetManagement.WebUI.Controllers
             //              .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)));
             //ViewBag.Category = context.Categories.ToList();
             //return View(assets);
+        }
+        public ActionResult EditProblem(int? id)
+        {
+            Ticket t = context.Tickets.ToList().Find(x => x.assetid == id);
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (t == null)
+            {
+                return HttpNotFound();
+            }
+      
+            return View(t);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditProblem([Bind(Include = "ticketid,assetnumber,assetid,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datecreated,datedue,employeeNumber")] Ticket t)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Entry(t).State = EntityState.Modified;
+                context.SaveChanges();
+                return RedirectToAction("Index", "Tickets");
+            }
+            return View(t);
+           
         }
     }
 }

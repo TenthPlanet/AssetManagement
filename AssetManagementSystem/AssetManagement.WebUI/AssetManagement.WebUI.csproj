@@ -303,6 +303,7 @@
     <Content Include="Views\Tickets\Details.cshtml" />
     <Content Include="Views\Tickets\Acknowledge.cshtml" />
     <Content Include="Views\Tickets\Accomplished.cshtml" />
+    <Content Include="Views\Asset\EditProblem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
