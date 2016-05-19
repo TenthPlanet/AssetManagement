@@ -204,6 +204,7 @@
     <Compile Include="ViewModel\PCViewModel.cs" />
     <Compile Include="ViewModel\PrinterViewModel.cs" />
     <Compile Include="ViewModel\StockViewModel.cs" />
+    <Compile Include="ViewModel\TicketViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -215,7 +216,9 @@
     <Content Include="Content\customscripts\jquery-1.10.2.js" />
     <Content Include="Content\customscripts\jquery-ui.css" />
     <Content Include="Content\customscripts\jquery-ui.js" />
+    <Content Include="Content\down.png" />
     <Content Include="Content\open.png" />
+    <Content Include="Content\up.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

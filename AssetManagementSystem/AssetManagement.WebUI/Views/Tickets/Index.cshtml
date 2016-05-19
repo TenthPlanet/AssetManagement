@@ -1,0 +1,157 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+<style>
+    fieldset{
+        padding-right: 20%;
+        width: 90%;
+        border: 2px 2px solid #000;
+    }
+    .link {
+        text-decoration: none;
+    }
+    .tabs {
+        padding-top: 2%;
+        margin-left: 30%;    
+    }
+        .tabs span {
+            display: inline-block;
+            padding-right: 4px;
+        }
+        strong span{
+            display: inline-block;
+            padding-right: 6px;
+        }
+</style>
+<div style="margin-bottom:10%;"></div>
+<h2>Tickets</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var i in Model)
+{
+    
+    <div class="col-md-10">
+
+        <h3>
+        <strong>
+            @if (i.acknowledgestatus == false) 
+            { 
+                
+               <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link"})</span>
+                <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+                
+            }
+            else
+            {
+                 <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link"})</span>
+                <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+            }
+        </strong>
+        </h3>
+    </div>
+    <fieldset>
+        <legend></legend>
+        <div class="col-md-10">
+            <p>
+                @Html.DisplayFor(item => i.description)
+
+                    <div class="tabs">
+                       
+                        <span>@Html.ActionLink("Asset details", "Report", "Asset", new { id = i.assetid }, new { @class = "link" }) | </span>
+                        <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
+                        <span>Due: @Html.DisplayFor(item => i.datedue)</span>
+                    </div>
+            </p>
+        </div>
+    </fieldset>
+    <hr/>
+}
+        @*<table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.assetnumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.assetowner)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.subject)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.priority)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.accomplishstatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.acknowledgestatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ticketstatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.datecreated)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.datedue)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employeeNumber)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.assetnumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.assetowner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.subject)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.priority)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.accomplishstatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.acknowledgestatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ticketstatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.datecreated)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.datedue)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.employeeNumber)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ticketid }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ticketid }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ticketid })
+                    </td>
+                </tr>
+            }
+
+        </table>*@

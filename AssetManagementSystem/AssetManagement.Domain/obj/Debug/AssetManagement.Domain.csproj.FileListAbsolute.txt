@@ -1,0 +1,715 @@
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\21325495\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAsset.resources
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeWarranty.resources
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeToString.resources
+C:\Users\XOLANI\Desktop\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddAsset.resources
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAsset.resources
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeWarranty.resources
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeToString.resources
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddAsset.resources
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Innocent\Desktop\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAsset.resources
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeWarranty.resources
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeToString.resources
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddAsset.resources
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAsset.resources
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeWarranty.resources
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeToString.resources
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddAsset.resources
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\New version\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAsset.resources
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeWarranty.resources
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeToString.resources
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddAsset.resources
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+F:\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\ITAMS Version 3\Asset Management 2.0\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Admin\Desktop\ITAMS v4.1\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+E:\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\XOLANI\Desktop\ITAMS v5\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Siyabonga\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Dep_with_layout\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
