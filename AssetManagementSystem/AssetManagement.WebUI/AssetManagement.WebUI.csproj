@@ -211,6 +211,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\check.png" />
     <Content Include="Content\closed.png" />
     <Content Include="Content\custom-style.css" />
     <Content Include="Content\customscripts\jquery-1.10.2.js" />
@@ -300,6 +301,8 @@
     <Content Include="Views\Tickets\Create.cshtml" />
     <Content Include="Views\Tickets\Index.cshtml" />
     <Content Include="Views\Tickets\Details.cshtml" />
+    <Content Include="Views\Tickets\Acknowledge.cshtml" />
+    <Content Include="Views\Tickets\Accomplished.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,4 +1,4 @@
-﻿@model AssetManagement.WebUI.ViewModel.TicketViewModel
+﻿@model AssetManagement.Domain.Entities.Ticket
 
     @{
     ViewBag.Title = "Details";
@@ -41,16 +41,25 @@
     <div class="col-md-10">
         <h3>
             <strong>
-                @if (Model.acknowledgestatus == false)
+                @if (Model.ticketstatus == true)
                 {
-                    <span>@Model.subject</span>
-                            <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+                    if (Model.acknowledgestatus == false)
+                    {
+                        <span>@Model.subject</span>
+                        <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+                    }
+                    else
+                    {
+                        <span>@Model.subject</span>
+                        <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+                    }
                 }
                 else
                 {
                     <span>@Model.subject</span>
-                            <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+                    <span><img src="~/Content/check.png" width="20" height="20" title="In progress..." /></span>
                 }
+
             </strong>
         </h3>
     </div>
@@ -61,7 +70,7 @@
             <br />
             <strong>Employee Number : </strong>@Model.assetowner
             <br />
-            <strong>Full Name       : </strong>@Model.fullname
+            <strong>Full Name       : </strong>@Model.Employees.fullname
             <br /><br />
         </div>
             <div class="col-md-10">
@@ -69,15 +78,17 @@
                     @Html.DisplayFor(model => model.description)
                     <div class="tabs">
                         <span>@Html.ActionLink("Asset details", "Report", "Asset", new { id = @Model.assetid }, new { @class = "link" }) | </span>
-                        <span><a href="/Tickets/Acknowledge/@Model.assetid" class="delete-link">Acknowledge</a> | </span>
-                        <span><a href="/Tickets/Accomplish/@Model.assetid" class="delete-link">Notify completion</a> | </span>
+                        @if (Model.acknowledgestatus == false)
+                        {
+                            <span><a href="/Tickets/Acknowledge/@Model.assetid" class="delete-link">Acknowledge</a> | </span>
+                        }
+                        @if (Model.accomplishstatus == false)
+                        {
+                            <span><a href="/Tickets/Accomplished/@Model.assetid" class="delete-link">Notify completion</a> | </span>
+                        }
                         <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
                         <span>Due: @Html.DisplayFor(model => model.datedue)</span>
                     </div>
                 </p>
             </div>
-
-        @*<div id="delete-dialog" title="Acknowledgement">
-            <p>Confirm acknowledgement of ticket!</p>
-        </div>*@	
 </fieldset>

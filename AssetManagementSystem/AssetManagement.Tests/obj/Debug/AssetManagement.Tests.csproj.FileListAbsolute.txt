@@ -827,6 +827,6 @@ C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSy
 C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
 C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache

@@ -6,6 +6,7 @@ using AssetManagement.WebUI.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -75,26 +76,20 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
-            var ticket = (from emps in _context.Employees
-                          join tics in _context.Tickets
-                          on emps.employeeNumber equals tics.assetowner
-                          select new TicketViewModel
-                          {
-                              accomplishstatus = tics.accomplishstatus,
-                              acknowledgestatus = tics.acknowledgestatus,
-                              assetid = tics.assetid,
-                              assetnumber = tics.assetnumber,
-                              fullname = emps.fullname,
-                              datecreated = tics.datecreated,
-                              datedue = tics.datedue,
-                              assetowner = tics.assetowner,
-                              subject = tics.subject,
-                              ticketid = tics.ticketid,
-                              ticketstatus = tics.ticketstatus,
-                              priority = tics.priority,
-                              description = tics.description
-                          }).FirstOrDefault(x => x.ticketid == id);
-
+            var ticket = _context.Tickets.Find(id);
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(ticket);
+        }
+        public ActionResult Acknowledge(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Ticket ticket = _context.Tickets.Find(id);
             if (ticket == null)
             {
                 return HttpNotFound();
@@ -102,48 +97,42 @@ namespace AssetManagement.WebUI.Controllers
             return View(ticket);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Acknowledge")]
         [ValidateAntiForgeryToken]
-        public ActionResult Acknowledge(int? id)
+        public ActionResult Confirm_Acknowledge(int? id)
+        {
+            Ticket ticket = _context.Tickets.Find(id);
+
+            ticket.acknowledgestatus = true;
+             _context.SaveChanges();
+             TempData["Success"] = "You acknowledged this ticket";
+            return View("Details", new { id = ticket.ticketid });
+        }
+
+        public ActionResult Accomplished(int? id)
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var ticket = _context.Tickets.FirstOrDefault(a => a.ticketid == id);
-
-            if (ticket != null)
-            {
-                ticket.acknowledgestatus = true;
-                _context.SaveChanges();
-            }
-            else
+            Ticket ticket = _context.Tickets.Find(id);
+            if (ticket == null)
             {
                 return HttpNotFound();
             }
             return View(ticket);
         }
-
-        [HttpPost]
+        [HttpPost, ActionName("Accomplished")]
         [ValidateAntiForgeryToken]
-        public ActionResult Accomplished(int? id)
+        public ActionResult Confirm_Accomplishment(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
-            var ticket = _context.Tickets.FirstOrDefault(a => a.ticketid == id);
+            Ticket ticket = _context.Tickets.Find(id);
 
-            if (ticket != null)
-            {
-                ticket.accomplishstatus = true;
-                _context.SaveChanges();
-            }
-            else
-            {
-                return HttpNotFound();
-            }
-            return View(ticket);
+            ticket.accomplishstatus = true;
+            ticket.ticketstatus = false;
+            _context.SaveChanges();
+            TempData["Success"] = "Ticket has been completed";
+            return View("Details", new { id = ticket.ticketid });
         }
         public JsonResult GetAssets(string term)
         {
