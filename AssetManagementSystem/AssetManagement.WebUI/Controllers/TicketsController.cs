@@ -5,6 +5,7 @@ using AssetManagement.Domain.Entities;
 using AssetManagement.WebUI.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -140,6 +141,34 @@ namespace AssetManagement.WebUI.Controllers
             assets = _context.Assets.Where(x => x.assetNumber.StartsWith(term) && x.assignstatus != 0)
                 .Select(a => a.assetNumber).ToList();
             return Json(assets, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult EditProblem(int? id)
+        {
+            Ticket t = _context.Tickets.Find(id);
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (t == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(t);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditProblem([Bind(Include = "ticketid,assetnumber,assetid,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datecreated,datedue,employeeNumber")] Ticket t)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Entry(t).State = EntityState.Modified;
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Tickets");
+            }
+            return View(t);
+
         }
     }
 }

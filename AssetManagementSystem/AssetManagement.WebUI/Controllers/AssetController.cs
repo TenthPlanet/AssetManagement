@@ -10,6 +10,7 @@ using System.Web;
 using System.Web.Mvc;
 using AssetManagement.Business;
 using System.Data.Entity;
+using AssetManagement.Domain.Entities;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -19,12 +20,13 @@ namespace AssetManagement.WebUI.Controllers
         private readonly AssetManagementEntities context = new AssetManagementEntities();
         private AssetResolver list = new AssetResolver();
         AssetLogic al = new AssetLogic();
+       
 
         //
         // GET: /Asset/
         public ActionResult Index()
         {
-
+                
             var assets = (from a in list.Assets()
                           select new AssetListViewModel
                           {
@@ -77,7 +79,6 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Assigned()
         {
-
             var assets = (from a in list.Assets()
                           join e in list.Employees()
                           on a.employeeNumber equals e.employeeNumber
@@ -92,9 +93,10 @@ namespace AssetManagement.WebUI.Controllers
                               owner = e.firstName + " " + e.lastName,
                               assigneddate = Convert.ToDateTime(a.assigndate).ToShortDateString(),
                               assetID = a.assetID
-                          })
+        })
                           .ToList()
                           .Where(x => x.assetstatus == 1);
+           
             int count = assets.ToList().Count;
             ViewBag.Items = count;
             ViewBag.Category = list.getCategories();
@@ -848,33 +850,6 @@ namespace AssetManagement.WebUI.Controllers
             //ViewBag.Category = context.Categories.ToList();
             //return View(assets);
         }
-        public ActionResult EditProblem(int? id)
-        {
-            Ticket t = context.Tickets.ToList().Find(x => x.assetid == id);
-
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            if (t == null)
-            {
-                return HttpNotFound();
-            }
-      
-            return View(t);
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult EditProblem([Bind(Include = "ticketid,assetnumber,assetid,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datecreated,datedue,employeeNumber")] Ticket t)
-        {
-            if (ModelState.IsValid)
-            {
-                context.Entry(t).State = EntityState.Modified;
-                context.SaveChanges();
-                return RedirectToAction("Index", "Tickets");
-            }
-            return View(t);
-           
-        }
+       
     }
 }

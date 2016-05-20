@@ -735,3 +735,4 @@ C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagementSystem\AssetManage
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

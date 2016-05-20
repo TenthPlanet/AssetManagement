@@ -44,7 +44,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Ticket</h4>
         <hr />
@@ -53,7 +53,7 @@
         @Html.HiddenFor(Model => Model.assetnumber)
         @Html.HiddenFor(Model => Model.assetid)
         @Html.HiddenFor(Model => Model.assetowner)
-        
+
         <div class="form-group">
             @Html.LabelFor(model => model.subject, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -65,12 +65,12 @@
         <div class="form-group">
             @Html.LabelFor(model => model.priority, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.priority,new List<SelectListItem>
+                @Html.DropDownListFor(model => model.priority, new List<SelectListItem>
            {
                new SelectListItem {Text="Low",Value="Low"},
                new SelectListItem {Text="Medium",Value="Medium"},
                new SelectListItem {Text="High",Value="High"}
-           },"---Select Priority---" ,new { htmlAttributes = new { @class = "form-control" } })
+           }, "---Select Priority---", new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.priority, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -110,7 +110,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index","Tickets")
+    @Html.ActionLink("Back to List", "Index", "Tickets")
 </div>
 <script>
     $(function () {
@@ -118,5 +118,5 @@
     })
 </script>
 @*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
