@@ -65,6 +65,7 @@
                        
                         <span>@Html.ActionLink("Asset details", "Report", "Asset", new { id = i.assetid }, new { @class = "link" }) | </span>
                         <span>@Html.ActionLink("Edit Problem", "EditProblem", "Tickets", new { id = i.ticketid }, new { @class = "link" }) | </span>
+                        <span>@Html.ActionLink("Discard Ticket", "Discard", "Tickets", new { id = i.ticketid }, new { @class = "link" }) | </span>
                         <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
                         <span>Due: @Html.DisplayFor(item => i.datedue)</span>
                     </div>

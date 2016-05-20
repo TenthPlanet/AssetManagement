@@ -170,5 +170,31 @@ namespace AssetManagement.WebUI.Controllers
             return View(t);
 
         }
+        public ActionResult Discard(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Ticket ticket = _context.Tickets.Find(id);
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(ticket);
+        }
+
+        // POST: Tickets1/Delete/5
+        [HttpPost, ActionName("Discard")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DiscardConfirmed(int id)
+        {
+            Ticket ticket = _context.Tickets.Find(id);
+            _context.Tickets.Remove(ticket);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Tickets");
+        }
+
+
     }
 }
