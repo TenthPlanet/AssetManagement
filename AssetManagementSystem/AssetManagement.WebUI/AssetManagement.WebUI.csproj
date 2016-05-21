@@ -220,7 +220,8 @@
     <Content Include="Content\down.png" />
     <Content Include="Content\open.png" />
     <Content Include="Content\up.png" />
-    <Content Include="favicon.ico" />
+    <Content Include="favicon.ICO" />
+    <Content Include="favicon1.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -305,6 +306,7 @@
     <Content Include="Views\Tickets\Accomplished.cshtml" />
     <Content Include="Views\Tickets\EditProblem.cshtml" />
     <Content Include="Views\Tickets\Discard.cshtml" />
+    <Content Include="Views\Shared\_assetsms1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
