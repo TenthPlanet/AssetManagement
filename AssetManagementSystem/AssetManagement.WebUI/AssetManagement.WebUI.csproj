@@ -307,6 +307,7 @@
     <Content Include="Views\Tickets\EditProblem.cshtml" />
     <Content Include="Views\Tickets\Discard.cshtml" />
     <Content Include="Views\Shared\_assetsms1.cshtml" />
+    <Content Include="Views\Tickets\EscalateTicket.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

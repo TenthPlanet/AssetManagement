@@ -194,7 +194,36 @@ namespace AssetManagement.WebUI.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index", "Tickets");
         }
+        public ActionResult EscalateTicket(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            Ticket ticket = _context.Tickets.Find(id);
+            ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician")), "employeeNumber", "fullname");
+            ViewData["employee"] = _context.Employees.Find(ticket.assetowner).fullname;
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(ticket);
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EscalateTicket([Bind(Include = "ticketid,assetnumber,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,employeeNumber")] Ticket ticket)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Entry(ticket).State = System.Data.Entity.EntityState.Modified;
+                _context.SaveChanges();
+                return RedirectToAction("Details", "Tickets", new { id = ticket.ticketid });
+            }
+            var thisTicket = _context.Tickets.Find(ticket.ticketid);
+            ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician")), "employeeNumber", "fullname", ticket.employeeNumber);
+            return View(ticket);
+        }
 
     }
 }

@@ -2,7 +2,7 @@
 
     @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_assetsms1.cshtml";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
     }
     <style>
         fieldset {
@@ -86,6 +86,7 @@
                         {
                             <span><a href="/Tickets/Accomplished/@Model.assetid" class="delete-link">Notify completion</a> | </span>
                         }
+                        <span><a href="/Tickets/EscalateTicket/@Model.ticketid" class="delete-link">Escalate Ticket</a> | </span>
                         <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
                         <span>Due: @Html.DisplayFor(model => model.datedue)</span>
                     </div>
