@@ -212,11 +212,11 @@ namespace AssetManagement.WebUI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EscalateTicket([Bind(Include = "ticketid,assetnumber,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,employeeNumber")] Ticket ticket)
+        public ActionResult EscalateTicket([Bind(Include = "ticketid,assetnumber,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datedue,employeeNumber")] Ticket ticket)
         {
             if (ModelState.IsValid)
             {
-                _context.Entry(ticket).State = System.Data.Entity.EntityState.Modified;
+                _context.Entry(ticket).State = EntityState.Modified;
                 _context.SaveChanges();
                 return RedirectToAction("Details", "Tickets", new { id = ticket.ticketid });
             }

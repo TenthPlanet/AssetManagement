@@ -107,22 +107,23 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" hidden="hidden">
             @*@Html.LabelFor(Model => Model.datecreated, htmlAttributes: new { @class = "control-label col-md-2" })*@
-            <label class="control-label col-md-2">Date Created</label>
-            <div class="col-md-10">
+            <label class="control-label col-md-2" hidden="hidden">Date Created</label>
+            <div class="col-md-10" hidden="hidden">
                 @Html.EditorFor(model => model.datecreated, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.datecreated, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group" hidden="hidden">
+        <div class="form-group">
             @Html.LabelFor(model => model.datedue, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.datedue, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.datedue, "", new { @class = "text-danger" })
             </div>
         </div>
+        
 
         <div class="form-group">
             <label class="control-label col-md-2">Technician</label>
