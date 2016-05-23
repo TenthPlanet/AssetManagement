@@ -17,7 +17,8 @@ namespace AssetManagement.WebUI.ViewModel
         public string manufacturer { get; set; }
         [Required]
         [Display(Name = "Warranty")]
-        public string warranty { get; set; }
+        [RegularExpression("([0-9]+)", ErrorMessage = "Enter numerical values only under warranty")]
+        public int warranty { get; set; }
         [Required]
         [DisplayName("Cost Price")]
         public double costprice { get; set; }

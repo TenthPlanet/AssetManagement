@@ -21,7 +21,7 @@ namespace AssetManagement.WebUI.Controllers
         }
         private readonly IKeyboardRepository _repository;
         private readonly AssetManagementEntities context = new AssetManagementEntities();
-        
+        Keyboard key = new Keyboard();
 
         public KeyboardController(IKeyboardRepository _repository)
         {
@@ -36,6 +36,7 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult Add()
         {
             ViewBag.KeyBM = context.Stocks.ToList().Where(x => x.category == "Keyboard");
+            
             return View();
         }
 
@@ -59,7 +60,7 @@ namespace AssetManagement.WebUI.Controllers
                             manufacturer = viewmodel.manufacturer,
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty+" Months",
                             costprice = viewmodel.costprice
 
                         };
@@ -68,7 +69,7 @@ namespace AssetManagement.WebUI.Controllers
                             serialNumber = viewmodel.serialNumber,
                             manufacturer = viewmodel.manufacturer,
                             modelName = viewmodel.modelName,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty + " Months",
                             dateAdded = viewmodel.dateAdded,
                         };
                         stock.quantity = stock.quantity - 1;
@@ -87,6 +88,10 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.Message = "Asset not added. Error: " + e.Message;
                 }
             }
+
+            DateTime endofwarranty = key.dateAdded.AddDays(1).AddMonths(Convert.ToInt32(viewmodel.warranty)).AddDays(-1);
+            ViewBag.KeyEnd = endofwarranty;
+
             ModelState.Clear();
             return View(viewmodel);
         }

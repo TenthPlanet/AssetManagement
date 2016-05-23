@@ -59,7 +59,7 @@ namespace AssetManagement.WebUI.Controllers
                             manufacturer = viewmodel.manufacturer,
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty + " Months",
                             costprice = viewmodel.costprice
                         };
                         var mouse = new Mouse
@@ -67,7 +67,7 @@ namespace AssetManagement.WebUI.Controllers
                             serialNumber = viewmodel.serialNumber,
                             manufacturer = viewmodel.manufacturer,
                             modelName = viewmodel.modelName,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty + " Months",
                             dateAdded = viewmodel.dateAdded,
                         };
                         stock.quantity = stock.quantity - 1;

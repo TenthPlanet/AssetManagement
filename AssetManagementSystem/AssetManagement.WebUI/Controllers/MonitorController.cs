@@ -61,7 +61,7 @@ namespace AssetManagement.WebUI.Controllers
                             manufacturer = viewmodel.manufacturer,
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty + " Months",
                             costprice = viewmodel.costprice
                         };
                         var monitor = new Monitor
@@ -69,7 +69,7 @@ namespace AssetManagement.WebUI.Controllers
                             serialNumber = viewmodel.serialNumber,
                             manufacturer = viewmodel.manufacturer,
                             modelName = viewmodel.modelName,
-                            warranty = viewmodel.warranty,
+                            warranty = viewmodel.warranty + " Months",
                             dateAdded = viewmodel.dateAdded,
                             displaySize = viewmodel.displaySize
                         };
