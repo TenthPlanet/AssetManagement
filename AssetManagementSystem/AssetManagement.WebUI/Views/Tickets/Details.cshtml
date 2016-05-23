@@ -38,6 +38,12 @@
     <div style="margin-bottom:10%;"></div>
 
     <h2>Ticket Details</h2>
+
+@if (@TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
     <div class="col-md-10">
         <h3>
             <strong>
@@ -57,7 +63,7 @@
                 else
                 {
                     <span>@Model.subject</span>
-                    <span><img src="~/Content/check.png" width="20" height="20" title="In progress..." /></span>
+                    <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
                 }
 
             </strong>
@@ -70,24 +76,31 @@
             <br />
             <strong>Employee Number : </strong>@Model.assetowner
             <br />
-            <strong>Full Name       : </strong>@Model.Employees.fullname
+            <strong>Assigned To       : </strong>@Model.Employees.fullname
             <br /><br />
         </div>
             <div class="col-md-10">
                 <p>
                     @Html.DisplayFor(model => model.description)
                     <div class="tabs">
-                        <span>@Html.ActionLink("Asset details", "Report", "Asset", new { id = @Model.assetid }, new { @class = "link" }) | </span>
+                        <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = @Model.assetid }, new { @class = "btn btn-sm btn-default" }) </span>
                         @if (Model.acknowledgestatus == false)
                         {
-                            <span><a href="/Tickets/Acknowledge/@Model.assetid" class="delete-link">Acknowledge</a> | </span>
+                            <span><a href="/Tickets/Acknowledge/@Model.ticketid" class="btn btn-sm btn-default">Acknowledge</a> </span>
                         }
-                        @if (Model.accomplishstatus == false)
+                        @if (Model.acknowledgestatus == true)
                         {
-                            <span><a href="/Tickets/Accomplished/@Model.assetid" class="delete-link">Notify completion</a> | </span>
+                            if (Model.accomplishstatus != true)
+                            {
+                                <span><a href="/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-default">Notify completion</a>  </span>
+                            }
                         }
                         <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
-                        <span>Due: @Html.DisplayFor(model => model.datedue)</span>
+                        <span>Due: @Html.DisplayFor(model => model.datedue) </span>
+                        @if (Model.datecompleted != null)
+                        {
+                            <span>| COM: @Html.DisplayFor(model => model.datecompleted)</span>
+                        }
                     </div>
                 </p>
             </div>

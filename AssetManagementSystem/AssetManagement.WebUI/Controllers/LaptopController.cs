@@ -12,7 +12,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Asset-Manager")]
     public class LaptopController : Controller
     {
         public LaptopController() : this(new LaptopRepository())

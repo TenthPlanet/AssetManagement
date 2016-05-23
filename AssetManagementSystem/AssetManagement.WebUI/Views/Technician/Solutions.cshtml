@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+    }
+    <style>
+        fieldset {
+            width: 90%;
+            border-bottom: 1px solid #b7b7b7;
+            margin-bottom: 15px;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .tabs {
+            padding-top: 2%;
+            margin-left: 50%;
+        }
+
+            .tabs span {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+        strong span {
+            display: inline-block;
+            padding-right: 6px;
+        }
+    </style>
+    <div style="margin-bottom:10%;"></div>
+    <h2>Your Solutions</h2>
+
+    @foreach (var i in Model)
+    {
+
+        <div class="col-md-10">
+
+            <h3>
+                <strong>
+                    <span> @Html.ActionLink(i.subject, "TicketInfo", "Technician", new { id = i.ticketid }, new { @class = "link" })</span>
+                    <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
+                </strong>
+            </h3>
+        </div>
+        <fieldset>
+            <div class="col-md-10">
+                <p>
+                    @Html.DisplayFor(item => i.description)
+                    @*<span><b>Solved by : @i.Employees.fullname</b></span>*@
+                    <div class="tabs">
+                        <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
+                        @*<span>Due: @Html.DisplayFor(item => i.datedue) | </span>*@
+                        <span>Completed: @Html.DisplayFor(item => i.datecompleted)</span>
+                    </div>
+                </p>
+            </div>
+        </fieldset>
+    }

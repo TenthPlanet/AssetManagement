@@ -67,7 +67,7 @@ namespace AssetManagement.WebUI.Controllers
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
@@ -78,19 +78,73 @@ namespace AssetManagement.WebUI.Controllers
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.EmployeeNumber, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+
+            if (model.role == "Technician")
             {
-                case SignInStatus.Success:
-                    return RedirectToAction("Dashboard", "Dashboard");
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Tickets", "Technician");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
             }
+            else if (model.role == "Administrator")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else if (model.role == "Asset Manager")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else if (model.role == "General Staff")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Base", "User");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            return View();
+            
         }
 
         //
@@ -138,90 +192,90 @@ namespace AssetManagement.WebUI.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
-        public ActionResult Register()
-        {
-            return View();
-        }
+        //[AllowAnonymous]
+        //public ActionResult Register()
+        //{
+        //    return View();
+        //}
 
-        //
-        // POST: /Account/Register
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
-        {
-            using (var context = new ApplicationDbContext())
-            {
-                model.Password = "123456";
-                model.ConfirmPassword = "123456";
+        ////
+        //// POST: /Account/Register
+        //[HttpPost]
+        //[AllowAnonymous]
+        //[ValidateAntiForgeryToken]
+        //public async Task<ActionResult> Register(RegisterViewModel model)
+        //{
+        //    using (var context = new ApplicationDbContext())
+        //    {
+        //        model.Password = "123456";
+        //        model.ConfirmPassword = "123456";
 
-                if (ModelState.IsValid)
-                {
-                    var entities = new AssetManagementEntities();
+        //        if (ModelState.IsValid)
+        //        {
+        //            var entities = new AssetManagementEntities();
 
-                    foreach (var entity in entities.Employees.ToList())
-                    {
-                        if (entity.employeeNumber.Equals(model.EmployeeNumber))
-                        {
-                            model.Password = "@" + entity.firstName.Substring(0,1) + entity.lastName.Substring(0,1) + entity.IDNumber.Substring(0, 6) +"c";
-                            model.ConfirmPassword = "@" + entity.firstName.Substring(0, 1) + entity.lastName.Substring(0, 1) + entity.IDNumber.Substring(0, 6) + "c";
-                            var user = new ApplicationUser() { UserName = model.EmployeeNumber, Email = entity.emailAddress };
-                            var result = await UserManager.CreateAsync(user, model.Password);
+        //            foreach (var entity in entities.Employees.ToList())
+        //            {
+        //                if (entity.employeeNumber.Equals(model.EmployeeNumber))
+        //                {
+        //                    model.Password = "@" + entity.firstName.Substring(0,1) + entity.lastName.Substring(0,1) + entity.IDNumber.Substring(0, 6) +"c";
+        //                    model.ConfirmPassword = "@" + entity.firstName.Substring(0, 1) + entity.lastName.Substring(0, 1) + entity.IDNumber.Substring(0, 6) + "c";
+        //                    var user = new ApplicationUser() { UserName = model.EmployeeNumber, Email = entity.emailAddress };
+        //                    var result = await UserManager.CreateAsync(user, model.Password);
 
-                            var roleStore = new RoleStore<IdentityRole>(context);
-                            var roleManager = new RoleManager<IdentityRole>(roleStore);
+        //                    var roleStore = new RoleStore<IdentityRole>(context);
+        //                    var roleManager = new RoleManager<IdentityRole>(roleStore);
 
-                            var userStore = new UserStore<ApplicationUser>(context);
-                            var userManager = new UserManager<ApplicationUser>(userStore);
+        //                    var userStore = new UserStore<ApplicationUser>(context);
+        //                    var userManager = new UserManager<ApplicationUser>(userStore);
 
-                            if (result.Succeeded)
-                            {
-                                if (!roleManager.RoleExists(entity.position))
-                                {
-                                    roleManager.Create(new IdentityRole() { Name = entity.position });
-                                }
-                                userManager.AddToRole(user.Id, entity.position);
+        //                    if (result.Succeeded)
+        //                    {
+        //                        if (!roleManager.RoleExists(entity.position))
+        //                        {
+        //                            roleManager.Create(new IdentityRole() { Name = entity.position });
+        //                        }
+        //                        userManager.AddToRole(user.Id, entity.position);
 
-                                //await SignInAsync(user, isPersistent: false);
-                                //await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                                TempData["Message"] = entity.fullname + " has been registered";
-                                ModelState.Clear();
-                                return RedirectToAction("Register", "Account");
-                            }
-                            else
-                            {
-                                AddErrors(result);
-                            }
-                        }
-                    }
-                    ModelState.AddModelError("", "Invalid employee number");
-                }
-            }
-            return View(model);
-            //if (ModelState.IsValid)
-            //{
-            //    var _context = new AssetManagementEntities();
+        //                        //await SignInAsync(user, isPersistent: false);
+        //                        //await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+        //                        TempData["Message"] = entity.fullname + " has been registered";
+        //                        ModelState.Clear();
+        //                        return RedirectToAction("Register", "Account");
+        //                    }
+        //                    else
+        //                    {
+        //                        AddErrors(result);
+        //                    }
+        //                }
+        //            }
+        //            ModelState.AddModelError("", "Invalid employee number");
+        //        }
+        //    }
+        //    return View(model);
+        //    //if (ModelState.IsValid)
+        //    //{
+        //    //    var _context = new AssetManagementEntities();
 
-            //    foreach (var entity in _context.Employees.ToList())
-            //    {
-            //        if (entity.employeeNumber.Equals(model.EmployeeNumber) && entity.position.Equals("Technician"))
-            //        {
+        //    //    foreach (var entity in _context.Employees.ToList())
+        //    //    {
+        //    //        if (entity.employeeNumber.Equals(model.EmployeeNumber) && entity.position.Equals("Technician"))
+        //    //        {
 
-            //        }
-            //    }
-            //    var user = new ApplicationUser { UserName = model.EmployeeNumber, Email = model.Email };
-            //    var result = await UserManager.CreateAsync(user, model.Password);
-            //    if (result.Succeeded)
-            //    {
-            //        await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-            //        return RedirectToAction("Dashboard", "Dashboard");
-            //    }
-            //    AddErrors(result);
-            //}
+        //    //        }
+        //    //    }
+        //    //    var user = new ApplicationUser { UserName = model.EmployeeNumber, Email = model.Email };
+        //    //    var result = await UserManager.CreateAsync(user, model.Password);
+        //    //    if (result.Succeeded)
+        //    //    {
+        //    //        await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+        //    //        return RedirectToAction("Dashboard", "Dashboard");
+        //    //    }
+        //    //    AddErrors(result);
+        //    //}
 
-            // If we got this far, something failed, redisplay form
-        }
+        //    // If we got this far, something failed, redisplay form
+        //}
 
         //
         // GET: /Account/ConfirmEmail
@@ -260,12 +314,6 @@ namespace AssetManagement.WebUI.Controllers
                     return View("ForgotPasswordConfirmation");
                 }
 
-                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                // Send an email with this link
-                // string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
-                // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                // return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 
             // If we got this far, something failed, redisplay form

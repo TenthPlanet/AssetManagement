@@ -9,7 +9,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using AssetManagement.Business;
-using System.Data.Entity;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -48,7 +47,6 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Assigned(string search)
         {
-
             if (search != "")
             {
 
@@ -95,9 +93,9 @@ namespace AssetManagement.WebUI.Controllers
                           })
                           .ToList()
                           .Where(x => x.assetstatus == 1);
-            int count = assets.ToList().Count;
-            ViewBag.Items = count;
-            ViewBag.Category = list.getCategories();
+            //int count = assets.ToList().Count;
+            //ViewBag.Items = count;
+            //ViewBag.Category = list.getCategories();
             return View(assets);
         }
         [HttpPost]
@@ -824,57 +822,99 @@ namespace AssetManagement.WebUI.Controllers
                               assigneddate = a.assigndate,
                               sellprice = (a.costprice - al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00")
                           }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
-
-
-
             return View(result);
-
-            //var assets = (from a in list.Assets()
-            //              join e in list.Employees() on a.employeeNumber equals e.employeeNumber
-            //              select new AssetListViewModel
-            //              {
-            //                  serialNumber = a.serialNumber,
-            //                  assetNumber = a.assetNumber,
-            //                  catergory = a.catergory,
-            //                  warranty = a.warranty,
-            //                  manufacturer = a.manufacturer,
-            //                  dateadded = a.dateadded,
-            //                  depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
-            //                  assetstatus = a.assignstatus,
-            //                  costprice = (a.costprice).ToString("R0.00")
-            //              })
-            //              .ToList()
-            //              .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)));
-            //ViewBag.Category = context.Categories.ToList();
-            //return View(assets);
         }
-        public ActionResult EditProblem(int? id)
-        {
-            Ticket t = context.Tickets.ToList().Find(x => x.assetid == id);
 
+        //The technician must be able to see the list of assets
+        //and their respective owners
+        [Authorize(Roles = "Technician")]
+        public ActionResult AllAssets()
+        {
+            var assets = (from a in list.Assets()
+                          join e in list.Employees()
+                          on a.employeeNumber equals e.employeeNumber
+                          select new AssetListViewModel
+                          {
+                              assetNumber = a.assetNumber,
+                              serialNumber = a.serialNumber,
+                              catergory = a.catergory,
+                              dateadded = a.dateadded,
+                              warranty = a.warranty,
+                              assetstatus = a.assignstatus,
+                              owner = e.firstName + " " + e.lastName,
+                              assigneddate = Convert.ToDateTime(a.assigndate).ToShortDateString(),
+                              assetID = a.assetID
+                          })
+                          .ToList()
+                          .Where(x => x.assetstatus == 1);
+            int count = assets.ToList().Count;
+            return View(assets);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AllAssets(string search)
+        {
+            if (search != "")
+            {
+
+                var asset = (from a in list.Assets()
+                             join e in list.Employees()
+                          on a.employeeNumber equals e.employeeNumber
+                             select new AssetListViewModel
+                             {
+                                 assetNumber = a.assetNumber,
+                                 serialNumber = a.serialNumber,
+                                 manufacturer = a.manufacturer,
+                                 catergory = a.catergory,
+                                 dateadded = a.dateadded,
+                                 warranty = a.warranty,
+                                 assetstatus = a.assignstatus,
+                                 owner = e.firstName + " " + e.lastName,
+                                 assetID = a.assetID,
+                                 assigneddate = Convert.ToDateTime(a.assigndate).ToShortDateString()
+                             })
+                         .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1)
+                         .ToList();
+                return View(asset);
+            }
+            return View();
+        }
+
+        //Technician should be able to view an asset report
+        [Authorize(Roles = "Technician")]
+        public ActionResult AssetReports(int? id)
+        {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            if (t == null)
+
+            var asset = context.Assets.Single(a => a.assetID == id);
+
+            if (asset == null)
             {
                 return HttpNotFound();
             }
-      
-            return View(t);
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult EditProblem([Bind(Include = "ticketid,assetnumber,assetid,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datecreated,datedue,employeeNumber")] Ticket t)
-        {
-            if (ModelState.IsValid)
-            {
-                context.Entry(t).State = EntityState.Modified;
-                context.SaveChanges();
-                return RedirectToAction("Index", "Tickets");
-            }
-            return View(t);
-           
+            var result = (from a in list.Assets()
+                          join e in list.Employees()
+                          on a.employeeNumber equals e.employeeNumber
+                          select new AssetReport
+                          {
+                              serialNumber = a.serialNumber,
+                              assetNumber = a.assetNumber,
+                              catergory = a.catergory,
+                              warranty = a.warranty,
+                              manufacturer = a.manufacturer,
+                              dateadded = a.dateadded,
+                              depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                              assetstatus = a.assignstatus,
+                              costprice = (a.costprice).ToString("R0.00"),
+                              owner = e.fullname,
+                              assetID = a.assetID,
+                              assigneddate = a.assigndate,
+                              sellprice = (a.costprice - al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00")
+                          }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
+            return View(result);
         }
     }
 }

@@ -21,6 +21,8 @@ namespace AssetManagement.WebUI.ViewModel.Asset
 
         /*NOT PART OF THE INPUTS*/
         public string owner { get; set; }
+        public string sell { get; set; }
+        public string employeenumber { get; set; }
         public string depreciationcost { get; set; }
         public string department { get; set; }
         public int assetID { get; set; }

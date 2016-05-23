@@ -3,7 +3,10 @@ using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Context;
 using AssetManagement.Domain.Entities;
 using AssetManagement.Domain.QuickResolver;
+using AssetManagement.WebUI.Models;
 using AssetManagement.WebUI.ViewModel.Employee;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +15,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "Administrator")]
     public class EmployeeController : Controller
     {
 
@@ -29,6 +32,7 @@ namespace AssetManagement.WebUI.Controllers
         }
         //
         // GET: /Employee/
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var query = (from depart in repository.Departments()
@@ -48,7 +52,6 @@ namespace AssetManagement.WebUI.Controllers
                          .OrderBy(x => x.hireDate);
             return View(query);
         }
-
         public ViewResult Details(string id)
         {
             var model = (from e in resolver.Employees()   
@@ -68,12 +71,8 @@ namespace AssetManagement.WebUI.Controllers
                              
                              
                          }).FirstOrDefault(m => m.employeeNumber.Equals(id));
-
-            var monitor = db.Monitors.FirstOrDefault(x => x.employeeNumber.Equals(id));
-            TempData["Monitor"] = "Asset Number: " + monitor.assetNumber;
             return View(model);
         }
-
         public ActionResult Create()
         {
             //ViewBag.departmentID = new SelectList(db.Departments, "departmentID", "departmentName");
@@ -84,6 +83,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(EmployeeViewModel employeemodel)
         {
+            
             if (ModelState.IsValid)
             {
                 try
@@ -109,6 +109,53 @@ namespace AssetManagement.WebUI.Controllers
                     {
                         departmentName = employeemodel.departmentName
                     };
+
+                    using (var appcontext = new ApplicationDbContext())
+                    {
+                        var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(appcontext));
+                        var PasswordHash = new PasswordHasher();
+
+                        if (!appcontext.Roles.Any(r => r.Name.Equals(employee.position)))
+                        {
+                            var store = new RoleStore<IdentityRole>(appcontext);
+                            var manager = new RoleManager<IdentityRole>(store);
+                            var role = new IdentityRole { Name = employee.position };
+
+                            manager.Create(role);
+
+                            if (!appcontext.Users.Any(u => u.UserName == employee.employeeNumber))
+                            {
+                                var user = new ApplicationUser
+                                {
+                                    UserName = employee.employeeNumber,
+                                    Email = employee.emailAddress,
+                                    EmailConfirmed = true,
+                                    PhoneNumber = employee.mobileNumber,
+                                    PhoneNumberConfirmed = true,
+                                    PasswordHash = PasswordHash.HashPassword(employee.IDNumber.Substring(0, 6)),
+                                };
+
+                                UserManager.Create(user);
+                                UserManager.AddToRole(user.Id, employee.position);
+                            }
+                        }
+                        if (!appcontext.Users.Any(u => u.UserName == employee.employeeNumber))
+                        {
+                            var user = new ApplicationUser
+                            {
+                                UserName = employee.employeeNumber,
+                                Email = employee.emailAddress,
+                                EmailConfirmed = true,
+                                PhoneNumber = employee.mobileNumber,
+                                PhoneNumberConfirmed = true,
+                                PasswordHash = PasswordHash.HashPassword(employee.IDNumber.Substring(0, 6)),
+                            };
+
+                            UserManager.Create(user);
+                            UserManager.AddToRole(user.Id, employee.position);
+                        }
+                        appcontext.SaveChanges();
+                    }
                     repository.Insert(department, employee);
                     repository.Save();
                     TempData["Success"] = employee.firstName + " " + employee.lastName + " has successfully been added!";
@@ -152,6 +199,29 @@ namespace AssetManagement.WebUI.Controllers
             }
             ViewBag.departmentID = new SelectList(db.Departments, "departmentID", "departmentName", employee.departmentID);
             return View(employee);
+        }
+
+        //Technician should be able to view the employees
+        // and asset and asset reports
+
+        public ActionResult AllEmployees()
+        {
+            var query = (from depart in repository.Departments()
+                         join emps in repository.Employees()
+                             on depart.departmentID equals emps.departmentID
+                         select new EmployeeViewModel
+                         {
+                             employeeNumber = emps.employeeNumber,
+                             fullname = emps.firstName + " " + emps.lastName,
+                             emailAddress = emps.emailAddress,
+                             officeNumber = emps.officeNumber,
+                             telephoneNumber = emps.telephoneNumber,
+                             departmentName = depart.departmentName,
+                             position = emps.position
+                         })
+                         .ToList()
+                         .OrderBy(x => x.hireDate);
+            return View(query);
         }
 	}
 }

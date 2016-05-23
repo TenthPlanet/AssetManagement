@@ -38,18 +38,11 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h3>Create Ticket</h3>
+        <h3>Create ticket</h3>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.subject, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.subject, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
+       
         <div class="form-group">
             @Html.LabelFor(model => model.assetnumber, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -66,23 +59,47 @@
             </div>
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.priority, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.priority, new List<SelectListItem>
-           {
-               new SelectListItem {Text="Low",Value="Low"},
-               new SelectListItem {Text="Medium",Value="Medium"},
-               new SelectListItem {Text="High",Value="High"}
-           }, "---Select Priority---", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.priority, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.priority, "", new { @class = "text-danger" })
             </div>
+        </div>*@
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Priority</label>
+            <div class="col-md-10">
+
+                @{
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem
+    {
+        Text = "Low",
+        Value = "Low"
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "Medium",
+        Value = "Medium",
+        Selected = true
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "High",
+        Value = "High"
+    });
+                }
+                @Html.DropDownListFor(model => model.priority, listItems, new { @class = "form-control" })
+            </div>
         </div>
+
+
 
         <div class="form-group">
             @Html.LabelFor(model => model.datedue, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.datedue, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextBoxFor(model => model.datedue, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.datedue, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -102,7 +119,13 @@
                 @Html.ValidationMessageFor(model => model.employeeNumber, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <div class="form-group">
+            @Html.LabelFor(model => model.subject, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subject, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger" })
+            </div>
+        </div>
         <div class="form-group">
             @Html.LabelFor(model => model.description, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">

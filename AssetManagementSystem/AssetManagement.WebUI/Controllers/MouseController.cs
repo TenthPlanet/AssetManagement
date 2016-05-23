@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Asset-Manager")]
     public class MouseController : Controller
     {
         public MouseController()

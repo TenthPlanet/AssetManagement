@@ -50,6 +50,9 @@ namespace AssetManagement.WebUI.Models
     public class LoginViewModel
     {
         [Required]
+        public string role { get; set; }
+
+        [Required]
         [Display(Name = "Employee Number")]
         public string EmployeeNumber { get; set; }
 

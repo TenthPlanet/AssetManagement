@@ -5,7 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     
-    <title>Asset Management Sys..</title>
+    <title>Help Desk System</title>
 
 
         <meta charset="utf-8">
@@ -40,7 +40,7 @@
             <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
         </div>
         <div style="margin-top:20px">
-            Asset Management
+            Admin : @User.Identity.Name
         </div>
     </header>
     <div> 
@@ -79,7 +79,6 @@
                         </a>
                         <ul class="sub">
                             <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
-                            <li>@Html.ActionLink("Employee Details", "Details", "Employee")</li>
                             <li>@Html.ActionLink("List of Employee", "Index", "Employee")</li>
                             <li></li>
                         </ul>
@@ -107,6 +106,9 @@
                                 <ul class="sub">
                                     <li>@Html.ActionLink("Create Ticket", "Create", "Tickets")</li>
                                     <li>@Html.ActionLink("All Tickets", "Index", "Tickets")</li>
+                                    <li>@Html.ActionLink("My Tickets", "MyTickets", "Tickets")</li>
+                                    <li>@Html.ActionLink("My Solutions", "MySolutions", "Tickets")</li>
+                                    <li>@Html.ActionLink("Knowledge Base", "Solutions", "Tickets")</li>
                                 </ul>
 
                         

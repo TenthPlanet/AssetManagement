@@ -12,10 +12,10 @@ namespace AssetManagement.Domain.Entities
     {
         [Key]
         public int ticketid { get; set; }
-        [DisplayName("Asset No.")]
+        [DisplayName("Asset #")]
         public string assetnumber { get; set; }
         public int assetid { get; set; } //This is so I can easily get an asset report
-        [DisplayName("Employee No.")]
+        [DisplayName("Employee #")]
         public string assetowner { get; set; }
         [DisplayName("Subject")]
         public string subject { get; set; }
@@ -32,6 +32,9 @@ namespace AssetManagement.Domain.Entities
         [DisplayName("Due Date")]
         [DataType(DataType.Date)]
         public DateTime datedue { get; set; }
+        public DateTime? datecompleted { get; set; }
+        [Display(Name = "Solution")]
+        public string solution { get; set; }
         
         public string employeeNumber { get; set; }
         public virtual Employee Employees { get; set; }

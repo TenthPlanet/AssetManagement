@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
+    [Authorize(Roles = "Asset-Manager")]
     public class StockController : Controller
     {
         public StockController()
@@ -28,6 +29,7 @@ namespace AssetManagement.WebUI.Controllers
 
         //
         // GET: /Stock/
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var query = (from assets in repo.Stocks()

@@ -72,3 +72,28 @@ C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSyste
 C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache
 C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
 C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.ReviveDomain.resources
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache

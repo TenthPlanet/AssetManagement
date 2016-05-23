@@ -17,11 +17,11 @@ namespace AssetManagement.WebUI.Migrations
 
         protected override void Seed(AssetManagement.WebUI.Models.ApplicationDbContext context)
         {
-            if (!context.Roles.Any(r => r.Name == "SuperAdmin"))
+            if (!context.Roles.Any(r => r.Name == "Administrator"))
             {
                 var store = new RoleStore<IdentityRole>(context);
                 var manager = new RoleManager<IdentityRole>(store);
-                var role = new IdentityRole { Name = "SuperAdmin" };
+                var role = new IdentityRole { Name = "Administrator" };
 
                 manager.Create(role);
 
@@ -38,7 +38,31 @@ namespace AssetManagement.WebUI.Migrations
                     };
 
                     UserManager.Create(user);
-                    UserManager.AddToRole(user.Id, "SuperAdmin");
+                    UserManager.AddToRole(user.Id, "Administrator");
+                }
+            }
+            if (!context.Roles.Any(r => r.Name == "Asset-Manager"))
+            {
+                var store = new RoleStore<IdentityRole>(context);
+                var manager = new RoleManager<IdentityRole>(store);
+                var role = new IdentityRole { Name = "Asset-Manager" };
+
+                manager.Create(role);
+
+                var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+                var PasswordHash = new PasswordHasher();
+
+                if (!context.Users.Any(u => u.UserName == "assetmanagement@admin.net"))
+                {
+                    var user = new ApplicationUser
+                    {
+                        UserName = "assetmanagement@admin.net",
+                        Email = "assetmanagement@admin.net",
+                        PasswordHash = PasswordHash.HashPassword("123456")
+                    };
+
+                    UserManager.Create(user);
+                    UserManager.AddToRole(user.Id, "Asset-Manager");
                 }
             }
 

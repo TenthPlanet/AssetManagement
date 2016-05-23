@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssetManagement.WebUI</RootNamespace>
     <AssemblyName>AssetManagement.WebUI</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,16 +52,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -102,6 +101,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -181,7 +181,9 @@
     <Compile Include="Controllers\PCController.cs" />
     <Compile Include="Controllers\PrinterController.cs" />
     <Compile Include="Controllers\StockController.cs" />
+    <Compile Include="Controllers\TechnicianController.cs" />
     <Compile Include="Controllers\TicketsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -225,6 +227,16 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\CX.pubxml" />
+    <None Include="Properties\PublishProfiles\dutweb.pubxml" />
+    <None Include="Properties\PublishProfiles\FileDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Final1.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\izincweti - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\izincweti - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\izincweti - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\izincweti - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\izingcweti2016.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -303,7 +315,33 @@
     <Content Include="Views\Tickets\Details.cshtml" />
     <Content Include="Views\Tickets\Acknowledge.cshtml" />
     <Content Include="Views\Tickets\Accomplished.cshtml" />
-    <Content Include="Views\Asset\EditProblem.cshtml" />
+    <Content Include="Views\Tickets\TechnicianTickets.cshtml" />
+    <Content Include="Views\Shared\_TechnicianLayout.cshtml" />
+    <Content Include="Views\Tickets\Solutions.cshtml" />
+    <Content Include="Views\Tickets\Info.cshtml" />
+    <Content Include="Views\Tickets\MySolutions.cshtml" />
+    <Content Include="Views\Employee\AllEmployees.cshtml" />
+    <Content Include="Views\Asset\AllAssets.cshtml" />
+    <Content Include="Views\Asset\AssetReports.cshtml" />
+    <Content Include="Views\Technician\Tickets.cshtml" />
+    <Content Include="Views\Technician\Solutions.cshtml" />
+    <Content Include="Views\Technician\Base.cshtml" />
+    <Content Include="Views\Technician\Employees.cshtml" />
+    <Content Include="Views\Technician\TicketInfo.cshtml" />
+    <Content Include="Views\Technician\Assets.cshtml" />
+    <Content Include="Views\Technician\Report.cshtml" />
+    <Content Include="Views\Technician\TicketDetails.cshtml" />
+    <Content Include="Views\Technician\Acknowledge.cshtml" />
+    <Content Include="Views\Technician\Complete.cshtml" />
+    <Content Include="Views\Tickets\MyTickets.cshtml" />
+    <Content Include="Views\Tickets\Escalate.cshtml" />
+    <Content Include="Views\Tickets\Discard.cshtml" />
+    <Content Include="Views\Tickets\EditProblem.cshtml" />
+    <Content Include="Views\User\Base.cshtml" />
+    <Content Include="Views\User\Solution.cshtml" />
+    <Content Include="Views\User\Assets.cshtml" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
+    <Content Include="Views\Technician\MyAssets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

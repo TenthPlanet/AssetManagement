@@ -1,0 +1,110 @@
+﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel>
+
+    @{
+        ViewBag.Title = "Employees";
+        Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+    }
+
+
+    <div style="margin-bottom:10%;"></div>
+
+    <h3 class="page-header"><i class="fa fa-list-alt"></i>Employees</h3>
+    <ol class="breadcrumb">
+        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+        <li><i class="fa fa-desktop"></i>Employees</li>
+        <li><i class="fa fa-list-alt"></i>List of Employees</li>
+    </ol>
+
+    <p style="float:right;">
+        @*@Html.ActionLink("Assign role", "Register", "Account",null, new { @class = "btn btn-default" })*@
+        @*@Html.ActionLink("Add new employee", "Create", null, new { @class = "btn btn-default" })*@
+    </p>
+    <table class="table table-striped table-condensed table-bordered">
+        <tr>
+            <th>
+                <i class="icon_floppy_alt"></i>
+                @Html.DisplayName("Employee #")
+            </th>
+
+            <th>
+                <i class="icon_profile"></i>
+                @Html.DisplayName("Full Name")
+            </th>
+
+            <th>
+                <i class="icon_briefcase_alt"></i>
+                @Html.DisplayName("Office #")
+            </th>
+
+            <th>
+                <i class="icon_phone"></i>
+                @Html.DisplayName("Telephone #")
+            </th>
+
+
+            <th>
+                <i class="icon_mail"></i>
+                @Html.DisplayName("E-mail Address")
+            </th>
+
+            <th>
+                <i class="icon_pin_alt"></i>
+                @Html.DisplayName("Position")
+            </th>
+
+            <th>
+                <i class="icon_chat_alt"></i>
+                @Html.DisplayName("Department")
+            </th>
+
+            @*<th>
+                <i class="icon_cogs"></i>
+                Actions
+            </th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employeeNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fullname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.officeNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telephoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.emailAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.departmentName)
+                </td>
+
+                @*<td>
+                    <div class="btn-group">
+
+                        <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
+                            <span class="icon_lightbulb_alt"></span>
+                            Options
+                        </a>
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">@Html.ActionLink("Edit", "Edit", new { id = item.employeeNumber })</a></li>
+                            <li class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
+                        </ul>
+                    </div>
+
+                </td>*@
+            </tr>
+        }
+
+    </table>

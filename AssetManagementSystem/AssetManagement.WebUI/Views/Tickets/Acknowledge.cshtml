@@ -48,13 +48,10 @@
         <strong>
             @if (Model.acknowledgestatus == false)
             {
-                <span>@Model.subject</span>
-                    <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
-            }
-            else
-            {
-                <span>@Model.subject</span>
-                    <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+
+                <span> @Html.ActionLink(Model.subject, "Details", "Tickets", new { id = Model.ticketid }, new { @class = "link" })</span>
+                <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+
             }
         </strong>
     </h3>
@@ -66,7 +63,7 @@
         <br />
         <strong>Employee Number : </strong>@Model.assetowner
         <br />
-        <strong>Full Name       : </strong>@Model.Employees.fullname
+        <strong>Assign To       : </strong>@Model.Employees.fullname
         <br /><br />
     </div>
     <div class="col-md-10">
