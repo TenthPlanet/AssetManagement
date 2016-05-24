@@ -52,12 +52,12 @@ namespace AssetManagement.WebUI.Migrations
                 var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
                 var PasswordHash = new PasswordHasher();
 
-                if (!context.Users.Any(u => u.UserName == "assetmanagement@admin.net"))
+                if (!context.Users.Any(u => u.UserName == "assets@admin.net"))
                 {
                     var user = new ApplicationUser
                     {
-                        UserName = "assetmanagement@admin.net",
-                        Email = "assetmanagement@admin.net",
+                        UserName = "assets@admin.net",
+                        Email = "assets@admin.net",
                         PasswordHash = PasswordHash.HashPassword("123456")
                     };
 

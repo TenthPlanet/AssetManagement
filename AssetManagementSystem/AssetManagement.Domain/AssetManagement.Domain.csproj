@@ -108,6 +108,10 @@
     <Compile Include="Entities\AssetsDomain.cs" />
     <Compile Include="Entities\EmployeeDomain.cs" />
     <Compile Include="Entities\HelpdeskDomain.cs" />
+    <Compile Include="Migrations\201605240845114_ReviveDomain.cs" />
+    <Compile Include="Migrations\201605240845114_ReviveDomain.Designer.cs">
+      <DependentUpon>201605240845114_ReviveDomain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
@@ -115,6 +119,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605240845114_ReviveDomain.resx">
+      <DependentUpon>201605240845114_ReviveDomain.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
