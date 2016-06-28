@@ -10,6 +10,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -29,10 +31,12 @@ namespace AssetManagement.WebUI.Controllers
         }
 
         // GET: Tickets
-        public ActionResult Index()
+        public ActionResult Index(int?page)
         {
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
-            return View(ticket);
+            int pageS = 4;
+            int pageN = (page ?? 1);
+            return View(ticket.ToPagedList(pageS,pageN));
         }
         public ActionResult Create()
         {
@@ -241,35 +245,47 @@ namespace AssetManagement.WebUI.Controllers
 
 
         //Tickets assigned to the help desk
-        public ActionResult MyTickets()
+        public ActionResult MyTickets(int? page)
         {
             var tickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name)
                 && x.solution == null && x.ticketstatus == true).ToList();
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize,pageNumber));
         }
 
-        public ActionResult TechnicianTickets()
+        public ActionResult TechnicianTickets(int?page)
         {
             var tickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name) 
                 && x.solution == null && x.ticketstatus == true).ToList();
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize, pageNumber));
         }
         //Solutions of a specific the helpdesk admin
-        public ActionResult MySolutions()
+        public ActionResult MySolutions(int?page)
         {
             var tickets = _context.Tickets.Where(t => t.employeeNumber.Equals(User.Identity.Name)
                 && t.solution != null && t.ticketstatus == false)
                 .ToList();
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize, pageNumber));
         }
         //Knowledge base, all the tickets that have been a completed 
         //All tickets that have a solution
         [AllowAnonymous]
-        public ActionResult Solutions()
+        public ActionResult Solutions(int?page)
         {
             var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
                 .OrderByDescending(x => x.datecreated);
-            return View(tickets);
+
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize, pageNumber));
         }
         //Full solution details
         [AllowAnonymous]

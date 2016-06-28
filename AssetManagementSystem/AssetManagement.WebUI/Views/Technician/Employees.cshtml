@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel>
+﻿@model PagedList.IPagedList<AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel>
+@using PagedList
+@using PagedList.Mvc
 
     @{
         ViewBag.Title = "Employees";
@@ -108,3 +110,13 @@
         }
 
     </table>
+
+<br />
+<div style="text-align:center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("Employees", new { page }))
+    </p>
+</div>

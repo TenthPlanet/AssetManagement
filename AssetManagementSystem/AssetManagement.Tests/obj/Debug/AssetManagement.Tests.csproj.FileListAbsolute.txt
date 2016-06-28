@@ -958,3 +958,41 @@ C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\Ass
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll.config
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.pdb
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Moq.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\PagedList.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\PagedList.Mvc.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Moq.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\PagedList.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\PagedList.Mvc.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb

@@ -23,26 +23,35 @@ namespace AssetManagement.WebUI.Controllers
         AssetLogic al = new AssetLogic();
         //
         // GET: /Technician/
-        public ActionResult Tickets()
+        public ActionResult Tickets(int? page)
         {
             var tickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name)
                 && x.solution == null && x.ticketstatus == true).ToList();
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize,pageNumber));
         }
-        public ActionResult Solutions()
+        public ActionResult Solutions(int? page)
         {
             var tickets = _context.Tickets.Where(t => t.employeeNumber.Equals(User.Identity.Name)
                 && t.solution != null && t.ticketstatus == false)
                 .ToList();
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize, pageNumber));
         }
-        public ActionResult Base()
+        public ActionResult Base(int? page)
         {
             var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
                 .OrderByDescending(x => x.datecreated);
-            return View(tickets);
+
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageSize, pageNumber));
         }
-        public ActionResult Employees()
+        public ActionResult Employees(int? page)
         {
             var query = (from depart in _context.Departments.ToList()
                          join emps in _context.Employees.ToList()
@@ -59,7 +68,10 @@ namespace AssetManagement.WebUI.Controllers
                          })
                         .ToList()
                         .OrderBy(x => x.hireDate);
-            return View(query);
+
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(query.ToPagedList(pageSize, pageNumber));
         }
         public ActionResult TicketInfo(int? id)
         {
@@ -76,7 +88,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(ticket);
         }
-        public ActionResult Assets()
+        public ActionResult Assets(int? page)
         {
             var assets = (from a in _context.Assets.ToList()
                           join e in _context.Employees.ToList()
@@ -96,7 +108,10 @@ namespace AssetManagement.WebUI.Controllers
                           .ToList()
                           .Where(x => x.assetstatus == 1);
             int count = assets.ToList().Count;
-            return View(assets);
+
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(assets.ToPagedList(pageSize,pageNumber));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -226,7 +241,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(ticket);
         }
-        public ActionResult MyAssets()
+        public ActionResult MyAssets(int? page)
         {
             var assets = (from a in _context.Assets.ToList()
                           join e in _context.Employees.ToList()
@@ -251,7 +266,9 @@ namespace AssetManagement.WebUI.Controllers
                           .Where(x => x.assetstatus == 1
                               && x.employeenumber.Equals(User.Identity.Name)).ToList();
 
-            return View(assets);
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(assets.ToPagedList(pageSize,pageNumber));
         }
 	}
 

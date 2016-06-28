@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.Ticket>
+@using PagedList
+@using PagedList.Mvc
 
 @{
     ViewBag.Title = "Index";
@@ -84,3 +86,13 @@ else
     </fieldset>
     <hr />
 }
+
+<br />
+<div style="text-align:center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("TechnicianTickets", new { page }))
+    </p>
+</div>
