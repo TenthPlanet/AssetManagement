@@ -288,7 +288,38 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(ticket);
         }
-
+        //Helpdesk Inbox
+        public ActionResult Inbox()
+        {
+            var query = (from a in _context.Contactus.ToList()
+                         select new ContactUsViewModel
+                         {
+                             id = a.id,
+                             read = a.read,
+                             subject = a.subject,
+                             body = a.body,
+                             username = a.userName,
+                             datesent = a.datesent
+                         })
+                             .OrderBy(x => x.datesent);
+            return View(query);
+            //var inbox = _context.Contactus.ToList();
+            //return View(inbox);
+        }
         
+        public ActionResult InboxDetails(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            ContactUs inbox = _context.Contactus.Find(id);
+            if (inbox == null)
+            {
+                return HttpNotFound();
+            }
+            return View(inbox);
+        }
+
     }
 }

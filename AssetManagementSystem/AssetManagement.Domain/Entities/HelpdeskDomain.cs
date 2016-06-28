@@ -39,4 +39,16 @@ namespace AssetManagement.Domain.Entities
         public string employeeNumber { get; set; }
         public virtual Employee Employees { get; set; }
     }
+    public class ContactUs
+    {
+        [Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id { get; set; }
+        public string subject { get; set; }
+        public string body { get; set; }
+        public string userName { get; set; }
+        [DefaultValue(false)]
+        public bool read { get; set; }
+        public DateTime datesent { get; set; }
+    }
 }

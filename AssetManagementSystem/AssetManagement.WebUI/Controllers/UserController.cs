@@ -1,5 +1,7 @@
 ﻿using AssetManagement.Business;
 using AssetManagement.Domain.Context;
+using AssetManagement.Domain.Entities;
+using AssetManagement.WebUI.ViewModel;
 using AssetManagement.WebUI.ViewModel.Asset;
 using System;
 using System.Collections.Generic;
@@ -77,5 +79,32 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(ticket);
         }
-	}
+
+        //Contacting the helpdesk
+        public ActionResult ContactUs()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ContactUs(ContactUsViewModel model)
+        {
+            if (ModelState.IsValid && Request.IsAuthenticated)
+            {
+                var contact = new ContactUs
+                {
+                    subject = model.subject,
+                    body = model.body,
+                    userName = User.Identity.Name,
+                    read = false,
+                    datesent = DateTime.Now
+                };
+                _context.Contactus.Add(contact);
+                _context.SaveChanges();
+            }
+            ModelState.Clear();
+            return View();
+        }
+    }
 }

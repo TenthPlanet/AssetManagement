@@ -687,6 +687,9 @@
     <Content Include="Views\Shared\_UserLayout.cshtml" />
     <Content Include="Views\Technician\MyAssets.cshtml" />
     <Content Include="Views\Tickets\EditProblem.cshtml" />
+    <Content Include="Views\User\ContactUs.cshtml" />
+    <Content Include="Views\Tickets\Inbox.cshtml" />
+    <Content Include="Views\Tickets\InboxDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -35,4 +35,13 @@ namespace AssetManagement.WebUI.ViewModel
         public string fullname { get; set; }
 
     }
+    public class ContactUsViewModel
+    {
+        public int id { get; set; }
+        public string subject { get; set; }
+        public string body { get; set; }
+        public string username { get; set; }
+        public bool read { get; set; }
+        public DateTime datesent { get; set; }
+    }
 }

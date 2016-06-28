@@ -1,0 +1,57 @@
+﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.ContactUsViewModel>
+
+@{
+    ViewBag.Title = "Inbox";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+<style>
+    fieldset {
+        width: 90%;
+        border-bottom: 1px solid #b7b7b7;
+        margin-bottom: 15px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .tabs {
+        padding-top: 2%;
+        margin-left: 15%;
+    }
+
+        .tabs span {
+            display: inline-block;
+            padding-right: 4px;
+        }
+
+    strong span {
+        display: inline-block;
+        padding-right: 6px;
+    }
+</style>
+<div style="margin-bottom:10%;"></div>
+<h2>Inbox</h2>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-10">
+        <h3>
+            <strong>
+
+                @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
+            </strong>
+        </h3>
+    </div>
+    <fieldset>
+        <div class="col-md-10">
+            <p>
+                @Html.DisplayFor(i => item.body)
+                <div class="tabs">
+                    <span>Date Sent: @Html.DisplayFor(i => item.datesent)</span>
+                </div>
+            </p>
+        </div>
+    </fieldset>
+}
+
