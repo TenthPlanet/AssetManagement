@@ -698,3 +698,28 @@ C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\Ass
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.csprojResolveAssemblyReference.cache
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.dll
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.pdb
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\AssetManagement.Business.dll.config
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\AssetManagement.Business.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\AssetManagement.Business.pdb
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\AssetManagement.Domain.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\EntityFramework.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Helpers.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Mvc.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Razor.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\EntityFramework.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Helpers.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Mvc.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.Razor.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.csprojResolveAssemblyReference.cache
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Business\obj\Debug\AssetManagement.Business.pdb

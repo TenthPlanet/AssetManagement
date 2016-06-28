@@ -1,4 +1,7 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.OwnershipHistory>
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.OwnershipHistory>
+@using PagedList;
+@using PagedList.Mvc;
+
 
 @{
     ViewBag.Title = "History";
@@ -67,3 +70,13 @@
     }
 
 </table>
+
+<br />
+<div style="text-align:center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </p>
+</div>

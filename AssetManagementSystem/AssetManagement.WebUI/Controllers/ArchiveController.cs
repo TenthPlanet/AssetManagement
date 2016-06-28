@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -13,15 +15,23 @@ namespace AssetManagement.WebUI.Controllers
         private readonly AssetManagementEntities context = new AssetManagementEntities();
         //
         // GET: /Archive/
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
             var owners = context.Ownerships;
-            return View(owners.ToList());
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(owners.ToList().ToPagedList(pageSize, pageNumber));
+
+
         }
-        public ViewResult Disposed()
+        public ViewResult Disposed(int? page)
         {
             var archive = context.Archives;
-            return View(archive.ToList());
+
+            int PageSize = 5;
+            int PageNumber = (page ?? 1);
+            return View(archive.ToList().ToPagedList(PageSize,PageNumber));
+
         }
 	}
 }
