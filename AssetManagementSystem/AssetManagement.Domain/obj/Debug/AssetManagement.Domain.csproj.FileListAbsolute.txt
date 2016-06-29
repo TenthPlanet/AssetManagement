@@ -803,3 +803,28 @@ C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\Ass
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ReviveDomain.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement2\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

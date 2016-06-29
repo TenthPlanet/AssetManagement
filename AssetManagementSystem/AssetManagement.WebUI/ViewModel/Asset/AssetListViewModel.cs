@@ -27,4 +27,26 @@ namespace AssetManagement.WebUI.ViewModel.Asset
         public string department { get; set; }
         public int assetID { get; set; }
     }
+    public class AssetListViewModel2
+    {
+        public string assetNumber { get; set; }
+        public string serialNumber { get; set; }
+        public string catergory { get; set; }
+        public string manufacturer { get; set; }
+        public string warranty { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime dateadded { get; set; }
+        public string assigneddate { get; set; }
+        public int assetstatus { get; set; }
+        public double costprice { get; set; }
+
+        /*NOT PART OF THE INPUTS*/
+        public string owner { get; set; }
+        public double sell { get; set; }
+        public string employeenumber { get; set; }
+        public double depreciationcost { get; set; }
+        public string department { get; set; }
+        public int assetID { get; set; }
+    }
+
 }
