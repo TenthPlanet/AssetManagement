@@ -51,7 +51,7 @@ namespace AssetManagement.WebUI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Add(StockViewModel viewmodel, HttpPostedFileBase upload)
+        public ActionResult Add(StockViewModel viewmodel)
         {
             if (ModelState.IsValid)
             {
@@ -80,25 +80,8 @@ namespace AssetManagement.WebUI.Controllers
                         repo.Insert(stock);
                         repo.Save();
                     }
-                    TempData["Success"] = "New asset stock has been added!";
-
-                    //INVOICE CODE
-                    if (upload != null && upload.ContentLength > 0)
-                    {
-                        var Invoice = new Invoice
-                        {
-                            FileName = System.IO.Path.GetFileName(upload.FileName),
-
-                            ContentType = upload.ContentType
-                        };
-                        using (var reader = new System.IO.BinaryReader(upload.InputStream))
-                        {
-                            Invoice.Content = reader.ReadBytes(upload.ContentLength);
-                        }
-                        AssetManagementEntities ame = new AssetManagementEntities();
-                        ame.Invoices.Add(Invoice);
-                        ame.SaveChanges();                       
-                    }
+                    TempData["Success"] = "New asset stock has been added!";                       
+                    
                 }
                 catch (Exception e)
                 {
