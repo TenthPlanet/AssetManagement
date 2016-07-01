@@ -108,6 +108,7 @@
     <Compile Include="Entities\AssetsDomain.cs" />
     <Compile Include="Entities\EmployeeDomain.cs" />
     <Compile Include="Entities\HelpdeskDomain.cs" />
+    <Compile Include="Entities\Invoice.cs" />
     <Compile Include="Migrations\201605240845114_ReviveDomain.cs" />
     <Compile Include="Migrations\201605240845114_ReviveDomain.Designer.cs">
       <DependentUpon>201605240845114_ReviveDomain.cs</DependentUpon>

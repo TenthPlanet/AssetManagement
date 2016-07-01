@@ -80,7 +80,8 @@ namespace AssetManagement.WebUI.Controllers
                         repo.Insert(stock);
                         repo.Save();
                     }
-                    TempData["Success"] = "New asset stock has been added!";
+                    TempData["Success"] = "New asset stock has been added!";                       
+                    
                 }
                 catch (Exception e)
                 {
