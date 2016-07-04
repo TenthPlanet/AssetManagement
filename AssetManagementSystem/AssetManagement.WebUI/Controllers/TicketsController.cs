@@ -301,12 +301,46 @@ namespace AssetManagement.WebUI.Controllers
                              username = a.userName,
                              datesent = a.datesent
                          })
-                             .OrderBy(x => x.datesent);
+                             .OrderByDescending(x => x.datesent);
+            int count = (query.ToList().Where(x => x.read.Equals(false))).Count();
+            int count2 = query.ToList().Count();
+            ViewBag.Mail = count2;
+            ViewBag.Inbox = count;
             return View(query);
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
-        
+
+        //lookup self service inbox
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Inbox(string search)
+        {
+            if (search != "")
+            {
+                var query = (from a in _context.Contactus.ToList()
+                             select new ContactUsViewModel
+                             {
+                                 id = a.id,
+                                 read = a.read,
+                                 subject = a.subject,
+                                 body = a.body,
+                                 username = a.userName,
+                                 datesent = a.datesent
+                             })
+                                 //.OrderBy(x => x.datesent)
+                                 .Where(x => x.body.Contains(search) | x.body.Contains(search));
+                int count = (query.ToList().Where(x => x.read.Equals(false))).Count();
+                int count2 = query.ToList().Count();
+                ViewBag.Mail = count2;
+                ViewBag.Inbox = count;
+                return View(query);
+            }
+            return View();
+            //var inbox = _context.Contactus.ToList();
+            //return View(inbox);
+        }
+
         public ActionResult InboxDetails(int? id)
         {
             if (id == null)
@@ -318,7 +352,23 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return HttpNotFound();
             }
+            inbox.read = true;
+            _context.SaveChanges();
             return View(inbox);
+        }
+        public ActionResult unReadmail()
+        {
+            var query = _context.Contactus.Where(x => x.read.Equals(false)).ToList();
+            int count = query.Count();
+            ViewBag.Inbox = count;
+            return View(query);
+        }
+        public ActionResult OpenedMail()
+        {
+            var query = _context.Contactus.Where(x => x.read.Equals(true)).ToList();
+            int count = query.Count();
+            ViewBag.Opened = count;
+            return View(query);
         }
 
     }

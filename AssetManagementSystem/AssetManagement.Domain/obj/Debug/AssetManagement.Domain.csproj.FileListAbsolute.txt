@@ -823,8 +823,8 @@ C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManag
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ReviveDomain.resources
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
-C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

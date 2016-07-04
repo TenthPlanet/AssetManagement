@@ -690,6 +690,8 @@
     <Content Include="Views\User\ContactUs.cshtml" />
     <Content Include="Views\Tickets\Inbox.cshtml" />
     <Content Include="Views\Tickets\InboxDetails.cshtml" />
+    <Content Include="Views\Tickets\unReadmail.cshtml" />
+    <Content Include="Views\Tickets\OpenedMail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

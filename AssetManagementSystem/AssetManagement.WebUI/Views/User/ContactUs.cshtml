@@ -38,8 +38,11 @@
     }
 </style>
 <div style="margin-bottom:10%;"></div>
-<h2>Contact Us</h2>
-
+<h2><img src="~/Content/Contactus.png" width="35" height="35" /> Contact Us</h2>
+@if (@TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()

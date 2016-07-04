@@ -989,6 +989,6 @@ C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManag
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
-C:\Users\DS3 admin\Source\Repos\AssetManagement\AssetManagementSystem\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache

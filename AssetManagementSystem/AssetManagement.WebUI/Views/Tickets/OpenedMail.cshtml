@@ -1,13 +1,27 @@
-﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.ContactUsViewModel>
+﻿@model IEnumerable<AssetManagement.Domain.Entities.ContactUs>
 
 @{
-    ViewBag.Title = "Inbox";
+    ViewBag.Title = "unReadMail";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+
+<style>
+    #urlddl {
+        width: 18%;
+        padding: 8px;
+        text-align: justify;
+        float: right;
+    }
+
+        #urlddl a {
+            padding: 5px;
+        }
+</style>
+
 <style>
     fieldset {
         width: 90%;
@@ -35,14 +49,15 @@
     }
 </style>
 <div style="margin-bottom:10%;"></div>
-<h2>Mail (@ViewBag.Mail)</h2>
-@using (Html.BeginForm("Inbox", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <div class="col-lg-7">
-        <span><input type="search" name="search" placeholder="Enter keyword" /> <input type="submit" class="btn btn-default" value="Search" /></span>
-    </div>
-}
+<h2>Opened Mail (@ViewBag.Opened)</h2>
+
+@*@using (Html.BeginForm("Inbox", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="col-lg-7">
+            <span>@Html.TextBox("search") <input type="submit" class="btn btn-default" value="Search" /></span>
+        </div>
+    }*@
 <div class="btn-group">
     <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
         <span class="icon_lightbulb_alt"></span>
@@ -50,42 +65,43 @@
     </a>
     <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
     <ul class="dropdown-menu">
-        <li><a href="~/Tickets/OpenedMail">Opened</a></li>
+        <li><a href="~/Tickets/Inbox">All Mail</a></li>
         <li><a href="~/Tickets/unReadmail">unRead</a></li>
         @*<li><a href="~/Monitor/Add">Deleted</a></li>*@
         <li class="divider"></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
     </ul>
 </div>
+
 @foreach (var item in Model)
 {
     if (item.read == false)
     {
-    <div class="col-md-10">
-        <h3>
-            <strong>
-                <span><img src="~/Content/closedenvelope.png" width="30" height="20" title="unRead" /></span>
-                @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
-            </strong>
-        </h3>
-    </div>
-    <fieldset>
         <div class="col-md-10">
-            <p>
-                @Html.DisplayFor(i => item.body)
-                <div class="tabs">
-                    <span>Date Sent: @Html.DisplayFor(i => item.datesent)</span>
-                </div>
-            </p>
+            <h3>
+                <strong>
+                    <span><img src="~/Content/closedenvelope.png" width="30" height="25" /></span>
+                    @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
+                </strong>
+            </h3>
         </div>
-    </fieldset>
+        <fieldset>
+            <div class="col-md-10">
+                <p>
+                    @Html.DisplayFor(i => item.body)
+                    <div class="tabs">
+                        <span>Date Sent: @Html.DisplayFor(i => item.datesent)</span>
+                    </div>
+                </p>
+            </div>
+        </fieldset>
     }
     else
     {
         <div class="col-md-10">
             <h3>
                 <strong>
-                    <span><img src="~/Content/openenvelope.png" width="30" height="25" title="Opened" /></span>
+                    <span><img src="~/Content/openenvelope.png" width="30" height="25" /></span>
                     @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
                 </strong>
             </h3>
@@ -102,4 +118,3 @@
         </fieldset>
     }
 }
-

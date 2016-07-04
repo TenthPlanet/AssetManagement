@@ -101,6 +101,7 @@ namespace AssetManagement.WebUI.Controllers
                     datesent = DateTime.Now
                 };
                 _context.Contactus.Add(contact);
+                TempData["Success"] = "Message was sent. ";
                 _context.SaveChanges();
             }
             ModelState.Clear();
