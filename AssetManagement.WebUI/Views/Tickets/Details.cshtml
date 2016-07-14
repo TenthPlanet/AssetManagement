@@ -1,0 +1,108 @@
+﻿@model AssetManagement.Domain.Entities.Ticket
+
+    @{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+    }
+    <style>
+        fieldset {
+            padding-right: 20%;
+            width: 100%;
+            border: 2px 2px solid #000;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .tabs {
+            padding-top: 2%;
+        }
+
+            .tabs span {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+        strong span {
+            display: inline-block;
+            padding-right: 6px;
+        }
+        .linespace strong{
+            padding-right: 10px;
+        }
+        .col-md-10{
+            font-size: 1.1em;
+        }
+    </style>
+    <div style="margin-bottom:10%;"></div>
+
+    <h2>Ticket Details</h2>
+
+@if (@TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+    <div class="col-md-10">
+        <h3>
+            <strong>
+                @if (Model.ticketstatus == true)
+                {
+                    if (Model.acknowledgestatus == false)
+                    {
+                        <span>@Model.subject</span>
+                        <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+                    }
+                    else
+                    {
+                        <span>@Model.subject</span>
+                        <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+                    }
+                }
+                else
+                {
+                    <span>@Model.subject</span>
+                    <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
+                }
+
+            </strong>
+        </h3>
+    </div>
+    <fieldset>
+        <legend></legend>
+        <div class="col-md-10 linespace">
+            <strong>Asset Number    : </strong>@Model.assetnumber
+            <br />
+            <strong>Employee Number : </strong>@Model.assetowner
+            <br />
+            <strong>Assigned To       : </strong>@Model.Employees.fullname
+            <br /><br />
+        </div>
+            <div class="col-md-10">
+                <p>
+                    @Html.DisplayFor(model => model.description)
+                    <div class="tabs">
+                        <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = @Model.assetid }, new { @class = "btn btn-sm btn-default" }) </span>
+                        @if (Model.acknowledgestatus == false)
+                        {
+                            <span><a href="/Tickets/Acknowledge/@Model.ticketid" class="btn btn-sm btn-default">Acknowledge</a> </span>
+                        }
+                        @if (Model.acknowledgestatus == true)
+                        {
+                            if (Model.accomplishstatus != true)
+                            {
+                                <span><a href="/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-default">Notify completion</a>  </span>
+                            }
+                        }
+                        @*<span><a href="/Tickets/EscalateTicket/@Model.ticketid" class="delete-link">Escalate Ticket</a> | </span>*@
+                        <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
+                        <span>Due: @Html.DisplayFor(model => model.datedue) </span>
+                        @if (Model.datecompleted != null)
+                        {
+                            <span>| COM: @Html.DisplayFor(model => model.datecompleted)</span>
+                        }
+                    </div>
+                </p>
+            </div>
+</fieldset>

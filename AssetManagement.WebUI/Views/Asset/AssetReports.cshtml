@@ -1,0 +1,114 @@
+﻿@model AssetManagement.WebUI.ViewModel.Asset.AssetReport
+
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+<div style="margin-bottom:10%;"></div>
+<h3 class="page-header">
+    <i class="fa fa-file-text-o"></i>
+
+    Asset Report
+</h3>
+
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-desktop"></i>Assets</li>
+    <li><i class="fa fa-list-alt"></i>Asset Report</li>
+</ol>
+
+<div>
+    <h4>Asset Report</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayName("Asset Number : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assetNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Serial Number : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serialNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Asset Category : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.catergory)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Manufacturer : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer)
+        </dd>
+        <dt>
+            @Html.DisplayName("Asset Owner : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.owner)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Date Added : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateadded)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Date Assinged : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assigneddate)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Warranty : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.warranty)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Cost Price : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costprice)
+        </dd>
+        <dt>
+            @Html.DisplayName("Depreciation Amount : ")
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.depreciationcost)
+        </dd>
+        <dt>
+            @Html.DisplayName("Selling Price : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sellprice)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "AllAssets", null, new { @class = "btn btn-default" })
+</p>

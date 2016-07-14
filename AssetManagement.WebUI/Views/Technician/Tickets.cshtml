@@ -1,0 +1,97 @@
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.Ticket>
+@using PagedList.Mvc;
+<link href="~/Content/css/PagedList.css" rel="stylesheet" />
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+    }
+    <style>
+        fieldset {
+            padding-right: 20%;
+            width: 90%;
+            border: 2px 2px solid #000;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .tabs {
+            padding-top: 2%;
+            margin-left: 30%;
+        }
+
+            .tabs span {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+        strong span {
+            display: inline-block;
+            padding-right: 6px;
+        }
+    </style>
+    <div style="margin-bottom:10%;"></div>
+    <h2>Your Tickets</h2>
+
+    @if (@TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+    @foreach (var i in Model)
+    {
+
+        <div class="col-md-10">
+
+            <h3>
+                <strong>
+                    @if (i.acknowledgestatus == false)
+                    {
+
+                        <span> @Html.ActionLink(i.subject, "TicketDetails", "Technician", new { id = i.ticketid }, new { @class = "link" })</span>
+                        <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+
+                    }
+                    else
+                    {
+                        if (i.accomplishstatus == false)
+                        {
+                            <span> @Html.ActionLink(i.subject, "TicketDetails", "Technician", new { id = i.ticketid }, new { @class = "link" })</span>
+                            <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+                        }
+                        else
+                        {
+                            <span> @Html.ActionLink(i.subject, "TicketDetails", "Technician", new { id = i.ticketid }, new { @class = "link" })</span>
+                            <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
+                        }
+                    }
+                </strong>
+            </h3>
+        </div>
+        <fieldset>
+            <legend></legend>
+            <div class="col-md-10">
+                <p>
+                    @Html.DisplayFor(item => i.description)
+
+                    <div class="tabs">
+
+                        <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = i.assetid }, new { @class = "btn btn-sm btn-default" }) | </span>
+                        <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
+                        <span>Due: @Html.DisplayFor(item => i.datedue)</span>
+                    </div>
+                </p>
+            </div>
+            
+        </fieldset>
+        <hr />
+    }
+        <div class="paging">
+            <div class="pagenum">
+                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+                @Html.PagedListPager(Model, page => Url.Action("Tickets", new{page, sortOrder = ViewBag.DateSortParm}))
+            </div>
+        </div>
+
