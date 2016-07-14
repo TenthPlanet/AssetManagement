@@ -1,9 +1,30 @@
 ﻿@model AssetManagement.Domain.Entities.Ticket
 
-@{
+@if (User.IsInRole("Asset-Manager"))
+{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@*@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}*@
 <style>
     fieldset {
         padding-right: 20%;

@@ -1,9 +1,26 @@
 ﻿@model AssetManagement.WebUI.ViewModel.PrinterViewModel
 
-  @{
-      ViewBag.Title = "Printers";
-      Layout = "~/Views/Shared/_assetsms.cshtml";
-} 
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

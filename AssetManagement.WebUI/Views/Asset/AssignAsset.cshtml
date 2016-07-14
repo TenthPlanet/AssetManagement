@@ -1,8 +1,15 @@
 ﻿
-@{
-    ViewBag.Title = "Assign Asset";
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Assign";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Assign";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+
 <link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
 <script src="~/Content/customscripts/jquery-1.10.2.js"></script>
 <script src="~/Content/customscripts/jquery-ui.js"></script>

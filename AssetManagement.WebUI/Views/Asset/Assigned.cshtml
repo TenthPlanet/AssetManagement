@@ -1,10 +1,17 @@
 ﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Asset.AssetListViewModel>
 
-@{
+
+@if (User.IsInRole("Asset-Manager"))
+{
     ViewBag.Title = "Assigned Assets";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
-
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+ 
 <div style="margin-bottom:10%;"></div>
       <h3 class="page-header">
           <i class="fa fa-file-text-o"></i>

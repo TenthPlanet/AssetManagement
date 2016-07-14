@@ -3,9 +3,37 @@
 <html>
 
 <head>
+    <style>
+        fieldset {
+            width: 90%;
+            border-bottom: 1px solid #b7b7b7;
+            margin-bottom: 15px;
+            background-color:white;
+            border-radius:10px;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .tabs {
+            padding-top: 2%;
+            margin-left: 15%;
+        }
+
+            .tabs span {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+        strong span {
+            display: inline-block;
+            padding-right: 6px;
+        }
+    </style>
     <meta name="viewport" content="width=device-width" />
     
-    <title>Asset Management Sys..</title>
+    <title>Help Desk System</title>
 
 
         <meta charset="utf-8">
@@ -64,8 +92,8 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li>@Html.ActionLink("Tag asset", "Add", "Printer")</li>
-                            <li>@Html.ActionLink("Assign asset", "Assign", "Asset")</li>
+                            @*<li>@Html.ActionLink("Tag asset", "Add", "Printer")</li>
+                            <li>@Html.ActionLink("Assign asset", "Assign", "Asset")</li>*@
                             <li>@Html.ActionLink("List of Asset", "Index", "Asset")</li>
                             <li>@Html.ActionLink("Search Asset", "Assigned", "Asset")</li>
                           
@@ -78,7 +106,7 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                          
+                            <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
                             <li>@Html.ActionLink("List of Employee", "Index", "Employee")</li>
                             <li></li>
                         </ul>
@@ -91,14 +119,30 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li>@Html.ActionLink("Disposed Assets", "Disposed", "Archive")</li>
+                         
                             <li>@Html.ActionLink("Ownership History", "Index", "Archive")</li>
                             <li></li>
                         </ul>
                     </li>
 
-          
-                    <li>
+                        <li class="sub-menu">
+                            <a href="javascript:;" class="">
+                                <i class="icon_genius"></i>
+                                <span>Tickets</span>
+                                <span class="menu-arrow arrow_carrot-right"></span>
+                                </a>
+                                <ul class="sub">
+                                    <li>@Html.ActionLink("Self Service Inbox", "Inbox", "Tickets")</li>
+                                    <li>@Html.ActionLink("Create Ticket", "Create", "Tickets")</li>
+                                    <li>@Html.ActionLink("All Tickets", "Index", "Tickets")</li>
+                                    <li>@Html.ActionLink("My Tickets", "MyTickets", "Tickets")</li>
+                                    <li>@Html.ActionLink("My Solutions", "MySolutions", "Tickets")</li>
+                                    <li>@Html.ActionLink("Knowledge Base", "Solutions", "Tickets")</li>
+                                </ul>
+
+                        
+                        </li>
+                    @*<li>
 
                         <a class="" href="">
                             <i class="icon_piechart"></i>
@@ -108,9 +152,9 @@
                         <ul class="sub">
                             
                         </ul>
-                    </li>
+                    </li>*@
 
-                    <li class="sub-menu">
+                    @*<li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon_table"></i>
                             <span>Stock</span>
@@ -120,7 +164,7 @@
                             <li>@Html.ActionLink("Add Stock", "Add", "Stock")</li>
                             <li>@Html.ActionLink("Available Stock", "Index", "Stock")</li>
                         </ul>
-                    </li>
+                    </li>*@
 
                     <li class="sub-menu">
                         <a href="javascript:;" class="">

@@ -1,9 +1,16 @@
 ﻿@model AssetManagement.Domain.Entities.Asset
 
-@{
+@if (User.IsInRole("Asset-Manager"))
+{
     ViewBag.Title = "Deallocate";
-   Layout = "~/Views/Shared/_assetsms.cshtml";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Deallocate";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+
 
 <div style="margin-bottom:10%;"></div>
 <h3 class="page-header">

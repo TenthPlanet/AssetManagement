@@ -1,9 +1,27 @@
 ﻿@model AssetManagement.WebUI.ViewModel.Asset.AssetReport
 
-@{
+@if (User.IsInRole("Asset-Manager"))
+{
     ViewBag.Title = "Report";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+ 
 <div style="margin-bottom:10%;"></div>
 <h3 class="page-header">
     <i class="fa fa-file-text-o"></i>

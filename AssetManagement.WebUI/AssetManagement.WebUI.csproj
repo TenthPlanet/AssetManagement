@@ -708,6 +708,8 @@
     <Content Include="Views\Tickets\DeleteMail.cshtml" />
     <Content Include="Views\Tickets\unReadmail.cshtml" />
     <Content Include="Views\Tickets\OpenedMail.cshtml" />
+    <Content Include="Views\Shared\_assetsms1.cshtml" />
+    <Content Include="Views\Shared\_helpd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

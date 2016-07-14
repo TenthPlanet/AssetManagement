@@ -1,9 +1,30 @@
 ﻿@model AssetManagement.Domain.Entities.Asset
 
-@{
-    ViewBag.Title = "Dispose Item";
+@if (User.IsInRole("Asset-Manager"))
+{
+
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
+else if (User.IsInRole("Administrator"))
+{
+
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@*@{
+    ViewBag.Title = "Dispose Item";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}*@
 <div style="margin-bottom:10%;"></div>
 
 <h3 class="page-header">

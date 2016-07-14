@@ -1,9 +1,29 @@
 ﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Asset.AssetListViewModel>
 
-    @{
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "Assigned Assets";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+    @*@{
         ViewBag.Title = "Assigned Assets";
         Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
-    }
+    }*@
 
     <div style="margin-bottom:10%;"></div>
     <h3 class="page-header">
