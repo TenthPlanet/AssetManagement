@@ -1,0 +1,1347 @@
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\XOLANI\Desktop\Work\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Help and Asset role management\Work\New folder\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\Iteration II Application\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\XOLANI\Desktop\Iteration II Application\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\21416816\Documents\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\Admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\Niphow\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\Mfusi\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+E:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+I:\Iteration 3\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\Mfusi\Desktop\New folder (2)\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+E:\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.ReviveASP.resources
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+E:\New folder\New folder\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\csc.exe
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\vbc.exe
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll.config
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.WebUI.pdb
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Owin.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\WebGrease.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Optimization.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
+C:\Users\DS3 admin\Desktop\AssetManagement-master\AssetManagementSystem\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb

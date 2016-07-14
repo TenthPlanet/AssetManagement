@@ -1,0 +1,124 @@
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll.config
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
+C:\Users\Gift Kay\Desktop\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.NewDatabase.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddStock.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.UpdateDB.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addFullName.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddArchive.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addTelephone.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.DateAssigned.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.addModel.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AddPending.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.AttrHistory.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.ChangeID.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.dateAddedDisposal.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.CostPrice.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.RemoveAttr.resources
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Depreciation\Version 6\Version 6\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll.config
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.ReviveDomain.resources
+C:\Users\DS3 admin\Desktop\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll.config
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\AssetManagement.Domain.pdb
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Helpers.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Mvc.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.Razor.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.Migrations.ReviveDomain.resources
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.dll
+C:\Users\21416816\Desktop\Friday solution\Friday solution\GitHubVisualStudio\AssetManagement\AssetManagementSystem\AssetManagement.Domain\obj\Release\AssetManagement.Domain.pdb
