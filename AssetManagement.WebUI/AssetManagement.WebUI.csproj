@@ -181,6 +181,7 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InvoiceController.cs" />
     <Compile Include="Controllers\KeyboardController.cs" />
     <Compile Include="Controllers\LaptopController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -710,6 +711,9 @@
     <Content Include="Views\Tickets\OpenedMail.cshtml" />
     <Content Include="Views\Shared\_assetsms1.cshtml" />
     <Content Include="Views\Shared\_helpd.cshtml" />
+    <Content Include="Views\Invoice\Create.cshtml" />
+    <Content Include="Views\Invoice\Index.cshtml" />
+    <Content Include="Views\Invoice\ViewInvoice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

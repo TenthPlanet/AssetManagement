@@ -32,6 +32,7 @@ namespace AssetManagement.Domain.Context
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<ContactUs> Contactus { get; set; }
         public DbSet<Screenshot> Screenshots { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
 
     }
 }

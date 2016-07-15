@@ -80,75 +80,75 @@ namespace AssetManagement.WebUI.Controllers
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.EmployeeNumber, model.Password, model.RememberMe, shouldLockout: false);
 
-            bool isAdmin = Roles.IsUserInRole(User.Identity.Name, "Administrator");
-            bool isAssetManager = Roles.IsUserInRole(User.Identity.Name, "Asset-Manager");
-            bool isTechnician = Roles.IsUserInRole(User.Identity.Name, "Technician");
-            bool isGeneral = Roles.IsUserInRole(User.Identity.Name, "General Staff");
+            //bool isAdmin = Roles.IsUserInRole(User.Identity.Name, "Administrator");
+            //bool isAssetManager = Roles.IsUserInRole(User.Identity.Name, "Asset-Manager");
+            //bool isTechnician = Roles.IsUserInRole(User.Identity.Name, "Technician");
+            //bool isGeneral = Roles.IsUserInRole(User.Identity.Name, "General Staff");
 
-            //if (model.role == "Technician")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Tickets", "Technician");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "Administrator")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Dashboard", "Dashboard");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "Asset Manager")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Dashboard", "Dashboard");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "General Staff")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Base", "User");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
+            if (model.role == "Technician")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Tickets", "Technician");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else if (model.role == "Administrator")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else if (model.role == "Asset Manager")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else if (model.role == "General Staff")
+            {
+                switch (result)
+                {
+                    case SignInStatus.Success:
+                        return RedirectToAction("Base", "User");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
             return View();
             
         }
