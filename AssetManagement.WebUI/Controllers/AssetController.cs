@@ -916,5 +916,14 @@ namespace AssetManagement.WebUI.Controllers
                           }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
             return View(result);
         }
+        [HttpGet]
+        public ActionResult EmployeeAssets(string id)
+        {
+            if(id==null)
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            var assets = context.Assets.Where(p => p.employeeNumber == "id");
+            return View(assets);
+        }
     }
 }

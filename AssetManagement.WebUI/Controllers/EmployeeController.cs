@@ -223,5 +223,6 @@ namespace AssetManagement.WebUI.Controllers
                          .OrderBy(x => x.hireDate);
             return View(query);
         }
+        
 	}
 }
