@@ -919,11 +919,14 @@ namespace AssetManagement.WebUI.Controllers
         [HttpGet]
         public ActionResult EmployeeAssets(string id)
         {
-            if(id==null)
+            if (id == null)
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-
-            var assets = context.Assets.Where(p => p.employeeNumber == "id");
-            return View(assets);
+            else
+                return View(list.Assets().Where(p => p.employeeNumber == id));
+        }
+        public ActionResult AllExistingAssets()
+        {
+            return View(list.Assets());
         }
     }
 }

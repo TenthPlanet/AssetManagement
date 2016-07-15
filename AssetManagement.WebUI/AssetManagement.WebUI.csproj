@@ -715,6 +715,7 @@
     <Content Include="Views\Invoice\Index.cshtml" />
     <Content Include="Views\Invoice\ViewInvoice.cshtml" />
     <Content Include="Views\Asset\EmployeeAssets.cshtml" />
+    <Content Include="Views\Asset\AllExistingAssets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
