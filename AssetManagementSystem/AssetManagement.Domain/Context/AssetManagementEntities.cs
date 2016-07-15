@@ -22,11 +22,13 @@ namespace AssetManagement.Domain.Context
         public DbSet<Laptop> Laptops { get; set; }
         public DbSet<Monitor> Monitors { get; set; }
         public DbSet<Mouse> Mice { get; set; }
+
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Archive> Archives { get; set; }
         public DbSet<OwnershipHistory> Ownerships { get; set; }
+
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
 
