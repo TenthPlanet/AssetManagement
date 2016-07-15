@@ -65,7 +65,7 @@
     </a>
     <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
     <ul class="dropdown-menu">
-        <li><a href="~/Tickets/Inbox">All Mail</a></li>
+        <li><a href="~/Tickets/Inbox">All Messages</a></li>
         <li><a href="~/Tickets/OpenedMail">Opened</a></li>
         
         @*<li><a href="~/Monitor/Add">Deleted</a></li>*@
@@ -82,7 +82,7 @@
             <h3>
                 <strong>
                     <span><img src="~/Content/closedenvelope.png" width="30" height="20" /></span>
-                    @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
+                    @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.contactId }, new { @class = "link" })
                 </strong>
             </h3>
         </div>
@@ -103,7 +103,7 @@
             <h3>
                 <strong>
                     <span><img src="~/Content/openenvelope.png" width="30" height="25" /></span>
-                    @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.id }, new { @class = "link" })
+                    @Html.ActionLink(item.subject, "InboxDetails", "Tickets", new { id = item.contactId }, new { @class = "link" })
                 </strong>
             </h3>
         </div>
