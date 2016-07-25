@@ -58,6 +58,10 @@
       <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Paging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Paging.1.0.1\lib\net40\Paging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -716,6 +720,7 @@
     <Content Include="Views\Invoice\ViewInvoice.cshtml" />
     <Content Include="Views\Asset\EmployeeAssets.cshtml" />
     <Content Include="Views\Asset\AllExistingAssets.cshtml" />
+    <Content Include="Views\Tickets\TicketsControl.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

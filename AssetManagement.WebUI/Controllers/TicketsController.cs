@@ -57,7 +57,7 @@ namespace AssetManagement.WebUI.Controllers
                     ticket.assetid = asset.assetID;
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("TicketsControl");
                 }
                 
             }
@@ -188,6 +188,10 @@ namespace AssetManagement.WebUI.Controllers
                 return HttpNotFound();
             }
             return View(ticket);
+        }
+        public ActionResult TicketsControl()
+        {
+            return View();
         }
 
         [HttpPost, ActionName("Acknowledge")]
