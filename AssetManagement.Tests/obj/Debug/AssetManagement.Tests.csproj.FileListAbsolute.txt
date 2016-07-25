@@ -1325,3 +1325,4 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
