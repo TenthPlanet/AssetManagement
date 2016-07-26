@@ -13,7 +13,6 @@ namespace AssetManagement.Domain.Entities
         [Key]
         [HiddenInput(DisplayValue = false)]
         public string employeeNumber { get; set; }
-
         public string firstName { get; set; }
         public string lastName { get; set; }
         [HiddenInput(DisplayValue = false)]
@@ -29,7 +28,6 @@ namespace AssetManagement.Domain.Entities
         public string telephoneNumber { get; set; }
         public string mobileNumber { get; set; }
         public string emailAddress { get; set; }
-
         public virtual ICollection<Printer> Printers { get; set; }
         public virtual ICollection<PCBox> PCBoxes { get; set; }
         public virtual ICollection<Laptop> Laptops { get; set; }
@@ -38,7 +36,6 @@ namespace AssetManagement.Domain.Entities
         public virtual ICollection<Monitor> Monitors { get; set; }
         public virtual ICollection<Asset> Assets { get; set; }
         public virtual ICollection<Ticket> Tickets { get; set; }
-
         public int departmentID { get; set; }
         public virtual Department Departments { get; set; }
     }
@@ -48,7 +45,6 @@ namespace AssetManagement.Domain.Entities
         [Key]
         public int departmentID { get; set; }
         public string departmentName { get; set; }
-
         public virtual ICollection<Employee> Employees { get; set; }
     }
 }

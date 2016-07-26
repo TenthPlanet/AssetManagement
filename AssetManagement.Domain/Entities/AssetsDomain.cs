@@ -12,7 +12,6 @@ namespace AssetManagement.Domain.Entities
     {
         [Key]
         public int stockID { get; set; }
-
         public string model { get; set; }
         public string manufacturer { get; set; }
         public string category { get; set; }
@@ -52,7 +51,7 @@ namespace AssetManagement.Domain.Entities
 
         public string employeeNumber { get; set; }
         public virtual Employee Employee { get; set; }
-
+        public string InvoiceNumber { get; set; }
     }
 
     
@@ -70,7 +69,6 @@ namespace AssetManagement.Domain.Entities
         public int assignStatus { get; set; }
         public string employeeNumber { get; set; }
         public virtual Employee Employee { get; set; }
-
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
 
@@ -142,7 +140,7 @@ namespace AssetManagement.Domain.Entities
 
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
-
+        public string InvoiceNumber { get; set; }
     }
 
     public class Monitor 

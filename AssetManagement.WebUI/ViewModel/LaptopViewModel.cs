@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using AssetManagement.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -9,6 +11,9 @@ namespace AssetManagement.WebUI.ViewModel
 {
     public class LaptopViewModel
     {
+        [Required]
+        [Display(Name = "Invoice Number")]
+        public string InvoiceNumber { get; set; }
         [Required]
         [Display(Name = "Serial Number")]
         public string serialNumber { get; set; }

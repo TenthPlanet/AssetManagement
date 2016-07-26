@@ -2,7 +2,7 @@
 
     @{
         ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_helpd.cshtml";
+        Layout = null;
     }
     <style>
         fieldset {
@@ -30,7 +30,7 @@
             padding-right: 6px;
         }
     </style>
-    <div style="margin-bottom:10%;"></div>
+    <div style="margin-bottom:2%;"></div>
     <h2>Knowledge Base</h2>
 @using (Html.BeginForm("Solutions", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {

@@ -67,5 +67,12 @@ namespace AssetManagement.WebUI.Controllers
             var file = AME.Invoices.Find(id);
             return File(file.Content, file.ContentType);
         }
+        [HttpGet]
+        public ActionResult ViewByInvoiceNumber(string id)
+        {
+            Domain.Context.AssetManagementEntities AME = new Domain.Context.AssetManagementEntities();
+            var file = AME.Invoices.Single(i => i.InvoiceNumber == id);
+            return File(file.Content, file.ContentType);
+        }
     }
 }

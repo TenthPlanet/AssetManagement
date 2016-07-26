@@ -919,11 +919,16 @@ namespace AssetManagement.WebUI.Controllers
         [HttpGet]
         public ActionResult EmployeeAssets(string id)
         {
+            ViewBag.EmployeeName = context.Employees.Find(id).fullname;
+            //ViewBag.InvoiceId = context.Invoices.Where(i=>i.InvoiceNumber == )
             if (id == null)
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             else
+            {
                 return View(list.Assets().Where(p => p.employeeNumber == id));
+            }
         }
+
         public ActionResult AllExistingAssets()
         {
             return View(list.Assets());

@@ -2,13 +2,11 @@
 using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Context;
 using AssetManagement.Domain.Entities;
-using AssetManagement.WebUI.Models;
 using AssetManagement.WebUI.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
@@ -55,9 +53,10 @@ namespace AssetManagement.WebUI.Controllers
                 if (asset != null)
                 {
                     ticket.assetid = asset.assetID;
+
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("TicketsControl");
                 }
                 
             }
@@ -188,6 +187,10 @@ namespace AssetManagement.WebUI.Controllers
                 return HttpNotFound();
             }
             return View(ticket);
+        }
+        public ActionResult TicketsControl()
+        {
+            return View();
         }
 
         [HttpPost, ActionName("Acknowledge")]
@@ -405,6 +408,12 @@ namespace AssetManagement.WebUI.Controllers
             int count = query.Count();
             ViewBag.Opened = count;
             return View(query);
+        }
+
+        public ActionResult Report()
+        {
+
+            return View();
         }
         
     }

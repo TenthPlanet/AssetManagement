@@ -117,11 +117,7 @@
     <Compile Include="Entities\EmployeeDomain.cs" />
     <Compile Include="Entities\HelpdeskDomain.cs" />
     <Compile Include="Entities\Invoice.cs" />
-    <Compile Include="Migrations\201607181229013_AddSomething.cs" />
-    <Compile Include="Migrations\201607181229013_AddSomething.Designer.cs">
-      <DependentUpon>201607181229013_AddSomething.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Concrete\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
   </ItemGroup>
@@ -133,9 +129,7 @@
     <Content Include="Content\PagedList.css" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607181229013_AddSomething.resx">
-      <DependentUpon>201607181229013_AddSomething.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="Migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

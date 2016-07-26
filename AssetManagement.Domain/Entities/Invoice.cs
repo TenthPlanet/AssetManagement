@@ -23,6 +23,5 @@ namespace AssetManagement.Domain.Entities
         [StringLength(100)]
         public string ContentType { get; set; }
         public byte[] Content { get; set; }
-
     }
 }
