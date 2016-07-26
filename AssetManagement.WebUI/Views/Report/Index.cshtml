@@ -1,0 +1,92 @@
+﻿@model AssetManagement.Business.HelpDeskSystem.HelpDeskLogic
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div style="margin-bottom:10%;"></div>
+<h2>Administrators</h2>
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th>Administrator</th>
+        <th>Open Tickets</th>
+        <th>Un Aknowlaged Tickets</th>
+        <th>Completed Tickets</th>
+        <th>All Tickets</th>
+    </tr>
+    @foreach (var admin in Model.AdministratorStats())
+    {
+        <tr>
+            <td>@admin.Name</td>
+
+            <td align="center">
+                @admin.OpenedTickets
+            </td>
+
+            <td align="center">
+                @admin.UnAcknowalgedTickets
+            </td>
+
+            <td align="center">
+                @admin.CompletedTickets
+            </td>
+
+            <td align="center">
+                @admin.AllTickets
+
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Technicians</h2>
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th>Technician</th>
+        <th>Open Tickets</th>
+        <th>Un Aknowlaged Tickets</th>
+        <th>Completed Tickets</th>
+        <th>All Tickets</th>
+    </tr>
+    @foreach (var Technician in Model.TechnicianStats())
+    {
+        <tr>
+            <td>@Technician.Name</td>
+
+            <td align="center">
+                @Technician.OpenedTickets
+            </td>
+
+            <td align="center">
+                @Technician.UnAcknowalgedTickets
+            </td>
+
+            <td align="center">
+                @Technician.CompletedTickets
+            </td>
+
+            <td align="center">
+                @Technician.AllTickets
+
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Total Tickets</h2>
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th>Open Tickets</th>
+        <th>Un Aknowlaged Tickets</th>
+        <th>Completed Tickets</th>
+        <th>All Tickets</th>
+    </tr>
+    <tr>
+        <th>@Model.openTickets.Count</th>
+        <th>@Model.unAknowlagedTickets.Count</th>
+        <th>@Model.closedTickets.Count</th>
+        <th>@Model.allTickets.Count</th>
+    </tr>
+</table>

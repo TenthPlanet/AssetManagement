@@ -36,7 +36,6 @@ namespace AssetManagement.Domain.Entities
         public DateTime? datecompleted { get; set; }
         [Display(Name = "Solution")]
         public string solution { get; set; }
-        
         public string employeeNumber { get; set; }
         public virtual Employee Employees { get; set; }
     }

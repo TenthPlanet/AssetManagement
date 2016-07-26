@@ -87,6 +87,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssetLogic.cs" />
+    <Compile Include="HelpDeskSystem\HelpDeskLogic.cs" />
+    <Compile Include="HelpDeskSystem\TicketParticipant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

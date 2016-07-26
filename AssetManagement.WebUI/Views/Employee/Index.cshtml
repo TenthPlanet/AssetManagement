@@ -88,13 +88,13 @@ else
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td align="center">
                 @Html.DisplayFor(modelItem => item.employeeNumber)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.fullname)
             </td>
-            <td>
+            <td align="center">
                 @Html.DisplayFor(modelItem => item.officeNumber)
             </td>
             <td>
@@ -112,14 +112,13 @@ else
 
             <td>
                 <div class="btn-group">
-
                     <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
                         <span class="icon_lightbulb_alt"></span>
                         Options
                     </a>
                     <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="">@Html.ActionLink("Edit", "Edit", new { id = item.employeeNumber })</a></li>
+                        <li><a href="">@Html.ActionLink("Modify", "Edit", new { id = item.employeeNumber })</a></li>
                         <li><a href="">@Html.ActionLink("View Assets", "EmployeeAssets","Asset", new { id = item.employeeNumber },null)</a></li>
                         <li class="divider"></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
@@ -129,5 +128,4 @@ else
             </td>
         </tr>
     }
-
 </table>

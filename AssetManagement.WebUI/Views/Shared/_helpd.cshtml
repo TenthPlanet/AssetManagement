@@ -8,8 +8,8 @@
             width: 90%;
             border-bottom: 1px solid #b7b7b7;
             margin-bottom: 15px;
-            background-color:white;
-            border-radius:10px;
+            background-color: white;
+            border-radius: 10px;
         }
 
         .link {
@@ -32,33 +32,33 @@
         }
     </style>
     <meta name="viewport" content="width=device-width" />
-    
+
     <title>Help Desk System</title>
 
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-        <meta name="author" content="GeeksLabs">
-        <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-        <link rel="shortcut icon" href="img/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
 
 
-        <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/xcharts.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/xcharts.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
 
 
 </head>
@@ -71,19 +71,17 @@
             Admin : @User.Identity.Name
         </div>
     </header>
-    <div> 
+    <div>
         <!--sidebar start-->
         <aside>
             <div id="sidebar" class="nav-collapse ">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu">
                     <li class="active">
-                         <a href="~/Dashboard/Dashboard">
-                             <i class="icon_house_alt"></i>
-                             <span>Dashboard</span>
-                         </a>
-                             
-                        
+                        <a href="~/Dashboard/Dashboard">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
@@ -93,21 +91,21 @@
                         </a>
                         <ul class="sub">
                             @*<li>@Html.ActionLink("Tag asset", "Add", "Printer")</li>
-                            <li>@Html.ActionLink("Assign asset", "Assign", "Asset")</li>*@
-                            <li>@Html.ActionLink("List of Asset", "Index", "Asset")</li>
+                                <li>@Html.ActionLink("Assign asset", "Assign", "Asset")</li>*@
+                            <li>@Html.ActionLink("All Assets", "Index", "Asset")</li>
                             <li>@Html.ActionLink("Search Asset", "Assigned", "Asset")</li>
-                          
+
                         </ul>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_archive"></i>
+                            <i class="icon_profile"></i>
                             <span>Employees</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
                             <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
-                            <li>@Html.ActionLink("List of Employee", "Index", "Employee")</li>
+                            <li>@Html.ActionLink("Employees", "Index", "Employee")</li>
                             <li></li>
                         </ul>
                     </li>
@@ -119,61 +117,71 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                         
+
                             <li>@Html.ActionLink("Ownership History", "Index", "Archive")</li>
                             <li></li>
                         </ul>
                     </li>
-
-                        <li class="sub-menu">
-                            <a href="javascript:;" class="">
-                                <i class="icon_genius"></i>
-                                <span>Tickets</span>
-                                <span class="menu-arrow arrow_carrot-right"></span>
-                                </a>
-                                <ul class="sub">
-                                    <li>@Html.ActionLink("Self Service Inbox", "Inbox", "Tickets")</li>
-                                    <li>@Html.ActionLink("Create Ticket", "Create", "Tickets")</li>
-                                    <li>@Html.ActionLink("All Tickets", "Index", "Tickets")</li>
-                                    <li>@Html.ActionLink("My Tickets", "MyTickets", "Tickets")</li>
-                                    <li>@Html.ActionLink("My Solutions", "MySolutions", "Tickets")</li>
-                                    <li>@Html.ActionLink("Knowledge Base", "Solutions", "Tickets")</li>
-                                </ul>
-
-                        
-                        </li>
-                    @*<li>
-
-                        <a class="" href="">
-                            <i class="icon_piechart"></i>
-                            <span>Report</span>
-                            <span class="menu-arrow arrow_carrot-right"></span>
-                        </a>
-                        <ul class="sub">
-                            
-                        </ul>
-                    </li>*@
-
-                    @*<li class="sub-menu">
+                    <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_table"></i>
-                            <span>Stock</span>
+                            <i class="icon_documents"></i>
+                            <span>Reports</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li>@Html.ActionLink("Add Stock", "Add", "Stock")</li>
-                            <li>@Html.ActionLink("Available Stock", "Index", "Stock")</li>
+
+                            <li>@Html.ActionLink("Ticket Report", "Index", "Report")</li>
+                            <li></li>
                         </ul>
-                    </li>*@
+                    </li>
 
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_documents_alt"></i>
-                            <span>Done</span>
+                            <i class="icon_genius"></i>
+                            <span>Tickets</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                             
+                            <li>@Html.ActionLink("Self Service Inbox", "Inbox", "Tickets")</li>
+                            <li>@Html.ActionLink("Create Ticket", "Create", "Tickets")</li>
+                            <li>@Html.ActionLink("All Tickets", "Index", "Tickets")</li>
+                            <li>@Html.ActionLink("My Tickets", "MyTickets", "Tickets")</li>
+                            <li>@Html.ActionLink("My Solutions", "MySolutions", "Tickets")</li>
+                            <li>@Html.ActionLink("Knowledge Base", "Solutions", "Tickets")</li>
+                        </ul>
+                    </li>
+                    @*<li>
+
+                            <a class="" href="">
+                                <i class="icon_piechart"></i>
+                                <span>Report</span>
+                                <span class="menu-arrow arrow_carrot-right"></span>
+                            </a>
+                            <ul class="sub">
+
+                            </ul>
+                        </li>*@
+
+                    @*<li class="sub-menu">
+                            <a href="javascript:;" class="">
+                                <i class="icon_table"></i>
+                                <span>Stock</span>
+                                <span class="menu-arrow arrow_carrot-right"></span>
+                            </a>
+                            <ul class="sub">
+                                <li>@Html.ActionLink("Add Stock", "Add", "Stock")</li>
+                                <li>@Html.ActionLink("Available Stock", "Index", "Stock")</li>
+                            </ul>
+                        </li>*@
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="glyphicon glyphicon-"></i>
+                            <span>Account</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+
                             @*<li>@Html.ActionLink("Logout", "Login", "Home")</li>*@
                             <li>@Html.Partial("_LoginPartial")</li>
                         </ul>

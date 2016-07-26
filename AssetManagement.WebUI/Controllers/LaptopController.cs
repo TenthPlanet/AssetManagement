@@ -60,7 +60,8 @@ namespace AssetManagement.WebUI.Controllers
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
                             warranty = viewmodel.warranty + " Months",
-                            costprice = viewmodel.costprice
+                            costprice = viewmodel.costprice,
+                            InvoiceNumber = viewmodel.InvoiceNumber
                         };
                         var laptop = new Laptop
                         {
@@ -73,6 +74,7 @@ namespace AssetManagement.WebUI.Controllers
                             OS = viewmodel.OS,
                             RAM = viewmodel.RAM,
                             screenSize = viewmodel.screenSize,
+                            InvoiceNumber = viewmodel.InvoiceNumber
                         };
                         stock.quantity = stock.quantity - 1;
                         repository.Insert(asset, laptop);
