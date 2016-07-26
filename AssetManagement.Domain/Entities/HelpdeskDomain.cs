@@ -18,6 +18,8 @@ namespace AssetManagement.Domain.Entities
         public int assetid { get; set; } //This is so I can easily get an asset report
         [DisplayName("Employee #")]
         public string assetowner { get; set; }
+        [DisplayName("Category")]
+        public string category { get; set; }
         [DisplayName("Subject")]
         public string subject { get; set; }
         [DisplayName("Priority")]

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Asset>
+
+@{
+    ViewBag.Title = "SelectType";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
+<script src="~/Content/customscripts/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+<script type="text/javascript">
+    $(function () {
+        $("#employeenumber").autocomplete({
+            source: '@Url.Action("GetEmployeesA")'
+        });
+    });
+</script>
+
+<hr />
+<br />
+<br />
+<div>
+    <h2>SelectType</h2>
+</div>
+<hr />
+
+@using (Html.BeginForm("SelectType", "Asset", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    @Html.AntiForgeryToken()
+
+    <th>
+        <div class="form-group">
+            @Html.Label("Employee Number", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("employeenumber")
+                @*<input type="text" name="employeenumber" id="employeenumber" />*@
+                <input type="submit" class="btn btn-default" value="Populate">
+            </div>
+        </div>
+    </th>
+    <th></th>
+}
+
+@using (Html.BeginForm("Create", "Tickets", FormMethod.Get, new { @class = "form-horizontal", role = "form" }))
+{
+    <div class="form-group">
+        @Html.Label("Asset", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Assets", new SelectList(ViewBag.empassets, "catergory", "catergory"), "Select Asset In Error", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Asset Ticket">
+            @Html.ActionLink("General Ticket", "General", "Tickets")
+        </div>
+    </div>
+
+}
+
+

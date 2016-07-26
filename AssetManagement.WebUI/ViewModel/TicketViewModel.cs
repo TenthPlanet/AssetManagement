@@ -36,6 +36,32 @@ namespace AssetManagement.WebUI.ViewModel
         public string fullname { get; set; }
     }
 
+    public class GeneralTicketViewModel
+    {
+        public int ticketid { get; set; }
+        [DisplayName("Employee #")]
+        public string employee { get; set; }
+        [DisplayName("Priority")]
+        public string priority { get; set; }
+        [DisplayName("Subject")]
+        public string subject { get; set; }
+        [DisplayName("Description")]
+        public string description { get; set; }
+        //public int numOfEscalatedTimes { get; set; }
+        public bool accomplishstatus { get; set; }
+        public bool acknowledgestatus { get; set; }
+        public bool ticketstatus { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime datecreated { get; set; }
+        [DisplayName("Due Date")]
+        [DataType(DataType.Date)]
+        public DateTime datedue { get; set; }
+        [DisplayName("Full Name")]
+        public string fullname { get; set; }
+
+        public string employeeNumber { get; set; }
+    }
+
     public class ContactUsViewModel
     {
         public int id { get; set; }

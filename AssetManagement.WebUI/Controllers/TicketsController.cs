@@ -32,9 +32,43 @@ namespace AssetManagement.WebUI.Controllers
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
             return View(ticket);
         }
-        public ActionResult Create()
+        public ActionResult Create(string Assets)
         {
+
+            string eno = null, sub = null, bodd = null;
+
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname");
+            Session["Asset"] = Assets;
+
+
+            eno = Session["empNo"].ToString();
+            sub = Session["Subject"].ToString();
+            bodd = Session["Body"].ToString();
+
+            if (bodd != " " && sub != " ")
+            {
+                Ticket tt = new Ticket
+                {
+                    assetowner = eno,
+                    subject = sub,
+                    description = bodd
+                };
+                return View(tt);
+            }
+
+            Asset aa = _context.Assets.ToList().Find(x => x.employeeNumber == eno && x.catergory == Assets);
+
+            if (eno != null && aa != null)
+            {
+                Ticket t = new Ticket
+                {
+                    category = Assets,
+                    assetnumber = aa.assetNumber,
+                    assetowner = aa.employeeNumber,
+                    employeeNumber = aa.employeeNumber
+                };
+                return View(t);
+            }
             return View();
         }
 
@@ -152,7 +186,7 @@ namespace AssetManagement.WebUI.Controllers
             var ticket = _context.Tickets.Find(id);
             _context.Tickets.Remove(ticket);
             _context.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("TicketsControl");
         }
         public JsonResult GetEmployees(string term)
         {
@@ -376,14 +410,19 @@ namespace AssetManagement.WebUI.Controllers
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
-      
-        public ActionResult InboxDetails(int ? id)
+
+        public ActionResult InboxDetails(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var inbox = _context.Contactus.Find(id);
+
+            Session["empNo"] = inbox.userName.ToString();
+            Session["Subject"] = inbox.subject.ToString();
+            Session["Body"] = inbox.body.ToString();
+
             var screenshots = _context.Screenshots.Where(m => m.contactId == inbox.contactId).ToList();
             if (inbox == null)
             {
@@ -415,6 +454,70 @@ namespace AssetManagement.WebUI.Controllers
 
             return View();
         }
-        
+
+        public ActionResult OverDueTickets()
+        {
+            DateTime now = System.DateTime.Now;
+            List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
+            return View(tt);
+        }
+
+        public ActionResult General()
+        {
+            ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname");
+
+            string eno = null, sub = null, bodd = null;
+
+            eno = Session["empNo"].ToString();
+            sub = Session["Subject"].ToString();
+            bodd = Session["Body"].ToString();
+
+            GeneralTicketViewModel gtt;
+            gtt = new GeneralTicketViewModel
+            {
+                employee = eno,
+                subject = sub,
+                description = bodd
+            };
+            return View(gtt);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult General([Bind(Include = "ticketid,assetnumber,assetowner,subject,priority,description,accomplishstatus,acknowledgestatus,ticketstatus,datecreated,datedue,employeeNumber")] GeneralTicketViewModel model)
+        {
+            string eno = Session["empNo"].ToString();
+            model.accomplishstatus = false;
+            model.acknowledgestatus = false;
+            model.ticketstatus = true;
+            model.datecreated = DateTime.Now;
+
+            if (ModelState.IsValid)
+            {
+                Ticket tt = new Ticket
+                {
+
+                    accomplishstatus = model.accomplishstatus,
+                    acknowledgestatus = model.acknowledgestatus,
+                    ticketstatus = model.ticketstatus,
+                    datecreated = model.datecreated,
+                    employeeNumber = model.employeeNumber,
+                    subject = model.subject,
+                    description = model.description,
+                    datedue = model.datedue,
+                    assetnumber = null,
+                    assetowner = eno,
+
+                };
+                _context.Tickets.Add(tt);
+                _context.SaveChanges();
+
+                return RedirectToAction("TicketsControl");
+            }
+            ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname", model.employeeNumber);
+
+            return View(model);
+        }
+
     }
 }

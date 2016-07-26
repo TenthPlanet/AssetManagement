@@ -720,6 +720,9 @@
     <Content Include="Views\Asset\EmployeeAssets.cshtml" />
     <Content Include="Views\Asset\AllExistingAssets.cshtml" />
     <Content Include="Views\Report\Index.cshtml" />
+    <Content Include="Views\Asset\SelectType.cshtml" />
+    <Content Include="Views\Tickets\OverDueTickets.cshtml" />
+    <Content Include="Views\Tickets\General.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

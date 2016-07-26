@@ -1,11 +1,10 @@
-﻿
-@*@Model AssetManagement.Domain.Entities.ContactUs*@
+﻿@*@Model AssetManagement.Domain.Entities.ContactUs*@
 
 @model Tuple<AssetManagement.Domain.Entities.ContactUs, IEnumerable<AssetManagement.Domain.Entities.Screenshot>>
 
 @{
     ViewBag.Title = "InboxDetails";
-    Layout = "~/Views/Shared/_helpd.cshtml";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
 }
 <style>
     fieldset {
@@ -39,11 +38,13 @@
     .col-md-10 {
         font-size: 1.1em;
     }
-    img#img-screen{
+
+    img#img-screen {
         float: left;
         margin-right: 4px;
     }
-    #img-screen:hover{
+
+    #img-screen:hover {
         width: 50%;
         height: auto;
     }
@@ -55,9 +56,9 @@
 <div class="col-md-10">
     <h3>
         <strong>
-                <span>@Model.Item1.userName</span>
-            </strong>
-        </h3>
+            <span>@Model.Item1.userName</span>
+        </strong>
+    </h3>
 </div>
 <fieldset>
     <legend></legend>
@@ -70,7 +71,9 @@
         <p>
             @Model.Item1.body
             <div class="tabs">
-                <span>@Html.ActionLink("Create New Ticket", "Create", "Tickets",null, new { @class = "btn btn-sm btn-default" })</span> @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
+                <span>@Html.ActionLink("Create Asset Ticket", "Create", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                <span>@Html.ActionLink("Create General Ticket", "General", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
                 <span>Sent: @Model.Item1.datesent</span>
             </div>
         </p>

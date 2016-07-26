@@ -933,5 +933,48 @@ namespace AssetManagement.WebUI.Controllers
         {
             return View(list.Assets());
         }
+
+        public JsonResult GetEmployeesA(string term)
+        {
+            List<string> employees;
+            employees = context.Employees.Where(x => x.employeeNumber.StartsWith(term))
+                .Select(n => n.employeeNumber).ToList();
+            return Json(employees, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult SelectType()
+        {
+
+            Asset asse = new Asset();
+            asse.assetID = 00;
+            asse.catergory = "...";
+            asse.assetNumber = "00";
+            asse.assigndate = System.DateTime.Now;
+            asse.assignstatus = 0;
+            asse.costprice = 0;
+            asse.dateadded = System.DateTime.Now;
+            asse.employeeNumber = "0";
+            asse.warranty = "0";
+            asse.serialNumber = "0";
+            List<Asset> ll = new List<Asset>();
+            ll.Add(asse);
+            ViewBag.empassets = ll;
+            return View(ll);
+        }
+        [HttpPost]
+        public ActionResult SelectType(string employeenumber)
+        {
+            List<Asset> lass = context.Assets.ToList().FindAll(x => x.employeeNumber == employeenumber);
+            Session["empNo"] = employeenumber;
+
+            Session["Subject"] = " ";
+            Session["Body"] = " ";
+            if (lass != null)
+            {
+                ViewBag.empassets = lass;
+                return View(lass);
+            }
+            return View();
+        }
     }
 }
