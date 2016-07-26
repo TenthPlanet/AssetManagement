@@ -109,28 +109,32 @@ namespace AssetManagement.WebUI.Controllers
              if (ModelState.IsValid && Request.IsAuthenticated)
                  {
                     var contact = new ContactUs
-                        {
+                       {
                         subject = model.subject,
-                    body = model.body,
-                    userName = User.Identity.Name,
-                    read = false,
-                    datesent = DateTime.Now
-                };
+                        body = model.body,
+                        userName = User.Identity.Name,
+                        read = false,
+                        datesent = DateTime.Now
+                    };
                 _context.Contactus.Add(contact);
 
                 foreach (var file in files)
                     {
-                        if (files != null && file.ContentLength > 0)
+                        if (file != null && file.ContentLength > 0)
                         {
-                        var screen = new Screenshot
-                        {
-                            ImageMimeType = file.ContentType,
-                            filename = Path.GetFileName(file.FileName),
-                            ImageData = ConvertToBytes(file)
+                            var screen = new Screenshot
+                            {
+                                ImageMimeType = file.ContentType,
+                                filename = Path.GetFileName(file.FileName),
+                                ImageData = ConvertToBytes(file)
                             };
                         _context.Screenshots.Add(screen);
                         }
+                    else
+                    {
+                        //DO NOTHING
                     }
+                   }
                     _context.SaveChanges();
                 TempData["Success"] = "Request was sent successfully.";
             }

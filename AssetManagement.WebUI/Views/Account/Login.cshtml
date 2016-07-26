@@ -22,7 +22,7 @@
                 @Html.AntiForgeryToken()
                 @*<h4>Use a local account to log in.</h4>*@
                 <hr />
-                <div class="form-group">
+                @*<div class="form-group">
                     <label class="col-md-2 control-label">User</label>
                     <div class="col-md-10">
 
@@ -54,7 +54,7 @@
                         }
                         @Html.DropDownListFor(model => model.role, listItems, new { @class = "form-control" })
                     </div>
-                </div>
+                </div>*@
 
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
@@ -91,4 +91,5 @@
                 </p>
             }
         </section>
+    </div>
     </div>

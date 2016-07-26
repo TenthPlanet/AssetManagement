@@ -56,7 +56,7 @@ namespace AssetManagement.WebUI.Controllers
 
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("TicketsControl");
                 }
                 
             }
@@ -187,6 +187,10 @@ namespace AssetManagement.WebUI.Controllers
                 return HttpNotFound();
             }
             return View(ticket);
+        }
+        public ActionResult TicketsControl()
+        {
+            return View();
         }
 
         [HttpPost, ActionName("Acknowledge")]
@@ -391,40 +395,6 @@ namespace AssetManagement.WebUI.Controllers
             _context.SaveChanges();
             return View(data);
         }
-        //Delete Ticket, Send to archiveInbox
-        //public ActionResult DeleteMail(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-        //    }
-        //    var Contact = _context.Contactus.Find(id);
-
-        //    if (Contact == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(Contact);
-        //}
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteMail(int id)
-        //{
-        //    var contact = _context.Contactus.Find(id);
-        //    var delete = new ArchiveMail
-        //    {
-        //        subject = contact.subject,
-        //        body = contact.body,
-        //        userName = contact.userName,
-        //        read = contact.read,
-        //        datesent = contact.datesent,
-        //        datedeleted = DateTime.Now,
-        //        mailId = contact.id
-        //    };
-        //    _context.Archivemail.Add(delete);
-        //    _context.SaveChanges();
-        //    return View();
-        //}
         public ActionResult unReadmail()
         {
             var query = _context.Contactus.Where(x => x.read.Equals(false)).ToList();

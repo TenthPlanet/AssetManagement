@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
 
     @{
-        ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_hepd.cshtml";
+        //ViewBag.Title = "Index";
+        Layout = null;
     }
     <style>
         fieldset {
@@ -30,7 +30,7 @@
             padding-right: 6px;
         }
     </style>
-    <div style="margin-bottom:10%;"></div>
+    <div style="margin-bottom:2%;"></div>
     <h2>My Solutions</h2>
 @using (Html.BeginForm("MySolutions", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {

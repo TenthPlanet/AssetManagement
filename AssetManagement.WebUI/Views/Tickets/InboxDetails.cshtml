@@ -70,7 +70,7 @@
         <p>
             @Model.Item1.body
             <div class="tabs">
-                <span>@Html.ActionLink("Create New Ticket", "Create", "Tickets", new { @class = "btn btn-sm btn-default" })</span> @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
+                <span>@Html.ActionLink("Create New Ticket", "Create", "Tickets",null, new { @class = "btn btn-sm btn-default" })</span> @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
                 <span>Sent: @Model.Item1.datesent</span>
             </div>
         </p>
