@@ -1088,3 +1088,4 @@ C:\Users\Lenovo\Source\Repos\AssetManagement.Domain\bin\Debug\System.Web.WebPage
 C:\Users\Lenovo\Source\Repos\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Lenovo\Source\Repos\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
