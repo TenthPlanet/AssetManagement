@@ -36,7 +36,7 @@
             <div class="col-md-10">
                 @Html.TextBox("employeenumber")
                 @*<input type="text" name="employeenumber" id="employeenumber" />*@
-                <input type="submit" class="btn btn-default" value="Populate">
+                <input type="submit" class="btn btn-default" value="Search">
             </div>
         </div>
     </th>
@@ -55,7 +55,7 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Asset Ticket">
-            @Html.ActionLink("General Ticket", "General", "Tickets")
+            @Html.ActionLink("General Ticket", "General", "Tickets", new { @class = "btn btn-sm btn-default" })
         </div>
     </div>
 

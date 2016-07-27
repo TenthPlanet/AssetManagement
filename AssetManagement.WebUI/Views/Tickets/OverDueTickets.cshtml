@@ -91,7 +91,8 @@
             </td>
             <td>
                 @*@Html.ActionLink("Edit", "Edit", new { id=item.ticketid }) |*@
-                @Html.ActionLink("Details", "Details", new { id = item.ticketid })
+                <span>@Html.ActionLink("Escalate", "Escalate", "Tickets", new { id = item.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
+                <span>@Html.ActionLink("Details", "Details", new { id = item.ticketid }, new { @class = "btn btn-sm btn-default" })</span> 
                 @*@Html.ActionLink("Delete", "Delete", new { id=item.ticketid })*@
             </td>
         </tr>

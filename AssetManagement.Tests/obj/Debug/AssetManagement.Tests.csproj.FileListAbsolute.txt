@@ -1363,4 +1363,3 @@ C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\S
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
