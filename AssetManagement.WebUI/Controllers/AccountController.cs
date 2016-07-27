@@ -76,93 +76,36 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return View(model);
             }
-            var result = await SignInManager.PasswordSignInAsync(model.EmployeeNumber, model.Password, model.RememberMe, shouldLockout: false);
 
-            if (User.Identity.IsAuthenticated)
+            var user = await UserManager.FindAsync(model.EmployeeNumber, model.Password);
+
+            if (user == null)
             {
-                if (User.IsInRole("Technician"))
-                {
-                    return RedirectToAction("Tickets", "Technician");
-                }
-                else if (User.IsInRole("Administrator"))
-                {
-                    return RedirectToAction("Dashboard", "Dashboard");
-                }
-                else if (User.IsInRole("Asset Manager"))
-                {
-                    return RedirectToAction("Dashboard", "Dashboard");
-                }
-                else
-                {
-                    return RedirectToAction("Base", "User");
-                }
+                ModelState.AddModelError(String.Empty, "Incorrect username or password!");
             }
+            else
+            {
+                var result = await SignInManager.PasswordSignInAsync(model.EmployeeNumber, model.Password, model.RememberMe, shouldLockout: false);
 
-            //if (model.role == "Technician")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Tickets", "Technician");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "Administrator")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Dashboard", "Dashboard");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "Asset Manager")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Dashboard", "Dashboard");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            //else if (model.role == "General Staff")
-            //{
-            //    switch (result)
-            //    {
-            //        case SignInStatus.Success:
-            //            return RedirectToAction("Base", "User");
-            //        case SignInStatus.LockedOut:
-            //            return View("Lockout");
-            //        case SignInStatus.RequiresVerification:
-            //            return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-            //        case SignInStatus.Failure:
-            //        default:
-            //            ModelState.AddModelError("", "Invalid login attempt.");
-            //            return View(model);
-            //    }
-            //}
-            ModelState.AddModelError("", "Username or password is incorrect!");
+                    if (UserManager.IsInRole(user.Id, "Technician"))
+                    {
+                        return RedirectToAction("Tickets", "Technician");
+                    }
+                    else if (UserManager.IsInRole(user.Id, "Administrator"))
+                    {
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    }
+                    else if (UserManager.IsInRole(user.Id, "Asset-Manager"))
+                    {
+                        return RedirectToAction("Dashboard", "Dashboard");
+                    }
+                    else if (UserManager.IsInRole(user.Id, "General Staff"))
+                    {
+                        return RedirectToAction("Base", "User");
+                    }
+            }
+            
+            //ModelState.AddModelError("", "Username or password is incorrect!");
             return View();
             
         }
