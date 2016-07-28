@@ -64,13 +64,39 @@
 </head>
 <body>
     <header class="header dark-bg">
-        <div class="toggle-nav">
-            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
-        </div>
-        <div style="margin-top:20px">
-            Admin : @User.Identity.Name
-        </div>
-    </header>
+        <!----=============================================-->
+
+        <div class="top-nav notification-row">
+            <ul class="nav pull-right top-menu">
+                <li id="mail_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-envelope-l"></i>
+                        <span class="badge bg-important">@Html.Partial("_Inbox")</span><!--returns the count number of inbox messages-->
+                        
+                    </a>
+                    
+                    <ul class="dropdown-menu extended inbox">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="red">You have @Html.Partial("_Inbox") Inbox new messages</p>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("AllMessages", "Tickets")"> <!--Redirect you to the tickets index-->
+                                <i class="fa fa-warning text-red"></i> @Html.Partial("_Inbox") Notification(s) Found
+                            </a>
+                        </li>
+                        </ul>
+                   </li>
+               </ul>
+           </div>
+            <!----=============================================-->
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+            <div style="margin-top:20px">
+                Admin : @User.Identity.Name
+            </div>
+</header>
     <div> 
         <!--sidebar start-->
         <aside>
@@ -145,8 +171,8 @@
                                 <span class="menu-arrow arrow_carrot-right"></span>
                                 </a>
                                 <ul class="sub">
-                                    <li>@Html.ActionLink("Self Service Inbox", "Inbox", "Tickets")</li>
-                                    <li>@Html.ActionLink("Tickets Control", "TicketsControl", "Tickets")</li>
+                                    <li>@Html.ActionLink("Self Service Inbox", "AllMessages", "Tickets")</li>
+                                    <li>@Html.ActionLink("Tickets Control", "Index", "Tickets")</li>
                                     <li>@Html.ActionLink("Create Ticket", "SelectType", "Asset")</li>
                                     @*<li>@Html.ActionLink("OverDue Tickets", "OverDueTickets", "Tickets")</li>
                                     <li>@Html.ActionLink("All Tickets", "Index", "Tickets")</li>

@@ -29,6 +29,10 @@ namespace AssetManagement.WebUI.Controllers
         // GET: Tickets
         public ActionResult Index()
         {
+            return View();
+        }
+        public ActionResult TicketsIndex()
+        {
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
             return View(ticket);
         }
@@ -90,7 +94,7 @@ namespace AssetManagement.WebUI.Controllers
 
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
-                    return RedirectToAction("TicketsControl");
+                    return RedirectToAction("Index");
                 }
                 
             }
@@ -186,7 +190,7 @@ namespace AssetManagement.WebUI.Controllers
             var ticket = _context.Tickets.Find(id);
             _context.Tickets.Remove(ticket);
             _context.SaveChanges();
-            return RedirectToAction("TicketsControl");
+            return RedirectToAction("Index");
         }
         public JsonResult GetEmployees(string term)
         {
@@ -389,7 +393,12 @@ namespace AssetManagement.WebUI.Controllers
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
-         public ActionResult Inbox()
+        public ActionResult AllMessages()
+        {
+            return View();
+        }
+      
+        public ActionResult Inbox()
         {
                 var query = (from a in _context.Contactus.ToList()
                              select new ContactUsViewModel
@@ -409,6 +418,13 @@ namespace AssetManagement.WebUI.Controllers
                 return View(query);
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
+        }
+
+        public ActionResult InboxCount()
+        {
+           ViewBag.InboxNote = (_context.Contactus.ToList().Where(x => x.read.Equals(false))).Count();
+
+           return View();
         }
 
         public ActionResult InboxDetails(int? id)

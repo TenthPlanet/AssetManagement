@@ -1,83 +1,53 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
-
+﻿
 @{
     ViewBag.Title = "Index";
-    Layout = null;
+    Layout = "~/Views/Shared/_helpd.cshtml";
 }
-<style>
-    fieldset{
-        width: 90%;
-        border-bottom: 1px solid #b7b7b7;
-        margin-bottom: 15px;
-    }
-    .link {
-        text-decoration: none;
-    }
-    .tabs {
-        padding-top: 2%;
-        margin-left: 15%;    
-    }
-        .tabs span {
-            display: inline-block;
-            padding-right: 4px;
-        }
-        strong span{
-            display: inline-block;
-            padding-right: 6px;
-        }
-</style>
-<div style="margin-bottom:2%;"></div>
-<h2>Tickets</h2>
 
-<p>
-    @Html.ActionLink("New Ticket", "Create")
-</p>
+<div style="margin-bottom:10%;"></div>
+<div class="form-horizontal" style="width:90%">
+    <ol class="breadcrumb">
+        <li><i class="fa fa-gears"></i><a href="#">Tickets Control</a></li>
+    </ol>
+</div>
+<div class="box box-primary">
+</div>
+<div class="box box-primary">
+    <div class="box-body">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">All Tickets</a></li>
+            <li><a data-toggle="tab" href="#menu2">My Ticket</a></li>
+            <li><a data-toggle="tab" href="#menu3">My Solutions</a></li>
+            <li><a data-toggle="tab" href="#menu4">Knowledge Base</a></li>
+            <li><a data-toggle="tab" href="#menu5">Overdue Tickets</a></li>
 
-@foreach (var i in Model)
-{
-    
-    <div class="col-md-10">
-
-        <h3>
-        <strong>
-            @if (i.acknowledgestatus == false) 
-            { 
-                
-               <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link"})</span>
-                <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
-
-            }
-            else
-            {
-                if (i.accomplishstatus == false)
-                {
-                 <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link" })</span>
-                <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                @{
+                    Html.RenderAction("TicketsIndex");
                 }
-                else
-                {
-                    <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link" })</span>
-                    <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                @{
+                    Html.RenderAction("MyTickets");
                 }
-            }
-        </strong>
-        </h3>
-    </div>
-    <fieldset>
-        <div class="col-md-10">
-            <p>
-                @Html.DisplayFor(item => i.description)
-
-                    <div class="tabs">
-                       
-                        <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = i.assetid }, new { @class = "btn btn-sm btn-default" })  </span>
-                        <span>@Html.ActionLink("Discard", "Discard", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
-                        <span>@Html.ActionLink("Escalate", "Escalate", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
-                        <span>@Html.ActionLink("Edit Problem", "EditProblem", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
-                        <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
-                        <span>Due: @Html.DisplayFor(item => i.datedue)</span>
-                    </div>
-            </p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                @{
+                    Html.RenderAction("MySolutions");
+                }
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                @{
+                    Html.RenderAction("Solutions");
+                }
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                @{
+                    Html.RenderAction("OverDueTickets");
+                }
+            </div>
         </div>
-    </fieldset>
-}
+    </div>
+</div>

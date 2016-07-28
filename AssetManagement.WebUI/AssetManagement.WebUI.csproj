@@ -674,7 +674,6 @@
     <Content Include="Views\Shared\_assetsms.cshtml" />
     <Content Include="Views\Shared\_home.cshtml" />
     <Content Include="Views\Tickets\Create.cshtml" />
-    <Content Include="Views\Tickets\Index.cshtml" />
     <Content Include="Views\Tickets\Details.cshtml" />
     <Content Include="Views\Tickets\Acknowledge.cshtml" />
     <Content Include="Views\Tickets\Accomplished.cshtml" />
@@ -723,6 +722,11 @@
     <Content Include="Views\Asset\SelectType.cshtml" />
     <Content Include="Views\Tickets\OverDueTickets.cshtml" />
     <Content Include="Views\Tickets\General.cshtml" />
+    <Content Include="Views\Tickets\TicketsIndex.cshtml" />
+    <Content Include="Views\Tickets\Index.cshtml" />
+    <Content Include="Views\Tickets\AllMessages.cshtml" />
+    <Content Include="Views\Tickets\InboxCount.cshtml" />
+    <Content Include="Views\Shared\_Inbox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

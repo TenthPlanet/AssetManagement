@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<AssetManagement.Domain.Entities.ContactUs>
 
 @{
-    ViewBag.Title = "unReadMail";
-    Layout = "~/Views/Shared/_helpd.cshtml";
+    //ViewBag.Title = "unReadMail";
+    Layout = null;
 }
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
 
-<style>
+@*<style>
     #urlddl {
         width: 18%;
         padding: 8px;
@@ -20,7 +20,7 @@
         #urlddl a {
             padding: 5px;
         }
-</style>
+</style>*@
 
 <style>
     fieldset {
@@ -48,10 +48,10 @@
         padding-right: 6px;
     }
 </style>
-<div style="margin-bottom:10%;"></div>
+<div style="margin-bottom:2%;"></div>
 <h2>Opened Messages (@ViewBag.Opened)</h2>
 
-<div class="btn-group">
+@*<div class="btn-group">
     <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
         <span class="icon_lightbulb_alt"></span>
         View
@@ -60,11 +60,11 @@
     <ul class="dropdown-menu">
         <li><a href="~/Tickets/Inbox">All Messages</a></li>
         <li><a href="~/Tickets/unReadmail">Unread</a></li>
-        @*<li><a href="~/Monitor/Add">Deleted</a></li>*@
+       <li><a href="~/Monitor/Add">Deleted</a></li>
         <li class="divider"></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
     </ul>
-</div>
+</div>*@
 
 @foreach (var item in Model)
 {

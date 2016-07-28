@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
 
     @{
-        ViewBag.Title = "Index";
+        //ViewBag.Title = "Index";
         Layout = null;
     }
     <style>
@@ -34,7 +34,7 @@
     <h2>My Tickets</h2>
 
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("New Ticket", "SelectType", "Asset")
     </p>
 
     @foreach (var i in Model)
