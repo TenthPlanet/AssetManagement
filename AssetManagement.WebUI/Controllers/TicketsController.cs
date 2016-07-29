@@ -317,7 +317,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             else
             {
-                return RedirectToAction("MySolutions");
+                return RedirectToAction("Index");
             }
         }
         //Knowledge base, all the tickets that have been a completed 
@@ -341,7 +341,18 @@ namespace AssetManagement.WebUI.Controllers
                     .OrderByDescending(x => x.datecreated);
                 return View(tickets);
             }
-            return RedirectToAction("Solutions");
+            return RedirectToAction("Index");
+        }
+        public ActionResult SolutionPortal(string search)
+        {
+            if (search != null)
+            {
+                var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
+                    .Where(x => x.solution.Contains(search) || x.subject.Contains(search) || x.description.Contains(search))
+                    .OrderByDescending(x => x.datecreated);
+                return View(tickets);
+            }
+            return RedirectToAction("SolutionPortal");
         }
         //Full solution details
         [AllowAnonymous]
@@ -387,7 +398,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             else
             {
-                return RedirectToAction("Inbox");
+                return RedirectToAction("AllMessages");
             }
             
             //var inbox = _context.Contactus.ToList();
@@ -528,7 +539,7 @@ namespace AssetManagement.WebUI.Controllers
                 _context.Tickets.Add(tt);
                 _context.SaveChanges();
 
-                return RedirectToAction("TicketsControl");
+                return RedirectToAction("Index");
             }
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname", model.employeeNumber);
 

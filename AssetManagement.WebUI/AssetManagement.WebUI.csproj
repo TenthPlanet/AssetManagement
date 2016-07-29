@@ -727,6 +727,7 @@
     <Content Include="Views\Tickets\AllMessages.cshtml" />
     <Content Include="Views\Tickets\InboxCount.cshtml" />
     <Content Include="Views\Shared\_Inbox.cshtml" />
+    <Content Include="Views\Tickets\SolutionPortal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

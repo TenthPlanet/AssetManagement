@@ -1167,6 +1167,5 @@ C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
