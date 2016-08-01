@@ -48,14 +48,14 @@
     <div class="form-group">
         @Html.Label("Asset", new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownList("Assets", new SelectList(ViewBag.empassets, "catergory", "catergory"), "Select Asset In Error", new { @class = "form-control" })
+            @Html.DropDownList("Assets", new SelectList(ViewBag.empassets, "catergory", "catergory"), "Select asset...", new { @class = "form-control" })
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Asset Ticket">
-            @Html.ActionLink("General Ticket", "General", "Tickets", new { @class = "btn btn-sm btn-default" })
+            @Html.ActionLink("General Ticket", "General", "Tickets",null, new { @class = "btn btn-sm btn-default" })
         </div>
     </div>
 

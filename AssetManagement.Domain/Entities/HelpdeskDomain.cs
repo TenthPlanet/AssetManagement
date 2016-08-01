@@ -40,6 +40,19 @@ namespace AssetManagement.Domain.Entities
         public string solution { get; set; }
         public string employeeNumber { get; set; }
         public virtual Employee Employees { get; set; }
+        public ICollection<Progress> Progresses { get; set; }
+    }
+
+    public class Progress
+    {
+        [Key]
+        public int progessID { get; set; }
+        public string comment { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? date { get; set; }
+        public int ticketid { get; set; }
+        public virtual Ticket Tickets { get; set; }
+
     }
     public class ContactUs
     {

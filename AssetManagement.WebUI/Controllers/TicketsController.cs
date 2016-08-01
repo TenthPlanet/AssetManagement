@@ -91,7 +91,12 @@ namespace AssetManagement.WebUI.Controllers
                 if (asset != null)
                 {
                     ticket.assetid = asset.assetID;
+                    //var progress = new Progress
+                    //{
+                    //    ticketid = ticket.ticketid
+                    //};
 
+                    //_context.Progresses.Add(progress);
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
                     return RedirectToAction("Index");

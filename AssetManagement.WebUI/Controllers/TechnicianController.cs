@@ -144,6 +144,40 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View();
         }
+        public ActionResult Progress(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var ticket = _context.Tickets.Find(id);
+            //var progress = new Progress();
+            //var model = new Tuple<Ticket, Progress>(ticket, progress);
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(ticket);
+        }
+        [HttpPost, ActionName("Progress")]
+        [ValidateAntiForgeryToken]
+        public ActionResult WriteComment(int? id, string comment)
+        {
+            if (id != null)
+            {
+                var ticket = _context.Tickets.Find(id);
+                var progress = new Progress
+                {
+                    ticketid = ticket.ticketid,
+                    comment = comment,
+                    date = DateTime.Now
+                };
+                _context.Progresses.Add(progress);
+                _context.SaveChanges();
+                return RedirectToAction("TicketDetails", new { id = ticket.ticketid});
+            }
+            return View();
+        }
         public ActionResult Complete(int? id)
         {
             if (id == null)
@@ -237,11 +271,14 @@ namespace AssetManagement.WebUI.Controllers
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
             var ticket = _context.Tickets.Find(id);
+            var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
+
+            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
             if (ticket == null)
             {
                 return HttpNotFound();
             }
-            return View(ticket);
+            return View(model);
         }
         public ActionResult MyAssets()
         {

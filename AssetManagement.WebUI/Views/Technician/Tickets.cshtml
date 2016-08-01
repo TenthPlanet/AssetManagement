@@ -77,8 +77,11 @@
                     @Html.DisplayFor(item => i.description)
 
                     <div class="tabs">
-
+                        @if (i.assetnumber != null)
+                        {
                         <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = i.assetid }, new { @class = "btn btn-sm btn-default" }) | </span>
+                        }
+                        <span>@Html.ActionLink("Progress Report", "Progress", "Technician")</span>
                         <span>Created: @Html.DisplayFor(item => i.datecreated) | </span>
                         <span>Due: @Html.DisplayFor(item => i.datedue)</span>
                     </div>

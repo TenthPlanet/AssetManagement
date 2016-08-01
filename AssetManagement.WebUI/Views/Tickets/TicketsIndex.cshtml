@@ -74,8 +74,10 @@
                 @Html.DisplayFor(item => i.description)
 
                 <div class="tabs">
-
-                    <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = i.assetid }, new { @class = "btn btn-sm btn-default" })  </span>
+                    @if (i.assetnumber != null)
+                    {
+                        <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = i.assetid }, new { @class = "btn btn-sm btn-default" })  </span>
+                    }
                     <span>@Html.ActionLink("Discard", "Discard", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
                     <span>@Html.ActionLink("Escalate", "Escalate", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
                     <span>@Html.ActionLink("Edit Problem", "EditProblem", "Tickets", new { id = i.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>

@@ -30,6 +30,7 @@ namespace AssetManagement.Domain.Context
         public DbSet<OwnershipHistory> Ownerships { get; set; }
 
         public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<Progress> Progresses { get; set; }
         public DbSet<ContactUs> Contactus { get; set; }
         public DbSet<Screenshot> Screenshots { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
