@@ -731,6 +731,12 @@
     <Content Include="Views\Shared\_Inbox.cshtml" />
     <Content Include="Views\Tickets\SolutionPortal.cshtml" />
     <Content Include="Views\Technician\Progress.cshtml" />
+    <Content Include="Views\Tickets\TicketsCount.cshtml" />
+    <Content Include="Views\Shared\_TicketCounter.cshtml" />
+    <Content Include="Views\Tickets\OverDue.cshtml" />
+    <Content Include="Views\Shared\_OverDue.cshtml" />
+    <Content Include="Views\Tickets\DueTickets.cshtml" />
+    <Content Include="Views\Shared\_DueTicketsCounter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
