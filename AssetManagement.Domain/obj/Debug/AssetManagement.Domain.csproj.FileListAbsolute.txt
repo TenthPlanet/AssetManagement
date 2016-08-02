@@ -1195,3 +1195,4 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

@@ -99,7 +99,9 @@ namespace AssetManagement.WebUI.Controllers
         //Contacting the helpdesk
         public ActionResult ContactUs()
         {
+
             return View();
+            //var screenshots = _context.Screenshots.Where(p=>p.contactId==contactit)
         }
 
         [HttpPost]

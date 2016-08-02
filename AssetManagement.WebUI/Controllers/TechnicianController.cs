@@ -271,9 +271,12 @@ namespace AssetManagement.WebUI.Controllers
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
             var ticket = _context.Tickets.Find(id);
+            var contact = _context.Contactus.FirstOrDefault(e => e.userName == ticket.assetowner);
+            var screenshot = _context.Screenshots.Where(e => e.contactId == contact.contactId);
+
             var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
 
-            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
+            var model = new Tuple<Ticket, IEnumerable<Progress>, IEnumerable<Screenshot>>(ticket, progress, screenshot);
             if (ticket == null)
             {
                 return HttpNotFound();

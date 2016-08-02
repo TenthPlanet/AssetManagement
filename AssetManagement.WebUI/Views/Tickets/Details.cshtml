@@ -72,8 +72,13 @@
     <fieldset>
         <legend></legend>
         <div class="col-md-10 linespace">
-            <strong>Asset Number    : </strong>@Model.assetnumber
-            <br />
+            <strong>Ticket Number  :</strong>@Model.ticketid
+            <br/>
+            @if (Model.assetnumber != null)
+            {
+                <strong>Asset Number    : </strong>@Model.assetnumber
+                <br />
+            }
             <strong>Employee Number : </strong>@Model.assetowner
             <br />
             <strong>Assigned To       : </strong>@Model.Employees.fullname
@@ -83,7 +88,10 @@
                 <p>
                     @Html.DisplayFor(model => model.description)
                     <div class="tabs">
+                        @if (Model.assetnumber != null)
+                        {
                         <span>@Html.ActionLink("Asset Report", "Report", "Asset", new { id = @Model.assetid }, new { @class = "btn btn-sm btn-default" }) </span>
+                        }
                         @if (Model.acknowledgestatus == false)
                         {
                             <span><a href="/Tickets/Acknowledge/@Model.ticketid" class="btn btn-sm btn-default">Acknowledge</a> </span>
@@ -92,7 +100,7 @@
                         {
                             if (Model.accomplishstatus != true)
                             {
-                                <span><a href="/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-default">Notify completion</a>  </span>
+                                <span><a href="~/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-default">Notify completion</a>  </span>
                             }
                         }
                         @*<span><a href="/Tickets/EscalateTicket/@Model.ticketid" class="delete-link">Escalate Ticket</a> | </span>*@

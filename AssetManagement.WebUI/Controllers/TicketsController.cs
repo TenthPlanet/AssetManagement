@@ -70,6 +70,8 @@ namespace AssetManagement.WebUI.Controllers
                     assetnumber = aa.assetNumber,
                     assetowner = aa.employeeNumber,
                     employeeNumber = aa.employeeNumber
+                    
+                    
                 };
                 return View(t);
             }
@@ -88,15 +90,11 @@ namespace AssetManagement.WebUI.Controllers
             if (ModelState.IsValid)
             {
                 var asset = _context.Assets.FirstOrDefault(e => e.assetNumber.Equals(ticket.assetnumber));
+                
                 if (asset != null)
                 {
                     ticket.assetid = asset.assetID;
-                    //var progress = new Progress
-                    //{
-                    //    ticketid = ticket.ticketid
-                    //};
-
-                    //_context.Progresses.Add(progress);
+                    
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
                     return RedirectToAction("Index");

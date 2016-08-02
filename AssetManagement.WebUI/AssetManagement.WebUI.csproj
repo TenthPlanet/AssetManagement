@@ -524,7 +524,9 @@
     <Content Include="Content\customscripts\jquery-1.8.3.min.js" />
     <Content Include="Content\customscripts\jquery-ui.css" />
     <Content Include="Content\customscripts\jquery-ui.js" />
+    <Content Include="Content\customscripts\lightbox.js" />
     <Content Include="Content\down.png" />
+    <Content Include="Content\lightbox.css" />
     <Content Include="Content\open.png" />
     <Content Include="Content\openenvelope.png" />
     <Content Include="Content\PagedList.css" />
