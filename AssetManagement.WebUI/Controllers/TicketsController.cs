@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
+using PagedList.Mvc;
+using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -31,10 +33,12 @@ namespace AssetManagement.WebUI.Controllers
         {
             return View();
         }
-        public ActionResult TicketsIndex()
+        public ActionResult TicketsIndex(int ? page)
         {
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
-            return View(ticket);
+            int PageSize = 4;
+            int PageNumber = (page ?? 1);
+            return View(ticket.ToPagedList(PageNumber,PageSize));
         }
         public ActionResult Create(string Assets)
         {
@@ -489,6 +493,7 @@ namespace AssetManagement.WebUI.Controllers
         {
             DateTime now = System.DateTime.Now;
             List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
+        
             return View(tt);
         }
 
@@ -547,6 +552,27 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname", model.employeeNumber);
 
             return View(model);
+        }
+        public ActionResult TicketsCount()//Total to notify tickets
+        {
+            int tickets = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList().Count();
+            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now).ToList().Count();
+
+            ViewBag.Tickets = tickets + overdueCount;
+
+            return View();
+        }
+        public ActionResult OverDue()
+        {
+            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now).ToList().Count();
+            ViewBag.Overdue = overdueCount;
+            return View();
+        }
+        public ActionResult DueTickets()//unsolved tickets
+        {
+            int tickets = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList().Count();
+            ViewBag.Tickets = tickets;
+            return View();
         }
 
     }
