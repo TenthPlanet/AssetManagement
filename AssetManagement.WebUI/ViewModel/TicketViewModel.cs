@@ -72,6 +72,7 @@ namespace AssetManagement.WebUI.ViewModel
         public string username { get; set; }
         public bool read { get; set; }
         public DateTime datesent { get; set; }
+        public string catergory { get; set; }
     }
     public class ScreenshotsViewModel
     {

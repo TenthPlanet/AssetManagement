@@ -69,21 +69,28 @@
                 @Html.ValidationMessageFor(model => model.body)
             </div>
         </div>
-        
-            
-           <div class="form-group">
+        <div class="form-group">
+            @Html.Label("Category", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Category", new SelectList(ViewBag.Category), "General Ticket", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.category)
+            </div>
+        </div>
+
+
+        <div class="form-group">
             @Html.Label("Attachments", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <input type="file" name="files" id="file" multiple />
             </div>
         </div>
-            
-        
-            @*<div class="col-md-10">
+
+
+        @*<div class="col-md-10">
                 <input type="submit" class="submit" value="UploadScreenshots" />
             </div>*@
-            
-        
+
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10" style="width:250px">
                 <input type="submit" value="Send" class="btn btn-md btn-default" />

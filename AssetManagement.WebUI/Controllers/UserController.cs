@@ -134,7 +134,7 @@ namespace AssetManagement.WebUI.Controllers
                         }
                     else
                     {
-                        //DO NOTHING
+                        //DO NOTHING -WAITING INSTRUCTIONS-
                     }
                    }
                     _context.SaveChanges();
