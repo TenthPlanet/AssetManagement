@@ -11,6 +11,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList.Mvc;
 using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
@@ -42,22 +43,27 @@ namespace AssetManagement.WebUI.Controllers
                     ViewBag.DateSortLink = "active";
                     break;
             }
-            int pageSize = 2;
+            int pageSize = 4;
             int pageNumber = (page ?? 1);
             return View(tickets.ToPagedList(pageNumber, pageSize));
         }
-        public ActionResult Solutions()
+        public ActionResult Solutions(int?page)
         {
             var tickets = _context.Tickets.Where(t => t.employeeNumber.Equals(User.Identity.Name)
                 && t.solution != null && t.ticketstatus == false)
                 .ToList();
-            return View(tickets);
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageNumber, pageSize));
+         
         }
-        public ActionResult Base()
+        public ActionResult Base(int?page)
         {
             var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
                 .OrderByDescending(x => x.datecreated);
-            return View(tickets);
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return View(tickets.ToPagedList(pageNumber, pageSize));
         }
         public ActionResult Employees()
         {

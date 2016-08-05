@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.ContactUs>
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.ContactUs>
+@using PagedList
+@using PagedList.Mvc
 
 @{
     //ViewBag.Title = "unReadMail";
@@ -104,3 +106,13 @@
         </fieldset>
     }
 }
+
+<br />
+<div style="text-align: center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("unReadmail", new { page }))
+    </p>
+</div>

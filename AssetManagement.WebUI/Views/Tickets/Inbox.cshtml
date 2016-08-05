@@ -52,7 +52,7 @@
 
 <div style="margin-bottom:2%;"></div>
 
-@using (Html.BeginForm("Inbox", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("AllMessages", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <div class="col-lg-7">

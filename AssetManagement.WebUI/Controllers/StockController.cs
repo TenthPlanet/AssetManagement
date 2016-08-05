@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList.Mvc;
+using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -30,7 +32,7 @@ namespace AssetManagement.WebUI.Controllers
         //
         // GET: /Stock/
         [AllowAnonymous]
-        public ActionResult Index()
+        public ActionResult Index(int?page)
         {
             var query = (from assets in repo.Stocks()
                          select new StockViewModel 
@@ -41,7 +43,10 @@ namespace AssetManagement.WebUI.Controllers
                              Quantity = assets.quantity.ToString()
                          }).ToList()
                          .OrderBy(m => m.Quantity);
-            return View(query);
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(query.ToPagedList(PageNumber, PageSize));
+         
         }
 
         public ViewResult Add()

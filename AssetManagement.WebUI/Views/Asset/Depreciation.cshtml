@@ -1,5 +1,6 @@
-﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Asset.AssetListViewModel>
-
+﻿@model PagedList.IPagedList<AssetManagement.WebUI.ViewModel.Asset.AssetListViewModel>
+@using PagedList.Mvc
+@using PagedList
 
 @if (User.IsInRole("Asset-Manager"))
 {
@@ -112,3 +113,13 @@ else
             </tr>
         }
     </table>
+
+<br />
+<div style="text-align: center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("Depreciation", new { page }))
+    </p>
+</div>

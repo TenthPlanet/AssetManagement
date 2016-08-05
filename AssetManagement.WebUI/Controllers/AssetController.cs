@@ -9,6 +9,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using AssetManagement.Business;
+using PagedList.Mvc;
+using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -21,7 +23,7 @@ namespace AssetManagement.WebUI.Controllers
 
         //
         // GET: /Asset/
-        public ActionResult Index()
+        public ActionResult Index(int?page)
         {
 
             var assets = (from a in list.Assets()
@@ -40,12 +42,16 @@ namespace AssetManagement.WebUI.Controllers
                           .Where(x => x.assetstatus == 0);
             int count = assets.ToList().Count;
             ViewBag.Items = count;
-            return View(assets);
+
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(assets.ToPagedList(PageNumber, PageSize));
+             
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Assigned(string search)
+        public ActionResult Assigned(string search,int?page)
         {
             if (search != "")
             {
@@ -68,12 +74,15 @@ namespace AssetManagement.WebUI.Controllers
                              })
                          .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1)
                          .ToList();
-                return View(asset);
+                int PageSize = 6;
+                int PageNumber = (page ?? 1);
+                return View(asset.ToPagedList(PageNumber, PageSize));
+               
             }
             return View();
         }
 
-        public ActionResult Assigned()
+        public ActionResult Assigned(int?page)
         {
 
             var assets = (from a in list.Assets()
@@ -93,14 +102,16 @@ namespace AssetManagement.WebUI.Controllers
                           })
                           .ToList()
                           .Where(x => x.assetstatus == 1);
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
             //int count = assets.ToList().Count;
             //ViewBag.Items = count;
             //ViewBag.Category = list.getCategories();
-            return View(assets);
+            return View(assets.ToPagedList(PageNumber,PageSize));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Depreciation(string search)
+        public ActionResult Depreciation(string search,int ?page)
         {
             if (search != "")
             {
@@ -125,7 +136,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View();
         }
-        public ActionResult Depreciation()
+        public ActionResult Depreciation(int?page)
         {
             var assets = (from a in list.Assets()
                           join e in list.Employees() on a.employeeNumber equals e.employeeNumber
@@ -144,7 +155,10 @@ namespace AssetManagement.WebUI.Controllers
                           .ToList()
                           .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)));
             ViewBag.Category = context.Categories.ToList();
-            return View(assets);
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(assets.ToPagedList(PageNumber, PageSize));
+            
         }
 
         public ActionResult Assign()
@@ -828,7 +842,7 @@ namespace AssetManagement.WebUI.Controllers
         //The technician must be able to see the list of assets
         //and their respective owners
         [Authorize(Roles = "Technician")]
-        public ActionResult AllAssets()
+        public ActionResult AllAssets(int?page)
         {
             var assets = (from a in list.Assets()
                           join e in list.Employees()
@@ -848,7 +862,9 @@ namespace AssetManagement.WebUI.Controllers
                           .ToList()
                           .Where(x => x.assetstatus == 1);
             int count = assets.ToList().Count;
-            return View(assets);
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(assets.ToPagedList(PageNumber,PageSize));
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -917,7 +933,7 @@ namespace AssetManagement.WebUI.Controllers
             return View(result);
         }
         [HttpGet]
-        public ActionResult EmployeeAssets(string id)
+        public ActionResult EmployeeAssets(string id,int?page)
         {
             ViewBag.EmployeeName = context.Employees.Find(id).fullname;
             //ViewBag.InvoiceId = context.Invoices.Where(i=>i.InvoiceNumber == )
@@ -925,13 +941,18 @@ namespace AssetManagement.WebUI.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             else
             {
-                return View(list.Assets().Where(p => p.employeeNumber == id));
+                int PageSize = 6;
+                int PageNumber = (page ?? 1);
+                return View(list.Assets().Where(p => p.employeeNumber == id).ToPagedList(PageNumber,PageSize));
             }
         }
 
-        public ActionResult AllExistingAssets()
+        public ActionResult AllExistingAssets(int?page)
         {
-            return View(list.Assets());
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(list.Assets().ToPagedList(PageNumber, PageSize));
+   
         }
 
         public JsonResult GetEmployeesA(string term)

@@ -449,8 +449,10 @@ namespace AssetManagement.WebUI.Controllers
                                  username = a.userName,
                                  datesent = a.datesent
                              })
-                                 .OrderByDescending(x => x.datesent);
-                return View(query);
+                             .OrderByDescending(x => x.datesent);
+            //int PageSize = 6;
+            //int PageNumber = (page ?? 1);
+           return View(query);
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
@@ -458,7 +460,6 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult InboxCount()
         {
            ViewBag.InboxNote = (_context.Contactus.ToList().Where(x => x.read.Equals(false))).Count();
-
            return View();
         }
 
@@ -490,19 +491,19 @@ namespace AssetManagement.WebUI.Controllers
             _context.SaveChanges();
             return View(data);
         }
-        public ActionResult unReadmail()
+        public ActionResult unReadmail(int?page)
         {
             var query = _context.Contactus.Where(x => x.read.Equals(false)).ToList();
-            int count = query.Count();
-            ViewBag.Inbox = count;
-            return View(query);
+            int PageSize = 4;
+            int PageNumber = (page ?? 1);
+            return View(query.ToPagedList(PageNumber,PageSize));
         }
-        public ActionResult OpenedMail()
+        public ActionResult OpenedMail(int?page)
         {
             var query = _context.Contactus.Where(x => x.read.Equals(true)).ToList();
-            int count = query.Count();
-            ViewBag.Opened = count;
-            return View(query);
+            int PageSize = 4;
+            int PageNumber = (page ?? 1);
+            return View(query.ToPagedList(PageNumber, PageSize));
         }
 
         public ActionResult Report()
