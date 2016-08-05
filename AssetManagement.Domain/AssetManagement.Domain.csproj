@@ -118,6 +118,14 @@
     <Compile Include="Entities\HelpdeskDomain.cs" />
     <Compile Include="Entities\Invoice.cs" />
     <Compile Include="Concrete\Configuration.cs" />
+    <Compile Include="Migrations\201608042055206_dropcatergory.cs" />
+    <Compile Include="Migrations\201608042055206_dropcatergory.Designer.cs">
+      <DependentUpon>201608042055206_dropcatergory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608050536287_addcategory.cs" />
+    <Compile Include="Migrations\201608050536287_addcategory.Designer.cs">
+      <DependentUpon>201608050536287_addcategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
   </ItemGroup>
@@ -128,8 +136,14 @@
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <EmbeddedResource Include="Migrations\201608042055206_dropcatergory.resx">
+      <DependentUpon>201608042055206_dropcatergory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608050536287_addcategory.resx">
+      <DependentUpon>201608050536287_addcategory.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

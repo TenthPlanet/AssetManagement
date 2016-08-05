@@ -35,12 +35,10 @@
     }
 </style>
 <div style="margin-bottom:2%;"></div>
-<h2>Tickets(@Html.Partial("_DueTicketsCounter"))</h2>
 
 <p>
     @Html.ActionLink("New Ticket", "SelectType", "Asset")
 </p>
-
 @foreach (var i in Model)
 {
 

@@ -99,7 +99,10 @@ namespace AssetManagement.WebUI.Controllers
         //Contacting the helpdesk
         public ActionResult ContactUs()
         {
-
+            var category = _context.Assets.Where(x => x.employeeNumber.Equals(User.Identity.Name)).Select(x => x.assetNumber);
+            ViewBag.Category = category;
+            //var assetNo = _context.Assets.Where(x => x.employeeNumber.Equals(User.Identity.Name)).Select(x => x.assetNumber);
+            //ViewBag.AssetNo = assetNo;
             return View();
             //var screenshots = _context.Screenshots.Where(p=>p.contactId==contactit)
         }
@@ -116,7 +119,8 @@ namespace AssetManagement.WebUI.Controllers
                         body = model.body,
                         userName = User.Identity.Name,
                         read = false,
-                        datesent = DateTime.Now
+                        datesent = DateTime.Now,
+                        category = model.category
                     };
                 _context.Contactus.Add(contact);
 
@@ -137,6 +141,8 @@ namespace AssetManagement.WebUI.Controllers
                         //DO NOTHING -WAITING INSTRUCTIONS-
                     }
                    }
+                var category = _context.Assets.Where(x => x.employeeNumber.Equals(User.Identity.Name)).Select(x => x.assetNumber);
+                ViewBag.Category = category;
                     _context.SaveChanges();
                 TempData["Success"] = "Request was sent successfully.";
             }

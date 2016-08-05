@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<AssetManagement.Domain.Entities.ContactUs>
 
 @{
-    ViewBag.Title = "unReadMail";
-    Layout = "~/Views/Shared/_helpd.cshtml";
+    //ViewBag.Title = "unReadMail";
+    Layout = null;
 }
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -48,8 +48,7 @@
         padding-right: 6px;
     }
 </style>
-<div style="margin-bottom:10%;"></div>
-<h2>Inbox (@ViewBag.Inbox)</h2>
+<div style="margin-bottom:2%;"></div>
 
 @*@using (Html.BeginForm("Inbox", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
@@ -58,21 +57,7 @@
         <span>@Html.TextBox("search") <input type="submit" class="btn btn-default" value="Search" /></span>
     </div>
 }*@
-<div class="btn-group">
-    <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
-        <span class="icon_lightbulb_alt"></span>
-        View
-    </a>
-    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li><a href="~/Tickets/Inbox">All Messages</a></li>
-        <li><a href="~/Tickets/OpenedMail">Opened</a></li>
-        
-        @*<li><a href="~/Monitor/Add">Deleted</a></li>*@
-        <li class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
-    </ul>
-</div>
+
 
 @foreach (var item in Model)
 {

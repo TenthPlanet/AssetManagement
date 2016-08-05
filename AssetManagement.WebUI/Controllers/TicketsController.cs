@@ -31,6 +31,12 @@ namespace AssetManagement.WebUI.Controllers
         // GET: Tickets
         public ActionResult Index()
         {
+            ViewBag.MyTickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name)
+                && x.solution == null && x.ticketstatus == true).ToList().Count();
+            ViewBag.MySolutions = _context.Tickets.Where(t => t.employeeNumber.Equals(User.Identity.Name)
+                && t.solution != null && t.ticketstatus == false)
+                .ToList().Count();
+            ViewBag.KnowledgeBase = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList().Count();
             return View();
         }
         public ActionResult TicketsIndex(int ? page)
@@ -43,30 +49,42 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult Create(string Assets)
         {
 
-            string eno = null, sub = null, bodd = null;
+            string employeenumber = null, subject = null, body = null, assetnumber = null;
 
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname");
             Session["Asset"] = Assets;
+            employeenumber = Session["empNo"].ToString();
+            subject = Session["Subject"].ToString();
+            body = Session["Body"].ToString();
+
+            var catergory = _context.Assets;
+            if (Assets == null)
+            {
+                assetnumber = Session["AssetNumber"].ToString();
+            }
 
 
-            eno = Session["empNo"].ToString();
-            sub = Session["Subject"].ToString();
-            bodd = Session["Body"].ToString();
+            //THIS FROM INBOX MESSAGE
 
-            if (bodd != " " && sub != " ")
+            if (body != " " && subject != " ")
             {
                 Ticket tt = new Ticket
                 {
-                    assetowner = eno,
-                    subject = sub,
-                    description = bodd
+                    assetowner = employeenumber,
+                    subject = subject,
+                    description = body,
+                    assetnumber = assetnumber,
+                    category = catergory.Single(p => p.assetNumber == assetnumber).catergory
+
                 };
                 return View(tt);
             }
 
-            Asset aa = _context.Assets.ToList().Find(x => x.employeeNumber == eno && x.catergory == Assets);
+            //CREATE TICKET FROM SELECT TYPE VIEW
+            //Finding the employee number and catergory
+            Asset aa = _context.Assets.ToList().Find(x => x.employeeNumber == employeenumber && x.catergory == Assets);
 
-            if (eno != null && aa != null)
+            if (employeenumber != null && aa != null)
             {
                 Ticket t = new Ticket
                 {
@@ -74,8 +92,8 @@ namespace AssetManagement.WebUI.Controllers
                     assetnumber = aa.assetNumber,
                     assetowner = aa.employeeNumber,
                     employeeNumber = aa.employeeNumber
-                    
-                    
+
+
                 };
                 return View(t);
             }
@@ -413,6 +431,9 @@ namespace AssetManagement.WebUI.Controllers
         }
         public ActionResult AllMessages()
         {
+            ViewBag.AllMessages = _context.Contactus.ToList().Count();
+            ViewBag.OpenedMessages = _context.Contactus.ToList().Where(x => x.read.Equals(true)).Count();
+            ViewBag.ClosedMessages = _context.Contactus.ToList().Where(x => x.read.Equals(false)).Count();
             return View();
         }
       
@@ -429,10 +450,6 @@ namespace AssetManagement.WebUI.Controllers
                                  datesent = a.datesent
                              })
                                  .OrderByDescending(x => x.datesent);
-                int count = (query.ToList().Where(x => x.read.Equals(false))).Count();
-                int count2 = query.ToList().Count();
-                ViewBag.Mail = count2;
-                ViewBag.Inbox = count;
                 return View(query);
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
@@ -451,11 +468,16 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            //var inbox = _context.Contactus.Find(id);
             var inbox = _context.Contactus.Find(id);
 
             Session["empNo"] = inbox.userName.ToString();
             Session["Subject"] = inbox.subject.ToString();
             Session["Body"] = inbox.body.ToString();
+            if (inbox.category != null)
+            {
+                Session["AssetNumber"] = inbox.category.ToString();
+            }
 
             var screenshots = _context.Screenshots.Where(m => m.contactId == inbox.contactId).ToList();
             if (inbox == null)
