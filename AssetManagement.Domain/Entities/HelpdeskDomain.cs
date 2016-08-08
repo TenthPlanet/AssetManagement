@@ -65,8 +65,9 @@ namespace AssetManagement.Domain.Entities
         [DefaultValue(false)]
         public bool read { get; set; }
         public DateTime datesent { get; set; }
-        //public byte[] image { get; set; }
+        public string category { get; set; }
         public ICollection<Screenshot> screenshots { get; set; }
+        
     }
     public class Screenshot
     {

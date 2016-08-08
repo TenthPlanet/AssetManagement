@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.ContactUs>
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.ContactUs>
+@using PagedList
+@using PagedList.Mvc
 
 @{
     //ViewBag.Title = "unReadMail";
@@ -49,7 +51,6 @@
     }
 </style>
 <div style="margin-bottom:2%;"></div>
-<h2>Opened Messages (@ViewBag.Opened)</h2>
 
 @*<div class="btn-group">
     <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
@@ -111,3 +112,13 @@
         </fieldset>
     }
 }
+
+<br />
+<div style="text-align: center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("AllMessages", new { page }))
+    </p>
+</div>

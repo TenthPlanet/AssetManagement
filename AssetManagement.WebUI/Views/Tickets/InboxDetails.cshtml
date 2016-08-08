@@ -6,6 +6,7 @@
     ViewBag.Title = "InboxDetails";
     Layout = "~/Views/Shared/_helpd.cshtml";
 }
+<link rel="stylesheet" href="~/Content/lightbox.css" />
 <style>
     fieldset {
         padding-right: 20%;
@@ -60,30 +61,67 @@
         </strong>
     </h3>
 </div>
-<fieldset>
-    <legend></legend>
-    <div class="col-md-10 linespace">
-        <h4><strong>@Model.Item1.subject</strong></h4>
-    </div>
-    <br /><br />
+@if (Model.Item1.category != null)
+{
 
-    <div class="col-md-10">
-        <p>
-            @Model.Item1.body
-            <div class="tabs">
-                <span>@Html.ActionLink("Create Asset Ticket", "Create", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
-                <span>@Html.ActionLink("Create General Ticket", "General", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
-                @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
-                <span>Sent: @Model.Item1.datesent</span>
-            </div>
-        </p>
+    <fieldset>
+        <legend></legend>
+        <div class="col-md-10 linespace">
+            <h4><strong>@Model.Item1.subject - @Model.Item1.category</strong></h4>
+        </div>
+        <br /><br />
 
-        @foreach (var image in Model.Item2)
-        {
-            <div>
-                <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(image.ImageData)" width="100" height="100" />
-            </div>
-        }
 
-    </div>
-</fieldset>
+        <div class="col-md-10">
+            <p>
+                @Model.Item1.body
+                <div class="tabs">
+                    <span>@Html.ActionLink("Create Asset Ticket", "Create", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                    <span>@Html.ActionLink("Create General Ticket", "General", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                    @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
+                    <span>Sent: @Model.Item1.datesent</span>
+                </div>
+            </p>
+
+            @foreach (var image in Model.Item2)
+            {
+                <div>
+                    <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(image.ImageData)" width="100" height="100" />
+                </div>
+            }
+
+        </div>
+    </fieldset>
+}
+else
+{
+    <fieldset>
+        <legend></legend>
+        <div class="col-md-10 linespace">
+            <h4><strong>@Model.Item1.subject </strong></h4>
+        </div>
+        <br /><br />
+
+
+        <div class="col-md-10">
+            <p>
+                @Model.Item1.body
+                <div class="tabs">
+                    <span>@Html.ActionLink("Create Asset Ticket", "Create", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                    <span>@Html.ActionLink("Create General Ticket", "General", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
+                    @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
+                    <span>Sent: @Model.Item1.datesent</span>
+                </div>
+            </p>
+
+            @foreach (var image in Model.Item2)
+            {
+                <div>
+                    <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(image.ImageData)" width="100" height="100" />
+                </div>
+            }
+
+        </div>
+    </fieldset>
+}
+<script src="~/Content/customscripts/lightbox.js"></script>

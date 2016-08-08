@@ -5,17 +5,20 @@ using System.Web;
 using System.Web.Mvc;
 using AssetManagement.Domain.Entities;
 using System.Data.Entity.Infrastructure;
+using PagedList.Mvc;
+using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
 {
     public class InvoiceController : Controller
     {
         // GET: Invoice
-        public ActionResult Index()
+        public ActionResult Index(int?page)
         {
             Domain.Context.AssetManagementEntities  AME = new Domain.Context.AssetManagementEntities();
-            
-            return View(AME.Invoices.ToList());
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(AME.Invoices.ToList().ToPagedList(PageNumber, PageSize));
         }
         
         public ActionResult Create()

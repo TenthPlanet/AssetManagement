@@ -31,8 +31,7 @@
         }
     </style>
     <div style="margin-bottom:2%;"></div>
-    <h2>My Solutions</h2>
-@using (Html.BeginForm("MySolutions", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Index", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <div class="col-lg-7">

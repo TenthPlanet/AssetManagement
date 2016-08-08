@@ -1,4 +1,7 @@
-﻿@model IEnumerable<AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel>
+﻿@model PagedList.IPagedList<AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel>
+@using PagedList.Mvc
+@using PagedList
+
 
 @if (User.IsInRole("Asset-Manager"))
 {
@@ -129,3 +132,13 @@ else
         </tr>
     }
 </table>
+
+<br />
+<div style="text-align: center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </p>
+</div>

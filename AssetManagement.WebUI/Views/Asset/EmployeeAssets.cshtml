@@ -1,4 +1,7 @@
-﻿@model IEnumerable<AssetManagement.Domain.Entities.Asset>
+﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.Asset>
+@using PagedList.Mvc
+@using PagedList
+
 
 @{
     ViewBag.Title = "EmployeeAssets";
@@ -23,25 +26,25 @@
             <text>Invoice</text>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.assetNumber)
+            @Html.DisplayName("Asset Number")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.serialNumber)
+            @Html.DisplayName("Serial Number")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.catergory)
+            @Html.DisplayName("Catergory")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.manufacturer)
+            @Html.DisplayName("Manufacturer")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.warranty)
+            @Html.DisplayName("Warranty")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.dateadded)
+            @Html.DisplayName("Date Added")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.assigndate)
+            @Html.DisplayName("Assign Date")
         </th>
     </tr>
 @foreach (var item in Model) {
@@ -76,3 +79,13 @@
 }
 
 </table>
+
+<br />
+<div style="text-align: center">
+    <p>
+        @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </p>
+    <p style="margin-top: -25px">
+        @Html.PagedListPager(Model, page => Url.Action("EmployeeAssets", new { page }))
+    </p>
+</div>

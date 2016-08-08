@@ -1,4 +1,4 @@
-﻿@model Tuple<AssetManagement.Domain.Entities.Ticket, IEnumerable<AssetManagement.Domain.Entities.Progress>>
+﻿@model Tuple<AssetManagement.Domain.Entities.Ticket, IEnumerable<AssetManagement.Domain.Entities.Progress>, IEnumerable<AssetManagement.Domain.Entities.Screenshot>>
 
 @{
     ViewBag.Title = "Details";
@@ -45,6 +45,9 @@
     span#showpanel:hover{
         cursor:pointer;
     }
+    img#img-screen:hover{
+        width: 50%;
+    }
 </style>
 <div style="margin-bottom:10%;"></div>
 
@@ -83,9 +86,14 @@
 <fieldset>
     <legend></legend>
     <div class="col-md-10 linespace">
+        <strong>Ticket Number :</strong>@Model.Item1.ticketid
+        <br/>
+        @if (Model.Item1.assetnumber != null)
+        {
         <strong>Asset Number    : </strong>@Model.Item1.assetnumber
-        <br />
-        <strong>Employee Number : </strong>@Model.Item1.assetowner
+            <br />
+        }
+                <strong>Employee Number : </strong>@Model.Item1.assetowner
         <br />
         <strong>Assigned To       : </strong>@Model.Item1.Employees.fullname
         <br /><br />
@@ -115,6 +123,14 @@
                 @if (Model.Item1.datecompleted != null)
                 {
                     <span>| COM: @Html.DisplayFor(model => model.Item1.datecompleted)</span>
+                }
+            </div>
+        </p>
+        <p>
+            <div>
+                @foreach (var pics in Model.Item3)
+                {
+                    <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(pics.ImageData)" width="100" height="100" />
                 }
             </div>
         </p>
