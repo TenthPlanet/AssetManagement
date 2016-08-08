@@ -1096,3 +1096,10 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Business\obj\Debug\AssetManagement.Business.csprojResolveAssemblyReference.cache
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Business\obj\Debug\AssetManagement.Business.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Business\obj\Debug\AssetManagement.Business.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\SendGrid.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\SendGrid.SmtpApi.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\SendGridMail.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\System.Net.Http.Formatting.xml

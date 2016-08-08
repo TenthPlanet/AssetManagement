@@ -12,7 +12,9 @@ using AssetManagement.WebUI.Models;
 using AssetManagement.Domain.Context;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Web.Security;
-
+using SendGrid;
+using System.Net.Mail;
+using System.Collections.Generic;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -270,18 +272,69 @@ namespace AssetManagement.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await UserManager.FindByNameAsync(model.Email);
+                var user = await UserManager.FindByEmailAsync(model.Email);
+                Session["empnumber"] = " ";
+                //var user = await UserManager.FindByNameAsync(model.Email);
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
                     // Don't reveal that the user does not exist or is not confirmed
                     return View("ForgotPasswordConfirmation");
                 }
+                Session["empnumber"] = user.UserName.ToString();
+                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
+                // Send an email with this link
+                string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                //  await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
+
+
+                // Create the email object first, then add the properties.
+                var myMessage = new SendGridMessage();
+                // Add the message properties.
+                myMessage.From = new MailAddress("tenthplanet02@gmail.com", "Izingcweti");
+                // Add multiple addresses to the To field.
+                //List<String> recipients = new List<String>
+                //{
+                //    @"Siyabonga Nkosi <snkosi524@gmail.com>"
+                //};
+                //myMessage.AddTo(recipients);
+                myMessage.AddTo(user.Email);
+
+                //Add the Subject, HTML and Text bodies
+                // Subject
+                string subject = "Application";
+
+                // HTML Body
+                string html = "<table style=\"border: none; font-family: verdana, tahoma, sans-serif;\">" +
+                              "<tr> " +
+                                  "<td> <h3>Hello,</h3> <p>Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>" +
+                                  "<p>Regards,<br/> Izingcweti Helpdesk</p> </td> </tr> </table>";
+
+                myMessage.Subject = subject;
+                myMessage.Html = html;
+
+                /* ADD THE ATTACHMENT
+                     * For the purposes of this demo, the file to attach
+                     * is residing in the project folder.
+                     * ===================================================*/
+
+
+                // Create a Web transport, using API Key
+                var transportWeb = new Web("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");
+                // Send the email.
+                await transportWeb.DeliverAsync(myMessage);
+
+                //ViewBag.PassMessage= "Check your email and Reset your Password!";
+
+                //return(ViewBag.PassMessage);
+                return RedirectToAction("ForgotPasswordConfirmation", "Account");
 
             }
 
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
 
         //
         // GET: /Account/ForgotPasswordConfirmation
@@ -296,6 +349,11 @@ namespace AssetManagement.WebUI.Controllers
         [AllowAnonymous]
         public ActionResult ResetPassword(string code)
         {
+            string empnumber = Session["empnumber"].ToString();
+            ResetPasswordViewModel rt = new ResetPasswordViewModel
+            {
+                EmployeeNumber=empnumber
+            };
             return code == null ? View("Error") : View();
         }
 

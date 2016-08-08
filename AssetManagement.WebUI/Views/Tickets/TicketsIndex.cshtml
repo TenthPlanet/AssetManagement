@@ -14,6 +14,8 @@
 
     .link {
         text-decoration: none;
+        margin-bottom:0;
+        padding-bottom:0;
     }
 
     .tabs {
@@ -47,10 +49,10 @@
             <strong>
                 @if (i.acknowledgestatus == false)
                 {
-
+                 <span style="font-size:small"># @Html.DisplayFor(model=>i.ticketid)</span>
                     <span> @Html.ActionLink(i.subject, "Details", "Tickets", new { id = i.ticketid }, new { @class = "link" })</span>
                     <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
-
+                    
                 }
                 else
                 {

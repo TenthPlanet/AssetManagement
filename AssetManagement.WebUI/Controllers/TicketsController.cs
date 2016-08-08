@@ -442,6 +442,15 @@ namespace AssetManagement.WebUI.Controllers
 
            return View();
         }
+        public ActionResult OverDueCount()
+        {
+            DateTime now = System.DateTime.Now;
+            List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
+            int qty = tt.ToList().Count();
+            ViewBag.Overdue = qty;
+
+            return View();
+        }
 
         public ActionResult InboxDetails(int? id)
         {
@@ -491,6 +500,9 @@ namespace AssetManagement.WebUI.Controllers
         {
             DateTime now = System.DateTime.Now;
             List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
+
+            int qty = tt.ToList().Count();
+            ViewBag.Overdue = qty;
             return View(tt);
         }
 

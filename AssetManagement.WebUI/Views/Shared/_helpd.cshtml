@@ -78,7 +78,7 @@
                     <ul class="dropdown-menu extended inbox">
                         <div class="notify-arrow notify-arrow-blue"></div>
                         <li>
-                            <p class="red">You have @Html.Partial("_Inbox") Inbox new messages</p>
+                            <p class="red">You have @Html.Partial("_Inbox") new messages</p>
                         </li>
                         <li>
                             <a href="@Url.Action("AllMessages", "Tickets")"> <!--Redirect you to the tickets index-->
@@ -87,6 +87,27 @@
                         </li>
                         </ul>
                    </li>
+
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-bell-l"></i>
+                        <span class="badge bg-important">@Html.Partial("_OverDue")</span><!--returns the count number of inbox messages-->
+                        
+                    </a>
+                    
+                    <ul class="dropdown-menu extended inbox">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="red">There are @Html.Partial("_OverDue") OverDue Tickets</p>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("OverDueTickets", "Tickets")"> <!--Redirect you to the tickets index-->
+                                <i class="fa fa-warning text-red"></i> @Html.Partial("_OverDue") OverDue Ticket(s) Found
+                            </a>
+                        </li>
+                        </ul>
+                   </li>
+
                </ul>
            </div>
             <!----=============================================-->

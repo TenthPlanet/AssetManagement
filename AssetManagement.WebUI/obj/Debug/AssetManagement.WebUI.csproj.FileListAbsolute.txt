@@ -1884,3 +1884,8 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGridMail.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.xml
