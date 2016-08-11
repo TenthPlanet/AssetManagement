@@ -115,7 +115,7 @@
                     if (Model.Item1.accomplishstatus != true)
                     {
                         <span><a href="~/Technician/Complete/@Model.Item1.ticketid" class="btn btn-sm btn-default">Notify completion</a> | </span>
-                        <span>@Html.ActionLink("Progress Report", "Progress", new { id = Model.Item1.ticketid }, new { @class = "btn btn-sm btn-default"})</span>
+                        <span>@Html.ActionLink("Progress Report", "Progress", new { id = Model.Item1.ticketid }, new { @class = "btn btn-sm btn-default" })</span>
                     }
                 }
                 <span>Created: @Html.DisplayFor(model => model.Item1.datecreated) | </span>
@@ -129,9 +129,9 @@
         <p>
             <div>
                 @foreach (var pics in Model.Item3)
-                {
-                    <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(pics.ImageData)" width="100" height="100" />
-                }
+                      {
+                         <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(pics.ImageData)" width="100" height="100" />
+                      }
             </div>
         </p>
     </div>
@@ -143,6 +143,7 @@
         @foreach(var p in Model.Item2)
         {
             <p class="thumbnail thumbspace">
+                <span><strong>@p.employeeNumber</strong></span>
                 @Html.DisplayFor(item => p.comment)
             </p>
             <span class="thumbnail" style="float:right;margin-top:0">@p.date</span>

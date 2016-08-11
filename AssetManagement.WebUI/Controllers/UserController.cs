@@ -21,14 +21,6 @@ namespace AssetManagement.WebUI.Controllers
     {
         private readonly AssetManagementEntities _context = new AssetManagementEntities();
         AssetLogic al = new AssetLogic();
-        //
-        // GET: /User/
-        //public ActionResult Index()
-        //{
-        //    var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
-        //         .OrderByDescending(x => x.datecreated);
-        //    return View(tickets);
-        //}
 
         //Knowledge base list
         public ActionResult Base(int?page)
@@ -85,6 +77,64 @@ namespace AssetManagement.WebUI.Controllers
             int pageNumber = (page ?? 1);
             return View(assets.ToPagedList(pageNumber, pageSize));
             
+        }
+
+        //User Tickets
+        public ActionResult Tickets()
+        {
+            var tickets = _context.Tickets.Where(x => x.assetowner.Equals(User.Identity.Name)).ToList();
+            return View(tickets);
+        }
+        //Ticket details
+        public ActionResult TicketInfo(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            var ticket = _context.Tickets.Find(id);
+            var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
+
+            var data = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(data);
+        }
+        //Write comment
+        //public ActionResult Progress(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    var ticket = _context.Tickets.Find(id);
+        //    if (ticket == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(ticket);
+        //}
+        [HttpPost, ActionName("TicketInfo")]
+        [ValidateAntiForgeryToken]
+        public ActionResult WriteComment(int? id, string comment)
+        {
+            if (id != null)
+            {
+                var ticket = _context.Tickets.Find(id);
+                var progress = new Progress
+                {
+                    ticketid = ticket.ticketid,
+                    comment = comment,
+                    date = DateTime.Now,
+                    employeeNumber = User.Identity.Name
+                };
+                _context.Progresses.Add(progress);
+                _context.SaveChanges();
+                return RedirectToAction("TicketInfo", new { id = ticket.ticketid });
+            }
+            return View();
         }
 
         //Detailed problem and solution

@@ -1,0 +1,160 @@
+﻿@model Tuple<AssetManagement.Domain.Entities.Ticket, IEnumerable<AssetManagement.Domain.Entities.Progress>>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<style>
+    fieldset {
+        padding-right: 20%;
+        width: 100%;
+        border: 2px 2px solid #000;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .tabs {
+        padding-top: 2%;
+    }
+
+        .tabs span {
+            display: inline-block;
+            padding-right: 4px;
+        }
+
+    strong span {
+        display: inline-block;
+        padding-right: 6px;
+    }
+
+    .linespace strong {
+        padding-right: 10px;
+    }
+
+    p.thumbspace {
+        padding: 2%;
+    }
+
+    .col-md-10 {
+        font-size: 1.1em;
+    }
+
+    div#progress {
+        display: none;
+    }
+
+    span#showpanel:hover, #showcomment:hover {
+        cursor: pointer;
+    }
+
+    img#img-screen:hover {
+        width: 50%;
+    }
+    div#user-reply{
+        display: none;
+    }
+</style>
+<div style="margin-bottom:10%;"></div>
+
+<h2>Ticket Details</h2>
+
+<div class="col-md-10">
+    <h3>
+        <strong>
+            @if (Model.Item1.ticketstatus == true)
+            {
+                if (Model.Item1.acknowledgestatus == false)
+                {
+                    <span>@Model.Item1.subject</span>
+                    <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
+                }
+                else
+                {
+                    <span>@Model.Item1.subject</span>
+                    <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
+                }
+            }
+            else
+            {
+                <span>@Model.Item1.subject</span>
+                <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
+            }
+
+        </strong>
+    </h3>
+</div>
+<fieldset>
+    <legend></legend>
+    <div class="col-md-10 linespace">
+        <strong>Ticket Number :</strong>@Model.Item1.ticketid
+        <br />
+        @if (Model.Item1.assetnumber != null)
+        {
+            <strong>Asset Number    : </strong>@Model.Item1.assetnumber
+            <br />
+        }
+        <strong>Ticket Owner : </strong>You
+        <br />
+        <strong>Assigned To       : </strong>@Model.Item1.Employees.fullname
+        <br /><br />
+    </div>
+    <div class="col-md-10">
+        <p>
+            @Html.DisplayFor(model => model.Item1.description)
+        </p>
+    </div>
+    <div style="clear: both;width:100%"></div>
+    <span style="color:blue;width:90%;margin-left:2%;padding-top:6%" id="showpanel">Show Progress</span>
+    <div style="clear: both;width:100%"></div>
+
+    <span class="btn btn-xs" id="showcomment">Comment</span>
+    <div id="user-reply">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="col-md-10">
+                <input type="text" name="comment" id="comment" placeholder="Write progress report..." class="form-control" />
+            </div>
+        }
+    </div>
+
+    <div class="col-md-10" id="progress" style="width:98%; padding: 1%">
+
+        @foreach (var p in Model.Item2)
+        {
+            <p class="thumbnail thumbspace">
+                <span><strong>@p.employeeNumber</strong></span>
+                <br/>
+                @Html.DisplayFor(item => p.comment)
+            </p>
+            <span class="thumbnail" style="float:right;margin-top:0">@p.date</span>
+        }
+    </div>
+</fieldset>
+<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
+<script>
+    $('span#showpanel').on('click', function () {
+        $('div#progress').slideToggle(1000);
+        var $state = $('span#showpanel').text();
+
+        if ($state === 'Show Progress') {
+            $('span#showpanel').text('Hide Progress')
+        } else {
+            $('span#showpanel').text('Show Progress')
+        }
+    });
+
+    $('span#showcomment').on('click', function () {
+        $('div#user-reply').slideToggle(1000);
+        var $state = $('span#showcomment').text();
+
+        if ($state === 'Comment') {
+            $('span#showpanel').text('Hide Panel')
+        } else {
+            $('span#showpanel').text('Comment')
+        }
+    });
+</script>

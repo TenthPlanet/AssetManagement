@@ -146,6 +146,22 @@
     <Compile Include="Migrations\201608050536287_addcategory.Designer.cs">
       <DependentUpon>201608050536287_addcategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608111349453_RemoveTID.cs" />
+    <Compile Include="Migrations\201608111349453_RemoveTID.Designer.cs">
+      <DependentUpon>201608111349453_RemoveTID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608111511187_RemoveTicket.cs" />
+    <Compile Include="Migrations\201608111511187_RemoveTicket.Designer.cs">
+      <DependentUpon>201608111511187_RemoveTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608111730025_CommentOwner.cs" />
+    <Compile Include="Migrations\201608111730025_CommentOwner.Designer.cs">
+      <DependentUpon>201608111730025_CommentOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608111735063_ComWriter.cs" />
+    <Compile Include="Migrations\201608111735063_ComWriter.Designer.cs">
+      <DependentUpon>201608111735063_ComWriter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
   </ItemGroup>
@@ -163,6 +179,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608050536287_addcategory.resx">
       <DependentUpon>201608050536287_addcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608111349453_RemoveTID.resx">
+      <DependentUpon>201608111349453_RemoveTID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608111511187_RemoveTicket.resx">
+      <DependentUpon>201608111511187_RemoveTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608111730025_CommentOwner.resx">
+      <DependentUpon>201608111730025_CommentOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608111735063_ComWriter.resx">
+      <DependentUpon>201608111735063_ComWriter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

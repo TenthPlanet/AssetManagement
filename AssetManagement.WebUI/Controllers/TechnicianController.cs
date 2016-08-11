@@ -176,7 +176,8 @@ namespace AssetManagement.WebUI.Controllers
                 {
                     ticketid = ticket.ticketid,
                     comment = comment,
-                    date = DateTime.Now
+                    date = DateTime.Now,
+                    employeeNumber = User.Identity.Name
                 };
                 _context.Progresses.Add(progress);
                 _context.SaveChanges();

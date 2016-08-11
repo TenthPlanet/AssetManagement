@@ -38,6 +38,7 @@ namespace AssetManagement.Domain.Entities
         public virtual ICollection<Ticket> Tickets { get; set; }
         public int departmentID { get; set; }
         public virtual Department Departments { get; set; }
+        public ICollection<Progress> Comments { get; set; }
     }
 
     public class Department
