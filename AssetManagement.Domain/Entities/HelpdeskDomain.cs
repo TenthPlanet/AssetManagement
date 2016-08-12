@@ -50,6 +50,7 @@ namespace AssetManagement.Domain.Entities
         [DataType(DataType.Date)]
         public DateTime? date { get; set; }
         public int ticketid { get; set; }
+        public string employeeName { get; set; }
         public virtual Ticket Tickets { get; set; }
         public string employeeNumber { get; set; }
         public virtual Employee Employee { get; set; }

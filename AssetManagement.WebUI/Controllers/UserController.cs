@@ -94,7 +94,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             var ticket = _context.Tickets.Find(id);
             var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
-
+            ViewBag.Fullname = _context.Employees.Single(e => e.employeeNumber == ticket.assetowner).fullname;
             var data = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
             if (ticket == null)
             {
@@ -102,20 +102,6 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(data);
         }
-        //Write comment
-        //public ActionResult Progress(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    var ticket = _context.Tickets.Find(id);
-        //    if (ticket == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(ticket);
-        //}
         [HttpPost, ActionName("TicketInfo")]
         [ValidateAntiForgeryToken]
         public ActionResult WriteComment(int? id, string comment)
@@ -123,12 +109,15 @@ namespace AssetManagement.WebUI.Controllers
             if (id != null)
             {
                 var ticket = _context.Tickets.Find(id);
+                var name = _context.Employees.Single(e => e.employeeNumber == User.Identity.Name);
                 var progress = new Progress
                 {
                     ticketid = ticket.ticketid,
                     comment = comment,
                     date = DateTime.Now,
-                    employeeNumber = User.Identity.Name
+                    employeeNumber = User.Identity.Name,
+                    employeeName = name.fullname
+                    
                 };
                 _context.Progresses.Add(progress);
                 _context.SaveChanges();

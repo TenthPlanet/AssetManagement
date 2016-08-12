@@ -162,6 +162,10 @@
     <Compile Include="Migrations\201608111735063_ComWriter.Designer.cs">
       <DependentUpon>201608111735063_ComWriter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608121231075_PostOwner.cs" />
+    <Compile Include="Migrations\201608121231075_PostOwner.Designer.cs">
+      <DependentUpon>201608121231075_PostOwner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickResolver\AssetResolver.cs" />
   </ItemGroup>
@@ -191,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608111735063_ComWriter.resx">
       <DependentUpon>201608111735063_ComWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608121231075_PostOwner.resx">
+      <DependentUpon>201608121231075_PostOwner.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

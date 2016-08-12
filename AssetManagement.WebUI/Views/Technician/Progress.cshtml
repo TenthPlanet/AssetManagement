@@ -80,8 +80,6 @@
 <fieldset>
     <legend></legend>
     <div class="col-md-10 linespace">
-        @*<strong>Asset Number    : </strong>@Model.assetnumber
-        <br />*@
         <strong>Employee Number : </strong>@Model.assetowner
         <br />
         <strong>Assigned To       : </strong>@Model.Employees.fullname
@@ -91,7 +89,6 @@
         <p>
             @Html.DisplayFor(model => model.description)
             <div class="tabs">
-                <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = @Model.assetid }, new { @class = "link" }) | </span>
                 <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
                 <span>Due: @Html.DisplayFor(model => model.datedue)</span>
             </div>
@@ -103,17 +100,9 @@
         @Html.AntiForgeryToken()
 
         <div class="col-md-10">
-           
-            @*@Html.EditorFor(model => model.Item2.comment, new { htmlAttributes = new { @class = "form-control", @placeholder = "Write progress report..."} })*@
-            <input type="text" name="comment" id="comment" placeholder="Write progress report..." class="form-control" />
+          
+            <input type="text" name="comment" id="comment" placeholder="Write progress report..." />
         </div>
-
-        @*<div class="col-md-10">
-            <div id="solve">
-                <input type="submit" value="Complete" class="btn btn-default" /> |
-                @Html.ActionLink("Cancel", "TicketDetails", new { id = Model.Item1.ticketid }, new { @class = "btn btn-default" })
-            </div>
-        </div>*@
     }
 </fieldset>
 

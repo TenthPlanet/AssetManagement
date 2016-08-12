@@ -1215,3 +1215,4 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CommentOwner.resources
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
