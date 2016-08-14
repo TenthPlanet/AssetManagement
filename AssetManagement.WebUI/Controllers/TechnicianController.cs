@@ -157,8 +157,6 @@ namespace AssetManagement.WebUI.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var ticket = _context.Tickets.Find(id);
-            //var progress = new Progress();
-            //var model = new Tuple<Ticket, Progress>(ticket, progress);
             if (ticket == null)
             {
                 return HttpNotFound();
@@ -172,11 +170,14 @@ namespace AssetManagement.WebUI.Controllers
             if (id != null)
             {
                 var ticket = _context.Tickets.Find(id);
+                var name = _context.Employees.Single(e => e.employeeNumber == User.Identity.Name);
                 var progress = new Progress
                 {
                     ticketid = ticket.ticketid,
                     comment = comment,
-                    date = DateTime.Now
+                    date = DateTime.Now,
+                    employeeNumber = User.Identity.Name,
+                    employeeName = name.fullname
                 };
                 _context.Progresses.Add(progress);
                 _context.SaveChanges();
@@ -274,15 +275,12 @@ namespace AssetManagement.WebUI.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var ticket = _context.Tickets.Find(id);
-            var contact = _context.Contactus.FirstOrDefault(e => e.userName == ticket.assetowner);
-            var screenshot = _context.Screenshots.Where(e => e.contactId == contact.contactId);
-
             var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
+            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
 
-            var model = new Tuple<Ticket, IEnumerable<Progress>, IEnumerable<Screenshot>>(ticket, progress, screenshot);
             if (ticket == null)
             {
                 return HttpNotFound();

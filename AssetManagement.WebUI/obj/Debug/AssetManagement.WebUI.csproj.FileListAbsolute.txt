@@ -1769,11 +1769,14 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Owin.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\PagedList.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\PagedList.Mvc.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\SendGrid.dll
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\SendGridMail.dll
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Helpers.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Mvc.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Optimization.dll
@@ -1785,8 +1788,10 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\AssetManagement.Business.pdb
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\AssetManagement.Domain.pdb
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\PagedList.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\PagedList.Mvc.xml
+C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Helpers.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Mvc.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\System.Web.Optimization.xml

@@ -26,7 +26,6 @@ namespace AssetManagement.Domain.Entities
         public string priority { get; set; }
         [DisplayName("Description")]
         public string description { get; set; }
-        //public int numOfEscalatedTimes { get; set; }
         public bool accomplishstatus { get; set; }
         public bool acknowledgestatus { get; set; }
         public bool ticketstatus { get; set; }
@@ -51,7 +50,10 @@ namespace AssetManagement.Domain.Entities
         [DataType(DataType.Date)]
         public DateTime? date { get; set; }
         public int ticketid { get; set; }
+        public string employeeName { get; set; }
         public virtual Ticket Tickets { get; set; }
+        public string employeeNumber { get; set; }
+        public virtual Employee Employee { get; set; }
 
     }
     public class ContactUs
@@ -67,7 +69,7 @@ namespace AssetManagement.Domain.Entities
         public DateTime datesent { get; set; }
         public string category { get; set; }
         public ICollection<Screenshot> screenshots { get; set; }
-        
+
     }
     public class Screenshot
     {

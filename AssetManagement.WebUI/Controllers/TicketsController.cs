@@ -470,7 +470,6 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            //var inbox = _context.Contactus.Find(id);
             var inbox = _context.Contactus.Find(id);
 
             Session["empNo"] = inbox.userName.ToString();
@@ -480,7 +479,6 @@ namespace AssetManagement.WebUI.Controllers
             {
                 Session["AssetNumber"] = inbox.category.ToString();
             }
-
             var screenshots = _context.Screenshots.Where(m => m.contactId == inbox.contactId).ToList();
             if (inbox == null)
             {

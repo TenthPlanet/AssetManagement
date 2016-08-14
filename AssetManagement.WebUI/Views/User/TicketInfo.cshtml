@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 <style>
     fieldset {
@@ -16,7 +16,7 @@
     }
 
     .tabs {
-        padding-top: 1%;
+        padding-top: 2%;
     }
 
         .tabs span {
@@ -32,28 +32,36 @@
     .linespace strong {
         padding-right: 10px;
     }
-    p.thumbspace{
-        padding: 2%;
+
+    p.thumbspace {
+        padding: 1%;
     }
 
     .col-md-10 {
         font-size: 1.1em;
     }
+
     div#progress {
         display: none;
         width: 100%;
         padding: 0;
-        margin: 3% 0 0 1.8%;
     }
-    span#showpanel
-    {
-        margin-left: 1.8%;
+
+    span#showpanel:hover, #showcomment:hover {
+        cursor: pointer;
     }
-    span#showpanel:hover{
-        cursor:pointer;
-    }
-    img#img-screen:hover{
+
+    img#img-screen:hover {
         width: 50%;
+    }
+    div#user-reply{
+        display: none;
+        margin-top: 3%;
+        padding: 0;
+        width: 100%;
+    }
+    input#comment{
+        width:100%;
     }
     .alert-success{
         width: 85%;
@@ -78,11 +86,6 @@
 <div style="margin-bottom:10%;"></div>
 
 <h2>Ticket Details</h2>
-
-@if (@TempData["Success"] != null)
-{
-    <div class="alert alert-success">@TempData["Success"]</div>
-}
 
 <div class="col-md-10">
     <h3>
@@ -113,49 +116,37 @@
     <legend></legend>
     <div class="col-md-10 linespace">
         <strong>Ticket Number :</strong>@Model.Item1.ticketid
-        <br/>
+        <br />
         @if (Model.Item1.assetnumber != null)
         {
-        <strong>Asset Number    : </strong>@Model.Item1.assetnumber
+            <strong>Asset Number    : </strong>@Model.Item1.assetnumber
             <br />
         }
-                <strong>Employee Number : </strong>@Model.Item1.assetowner
+        <strong>Ticket Owner : </strong>You
         <br />
-        <strong>Assigned To       : </strong>You
+        <strong>Assigned To       : </strong>@Model.Item1.Employees.fullname
         <br /><br />
     </div>
     <div class="col-md-10">
         <p>
             @Html.DisplayFor(model => model.Item1.description)
-            <div class="tabs">
-                @if (Model.Item1.assetnumber != null)
-                {
-                    <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = @Model.Item1.assetid }, new { @class = "btn btn-sm btn-default" }) | </span>
-                }
-                @if (Model.Item1.acknowledgestatus == false)
-                {
-                    <span><a href="~/Technician/Acknowledge/@Model.Item1.ticketid" class="btn btn-sm btn-default">Acknowledge</a> | </span>
-                }
-                @if (Model.Item1.acknowledgestatus == true)
-                {
-                    if (Model.Item1.accomplishstatus != true)
-                    {
-                        <span><a href="~/Technician/Complete/@Model.Item1.ticketid" class="btn btn-sm btn-default">Notify completion</a> | </span>
-                        <span>@Html.ActionLink("Progress Report", "Progress", new { id = Model.Item1.ticketid }, new { @class = "btn btn-sm btn-default" })</span>
-                    }
-                }
-                <span>Created: @Html.DisplayFor(model => model.Item1.datecreated) | </span>
-                <span>Due: @Html.DisplayFor(model => model.Item1.datedue) </span>
-                @if (Model.Item1.datecompleted != null)
-                {
-                    <span>| COM: @Html.DisplayFor(model => model.Item1.datecompleted)</span>
-                }
-            </div>
         </p>
     </div>
     <div style="clear: both;width:100%"></div>
-    <span class="btn btn-default" id="showpanel">Show Progress</span>
+    <span class="btn btn-default" id="showpanel">Show Comments</span>
     <div style="clear: both;width:100%"></div>
+
+    
+    <div class="col-md-10" id="user-reply">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <p>
+                <input type="text" name="comment" id="comment" placeholder="Write progress report..."/>
+            </p>
+        }
+    </div>
 
     <div class="col-md-10" id="progress">
 
@@ -185,17 +176,19 @@
             }
         }
     </div>
+
 </fieldset>
 <script src="~/Content/customscripts/jquery-1.10.2.js"></script>
 <script>
     $('span#showpanel').on('click', function () {
-        $('div#progress').slideToggle(1000);
+        $('div#progress').slideToggle(500);
+        $('div#user-reply').slideToggle(500)
         var $state = $('span#showpanel').text();
 
-        if ($state === 'Show Progress') {
-            $('span#showpanel').text('Hide Progress')
+        if ($state === 'Show Comments') {
+            $('span#showpanel').text('Hide Comments')
         } else {
-            $('span#showpanel').text('Show Progress')
+            $('span#showpanel').text('Show Comments')
         }
     });
 </script>
