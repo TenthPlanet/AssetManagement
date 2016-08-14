@@ -3,6 +3,7 @@ using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Context;
 using AssetManagement.Domain.Entities;
 using AssetManagement.WebUI.ViewModel;
+using AssetManagement.Business.HelpDeskSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace AssetManagement.WebUI.Controllers
     [Authorize(Roles = "Administrator")]
     public class TicketsController : Controller
     {
-        public TicketsController() 
+        public TicketsController()
             : this(new TicketRepository())
         { }
 
@@ -39,12 +40,12 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.KnowledgeBase = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList().Count();
             return View();
         }
-        public ActionResult TicketsIndex(int ? page)
+        public ActionResult TicketsIndex(int? page)
         {
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
             int PageSize = 4;
             int PageNumber = (page ?? 1);
-            return View(ticket.ToPagedList(PageNumber,PageSize));
+            return View(ticket.ToPagedList(PageNumber, PageSize));
         }
         public ActionResult Create(string Assets)
         {
@@ -112,16 +113,16 @@ namespace AssetManagement.WebUI.Controllers
             if (ModelState.IsValid)
             {
                 var asset = _context.Assets.FirstOrDefault(e => e.assetNumber.Equals(ticket.assetnumber));
-                
+
                 if (asset != null)
                 {
                     ticket.assetid = asset.assetID;
-                    
+
                     _context.Tickets.Add(ticket);
                     _context.SaveChanges();
                     return RedirectToAction("Index");
                 }
-                
+
             }
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname", ticket.employeeNumber);
             return View(ticket);
@@ -158,7 +159,7 @@ namespace AssetManagement.WebUI.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Details", new { id = ticket.ticketid });
             }
-            
+
             ViewBag.employeeNumber = new SelectList(_context.Employees.ToList().Where(x => x.position.Equals("Technician") || x.position.Equals("Administrator")), "employeeNumber", "fullname", ticket.employeeNumber);
             return View(ticket);
 
@@ -189,7 +190,7 @@ namespace AssetManagement.WebUI.Controllers
                 ticket.priority = priority;
                 ticket.datedue = datedue;
                 _context.SaveChanges();
-                return RedirectToAction("Details", new { id =ticket.ticketid });
+                return RedirectToAction("Details", new { id = ticket.ticketid });
             }
             return View(ticket);
         }
@@ -285,7 +286,7 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult Confirm_Accomplishment(int? id, string solution)
         {
             Ticket ticket = _context.Tickets.Find(id);
-            
+
             ticket.datecompleted = DateTime.Now;
             ticket.accomplishstatus = true;
             ticket.ticketstatus = false;
@@ -316,7 +317,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult TechnicianTickets()
         {
-            var tickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name) 
+            var tickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name)
                 && x.solution == null && x.ticketstatus == true).ToList();
             return View(tickets);
         }
@@ -387,7 +388,7 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Ticket ticket = _context.Tickets.FirstOrDefault(a => a.ticketid == id 
+            Ticket ticket = _context.Tickets.FirstOrDefault(a => a.ticketid == id
                 && a.solution != null
                 && a.ticketstatus == false);
             if (ticket == null)
@@ -425,7 +426,7 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return RedirectToAction("AllMessages");
             }
-            
+
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
@@ -436,31 +437,31 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.ClosedMessages = _context.Contactus.ToList().Where(x => x.read.Equals(false)).Count();
             return View();
         }
-      
+
         public ActionResult Inbox()
         {
-                var query = (from a in _context.Contactus.ToList()
-                             select new ContactUsViewModel
-                             {
-                                 id = a.contactId,
-                                 read = a.read,
-                                 subject = a.subject,
-                                 body = a.body,
-                                 username = a.userName,
-                                 datesent = a.datesent
-                             })
-                             .OrderByDescending(x => x.datesent);
+            var query = (from a in _context.Contactus.ToList()
+                         select new ContactUsViewModel
+                         {
+                             id = a.contactId,
+                             read = a.read,
+                             subject = a.subject,
+                             body = a.body,
+                             username = a.userName,
+                             datesent = a.datesent
+                         })
+                         .OrderByDescending(x => x.datesent);
             //int PageSize = 6;
             //int PageNumber = (page ?? 1);
-           return View(query);
+            return View(query);
             //var inbox = _context.Contactus.ToList();
             //return View(inbox);
         }
 
         public ActionResult InboxCount()
         {
-           ViewBag.InboxNote = (_context.Contactus.ToList().Where(x => x.read.Equals(false))).Count();
-           return View();
+            ViewBag.InboxNote = (_context.Contactus.ToList().Where(x => x.read.Equals(false))).Count();
+            return View();
         }
 
         public ActionResult InboxDetails(int? id)
@@ -491,14 +492,14 @@ namespace AssetManagement.WebUI.Controllers
             _context.SaveChanges();
             return View(data);
         }
-        public ActionResult unReadmail(int?page)
+        public ActionResult unReadmail(int? page)
         {
             var query = _context.Contactus.Where(x => x.read.Equals(false)).ToList();
             int PageSize = 4;
             int PageNumber = (page ?? 1);
-            return View(query.ToPagedList(PageNumber,PageSize));
+            return View(query.ToPagedList(PageNumber, PageSize));
         }
-        public ActionResult OpenedMail(int?page)
+        public ActionResult OpenedMail(int? page)
         {
             var query = _context.Contactus.Where(x => x.read.Equals(true)).ToList();
             int PageSize = 4;
@@ -516,7 +517,7 @@ namespace AssetManagement.WebUI.Controllers
         {
             DateTime now = System.DateTime.Now;
             List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
-        
+
             return View(tt);
         }
 
@@ -580,9 +581,7 @@ namespace AssetManagement.WebUI.Controllers
         {
             int tickets = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList().Count();
             int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now).ToList().Count();
-
             ViewBag.Tickets = tickets + overdueCount;
-
             return View();
         }
         public ActionResult OverDue()
@@ -597,6 +596,39 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.Tickets = tickets;
             return View();
         }
-
+        public PartialViewResult _OpenedTickets()
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var id = ViewData["id"].ToString();
+            var tickets = hdl.OpenTickets(hdl.GetEmployee(id));
+            return PartialView("_OpenedTickets",tickets);
+        }
+        public PartialViewResult _UnAknowlaged(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var tickets = hdl.UnAknowlagedTickets(hdl.GetEmployee(id));
+            return PartialView("_UnAknowlaged",tickets);
+        }
+        public PartialViewResult _Completed(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var tickets = hdl.CompletedTickets(hdl.GetEmployee(id));
+            return PartialView("_Completed",tickets);
+        }
+        public PartialViewResult _AllTickets(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var tickets = hdl.AllTickets(hdl.GetEmployee(id));
+            return PartialView("_AllTickets",tickets);
+        }
+        public ActionResult TicketsFilter(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            status _status = (status)Convert.ToInt32(Session["status"]);
+            var tickets = hdl.TicketsFilter(_status).Where(emp => emp.employeeNumber == id);
+            Session["Technician"] = hdl.GetEmployee(id).fullname;
+            ViewData["id"] = hdl.GetEmployee(id).employeeNumber;
+            return View(hdl);
+        }
     }
 }

@@ -10,6 +10,9 @@ namespace AssetManagement.WebUI.ViewModel
     public class PrinterViewModel
     {
         [Required]
+        [Display(Name = "Invoice Number")]
+        public string InvoiceNumber { get; set; }
+        [Required]
         [DisplayName("Serial Number")]
         public string serialNumber { get; set; }
         [Required]

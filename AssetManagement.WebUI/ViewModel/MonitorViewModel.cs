@@ -10,6 +10,9 @@ namespace AssetManagement.WebUI.ViewModel
     public class MonitorViewModel
     {
         [Required]
+        [Display(Name = "Invoice Number")]
+        public string InvoiceNumber { get; set; }
+        [Required]
         [Display(Name = "Serial Number")]
         public string serialNumber { get; set; }
         [Required]

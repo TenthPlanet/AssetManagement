@@ -16,7 +16,7 @@ namespace AssetManagement.Business.HelpDeskSystem
         public List<Ticket> aknowlagedTickets;
         public List<Ticket> unAknowlagedTickets;
         private readonly AssetManagementEntities _context = new AssetManagementEntities();
-        
+
 
         public HelpDeskLogic()
         {
@@ -47,6 +47,10 @@ namespace AssetManagement.Business.HelpDeskSystem
         {
             return allTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
         }
+        public List<Ticket> ClosedTickets(Employee TicketParticipant)
+        {
+            return closedTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+        }
 
         public List<Employee> AllAdministrators()
         {
@@ -57,16 +61,17 @@ namespace AssetManagement.Business.HelpDeskSystem
             return _context.Employees.Where(emp => emp.position == "Technician").ToList();
         }
 
-        public IEnumerable<Tech> TechnicianStats()
+        public IEnumerable<TicketParticipant> TechnicianStats()
         {
-            List<Tech> participants = new List<Tech>();
-            foreach(var participant in AllTechnicians())
+            var participants = new List<TicketParticipant>();
+            foreach (var participant in AllTechnicians())
             {
-                var returnParticipant = new Tech()
+                var returnParticipant = new TicketParticipant()
                 {
                     Name = participant.fullname,
+                    employeeID = participant.employeeNumber,
                     AllTickets = AllTickets(participant).Count,
-                    OpenedTickets = OpenTickets(participant).Count,
+                    OpenedTickets = OpenTickets(participant),
                     CompletedTickets = CompletedTickets(participant).Count,
                     UnAcknowalgedTickets = UnAknowlagedTickets(participant).Count
                 };
@@ -74,16 +79,17 @@ namespace AssetManagement.Business.HelpDeskSystem
             }
             return participants;
         }
-        public IEnumerable<Admin> AdministratorStats()
+        public IEnumerable<TicketParticipant> AdministratorStats()
         {
-            List<Admin> participants = new List<Admin>();
+            var participants = new List<TicketParticipant>();
             foreach (var participant in AllAdministrators())
             {
-                var returnParticipant = new Admin()
+                var returnParticipant = new TicketParticipant()
                 {
                     Name = participant.fullname,
+                    employeeID = participant.employeeNumber,
                     AllTickets = AllTickets(participant).Count,
-                    OpenedTickets = OpenTickets(participant).Count,
+                    OpenedTickets = OpenTickets(participant),
                     CompletedTickets = CompletedTickets(participant).Count,
                     UnAcknowalgedTickets = UnAknowlagedTickets(participant).Count
                 };
@@ -91,5 +97,62 @@ namespace AssetManagement.Business.HelpDeskSystem
             }
             return participants;
         }
+        public Employee GetEmployee(string id)
+        {
+            AssetManagementEntities ams = new AssetManagementEntities();
+            return ams.Employees.Find(id);
+        }
+
+        public List<Ticket> TicketsFilter(status status)
+        {
+            var tickets = new List<Ticket>();
+            switch (status)
+            {
+                case status.opened:
+                    tickets = openTickets;
+                    break;
+                case status.completed:
+                    tickets = closedTickets;
+                    break;
+                case status.unAknowlaged:
+                    tickets = unAknowlagedTickets;
+                    break;
+                case status.all:
+                    tickets = allTickets;
+                    break;
+            }
+            return tickets;
+        }
+        //public object TicketsFilter(string employeeId, status opened)
+        //{
+        //    var employee = GetEmployee(employeeId);
+        //    var tickets = new List<Ticket>();
+        //    switch (opened)
+        //    {
+        //        case status.opened:
+        //            tickets = OpenTickets(employee);
+        //            break;
+        //        case status.closed:
+        //            tickets = ClosedTickets(employee);
+        //            break;
+        //        case status.completed:
+        //            tickets = CompletedTickets(employee);
+        //            break;
+        //        case status.unAknowlaged:
+        //            tickets = UnAknowlagedTickets(employee);
+        //            break;
+        //        case status.all:
+        //            tickets = AllTickets(employee);
+        //            break;
+        //    }
+        //    return tickets;
+        //}
+    }
+    public enum status
+    {
+        opened = 0,
+        unAknowlaged,
+        completed,
+        all
     }
 }

@@ -10,6 +10,9 @@ namespace AssetManagement.WebUI.ViewModel
     public class KeyboardViewModel
     {
         [Required]
+        [Display(Name = "Invoice Number")]
+        public string InvoiceNumber { get; set; }
+        [Required]
         [Display(Name = "Serial Number")]
         public string serialNumber { get; set; }
         [Required]
@@ -30,6 +33,7 @@ namespace AssetManagement.WebUI.ViewModel
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime dateAdded { get; set; }
+        
 
 
     }

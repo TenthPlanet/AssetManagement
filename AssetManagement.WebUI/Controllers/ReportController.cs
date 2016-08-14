@@ -15,5 +15,10 @@ namespace AssetManagement.WebUI.Controllers
             HelpDeskLogic hdl = new HelpDeskLogic();
             return View(hdl);
         }
+        public ActionResult GeneratePdf()
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            return View(hdl);
+        }
     }
 }

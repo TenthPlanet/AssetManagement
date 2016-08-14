@@ -71,6 +71,7 @@ namespace AssetManagement.Domain.Entities
         public virtual Employee Employee { get; set; }
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
+        public string InvoiceNumber { get; set; }
 
     }
 
@@ -95,6 +96,7 @@ namespace AssetManagement.Domain.Entities
 
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
+        public string InvoiceNumber { get; set; }
 
     }
 
@@ -112,9 +114,11 @@ namespace AssetManagement.Domain.Entities
         public string modelName { get; set; }
         public string employeeNumber { get; set; }
         public virtual Employee Employee { get; set; }
+        
 
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
+        public string InvoiceNumber { get; set; }
 
     }
 
@@ -162,6 +166,7 @@ namespace AssetManagement.Domain.Entities
 
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
+        public string InvoiceNumber { get; set; }
 
     }
 
@@ -183,6 +188,7 @@ namespace AssetManagement.Domain.Entities
 
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
+        public string InvoiceNumber { get; set; }
 
     }
 

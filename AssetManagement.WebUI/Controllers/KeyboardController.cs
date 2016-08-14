@@ -61,7 +61,8 @@ namespace AssetManagement.WebUI.Controllers
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
                             warranty = viewmodel.warranty+" Months",
-                            costprice = viewmodel.costprice
+                            costprice = viewmodel.costprice,
+                            InvoiceNumber = viewmodel.InvoiceNumber
 
                         };
                         var keyboard = new Keyboard
@@ -71,6 +72,7 @@ namespace AssetManagement.WebUI.Controllers
                             modelName = viewmodel.modelName,
                             warranty = viewmodel.warranty + " Months",
                             dateAdded = viewmodel.dateAdded,
+                            InvoiceNumber = viewmodel.InvoiceNumber
                         };
                         stock.quantity = stock.quantity - 1;
                         _repository.Insert(asset, keyboard);

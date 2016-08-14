@@ -11,17 +11,10 @@ namespace AssetManagement.Business.HelpDeskSystem
     public class TicketParticipant
     {
         public string Name { get; set; }
-        public int OpenedTickets { get; set; }
+        public string employeeID { get; set; }
+        public IEnumerable<Ticket> OpenedTickets { get; set; }
         public int CompletedTickets { get; set; }
         public int UnAcknowalgedTickets { get; set; }
         public int AllTickets { get; set; }    
-    }
-    public class Tech : TicketParticipant
-    {
-
-    }
-    public class Admin : TicketParticipant
-    {
-
     }
 }
