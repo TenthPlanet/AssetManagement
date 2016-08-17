@@ -1,0 +1,36 @@
+﻿@model AssetManagement.Domain.Entities.Asset
+
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Deallocate";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Deallocate";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+
+
+<div style="margin-bottom:10%;"></div>
+<h3 class="page-header">
+
+
+    <i class="fa fa-file-text-o"></i>
+    Dealocate asset @Model.assetNumber from @Model.Employee.fullname?
+</h3>
+
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-desktop"></i>Assets</li>
+    <li><i class="fa fa-list-alt"></i>Deallocate</li>
+</ol>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Dealocate" class="btn btn-primary" /> |
+            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    }

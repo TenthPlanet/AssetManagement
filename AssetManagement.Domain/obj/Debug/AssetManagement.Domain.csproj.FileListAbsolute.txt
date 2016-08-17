@@ -1217,9 +1217,14 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Sy
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dropcatergory.resources
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addcategory.resources
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTID.resources
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTicket.resources
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CommentOwner.resources
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

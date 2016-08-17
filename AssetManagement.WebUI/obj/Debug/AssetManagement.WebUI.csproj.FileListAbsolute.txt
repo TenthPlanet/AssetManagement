@@ -1897,5 +1897,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\Ass
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.xml
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Rotativa.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll

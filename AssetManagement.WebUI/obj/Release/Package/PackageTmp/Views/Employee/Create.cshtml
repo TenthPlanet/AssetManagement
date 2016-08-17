@@ -1,0 +1,198 @@
+﻿@model AssetManagement.WebUI.ViewModel.Employee.EmployeeViewModel
+
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+
+ 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+}
+
+    <div style="margin-bottom:10%;"></div>
+    
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h3 class="page-header"><i class="fa fa-list-alt"></i>Add Employee</h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                <li><i class="fa fa-desktop"></i>Employees</li>
+                <li><i class="fa fa-list-alt"></i>Add Employee</li>
+            </ol>
+            </div>
+            <hr />
+            <div class="form-horizontal">
+                <h3>Add Employee</h3>
+                <hr />
+                @Html.ValidationSummary(true)
+
+                @if (@TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">@TempData["Success"]</div>
+                }
+                @if (@ViewBag.Message != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.Message</div>
+                }
+
+                <div style="margin-bottom:4%;"></div>
+
+
+                <div class="form-group">
+                    @Html.Label("Employee Number", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.employeeNumber)
+                        @Html.ValidationMessageFor(model => model.employeeNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("First Name", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.firstName)
+                        @Html.ValidationMessageFor(model => model.firstName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Last Name", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.lastName)
+                        @Html.ValidationMessageFor(model => model.lastName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("ID Number", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.IDNumber)
+                        @Html.ValidationMessageFor(model => model.IDNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Gender", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @{
+                            List<SelectListItem> gender = new List<SelectListItem>();
+
+                            gender.Add(new SelectListItem { Text = "Male", Value = "Male" });
+                            gender.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                        }
+                        @Html.DropDownListFor(m => m.gender, gender, "Select...")
+                        @Html.ValidationMessageFor(model => model.gender)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Date Hired", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.hireDate)
+                        @Html.ValidationMessageFor(model => model.hireDate)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Position", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @{
+                            List<SelectListItem> post = new List<SelectListItem>();
+
+                            post.Add(new SelectListItem { Text = "Asset Manager", Value = "Asset-Manager" });
+                            post.Add(new SelectListItem { Text = "Help Desk Admin", Value = "Administrator" });
+                            post.Add(new SelectListItem { Text = "Technician", Value = "Technician" });
+                            post.Add(new SelectListItem { Text = "General Staff", Value = "General Staff" });
+                        }
+                        @Html.DropDownListFor(m => m.position, post, "Select...")
+                        @Html.ValidationMessageFor(model => model.position)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Office Number", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.officeNumber)
+                        @Html.ValidationMessageFor(model => model.officeNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Telephone Number", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.telephoneNumber)
+                        @Html.ValidationMessageFor(model => model.telephoneNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Mobile Number", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.mobileNumber)
+                        @Html.ValidationMessageFor(model => model.mobileNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("E-mail Address", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.emailAddress)
+                        @Html.ValidationMessageFor(model => model.emailAddress)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Department", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @{
+                            List<SelectListItem> depart = new List<SelectListItem>();
+
+                            depart.Add(new SelectListItem { Text = "Accounting", Value = "Accounting" });
+                            depart.Add(new SelectListItem { Text = "Human Resources", Value = "Human Resources" });
+                            depart.Add(new SelectListItem { Text = "IT", Value = "IT" });
+                        }
+                        @Html.DropDownListFor(m => m.departmentName, depart, "Select...")
+                        @Html.ValidationMessageFor(model => model.departmentName)
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Add Employee" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+            }
+
+            <div>
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+            </div>
+<script>
+  $(function() {
+      $("#hireDate").datepicker();
+  });
+</script>

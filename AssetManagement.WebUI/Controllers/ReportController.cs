@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Rotativa;
 using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
@@ -15,10 +16,9 @@ namespace AssetManagement.WebUI.Controllers
             HelpDeskLogic hdl = new HelpDeskLogic();
             return View(hdl);
         }
-        public ActionResult GeneratePdf()
+        public ActionResult ExportPDF()
         {
-            HelpDeskLogic hdl = new HelpDeskLogic();
-            return View(hdl);
+            return View();
         }
     }
 }

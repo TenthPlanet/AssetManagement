@@ -1,0 +1,40 @@
+﻿@*@model AssetManagement.Domain.Entities.Comment*@
+@model AssetManagement.Domain.Entities.Ticket
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+     @*<img src="@Url.Content("~/Content/comment.png")" width="30" height="20" alt="like" />*@
+
+    var imgUrl = Url.Content("~/Content/images/profile/" + User.Identity.Name + ".png") + "?time=" + DateTime.Now.ToString();
+
+    <table>
+        <tr>
+            <td style="width:50px;vertical-align: top;"><div class="comImg"><img src="@imgUrl" height="50" width="50" /></div></td>
+            <td style="vertical-align:middle; min-height:40px;" class="comments" id="comments">
+                <textarea name="Newcomment" id="Newcomment1" style="width:300px"></textarea>
+                <script>
+                    CKEDITOR.replace('Newcomment1',
+                       {
+                           customConfig: '/Scripts/ckEditorConfig1.js'
+                       });
+
+                </script>
+                <div class="comTextSub" style="width:250px">
+                    <input type="submit" value="Comment" class="btn btn-sm btn-default" />
+                </div>
+            </td>
+        </tr>
+    </table>
+    @*@foreach (var comment in Model.Comments)
+    {
+        
+    }*@
+        @*<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>*@
+}

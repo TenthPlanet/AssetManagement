@@ -1,0 +1,94 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
+
+@{
+    //Layout = "~/Views/Shared/_helpd.cshtml";
+    Layout = null;
+}
+
+<style>
+    fieldset {
+        width: 90%;
+        border-bottom: 1px solid #b7b7b7;
+        margin-bottom: 15px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .tabs {
+        padding-top: 2%;
+        margin-left: 15%;
+    }
+
+        .tabs span {
+            display: inline-block;
+            padding-right: 4px;
+        }
+
+    strong span {
+        display: inline-block;
+        padding-right: 6px;
+    }
+</style>
+<div style="margin-bottom:2%;"></div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Technician")
+        </th>
+        <th>
+            @Html.DisplayName("Asset No")
+        </th>
+        <th>
+            @Html.DisplayName("Asset Owner")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.priority)
+        </th>
+        <th>
+            @Html.DisplayName("Date Created")
+        </th>
+        <th>
+            @Html.DisplayName("Due Date")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employees.firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.assetnumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.assetowner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priority)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datecreated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datedue)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id=item.ticketid }) |*@
+                <span>@Html.ActionLink("Escalate", "Escalate", "Tickets", new { id = item.ticketid }, new { @class = "btn btn-sm btn-default" })  </span>
+                <span>@Html.ActionLink("Details", "Details", new { id = item.ticketid }, new { @class = "btn btn-sm btn-default" })</span> 
+                @*@Html.ActionLink("Delete", "Delete", new { id=item.ticketid })*@
+            </td>
+        </tr>
+    }
+
+</table>

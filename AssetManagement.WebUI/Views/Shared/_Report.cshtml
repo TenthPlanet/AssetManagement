@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        fieldset {
+            width: 90%;
+            border-bottom: 1px solid #b7b7b7;
+            margin-bottom: 15px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .tabs {
+            padding-top: 2%;
+            margin-left: 15%;
+        }
+
+            .tabs span {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+        strong span {
+            display: inline-block;
+            padding-right: 6px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Help Desk System</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/xcharts.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <header class="header dark-bg">
+        <!----=============================================-->
+
+
+        <div class="top-nav notification-row">
+            <ul class="nav pull-right top-menu">
+                <li id="mail_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-envelope-l"></i>
+                        <span class="badge bg-important">@Html.Partial("_Inbox")</span><!--returns the count number of inbox messages-->
+
+                    </a>
+
+                    <ul class="dropdown-menu extended inbox">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="red">You have @Html.Partial("_Inbox") New messages</p>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("AllMessages", "Tickets")">
+                                <!--Redirect you to the tickets index-->
+                                <i class="fa fa-warning text-red"></i> @Html.Partial("_Inbox") Notification(s) Found
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <i class="icon-bell-l"></i>
+                        <span class="badge bg-important">@Html.Partial("_TicketCounter")</span>
+                    </a>
+                    <ul class="dropdown-menu extended notification">
+                        <div class="notify-arrow notify-arrow-blue"></div>
+                        <li>
+                            <p class="blue">You have @Html.Partial("_TicketCounter") Total notifications</p>
+                        </li>
+
+                        <li>
+                            <a href="@Url.Action("Index", "Tickets")">
+                                <span class="label label-danger"><i class="icon_book_alt"></i></span>
+                                @Html.Partial("_DueTicketsCounter") unassigned Tickets
+                                <span class="small italic pull-right">High Priority</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Tickets")">
+                                <span class="label label-warning"><i class="icon_clock_alt"></i></span>
+                                @Html.Partial("_OverDue") Over Due Tickets
+                                <span class="small italic pull-right">High Priority</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <!----=============================================-->
+        <div class="toggle-nav">
+            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+        </div>
+        <div style="margin-top:20px">
+            Admin : @User.Identity.Name
+        </div>
+    </header>
+    <div>
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="~/Dashboard/Dashboard">
+                            <i class="icon_house_alt"></i>
+                            <span>Home</span>
+                        </a>
+
+
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_document_alt"></i>
+                            <span>Assets</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            @*<li>@Html.ActionLink("Tag asset", "Add", "Printer")</li>
+                                <li>@Html.ActionLink("Assign asset", "Assign", "Asset")</li>*@
+                            <li>@Html.ActionLink("List of Asset", "Index", "Asset")</li>
+                            <li>@Html.ActionLink("Search Asset", "Assigned", "Asset")</li>
+
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_profile"></i>
+                            <span>Employees</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
+                            <li>@Html.ActionLink("List of Employee", "Index", "Employee")</li>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_piechart"></i>
+                            <span>Report</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+
+                            <li>@Html.ActionLink("Ticket Report", "Index", "Report")</li>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_documents"></i>
+                            <span>Archive</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+
+                            <li>@Html.ActionLink("Ownership History", "Index", "Archive")</li>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_genius"></i>
+                            <span>Tickets</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li>@Html.ActionLink("Self Service Inbox", "AllMessages", "Tickets")</li>
+                            <li>@Html.ActionLink("Tickets Control", "Index", "Tickets")</li>
+                            <li>@Html.ActionLink("Create Ticket", "SelectType", "Asset")</li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="fa fa-user"></i>
+                            <span>Account</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+
+                            @*<li>@Html.ActionLink("Logout", "Login", "Home")</li>*@
+                            <li>@Html.Partial("_LoginPartial")</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
+        </footer>
+    </div>
+
+    <script src="~/Content/PDF/jquery.min.js"></script>
+    <script src="~/Content/PDF/tableExport.js"></script>
+    <script src="~/Content/PDF/jquery.base64.js"></script>
+    <script src="~/Content/PDF/sprintf.js"></script>
+    <script src="~/Content/PDF/jspdf.js"></script>
+    <script src="~/Content/PDF/base64.js"></script>
+
+    
+    <script>
+
+        //knob
+        $(function () {
+            $(".knob").knob({
+                'draw': function () {
+                    $(this.i).val(this.cv + '%')
+                }
+            })
+        });
+
+        //carousel
+        $(document).ready(function () {
+            $("#owl-slider").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+        /* ---------- Map ---------- */
+        $(function () {
+            $('#map').vectorMap({
+                map: 'world_mill_en',
+                series: {
+                    regions: [{
+                        values: gdpData,
+                        scale: ['#000', '#000'],
+                        normalizeFunction: 'polynomial'
+                    }]
+                },
+                backgroundColor: '#eef3f7',
+                onLabelShow: function (e, el, code) {
+                    el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+                }
+            });
+        });
+    </script>
+  
+
+</body>
+</html>

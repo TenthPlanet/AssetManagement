@@ -54,7 +54,7 @@ namespace AssetManagement.Business.HelpDeskSystem
 
         public List<Employee> AllAdministrators()
         {
-            return _context.Employees.Where(emp => emp.position == "Administator").ToList();
+            return _context.Employees.Where(emp => emp.position == "Administrator").ToList();
         }
         public List<Employee> AllTechnicians()
         {
