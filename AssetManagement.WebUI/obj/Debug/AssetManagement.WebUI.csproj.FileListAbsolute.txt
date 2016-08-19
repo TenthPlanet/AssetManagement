@@ -1610,7 +1610,6 @@ C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Microso
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Owin.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\PagedList.dll
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\PagedList.Mvc.dll
@@ -1900,3 +1899,10 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextshar
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Rotativa.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Rotativa.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGridMail.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
+C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.xml

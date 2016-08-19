@@ -2,4 +2,13 @@
     Layout = null;
  }
 
-@ViewBag.InboxNote
+@if (ViewBag.InboxNote == 0)
+{
+    <span class="badge bg-important" style="opacity:0.01;filter:apha(opacity=10)">@ViewBag.InboxNote</span>
+}
+else
+{
+    <span class="badge bg-important">@ViewBag.InboxNote</span>
+}
+
+ 

@@ -1,4 +1,12 @@
 ﻿@{ 
     Layout = null;
 }
-@ViewBag.Tickets
+@if (@ViewBag.Tickets == 0)
+{
+    <span class="badge bg-important" style="opacity:0.01;filter:apha(opacity=10)">@ViewBag.Tickets</span>
+}
+else
+{
+    <span class="badge bg-important">@ViewBag.Tickets</span>
+}
+
