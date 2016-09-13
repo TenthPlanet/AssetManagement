@@ -32,17 +32,47 @@ namespace AssetManagement.WebUI.Controllers
         {
             return View();
         }
-
+        
         public ActionResult Add()
         {
-            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Laptop");
+            List<Stock> slist =new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Laptop"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if(man==null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+                
+            }
+            ViewBag.LL = li;
             return View();
+        }
+        
+        public JsonResult GetModel(string ddlmanu)
+        {
+            return Json(context.Stocks.Where(x => x.category == "Laptop" && x.manufacturer == ddlmanu), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Add(LaptopViewModel viewmodel)
+        public ActionResult Add(LaptopViewModel viewmodel, string modelName)
         {
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Laptop"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            viewmodel.modelName = modelName;
+            ViewBag.LL = li;
+
             ViewBag.LM = context.Stocks.ToList().Where(x=>x.category=="Laptop");
             if (ModelState.IsValid)
             {

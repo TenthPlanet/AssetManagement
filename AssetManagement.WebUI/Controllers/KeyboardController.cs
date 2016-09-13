@@ -35,16 +35,45 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
-            ViewBag.KeyBM = context.Stocks.ToList().Where(x => x.category == "Keyboard");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Keyboard"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.KeyBM = li;
+
             
             return View();
+        }
+
+        public JsonResult GetModel(string ddlmanu)
+        {
+            return Json(context.Stocks.Where(x => x.category == "Keyboard" && x.manufacturer == ddlmanu), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Add(KeyboardViewModel viewmodel)
         {
-            ViewBag.KeyBM = context.Stocks.ToList().Where(x => x.category == "Keyboard");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Keyboard"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.KeyBM = li;
+
             if (ModelState.IsValid)
             {
                 try
