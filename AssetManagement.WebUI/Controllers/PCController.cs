@@ -34,15 +34,43 @@ namespace AssetManagement.WebUI.Controllers
         }
         public ActionResult Add()
         {
-            ViewBag.PCM = db.Stocks.ToList().Where(x => x.category == "PCBox");
+            List<Stock> slist = new List<Stock>(db.Stocks.ToList().Where(x => x.category == "PCBox"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.PCM = li;
+            
             return View();
+        }
+
+        public JsonResult GetModel(string ddlmanu)
+        {
+            return Json(db.Stocks.Where(x => x.category == "PCBox" && x.manufacturer == ddlmanu), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Add(PCViewModel viewmodel)
         {
-            ViewBag.PCM = db.Stocks.ToList().Where(x=>x.category=="PCBox");
+            List<Stock> slist = new List<Stock>(db.Stocks.ToList().Where(x => x.category == "PCBox"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.PCM = li;
             if (ModelState.IsValid)
             {
                 try

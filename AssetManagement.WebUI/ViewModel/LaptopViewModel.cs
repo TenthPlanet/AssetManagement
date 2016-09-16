@@ -32,7 +32,7 @@ namespace AssetManagement.WebUI.ViewModel
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime dateAdded { get; set; }
-        [Required]
+        //[Required]
         [Display(Name = "Model")]
         public string modelName { get; set; }
         [Required]
