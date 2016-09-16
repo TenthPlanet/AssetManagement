@@ -776,6 +776,7 @@
     <Content Include="Views\Tickets\_Completed.cshtml" />
     <Content Include="Views\Report\ExportPDF.cshtml" />
     <Content Include="Views\Shared\_Report.cshtml" />
+    <Content Include="Views\Asset\FullyDepreciated.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

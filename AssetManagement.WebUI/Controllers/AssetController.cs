@@ -130,9 +130,10 @@ namespace AssetManagement.WebUI.Controllers
                                  costprice = a.costprice.ToString("R0.00")
                              })
                          .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)))
-                         // .Where(x => x.manufacturer.Contains(search.ToUpper()) && x.assetstatus == 1)
                          .ToList();
-                return View(asset);
+                int PageSize = 6;
+                int PageNumber = (page ?? 1);
+                return View(asset.ToPagedList(PageNumber, PageSize));
             }
             return View();
         }
@@ -160,6 +161,60 @@ namespace AssetManagement.WebUI.Controllers
             return View(assets.ToPagedList(PageNumber, PageSize));
             
         }
+        public ActionResult FullyDepreciated(int? page)
+        {
+            var assets = (from a in list.Assets()
+                          join e in list.Employees() on a.employeeNumber equals e.employeeNumber
+                          select new AssetListViewModel
+                          {
+                              serialNumber = a.serialNumber,
+                              assetNumber = a.assetNumber,
+                              catergory = a.catergory,
+                              warranty = a.warranty,
+                              manufacturer = a.manufacturer,
+                              dateadded = a.dateadded,
+                              depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                              assetstatus = a.assignstatus,
+                              costprice = (a.costprice).ToString("R0.00")
+                          })
+                          .ToList()
+                          .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)) && x.depreciationcost.Equals("R0.00"));
+            ViewBag.Category = context.Categories.ToList();
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(assets.ToPagedList(PageNumber, PageSize));
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult FullyDepreciated(string search, int? page)
+        {
+            if (search != "")
+            {
+
+                var asset = (from a in list.Assets()
+                             select new AssetListViewModel
+                             {
+                                 serialNumber = a.serialNumber,
+                                 assetNumber = a.assetNumber,
+                                 catergory = a.catergory,
+                                 warranty = a.warranty,
+                                 manufacturer = a.manufacturer,
+                                 dateadded = a.dateadded,
+                                 depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                                 assetstatus = a.assignstatus,
+                                 costprice = a.costprice.ToString("R0.00")
+                             })
+                         .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)) && x.depreciationcost.Equals("R0.00"))
+                         .ToList();
+                int PageSize = 6;
+                int PageNumber = (page ?? 1);
+                return View(asset.ToPagedList(PageNumber, PageSize));
+            }
+            return View();
+        }
+
 
         public ActionResult Assign()
         {

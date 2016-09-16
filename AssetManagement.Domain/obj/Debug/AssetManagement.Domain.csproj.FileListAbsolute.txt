@@ -1244,3 +1244,53 @@ C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
 C:\Users\21220465\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dropcatergory.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addcategory.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTID.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTicket.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CommentOwner.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\SendGrid.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\SendGrid.SmtpApi.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\SendGridMail.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dropcatergory.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addcategory.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTID.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTicket.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CommentOwner.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb

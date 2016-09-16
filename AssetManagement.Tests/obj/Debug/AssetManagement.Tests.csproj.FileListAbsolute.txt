@@ -1400,9 +1400,7 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\SendGrid.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\SendGrid.SmtpApi.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\SendGridMail.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
@@ -1494,3 +1492,87 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Tests\bin\Debug\Sys
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll.config
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.pdb
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Moq.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\SendGrid.SmtpApi.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Moq.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
+C:\Users\Mfusi\Desktop\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll.config
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\AssetManagement.Tests.pdb
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Moq.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.Mvc.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\SendGrid.SmtpApi.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Helpers.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Mvc.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Razor.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\WebActivatorEx.dll
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\EntityFramework.SqlServer.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Moq.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Common.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\Ninject.Web.Mvc.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\PagedList.Mvc.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Helpers.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Mvc.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.Razor.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\AssetManagement\AssetManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.csprojResolveAssemblyReference.cache
+E:\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.dll
+E:\AssetManagement\AssetManagement.Tests\obj\Debug\AssetManagement.Tests.pdb

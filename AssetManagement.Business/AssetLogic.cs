@@ -17,7 +17,10 @@ namespace AssetManagement.Business
             {
                 deprcost = cost - ((cost * 0.3) * (DateTime.Now.Year - dateadded.Year));
             }
-                
+            if (cost - ((cost * 0.3) * (DateTime.Now.Year - dateadded.Year)) < 0)
+            {
+                deprcost = 0;
+            }
             return deprcost;
         }
 
