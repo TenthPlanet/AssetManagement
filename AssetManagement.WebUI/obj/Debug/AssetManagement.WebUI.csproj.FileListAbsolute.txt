@@ -2151,3 +2151,5 @@ C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\bin\Micro
 C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
 C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Syfolics'\Source\Repos\AssetManagement3\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
