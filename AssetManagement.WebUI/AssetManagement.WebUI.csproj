@@ -777,6 +777,8 @@
     <Content Include="Views\Report\ExportPDF.cshtml" />
     <Content Include="Views\Shared\_Report.cshtml" />
     <Content Include="Views\Asset\FullyDepreciated.cshtml" />
+    <Content Include="Views\Shared\_TotalStock.cshtml" />
+    <Content Include="Views\Stock\totalStock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

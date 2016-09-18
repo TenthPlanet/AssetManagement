@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+
+@if(@ViewBag.TotalStock<10)
+{
+     <div class="nav pull-right top-menu">
+      <a class="btn btn-danger" data-toggle="modal" href="#myModal2">
+      Stock Alert!
+      </a>
+    </div>
+}
+else
+{
+    @ViewBag.Total
+}
+
+

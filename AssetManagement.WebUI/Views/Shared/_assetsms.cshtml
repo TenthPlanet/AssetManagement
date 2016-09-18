@@ -41,8 +41,34 @@
         </div>
         <div style="margin-top:20px">
             Admin : @User.Identity.Name
+            @Html.Partial("_TotalStock")
         </div>
     </header>
+
+    <!--============================Modal for stock alert!========================================-->
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:red;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x</button>
+                    <h2 class="modal-title" style="font-family:Broadway;font-weight:bold;text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock &nbsp;&nbsp;</h2>
+                </div>
+                <div class="modal-body">
+
+                    Stock from the warehouse is depleting please add more stock or purchase some new assets!
+
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-danger" type="button">Close</button>
+                    @*<button class="btn btn-warning" type="button">Confirm</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <!--============================================================================================-->
     <div> 
         <!--sidebar start-->
         <aside>
