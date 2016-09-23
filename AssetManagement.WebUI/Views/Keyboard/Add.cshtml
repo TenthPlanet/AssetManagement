@@ -24,6 +24,21 @@ else
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#ddlmanu").change(function () {
+            $.get("/Keyboard/GetModel", { ddlmanu: $("#ddlmanu").val() }, function (data) {
+
+                $("#modelName").empty();
+                $.each(data, function (index, row) {
+                    $("#modelName").append("<option value='" + row.model + "'>" + row.model + "</option>")
+                });
+            })
+        });
+    });
+</script>
 <style>
     #urlddl{
         width: 18%;
@@ -96,14 +111,14 @@ else
             <div class="form-group">
                 @Html.LabelFor(model => model.manufacturer, new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.manufacturer, new SelectList(ViewBag.KeyBM, "manufacturer", "manufacturer"), "Select Manufacturer", new { @class = "form-control" })
+                    @Html.DropDownListFor(model => model.manufacturer, ViewBag.KeyBM as List<SelectListItem>, "Select Manufacturer", new { id = "ddlmanu" })
                     @Html.ValidationMessageFor(model => model.manufacturer)
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.modelName,new SelectList(ViewBag.KeyBM, "model", "model"), "Select Model", new { @class = "form-control" })
+                    <select id="modelName" class="form-control" name="modelName"></select>
                     @Html.ValidationMessageFor(model => model.modelName)
                 </div>
             </div>

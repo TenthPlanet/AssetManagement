@@ -34,15 +34,43 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
-            ViewBag.PrM = context.Stocks.ToList().Where(x => x.category == "Printer");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Printer"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.PrM = li;
             return View();
+        }
+
+        public JsonResult GetModel(string ddlmanu)
+        {
+            return Json(context.Stocks.Where(x => x.category == "Printer" && x.manufacturer == ddlmanu), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Add(PrinterViewModel viewmodel)
         {
-            ViewBag.PrM = context.Stocks.ToList().Where(x => x.category == "Printer");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Printer"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.PrM = li;
+
             if (ModelState.IsValid)
             {
                 try

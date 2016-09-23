@@ -36,15 +36,42 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
-            ViewBag.MM = context.Stocks.ToList().Where(x => x.category == "Monitor");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Monitor"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.MM = li;
             return View();
+        }
+
+        public JsonResult GetModel(string ddlmanu)
+        {
+            return Json(context.Stocks.Where(x => x.category == "Monitor" && x.manufacturer == ddlmanu), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Add(MonitorViewModel viewmodel)
         {
-            ViewBag.MM = context.Stocks.ToList().Where(x => x.category == "Monitor");
+            List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Monitor"));
+            List<SelectListItem> li = new List<SelectListItem>();
+            foreach (var item in slist)
+            {
+                var man = li.Find(x => x.Value == item.manufacturer);
+                if (man == null)
+                {
+                    li.Add(new SelectListItem { Text = item.manufacturer, Value = item.manufacturer });
+                }
+
+            }
+            ViewBag.MM = li;
             if (ModelState.IsValid)
             {
                 try

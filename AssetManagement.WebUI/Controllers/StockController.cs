@@ -95,5 +95,18 @@ namespace AssetManagement.WebUI.Controllers
             ModelState.Clear();
             return View();
         }
+        public ActionResult totalStock()
+        {
+            int count = context.Stocks.ToList().Count();
+
+            int stock = 0;
+            foreach (Stock st in context.Stocks.ToList())
+            {
+                stock += st.quantity;
+            }
+            ViewBag.TotalStock = stock;
+
+            return View();
+        }
 	}
 }

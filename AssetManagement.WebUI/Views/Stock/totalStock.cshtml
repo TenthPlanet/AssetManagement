@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+    
+}
+<link href="~/Content/css/lobibox.css" rel="stylesheet" />
+ 
+
+
+@if (@ViewBag.TotalStock<10)
+{
+     <div class="nav pull-right top-menu">
+         <a id="popupErrorBasic" class="btn btn-danger" data-toggle="modal" href="#myModal2">
+          
+             Stock Alert!
+         </a>
+    </div>
+    
+    
+}
+else
+{
+    @ViewBag.Total
+}
+
+
