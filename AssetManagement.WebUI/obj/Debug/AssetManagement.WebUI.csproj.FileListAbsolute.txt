@@ -1903,3 +1903,5 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Microsoft
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
