@@ -1,0 +1,132 @@
+﻿@model AssetManagement.Domain.Entities.Ticket
+@{
+    ViewBag.Title = "Ticket";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+<h2>Ticket</h2>
+<style>
+    .card {
+        position: relative;
+        display: block;
+        margin-bottom: .50rem;
+        background-color: #f7f7f7;
+        border-radius: .50rem;
+        border: 1px solid rgba(128, 128, 128, 0.37);
+    }
+
+    .card-block {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #cardID {
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .card-header {
+        background-color: rgba(87, 114, 124, 0.10);
+        border-top: 1px solid rgba(128, 128, 128, 0.37);
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .card-footer {
+        padding: 10px;
+        background-color: rgba(87, 114, 124, 0.10);
+        border-top: 1px solid rgba(128, 128, 128, 0.37);
+    }
+
+    .container {
+        padding-left: 3.5%;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        background-color: #f7f7f7;
+    }
+
+    p {
+        color: rgba(51, 51, 51, 0.61);
+    }
+</style>
+<div class="container" id="cardID">
+    <div class="card text-xs-center">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs pull-xs-left">
+                <li class="nav-item active">
+                    <a data-toggle="tab" href="#ticket" class="nav-link">Ticket</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" href="#asset" class="nav-link">Asset Details</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" href="#" class="nav-link disabled">Comments</a>
+                </li>
+            </ul>
+        </div> <!--End of HEADER-->
+        <div class="card-block tab-content">
+            <div id="ticket" class="tab-pane fade in active">
+                <p><strong>@Model.subject</strong></p>
+                <p>@Model.description</p>
+                @if (Model.acknowledgestatus == true && User.Identity.Name == Model.employeeNumber)
+                {
+                    if (Model.accomplishstatus != true)
+                    {
+                        <a href="~/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-danger">Close Ticket</a>
+                    }
+                }
+            </div>
+            <div class="tab-pane fade" id="asset">
+                <p>@Model.assetnumber</p>
+                <p>@Model.acknowledgestatus</p>
+                <a href="#" id="load" class="btn btn-primary">Load JS</a>
+            </div>
+        </div>
+        <div class="card-footer text-muted" onload="">
+            @if (Model.datecompleted != null)
+            {
+                <p>
+                    Created :  <span style="color:lightseagreen">@Model.datecreated</span>
+                    | Closed : <span style="color:lightseagreen">@Html.DisplayFor(model => model.datecompleted)</span>
+                    | Duration : <span style="color:lightseagreen">
+                        <text class="days" hidden="hidden">@(((TimeSpan)ViewData["duration"]).Duration().Days) Days -</text>
+                        <text class="hours" hidden="hidden">@(((TimeSpan)ViewData["duration"]).Duration().Hours) Hours -</text>
+                        <text class="minutes">@(((TimeSpan)ViewData["duration"]).Duration().Minutes) Minutes</text>
+                    </span>
+                </p>
+            }
+            else
+            {
+                <p>
+                    Created :  <span style="color:lightseagreen">@Model.datecreated</span>
+                    | Open <span style="color:lightseagreen">
+                        <text class="days" hidden="hidden">@(((TimeSpan)ViewData["duration"]).Duration().Days) Days -</text>
+                        <text class="hours" hidden="hidden">@(((TimeSpan)ViewData["duration"]).Duration().Hours) Hours -</text>
+                        <text class="minutes">@(((TimeSpan)ViewData["duration"]).Duration().Minutes) Minutes</text>
+                    </span>
+                </p>
+            }
+        </div>
+    </div>
+</div>
+<script src="~/Content/AdminLayout/js/jquery.js"></script>
+<script>
+    var days = @(((TimeSpan)@ViewData["duration"]).Duration().Days);
+    var hours = @(((TimeSpan)@ViewData["duration"]).Duration().Hours);
+    var daysElement = $('.days');
+    var hoursElement = $('.hours');
+    $(document).ready(function(){
+        showElement();
+    });
+    function showElement(){
+        if(days!=0){
+            daysElement.show();
+        }
+        if(hours!=0){
+            hoursElement.show();
+            console.log("Visible",daysElement.visible)
+            console.log('loaded');
+        }
+    }
+</script>

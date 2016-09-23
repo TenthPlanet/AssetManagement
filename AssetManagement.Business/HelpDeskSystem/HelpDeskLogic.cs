@@ -15,9 +15,13 @@ namespace AssetManagement.Business.HelpDeskSystem
         public List<Ticket> openTickets;
         public List<Ticket> aknowlagedTickets;
         public List<Ticket> unAknowlagedTickets;
+        public List<ReplacementPart> spareParts;
+        public List<Asset> assets;
+        public List<Stock> stocks;
+
+        public List<Invoice> invoices { get; set; }
+
         private readonly AssetManagementEntities _context = new AssetManagementEntities();
-
-
         public HelpDeskLogic()
         {
             allTickets = _context.Tickets.ToList();
@@ -25,31 +29,31 @@ namespace AssetManagement.Business.HelpDeskSystem
             openTickets = _context.Tickets.Where(t => t.accomplishstatus == false).ToList();
             aknowlagedTickets = _context.Tickets.Where(t => t.acknowledgestatus == true).ToList();
             unAknowlagedTickets = _context.Tickets.Where(t => t.acknowledgestatus == false).ToList();
+            spareParts = _context.ReplacementParts.ToList();
+            invoices = _context.Invoices.ToList();
+            assets = _context.Assets.ToList();
+            stocks = _context.Stocks.ToList();
         }
 
-        public List<Ticket> CompletedTickets(Employee TicketParticipant)
+        public List<Ticket> CompletedTickets(string id)
         {
-            return closedTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+            return closedTickets.Where(emp => emp.employeeNumber == id).ToList();
         }
-        public List<Ticket> OpenTickets(Employee TicketParticipant)
+        public List<Ticket> OpenTickets(string id)
         {
-            return openTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+            return openTickets.Where(emp => emp.employeeNumber == id).ToList();
         }
-        public List<Ticket> AknowlagedTickets(Employee TicketParticipant)
+        public List<Ticket> AknowlagedTickets(string id)
         {
-            return aknowlagedTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+            return aknowlagedTickets.Where(emp => emp.employeeNumber == id).ToList();
         }
-        public List<Ticket> UnAknowlagedTickets(Employee TicketParticipant)
+        public List<Ticket> UnAknowlagedTickets(string id)
         {
-            return unAknowlagedTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+            return unAknowlagedTickets.Where(emp => emp.employeeNumber == id).ToList();
         }
-        public List<Ticket> AllTickets(Employee TicketParticipant)
+        public List<Ticket> AllTickets(string id)
         {
-            return allTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
-        }
-        public List<Ticket> ClosedTickets(Employee TicketParticipant)
-        {
-            return closedTickets.Where(emp => emp.employeeNumber == TicketParticipant.employeeNumber).ToList();
+            return allTickets.Where(emp => emp.employeeNumber == id).ToList();
         }
 
         public List<Employee> AllAdministrators()
@@ -61,41 +65,15 @@ namespace AssetManagement.Business.HelpDeskSystem
             return _context.Employees.Where(emp => emp.position == "Technician").ToList();
         }
 
-        public IEnumerable<TicketParticipant> TechnicianStats()
+        public Ticket GetTicket(int id)
         {
-            var participants = new List<TicketParticipant>();
-            foreach (var participant in AllTechnicians())
-            {
-                var returnParticipant = new TicketParticipant()
-                {
-                    Name = participant.fullname,
-                    employeeID = participant.employeeNumber,
-                    AllTickets = AllTickets(participant).Count,
-                    OpenedTickets = OpenTickets(participant),
-                    CompletedTickets = CompletedTickets(participant).Count,
-                    UnAcknowalgedTickets = UnAknowlagedTickets(participant).Count
-                };
-                participants.Add(returnParticipant);
-            }
-            return participants;
+            return allTickets.Find(t => t.ticketid == id);
         }
-        public IEnumerable<TicketParticipant> AdministratorStats()
+
+        public void AddReplacementPart(ReplacementPart part)
         {
-            var participants = new List<TicketParticipant>();
-            foreach (var participant in AllAdministrators())
-            {
-                var returnParticipant = new TicketParticipant()
-                {
-                    Name = participant.fullname,
-                    employeeID = participant.employeeNumber,
-                    AllTickets = AllTickets(participant).Count,
-                    OpenedTickets = OpenTickets(participant),
-                    CompletedTickets = CompletedTickets(participant).Count,
-                    UnAcknowalgedTickets = UnAknowlagedTickets(participant).Count
-                };
-                participants.Add(returnParticipant);
-            }
-            return participants;
+            _context.ReplacementParts.Add(part);
+            _context.SaveChanges();
         }
         public Employee GetEmployee(string id)
         {
@@ -103,56 +81,57 @@ namespace AssetManagement.Business.HelpDeskSystem
             return ams.Employees.Find(id);
         }
 
-        public List<Ticket> TicketsFilter(status status)
+        public TicketReportPerParticipant GetParticipantReport(string id)
         {
-            var tickets = new List<Ticket>();
-            switch (status)
-            {
-                case status.opened:
-                    tickets = openTickets;
-                    break;
-                case status.completed:
-                    tickets = closedTickets;
-                    break;
-                case status.unAknowlaged:
-                    tickets = unAknowlagedTickets;
-                    break;
-                case status.all:
-                    tickets = allTickets;
-                    break;
-            }
-            return tickets;
+            TicketReportPerParticipant participant = new TicketReportPerParticipant();
+            participant.Opened = OpenTickets(id);
+            participant.Completed = CompletedTickets(id);
+            participant.UnAknowlaged = UnAknowlagedTickets(id);
+            participant.All = AllTickets(id);
+            return participant;
         }
-        //public object TicketsFilter(string employeeId, status opened)
-        //{
-        //    var employee = GetEmployee(employeeId);
-        //    var tickets = new List<Ticket>();
-        //    switch (opened)
-        //    {
-        //        case status.opened:
-        //            tickets = OpenTickets(employee);
-        //            break;
-        //        case status.closed:
-        //            tickets = ClosedTickets(employee);
-        //            break;
-        //        case status.completed:
-        //            tickets = CompletedTickets(employee);
-        //            break;
-        //        case status.unAknowlaged:
-        //            tickets = UnAknowlagedTickets(employee);
-        //            break;
-        //        case status.all:
-        //            tickets = AllTickets(employee);
-        //            break;
-        //    }
-        //    return tickets;
-        //}
-    }
-    public enum status
-    {
-        opened = 0,
-        unAknowlaged,
-        completed,
-        all
+        public TicketReport GetReport(string id)
+        {
+            TicketReport report = new TicketReport();
+            report.Opened = openTickets;
+            report.Completed = closedTickets;
+            report.UnAknowlaged = unAknowlagedTickets;
+            report.All = allTickets;
+            return report;
+        }
+        public double TotalPartsCost()
+        {
+            double total = 0;
+            foreach (var part in spareParts)
+            {
+                total += part.price;
+            }
+            return total;
+        }
+        public double TotalAssetsCost()
+        {
+            double total = 0;
+            foreach (var part in invoices)
+            {
+                if (part.invoiceType == "a")
+                    total += part.totalCost;
+                else
+                    continue;
+            }
+            return total;
+        }
+        public double Qunatity()
+        {
+            double qty = 0;
+            foreach (var stock in stocks)
+            {
+                qty += stock.quantity;
+            }
+            return qty;
+        }
+        public double TotalCost()
+        {
+            return TotalAssetsCost() + TotalPartsCost();
+        }
     }
 }

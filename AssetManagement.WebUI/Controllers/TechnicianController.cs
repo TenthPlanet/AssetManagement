@@ -13,6 +13,7 @@ using System.Web;
 using System.Web.Mvc;
 using PagedList.Mvc;
 using PagedList;
+using AssetManagement.Business.HelpDeskSystem;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -22,8 +23,41 @@ namespace AssetManagement.WebUI.Controllers
         private readonly AssetManagementEntities _context = new AssetManagementEntities();
         private AssetResolver list = new AssetResolver();
         AssetLogic al = new AssetLogic();
-        //
-        // GET: /Technician/
+        public ActionResult Index()
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            ViewBag.UserID = User.Identity.Name;
+            Session["Role"] = User.IsInRole("Administrator");
+            return View(hdl.GetParticipantReport(User.Identity.Name));
+        }
+
+        public ActionResult Ticket(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var ticket = hdl.GetTicket(int.Parse(id));
+            Session["AssetNumber"] = ticket.assetnumber;
+            Session["TicketID"] = id;
+            return View(ticket);
+        }
+        [HttpGet]
+        public ActionResult AcknowlageTicket(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var ticket = hdl.GetTicket(int.Parse(id));
+            return View(ticket);
+        }
+        [HttpPost]
+        [ActionName("AcknowlageTicket")]
+        public ActionResult Acknowlage_Ticket(string id)
+        {
+            Ticket ticket = _context.Tickets.Find(int.Parse(id));
+            ticket.acknowledgestatus = true;
+            TryUpdateModel(ticket);
+            _context.SaveChanges();
+            TempData["Success"] = "You have acknowledged this ticket";
+            return RedirectToAction("Ticket", "Tickets", new { id = ticket.ticketid });
+        }
+
         public ActionResult Tickets(string sortOrder, int? page)
         {
             
@@ -235,7 +269,7 @@ namespace AssetManagement.WebUI.Controllers
             ticket.acknowledgestatus = true;
             _context.SaveChanges();
             TempData["Success"] = "You have acknowledged this ticket";
-            return RedirectToAction("TicketDetails", new { id = ticket.ticketid });
+            return RedirectToAction("Ticket","Tickets", new { id = ticket.ticketid });
         }
         public ActionResult Report(int? id)
         {
@@ -311,9 +345,7 @@ namespace AssetManagement.WebUI.Controllers
                           })
                           .Where(x => x.assetstatus == 1
                               && x.employeenumber.Equals(User.Identity.Name)).ToList();
-
             return View(assets);
         }
-        
 	}
 }

@@ -9,6 +9,7 @@ using AssetManagement.Domain.QuickResolver;
 using AssetManagement.WebUI.ViewModel.Asset;
 using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Entities;
+using AssetManagement.Business.HelpDeskSystem;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -28,15 +29,14 @@ namespace AssetManagement.WebUI.Controllers
             int s = 0;
             ViewBag.getAssets = list.Assets().Count;
             ViewBag.getEmployee = list.Employees().Count;
-            foreach(Stock st in context.Stocks.ToList())
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            ViewBag.TicketParticipant = hdl.GetParticipantReport(User.Identity.Name);
+            foreach (Stock st in context.Stocks.ToList())
             {
-                s+= st.quantity;
-                
+                s+= st.quantity;             
             }
             ViewBag.getStock=s;
-
-
-            return View();
+            return View();                   
         }
 
     }

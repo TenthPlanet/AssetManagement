@@ -91,7 +91,7 @@ namespace AssetManagement.WebUI.Controllers
 
                     if (UserManager.IsInRole(user.Id, "Technician"))
                     {
-                        return RedirectToAction("Tickets", "Technician");
+                        return RedirectToAction("Index", "Technician");
                     }
                     else if (UserManager.IsInRole(user.Id, "Administrator"))
                     {

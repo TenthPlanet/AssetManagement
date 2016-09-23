@@ -28,7 +28,7 @@ namespace AssetManagement.WebUI.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Invoice InvoiceModel, HttpPostedFileBase upload)
-        { 
+        {
             try
             {
                 Domain.Context.AssetManagementEntities AME = new Domain.Context.AssetManagementEntities();
@@ -45,10 +45,12 @@ namespace AssetManagement.WebUI.Controllers
                         {
                             invoice.Content = reader.ReadBytes(upload.ContentLength);
                         }
-                        InvoiceModel.CaptureDate = DateTime.Now;
+                        InvoiceModel.invoiceType = invoice.invoiceType;
+                        InvoiceModel.InvoiceDate = invoice.InvoiceDate;
                         InvoiceModel.Content = invoice.Content;
                         InvoiceModel.ContentType = invoice.ContentType;
-                        InvoiceModel.FileName = invoice.FileName;          
+                        InvoiceModel.FileName = invoice.FileName;
+                        InvoiceModel.totalCost = invoice.totalCost;
                     }
                     AME.Invoices.Add(InvoiceModel);
                     AME.SaveChanges();
@@ -74,8 +76,26 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult ViewByInvoiceNumber(string id)
         {
             Domain.Context.AssetManagementEntities AME = new Domain.Context.AssetManagementEntities();
-            var file = AME.Invoices.Single(i => i.InvoiceNumber == id);
-            return File(file.Content, file.ContentType);
+            try
+            {
+                var file = AME.Invoices.Single(i => i.InvoiceNumber == id);
+                return File(file.Content, file.ContentType);
+            }
+            catch(InvalidOperationException e)
+            {
+                Session["ExeptionMessage"] = e.Message;
+                Session["Message"] = "Invoice not found. The admin will be see to the matter as soon as possible...";
+                return RedirectToAction("PageNotFound");
+            }catch(ArgumentException e)
+            {
+                Session["ExeptionMessage"] = e.Message;
+                Session["Message"] = "Invoice not found. The admin will be see to the matter as soon as possible...";
+                return RedirectToAction("PageNotFound");
+            }
+        }
+        public ActionResult PageNotFound()
+        {
+            return View();
         }
     }
 }

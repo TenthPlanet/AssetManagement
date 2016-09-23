@@ -34,6 +34,7 @@ namespace AssetManagement.Domain.Context
         public DbSet<ContactUs> Contactus { get; set; }
         public DbSet<Screenshot> Screenshots { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<ReplacementPart> ReplacementParts { get; set; }
 
     }
 }

@@ -44,9 +44,7 @@ else
                 <li><i class="fa fa-list-alt"></i>Add Employee</li>
             </ol>
             </div>
-            <hr />
             <div class="form-horizontal">
-                <h3>Add Employee</h3>
                 <hr />
                 @Html.ValidationSummary(true)
 
@@ -58,18 +56,14 @@ else
                 {
                     <div class="alert alert-danger">@ViewBag.Message</div>
                 }
-
                 <div style="margin-bottom:4%;"></div>
-
-
                 <div class="form-group">
-                    @Html.Label("Employee Number", new { @class = "control-label col-md-2" })
+                    @Html.Label("Employee #", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(model => model.employeeNumber)
                         @Html.ValidationMessageFor(model => model.employeeNumber)
                     </div>
                 </div>
-
                 <div class="form-group">
                     @Html.Label("First Name", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
@@ -133,7 +127,7 @@ else
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Office Number", new { @class = "control-label col-md-2" })
+                    @Html.Label("Office #", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(model => model.officeNumber)
                         @Html.ValidationMessageFor(model => model.officeNumber)
@@ -141,7 +135,7 @@ else
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Telephone Number", new { @class = "control-label col-md-2" })
+                    @Html.Label("Telephone #", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(model => model.telephoneNumber)
                         @Html.ValidationMessageFor(model => model.telephoneNumber)
@@ -149,7 +143,7 @@ else
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Mobile Number", new { @class = "control-label col-md-2" })
+                    @Html.Label("Mobile #", new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(model => model.mobileNumber)
                         @Html.ValidationMessageFor(model => model.mobileNumber)

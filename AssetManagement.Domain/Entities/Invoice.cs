@@ -16,8 +16,12 @@ namespace AssetManagement.Domain.Entities
         [Required]
         [Display(Name = "Supplier")]
         public string Retailer { get; set; }
-        [DataType(DataType.DateTime)]
-        public DateTime CaptureDate { get; set; }
+        [Required]
+        [Display(Name = "Total Cost")]
+        public double totalCost { get; set; }
+        public string invoiceType { get; set; }
+        [Required]
+        public DateTime InvoiceDate { get; set; }
         [StringLength(255)]
         public string FileName { get; set; }
         [StringLength(100)]

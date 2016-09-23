@@ -22,7 +22,6 @@ namespace AssetManagement.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int catID { get; set; }
-
         public string category { get; set; }
     }
 
@@ -52,6 +51,7 @@ namespace AssetManagement.Domain.Entities
         public string employeeNumber { get; set; }
         public virtual Employee Employee { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
     }
 
     
@@ -72,6 +72,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
 
     }
 
@@ -97,6 +98,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
 
     }
 
@@ -119,6 +121,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
 
     }
 
@@ -145,6 +148,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
     }
 
     public class Monitor 
@@ -167,6 +171,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
 
     }
 
@@ -189,6 +194,7 @@ namespace AssetManagement.Domain.Entities
         public int assetID { get; set; }
         public virtual Asset Asset { get; set; }
         public string InvoiceNumber { get; set; }
+        public List<ReplacementPart> replacementParts { get; set; }
 
     }
 
@@ -208,7 +214,6 @@ namespace AssetManagement.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int historyID { get; set; }
-
         public string assetNumber { get; set; }
         public string category { get; set; }
         public DateTime assignDate { get; set; }

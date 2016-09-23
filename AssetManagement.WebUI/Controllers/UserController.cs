@@ -202,6 +202,5 @@ namespace AssetManagement.WebUI.Controllers
             ImageBytes = reader.ReadBytes((int)Image.ContentLength);
             return ImageBytes;
         }
-
     }
 }

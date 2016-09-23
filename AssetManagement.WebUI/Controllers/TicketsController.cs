@@ -14,7 +14,7 @@ using PagedList;
 
 namespace AssetManagement.WebUI.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Administrator,Technician")]
     public class TicketsController : Controller
     {
         public TicketsController()
@@ -28,7 +28,10 @@ namespace AssetManagement.WebUI.Controllers
         {
             this._repository = _repository;
         }
-
+        public ActionResult KnowlageBase()
+        {
+            return View();
+        }
         // GET: Tickets
         public ActionResult Index()
         {
@@ -39,6 +42,19 @@ namespace AssetManagement.WebUI.Controllers
                 .ToList().Count();
             ViewBag.KnowledgeBase = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList().Count();
             return View();
+        }
+        [AllowAnonymous]
+        public ActionResult Ticket(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var Ticket = hdl.GetTicket(int.Parse(id));
+            var duration = new TimeSpan();
+            if (Ticket.accomplishstatus==true)
+                duration = Ticket.datecompleted.Value.Subtract(Ticket.datecreated);
+            else
+                duration = DateTime.Now.Subtract(Ticket.datecreated);
+            ViewData["duration"] = duration;
+            return View(Ticket);
         }
         public ActionResult TicketsIndex(int? page)
         {
@@ -76,7 +92,6 @@ namespace AssetManagement.WebUI.Controllers
                     description = body,
                     assetnumber = assetnumber,
                     category = catergory.Single(p => p.assetNumber == assetnumber).catergory
-
                 };
                 return View(tt);
             }
@@ -92,9 +107,6 @@ namespace AssetManagement.WebUI.Controllers
                     category = Assets,
                     assetnumber = aa.assetNumber,
                     assetowner = aa.employeeNumber,
-                    employeeNumber = aa.employeeNumber
-
-
                 };
                 return View(t);
             }
@@ -256,18 +268,18 @@ namespace AssetManagement.WebUI.Controllers
         {
             return View();
         }
-
+        [Authorize(Roles ="Technician")]
         [HttpPost, ActionName("Acknowledge")]
         [ValidateAntiForgeryToken]
         public ActionResult Confirm_Acknowledge(int? id)
         {
             Ticket ticket = _context.Tickets.Find(id);
-
             ticket.acknowledgestatus = true;
             _context.SaveChanges();
             TempData["Success"] = "You have acknowledged this ticket";
             return RedirectToAction("Details", new { id = ticket.ticketid });
         }
+        [Authorize(Roles ="Technician")]
         public ActionResult Accomplished(int? id)
         {
             if (id == null)
@@ -598,35 +610,38 @@ namespace AssetManagement.WebUI.Controllers
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
             var id = ViewData["id"].ToString();
-            var tickets = hdl.OpenTickets(hdl.GetEmployee(id));
+            var tickets = hdl.OpenTickets(id);
             return PartialView("_OpenedTickets",tickets);
         }
         public PartialViewResult _UnAknowlaged(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
-            var tickets = hdl.UnAknowlagedTickets(hdl.GetEmployee(id));
+            var tickets = hdl.UnAknowlagedTickets(id);
             return PartialView("_UnAknowlaged",tickets);
         }
         public PartialViewResult _Completed(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
-            var tickets = hdl.CompletedTickets(hdl.GetEmployee(id));
+            var tickets = hdl.CompletedTickets(id);
             return PartialView("_Completed",tickets);
         }
         public PartialViewResult _AllTickets(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
-            var tickets = hdl.AllTickets(hdl.GetEmployee(id));
+            var tickets = hdl.AllTickets(id);
             return PartialView("_AllTickets",tickets);
         }
         public ActionResult TicketsFilter(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
-            status _status = (status)Convert.ToInt32(Session["status"]);
-            var tickets = hdl.TicketsFilter(_status).Where(emp => emp.employeeNumber == id);
             Session["Technician"] = hdl.GetEmployee(id).fullname;
             ViewData["id"] = hdl.GetEmployee(id).employeeNumber;
             return View(hdl);
+        }
+        public PartialViewResult _TicketsPerParticipant(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            return PartialView("_TicketsPerParticipant",hdl.GetParticipantReport(id));
         }
     }
 }

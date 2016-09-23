@@ -1,0 +1,27 @@
+﻿
+
+@model AssetManagement.Business.HelpDeskSystem.TicketReportPerParticipant
+<div class="box box-primary" id="tabs">
+    <div class="box-body">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Opened</a></li>
+            <li><a data-toggle="tab" href="#menu1">Unaknowlaged</a></li>
+            <li><a data-toggle="tab" href="#menu2">Completed</a></li>
+            <li><a data-toggle="tab" href="#menu3">All</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                @Html.Partial("~/Views/Tickets/_OpenedTickets.cshtml", Model.Opened)
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                @Html.Partial("~/Views/Tickets/_UnAknowlaged.cshtml", Model.UnAknowlaged)
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                @Html.Partial("~/Views/Tickets/_Completed.cshtml", Model.Completed)
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                @Html.Partial("~/Views/Tickets/_AllTickets.cshtml", Model.All)
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+@model AssetManagement.Business.HelpDeskSystem.TicketReportPerParticipant
+>
+<div style="margin-bottom:10%;"></div>
+<h3 class="page-header">
+    <i class="fa fa-list-alt"></i>My Tickets
+</h3>
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i>@Html.ActionLink("Home", "Index", "Technician")</li>
+    <li><i class="icon_genius"></i>Ticket</li>
+</ol>
+
+@Html.Partial("~/Views/Tickets/_TicketsPerParticipant.cshtml", Model)
+

@@ -40,6 +40,7 @@ namespace AssetManagement.Domain.Entities
         public string employeeNumber { get; set; }
         public virtual Employee Employees { get; set; }
         public ICollection<Progress> Progresses { get; set; }
+        public List<int> replacementParts { get; set; }
     }
 
     public class Progress
@@ -81,5 +82,21 @@ namespace AssetManagement.Domain.Entities
         public string ImageMimeType { get; set; }
         public int contactId { get; set; }
         public virtual ContactUs contactUs { get; set; }
+    }
+
+    public class ReplacementPart
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int replacementPartID { get; set; }
+        public string name { get; set; }
+        public string associatedAsset { get; set; }
+        public int associatedTicket { get; set; }
+        public string invoiceNumber { get; set; }
+        public string supplier { get; set; }
+        public double price { get; set; }
+        public string serialNumber { get; set;}
+        public DateTime pruchaseDate { get; set; }
+
     }
 }

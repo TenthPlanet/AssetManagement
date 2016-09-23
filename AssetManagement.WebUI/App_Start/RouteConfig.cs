@@ -18,6 +18,11 @@ namespace AssetManagement.WebUI
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Technician",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Technician", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

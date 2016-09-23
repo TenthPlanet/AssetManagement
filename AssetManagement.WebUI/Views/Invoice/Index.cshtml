@@ -32,7 +32,7 @@
             <p>Supplier</p>
         </th>
         <th>
-            @Html.DisplayName("Capture Date")
+            @Html.DisplayName("Invoice Date")
         </th>
         <th>
            
@@ -49,7 +49,7 @@
                 @Html.DisplayFor(modelItem => item.Retailer)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CaptureDate)
+                @Html.DisplayFor(modelItem => item.InvoiceDate)
             </td>
             <td>
                 @Html.ActionLink("View", "ViewInvoice", new { id = item.InvoiceId })

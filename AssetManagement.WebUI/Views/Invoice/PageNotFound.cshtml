@@ -1,0 +1,11 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
+
+<div style="margin-bottom:10%;"></div>
+<div class="alert alert-danger">
+    <h3>@Session["Message"]</h3>
+</div>
+<a href="~/Invoice/Create.cshtml">Upload Invoice</a>
