@@ -1566,6 +1566,13 @@
     <Content Include="Views\Tickets\Ticket.cshtml" />
     <Content Include="Views\Technician\AcknowlageTicket.cshtml" />
     <Content Include="Views\Tickets\KnowlageBase.cshtml" />
+    <Content Include="Views\Shared\_AssetDetails.cshtml" />
+    <Content Include="Views\Shared\_Laptop.cshtml" />
+    <Content Include="Views\Shared\_Printer.cshtml" />
+    <Content Include="Views\Shared\_Mouse.cshtml" />
+    <Content Include="Views\Shared\_Keyboard.cshtml" />
+    <Content Include="Views\Shared\_PC.cshtml" />
+    <Content Include="Views\Shared\_Monitor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

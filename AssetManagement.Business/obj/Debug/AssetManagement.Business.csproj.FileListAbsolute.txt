@@ -1095,7 +1095,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\EntityFramework.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\PagedList.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\PagedList.Mvc.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\SendGrid.dll
@@ -1111,7 +1110,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\AssetManagement.Domain.pdb
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\EntityFramework.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\PagedList.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\PagedList.Mvc.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Business\bin\Debug\System.Net.Http.Formatting.xml

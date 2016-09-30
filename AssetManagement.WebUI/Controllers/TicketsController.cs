@@ -9,8 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
-using PagedList.Mvc;
 using PagedList;
+using AssetManagement.Business.AssetManagement;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -47,6 +47,7 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult Ticket(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
+            AssetManagementLogic aml = new AssetManagementLogic();
             var Ticket = hdl.GetTicket(int.Parse(id));
             var duration = new TimeSpan();
             if (Ticket.accomplishstatus==true)
@@ -54,6 +55,7 @@ namespace AssetManagement.WebUI.Controllers
             else
                 duration = DateTime.Now.Subtract(Ticket.datecreated);
             ViewData["duration"] = duration;
+            ViewData["Asset"] = aml.GetAsset(Ticket.assetid.ToString());
             return View(Ticket);
         }
         public ActionResult TicketsIndex(int? page)

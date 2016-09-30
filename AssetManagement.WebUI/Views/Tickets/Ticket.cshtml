@@ -12,6 +12,7 @@
         background-color: #f7f7f7;
         border-radius: .50rem;
         border: 1px solid rgba(128, 128, 128, 0.37);
+        box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.08);
     }
 
     .card-block {
@@ -23,6 +24,7 @@
     #cardID {
         padding-top: 15px;
         padding-left: 20px;
+        margin-left: 6%;
     }
 
     .card-header {
@@ -47,9 +49,20 @@
     }
 
     p {
-        color: rgba(51, 51, 51, 0.61);
+        color: rgba(51, 51, 51, 0.8);
+    }
+
+    #asset, #ticket {
+        margin-right: 20px;
     }
 </style>
+<div style="margin-bottom:20px;"></div>
+
+<ol class="breadcrumb" style="margin-left:5%;">
+    <li><i class="ui-icon-home"></i>Home</li>
+    <li><i class="icon_genius"></i>Ticket</li>
+</ol>
+
 <div class="container" id="cardID">
     <div class="card text-xs-center">
         <div class="card-header">
@@ -58,29 +71,127 @@
                     <a data-toggle="tab" href="#ticket" class="nav-link">Ticket</a>
                 </li>
                 <li class="nav-item">
-                    <a data-toggle="tab" href="#asset" class="nav-link">Asset Details</a>
+                    <a data-toggle="tab" href="#user" class="nav-link">User</a>
                 </li>
                 <li class="nav-item">
-                    <a data-toggle="tab" href="#" class="nav-link disabled">Comments</a>
+                    <a data-toggle="tab" href="#asset" class="nav-link">Asset</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" href="#comments" class="nav-link disabled">Comments</a>
                 </li>
             </ul>
         </div> <!--End of HEADER-->
         <div class="card-block tab-content">
             <div id="ticket" class="tab-pane fade in active">
-                <p><strong>@Model.subject</strong></p>
-                <p>@Model.description</p>
+                <table class="table table-striped table-condensed table-bordered">
+                    <tr>
+                        <th style="width:20%">Proterties</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Ticket No</td>
+                        <td>@Model.ticketid</td>
+                    </tr>
+                    <tr>
+                        <td>Ticket Employee</td>
+                        <td>@Model.assetowner</td>
+                    </tr>
+                    <tr>
+                        <td>Help Desk / Technician</td>
+                        <td>@Model.Employees.fullname</td>
+                    </tr>
+                    <tr>
+                        <td>Priority</td>
+                        <td>@Model.priority</td>
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td>@Model.subject</td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>@Model.description</td>
+                    </tr>
+                    @if (Model.accomplishstatus == true)
+                    {
+                        <tr>
+                            <td>Solution</td>
+                            <td>@Model.solution</td>
+                        </tr>
+                    }
+
+                </table>
                 @if (Model.acknowledgestatus == true && User.Identity.Name == Model.employeeNumber)
                 {
                     if (Model.accomplishstatus != true)
                     {
-                        <a href="~/Tickets/Accomplished/@Model.ticketid" class="btn btn-sm btn-danger">Close Ticket</a>
+                        <a href="~/Tickets/Accomplished/@Model.ticketid" class="btn btn-info" style="margin-top:8px">Close Ticket</a>
                     }
                 }
             </div>
+            <div id="user" class="tab-pane fade">
+                <table class="table table-striped table-condensed table-bordered">
+                    <tr>
+                        <th style="width:20%">Proterties</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Employee #</td>
+                        <td>@Model.Employees.employeeNumber</td>
+                    </tr>
+                    <tr>
+                        <td>Employee Name</td>
+                        <td>@Model.Employees.fullname</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>@Model.Employees.gender</td>
+                    </tr>
+                    <tr>
+                        <td>Office #</td>
+                        <td>@Model.Employees.officeNumber</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td>@Model.Employees.emailAddress</td>
+                    </tr>
+                    <tr>
+                        <td>Telephone</td>
+                        <td>@Model.Employees.telephoneNumber</td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td>@Model.Employees.Departments.departmentName</td>
+                    </tr>
+                </table>
+            </div>
             <div class="tab-pane fade" id="asset">
-                <p>@Model.assetnumber</p>
-                <p>@Model.acknowledgestatus</p>
-                <a href="#" id="load" class="btn btn-primary">Load JS</a>
+                @Html.Partial("_AssetDetails", (AssetManagement.Domain.Entities.Asset)ViewData["Asset"])
+            </div>
+            <div id="comments" class="tab-pane fade">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    var imgUrl = Url.Content("~/Content/images/profile/" + User.Identity.Name + ".png") + "?time=" + DateTime.Now.ToString();
+                    <table>
+                        <tr>
+                            <td style="width:50px;vertical-align: top;"><div class="comImg"><img src="@imgUrl" height="50" width="50" /></div></td>
+                            <td style="vertical-align:middle; min-height:40px;" class="comments" id="comments">
+                                <textarea name="Newcomment" id="Newcomment1" style="width:300px"></textarea>
+                                <script>
+                                    CKEDITOR.replace('Newcomment1',
+                                       {
+                                           customConfig: '/Scripts/ckEditorConfig1.js'
+                                       });
+
+                                </script>
+                                <div class="comTextSub" style="width:250px">
+                                    <input type="submit" value="Comment" class="btn btn-sm btn-default" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                }
             </div>
         </div>
         <div class="card-footer text-muted" onload="">
@@ -109,8 +220,10 @@
             }
         </div>
     </div>
+    <a class="btn btn-outline-info" href="~/Technician/Index">Back</a>
 </div>
-<script src="~/Content/AdminLayout/js/jquery.js"></script>
+
+@*<script src="~/Content/AdminLayout/js/jquery.js"></script>*@
 <script>
     var days = @(((TimeSpan)@ViewData["duration"]).Duration().Days);
     var hours = @(((TimeSpan)@ViewData["duration"]).Duration().Hours);

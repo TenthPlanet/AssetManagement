@@ -38,6 +38,9 @@
         body {
             font-family: Arial;
         }
+        .table{
+            margin-bottom:0px;
+        }
     </style>
     <header class="header dark-bg">
         <div class="toggle-nav">
@@ -130,6 +133,54 @@
     <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>*@
  
     <script>
+        $(document).ready(function () {
+            var tableAllDiv = $('#table-scroll-all');
+            var tabaleAll = $('#tableAll');
+            var tableScrollAllRows = $('#tableAll tr').length;
+            console.log("tableScrollAllRows : ", tableScrollAllRows);
+            console.log("#headerDivAll : ", $('#headerDivAll').css("padding-right"));
+            if (tableScrollAllRows <= 5) {
+                $('#headerDivAll').css("padding-right", 0)
+                $('#headerDivAll').css("margin-right", 0)
+                console.log("#headerDivAll padding right is now : ", $('#headerDivAll').css("padding-right"))
+                console.log("#headerDivAll margin right is now : ", $('#headerDivAll').css("margin-right"))
+            } else {
+                console.log("#headerDivAll padding right is still : ", $('#headerDivAll').css("padding-right"))
+                console.log("#table-scroll-all width : ", $('#table-scroll-all').css("height"))
+            }
+        });
+        $(document).ready(function () {
+            var tableUnAcknowlagedDiv = $('#table-scroll-unacknowlaged');
+            var tabaleAcknowlaged = $('#tableUnAcknowlaged');
+            var tableScrollAcknowlagedRows = $('#tableUnAcknowlaged tr').length;
+            console.log("tableScrollAcknowlagedRows : ", tableScrollAcknowlagedRows);
+            console.log("#HeaderDivUnAcknowlaged : ", $('#HeaderDivUnAcknowlaged').css("padding-right"));
+            if (tableScrollAcknowlagedRows <= 5) {
+                $('#HeaderDivUnAcknowlaged').css("padding-right", 0)
+                $('#HeaderDivUnAcknowlaged').css("margin-right", 0)
+                console.log("#HeaderDivUnAcknowlaged padding right is now : ", $('#HeaderDivUnAcknowlaged').css("padding-right"))
+                console.log("#HeaderDivUnAcknowlaged margin right is now : ", $('#HeaderDivUnAcknowlaged').css("margin-right"))
+            } else {
+                console.log("#HeaderDivUnAcknowlaged padding right is still : ", $('#HeaderDivUnAcknowlaged').css("padding-right"))
+                console.log("#table-scroll-unacknowlaged width : ", $('#table-scroll-unacknowlaged').css("height"))
+            }
+        });
+        $(document).ready(function () {
+            var tableCompletedDiv = $('#table-scroll-completed');
+            var tabaleCompleted = $('#tableCompleted');
+            var tableScrollCompletedRows = $('#tableCompleted tr').length;
+            console.log("tableScrollCompletedRows : ", tableScrollCompletedRows);
+            console.log("#HeaderDivCompleted : ", $('#HeaderDivCompleted').css("padding-right"));
+            if (tableScrollCompletedRows <= 5) {
+                $('#HeaderDivCompleted').css("padding-right", 0)
+                $('#HeaderDivCompleted').css("margin-right", 0)
+                console.log("#HeaderDivCompleted padding right is now : ", $('#HeaderDivCompleted').css("padding-right"))
+                console.log("#HeaderDivCompleted margin right is now : ", $('#HeaderDivCompleted').css("margin-right"))
+            } else {
+                console.log("#HeaderDivCompleted padding right is still : ", $('#HeaderDivCompleted').css("padding-right"))
+                console.log("#table-scroll-completed width : ", $('#table-scroll-completed').css("height"))
+            }
+        });
         //knob
         $(function () {
             $(".knob").knob({
@@ -176,6 +227,7 @@
         $('#trigger').click(function () {
             $('#myModal').modal('show');
         });
+
     </script>
 </body>
 </html>

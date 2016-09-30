@@ -70,10 +70,18 @@ else
         background-color: #93ff87;
         color: #191919;
     }*/
+    .jumbotron{
+        padding:0px;
+    }
 </style>
 <div style="margin-bottom:8%;"></div>
-
 <h2>Solution</h2>
+
+<ol class="breadcrumb">
+    <li><i class="fa fa-info"></i>Knowlage base</li>
+    <li><i class="icon_genius"></i>Solution</li>
+</ol>
+
 
 @if (@TempData["Success"] != null)
 {
@@ -88,7 +96,7 @@ else
         </strong>
     </h3>
 </div>
-<fieldset>
+<fieldset class="jumbotron">
     <legend></legend>
     <div class="col-md-10 linespace">
         <strong>Asset Number    : </strong>@Model.assetnumber

@@ -1208,7 +1208,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\As
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.Mvc.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\SendGrid.dll
@@ -1223,7 +1222,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Sy
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\PagedList.Mvc.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Net.Http.Formatting.xml
@@ -1233,7 +1231,6 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Sy
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dropcatergory.resources
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addcategory.resources
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTID.resources

@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace AssetManagement.WebUI.Controllers
 {
+    [AllowAnonymous]
     public class ReportController : Controller
     {
         // GET: Report
@@ -16,6 +17,7 @@ namespace AssetManagement.WebUI.Controllers
             HelpDeskLogic hdl = new HelpDeskLogic();
             return View(hdl);
         }
+        
         public ActionResult FinencialReport()
         {
             var hdl = new HelpDeskLogic();
