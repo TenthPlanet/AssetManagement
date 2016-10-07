@@ -35,6 +35,6 @@ namespace AssetManagement.Domain.Context
         public DbSet<Screenshot> Screenshots { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<ReplacementPart> ReplacementParts { get; set; }
-
+        public DbSet<TemporalDevice> TemporalDevices { get; set; }
     }
 }

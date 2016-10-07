@@ -218,6 +218,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610070129016_Kay.cs" />
+    <Compile Include="Migrations\201610070129016_Kay.Designer.cs">
+      <DependentUpon>201610070129016_Kay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -1566,6 +1570,14 @@
     <Content Include="Views\Tickets\Ticket.cshtml" />
     <Content Include="Views\Technician\AcknowlageTicket.cshtml" />
     <Content Include="Views\Tickets\KnowlageBase.cshtml" />
+    <Content Include="Views\Asset\TempDev.cshtml" />
+    <Content Include="Views\Asset\DisposeTempDev.cshtml" />
+    <Content Include="Views\Asset\AssignTempDev.cshtml" />
+    <Content Include="Views\Asset\DeallocateTempDev.cshtml" />
+    <Content Include="Views\Shared\_fullyDepreciated.cshtml" />
+    <Content Include="Views\Shared\_FullyDAssetCounter.cshtml" />
+    <Content Include="Views\Asset\FullyDepreciatedAssets.cshtml" />
+    <Content Include="Views\Asset\FullyDAssets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1623,6 +1635,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610070129016_Kay.resx">
+      <DependentUpon>201610070129016_Kay.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

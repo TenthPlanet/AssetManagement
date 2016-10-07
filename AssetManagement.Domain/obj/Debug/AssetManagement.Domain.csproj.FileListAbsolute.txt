@@ -1141,14 +1141,11 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\SendGrid.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\SendGrid.SmtpApi.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\SendGridMail.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll.config
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.Domain\bin\Debug\AssetManagement.Domain.pdb
@@ -1244,3 +1241,11 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\As
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.pdb
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.dropcatergory.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.addcategory.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTID.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.RemoveTicket.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.CommentOwner.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache

@@ -1,0 +1,80 @@
+﻿@model AssetManagement.Domain.Entities.TemporalDevice
+
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Assign";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Assign";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+
+<div style="margin-bottom:10%;"></div>
+<h2>Dispose Temporal Device</h2>
+
+<h3>Are you sure you want to dispose this device?</h3>
+<div>
+    <h4>TemporalDevice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.assetID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assetID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.serialNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serialNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateadded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateadded)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Dispose" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "TempDev")
+        </div>
+    }
+</div>

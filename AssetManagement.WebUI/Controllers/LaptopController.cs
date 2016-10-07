@@ -1,4 +1,5 @@
-﻿using AssetManagement.Domain.Abstract;
+﻿using AssetManagement.Business;
+using AssetManagement.Domain.Abstract;
 using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Context;
 using AssetManagement.Domain.Entities;
@@ -76,6 +77,7 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.LM = context.Stocks.ToList().Where(x=>x.category=="Laptop");
             if (ModelState.IsValid)
             {
+                AssetLogic al = new AssetLogic();
                 try
                 {
                     Stock stock = context.Stocks.FirstOrDefault(m => m.model.Equals(viewmodel.modelName) 
@@ -91,7 +93,8 @@ namespace AssetManagement.WebUI.Controllers
                             dateadded = viewmodel.dateAdded,
                             warranty = viewmodel.warranty + " Months",
                             costprice = viewmodel.costprice,
-                            InvoiceNumber = viewmodel.InvoiceNumber
+                            InvoiceNumber = viewmodel.InvoiceNumber,
+                            depreciationcost=al.depreciationCost(viewmodel.dateAdded,viewmodel.costprice)
                         };
                         var laptop = new Laptop
                         {
@@ -104,7 +107,7 @@ namespace AssetManagement.WebUI.Controllers
                             OS = viewmodel.OS,
                             RAM = viewmodel.RAM,
                             screenSize = viewmodel.screenSize,
-                            InvoiceNumber = viewmodel.InvoiceNumber
+                            InvoiceNumber = viewmodel.InvoiceNumber,
                         };
                         stock.quantity = stock.quantity - 1;
                         repository.Insert(asset, laptop);

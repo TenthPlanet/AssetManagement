@@ -17,6 +17,20 @@ namespace AssetManagement.Domain.Entities
         public string category { get; set; }
         public int quantity { get; set; }
     }
+    public class TemporalDevice
+    {
+        [Key]
+        public int TempID { get; set; }
+        public int assetID { get; set; }
+        public string serialNumber { get; set; }
+        public string model { get; set; }
+        public string manufacturer { get; set; }
+        public string category { get; set; }
+        public DateTime dateadded { get; set; }
+        public string employeeNumber { get; set; }
+        public string employeeFullname { get; set; }
+
+    }
     public class Category
     {
         [Key]
@@ -39,6 +53,7 @@ namespace AssetManagement.Domain.Entities
         public DateTime dateadded { get; set; }
         public DateTime? assigndate { get; set; }
         public int assignstatus { get; set; }
+        public double depreciationcost { get; set; }
 
         public virtual ICollection<Printer> Printers { get; set; }
         public virtual ICollection<PCBox> PCBoxes { get; set; }

@@ -1,4 +1,5 @@
-﻿using AssetManagement.Domain.Abstract;
+﻿using AssetManagement.Business;
+using AssetManagement.Domain.Abstract;
 using AssetManagement.Domain.Concrete;
 using AssetManagement.Domain.Context;
 using AssetManagement.Domain.Entities;
@@ -82,13 +83,15 @@ namespace AssetManagement.WebUI.Controllers
 
                     if (stock != null && stock.quantity != 0)
                     {
+                        AssetLogic al = new AssetLogic();
                         var asset = new Asset
                         {
                             manufacturer = viewmodel.manufacturer,
                             serialNumber = viewmodel.serialNumber,
                             dateadded = viewmodel.dateAdded,
                             warranty = viewmodel.warranty + " Months",
-                            costprice = viewmodel.costprice
+                            costprice = viewmodel.costprice,
+                            depreciationcost=al.depreciationCost(viewmodel.dateAdded,viewmodel.costprice)
                         };
                         var pc = new PCBox
                         {
