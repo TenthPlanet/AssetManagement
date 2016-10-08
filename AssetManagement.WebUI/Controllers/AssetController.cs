@@ -218,8 +218,8 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult FullyDAssets()
         {
-            List<Asset> ass = context.Assets.ToList().FindAll(x=>x.depreciationcost==0&&x.assignstatus==1);
-            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost == 0 && x.assignstatus == 1).ToList().Count();
+            List<Asset> ass = context.Assets.ToList().FindAll(x=>x.depreciationcost==x.costprice&&x.assignstatus==1);
+            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==x.costprice && x.assignstatus == 1).ToList().Count();
             ViewBag.fullydue = fullyCount;
             return View(ass);
 
@@ -620,8 +620,8 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult FullyDepreciatedAssets()
         {
-            List<Asset> fullyassets = context.Assets.ToList().FindAll(x => x.depreciationcost == 0);
-            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==0 && x.assignstatus==1).ToList().Count();
+            List<Asset> fullyassets = context.Assets.ToList().FindAll(x => x.depreciationcost == x.costprice);
+            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==x.costprice && x.assignstatus==1).ToList().Count();
             ViewBag.fullydue = fullyCount;
             return View(fullyassets);
         }

@@ -108,6 +108,7 @@ namespace AssetManagement.WebUI.Controllers
                             RAM = viewmodel.RAM,
                             screenSize = viewmodel.screenSize,
                             InvoiceNumber = viewmodel.InvoiceNumber,
+                            processor=viewmodel.processor
                         };
                         stock.quantity = stock.quantity - 1;
                         repository.Insert(asset, laptop);

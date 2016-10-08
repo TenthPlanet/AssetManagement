@@ -1249,3 +1249,4 @@ C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.ComWriter.resources
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.Migrations.PostOwner.resources
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.Domain\obj\Debug\AssetManagement.Domain.csprojResolveAssemblyReference.cache

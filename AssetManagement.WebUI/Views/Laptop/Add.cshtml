@@ -198,6 +198,13 @@ else
                 @Html.ValidationMessageFor(model => model.RAM)
             </div>
         </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.processor, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.processor)
+                @Html.ValidationMessageFor(model => model.processor)
+            </div>
+        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.HDD, new { @class = "control-label col-md-2" })

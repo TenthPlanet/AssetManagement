@@ -155,6 +155,7 @@ namespace AssetManagement.Domain.Entities
         public string screenSize { get; set; }
         public string OS { get; set; }
         public string RAM { get; set; }
+        public string processor { get; set; }
         public string HDD { get; set; }
 
         public string employeeNumber { get; set; }
