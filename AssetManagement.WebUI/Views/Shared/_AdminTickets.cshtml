@@ -1,0 +1,112 @@
+﻿
+<style>
+    /*.tab-content{
+        box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.02);
+    }*/
+</style>
+@model AssetManagement.Business.HelpDeskSystem.TicketReportPerParticipant
+<div class="box box-primary" id="tabs">
+    <div class="box-body">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#AdminOpened">Opened</a></li>
+            <li><a data-toggle="tab" href="#AdminUnacknowlaged">Unacknowlaged</a></li>
+            <li><a data-toggle="tab" href="#AdminCompleted">Completed</a></li>
+            <li><a data-toggle="tab" href="#AdminAll">All</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="AdminOpened" class="tab-pane fade in active">
+                @Html.Partial("TicketPartials/_OpenedTickets", Model.Opened)
+            </div>
+            <div id="AdminUnacknowlaged" class="tab-pane fade">
+                @Html.Partial("TicketPartials/_UnAcknowlaged", Model.UnAcknowlaged)
+            </div>
+            <div id="AdminCompleted" class="tab-pane fade">
+                @Html.Partial("TicketPartials/_Completed", Model.Completed)
+            </div>
+            <div id="AdminAll" class="tab-pane fade">
+                @Html.Partial("TicketPartials/_AllTickets", Model.All)
+            </div>
+        </div>
+    </div>
+</div>
+<div id="AdminModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!--MODAL CONTENT-->
+        <div class="modal-content" style="border-radius:10px;background-color:rgba(50, 87, 234, 0.80);color:whitesmoke;">
+            <!--MODAL HEADER-->
+            <!--MODAL BODY-->
+            <div class="modal-body" ;">
+                <h3 style="padding-left:155px;padding-top:10px;">Confirm Acknowlagement</h3>
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+                <a class="btn btn-primary" data-dismiss="modal" onclick="ConfirmAcknowlagement()">Aknowlage</a>
+            </div>
+            <!--MODAL FOOTER-->
+        </div>
+    </div>
+</div>
+<script>
+    function ConfirmAcknowlagement() {
+        console.log('Modal clicked')
+        var myurl = "/Tickets/AcknowlageTicket/" + currentTicketID;
+        console.log(myurl);
+        $.ajax({
+            cache: false,
+            async: true,
+            url: myurl,
+            type: "POST",
+            data: {},
+            datatype: "html",
+            success: refresh()
+        });
+        function refresh() {
+            console.log(myurl);
+            window.location.href = "/Tickets/Index";
+        }
+    }
+    $(document).ready(function () {
+        
+        console.log('script loaded')
+        console.log(TicketTechnician)
+        Authenticate();
+        
+        function Authenticate() {
+            if (user == TicketTechnician) {
+                $('.unAcknowlaged').show();
+                console.log('should be shown');
+            }
+            if (isAdmin == false) {
+                console.log(isAdmin);
+                console.log(typeof (isAdmin));
+                console.log(TicketTechnician);
+                $('.escalate').hide();
+            }
+        }
+
+        $('.acknowlageLink').click(function () {
+            $('#AdminModal').modal('show');
+            console.log('Modal shown');
+            function parseID(myID) {
+                currentTicketID = myID;
+                console.log(currentTicketID);
+            }
+        })
+    })
+    //function ConfirmAcknowlagement() {
+    //    console.log('Modal clicked')
+    //    var myurl = "/Technician/AcknowlageTicket/" + currentTicketID;
+    //    console.log(myurl);
+    //    $.ajax({
+    //        url: myurl,
+    //        type: "POST",
+    //        data: {},
+    //        datatype: "html",
+    //        success: refresh()
+    //    });
+    //    function refresh() {
+    //        console.log(myurl);
+    //        //window.location.href = "/Tickets/Index";
+    //    }
+    //}
+  
+    
+</script>

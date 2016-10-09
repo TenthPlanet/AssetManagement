@@ -872,26 +872,8 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return HttpNotFound();
             }
-            var result = (from a in list.Assets()
-                          join e in list.Employees()
-                          on a.employeeNumber equals e.employeeNumber
-                          select new AssetReport
-                          {
-                              serialNumber = a.serialNumber,
-                              assetNumber = a.assetNumber,
-                              catergory = a.catergory,
-                              warranty = a.warranty,
-                              manufacturer = a.manufacturer,
-                              dateadded = a.dateadded,
-                              depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
-                              assetstatus = a.assignstatus,
-                              costprice = (a.costprice).ToString("R0.00"),
-                              owner = e.fullname,
-                              assetID = a.assetID,
-                              assigneddate = a.assigndate,
-                              sellprice = (a.costprice - al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00")
-                          }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
-            return View(result);
+
+            return View(asset);
         }
 
         //The technician must be able to see the list of assets

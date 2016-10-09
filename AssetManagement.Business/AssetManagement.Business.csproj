@@ -106,6 +106,7 @@
     <Compile Include="AssetManagement\AssetManagementLogic.cs" />
     <Compile Include="HelpDeskSystem\FinencialReport.cs" />
     <Compile Include="HelpDeskSystem\HelpDeskLogic.cs" />
+    <Compile Include="HelpDeskSystem\TicketFormat.cs" />
     <Compile Include="HelpDeskSystem\TicketParticipant.cs" />
     <Compile Include="HelpDeskSystem\TicketReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

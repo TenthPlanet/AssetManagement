@@ -86,18 +86,28 @@ namespace AssetManagement.Business.HelpDeskSystem
             TicketReportPerParticipant participant = new TicketReportPerParticipant();
             participant.Opened = OpenTickets(id);
             participant.Completed = CompletedTickets(id);
-            participant.UnAknowlaged = UnAknowlagedTickets(id);
+            participant.UnAcknowlaged = UnAknowlagedTickets(id);
             participant.All = AllTickets(id);
             return participant;
         }
-        public TicketReport GetReport(string id)
+        public TicketReportPerParticipant getAllTickets()
         {
-            TicketReport report = new TicketReport();
-            report.Opened = openTickets;
-            report.Completed = closedTickets;
-            report.UnAknowlaged = unAknowlagedTickets;
-            report.All = allTickets;
-            return report;
+            var tr = new TicketReportPerParticipant();
+            tr.All = allTickets;
+            tr.Completed = closedTickets;
+            tr.Opened = openTickets;
+            tr.UnAcknowlaged = unAknowlagedTickets;
+
+            return tr;
+        }
+
+        public List<Ticket> GetOverDueTickets()
+        {
+            var overDueTickets = new List<Ticket>();
+
+            overDueTickets = allTickets.Where(t => t.datedue > DateTime.Now)
+                .Where(t => t.accomplishstatus==false).ToList();
+            return overDueTickets;
         }
         public double TotalPartsCost()
         {

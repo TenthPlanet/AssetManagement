@@ -83,19 +83,26 @@ namespace AssetManagement.Domain.Entities
         public int contactId { get; set; }
         public virtual ContactUs contactUs { get; set; }
     }
-
     public class ReplacementPart
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int replacementPartID { get; set; }
+        [Display(Name = "Name")]
         public string name { get; set; }
+        [Display(Name = "Assciated Asset")]
         public string associatedAsset { get; set; }
+        [Display(Name = "Assciated Ticket")]
         public int associatedTicket { get; set; }
+        [Display(Name = "Invoice Number")]
         public string invoiceNumber { get; set; }
+        [Display(Name = "Supplier")]
         public string supplier { get; set; }
+        [Display(Name = "Price")]
         public double price { get; set; }
-        public string serialNumber { get; set;}
+        [Display(Name = "Part Number")]
+        public string partNumber { get; set; }
+        [Display(Name = "Purchase Date")]
         public DateTime pruchaseDate { get; set; }
 
     }

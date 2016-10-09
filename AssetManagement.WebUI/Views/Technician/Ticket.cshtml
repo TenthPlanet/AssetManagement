@@ -1,18 +1,15 @@
 ﻿@model AssetManagement.Domain.Entities.Ticket
-@using PagedList.Mvc
-@using PagedList
-@{ 
+@{
     ViewBag.Title = "Ticket";
     Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
 }
-
 <div style="margin-bottom:10%;"></div>
-
-<div class="jumbotron" id="ticketDiv" >
-    <h3 style="color:rgba(96, 68, 177, 1.00)">@Model.subject</h3>
-    <small>@Model.description</small>
-    <br />
-    @Html.ActionLink("Request Part","ReplacementPart","ReplacementPart",null, new { @class = "btn btn-default", @readonly="readonly" })
-</div>
+<h3 class="page-header"><i class="icon_star_alt"></i>Tickets</h3>
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i>@Html.ActionLink("Home", "Dashboard", "Dashboard")</li>
+    <li><i class="icon-tag"></i>Tickets</li>
+</ol>
 
 
+@Html.Partial("_Ticket",Model)
+<div style="float:left"><a class="btn btn-default" href="/Technician/Index">Back</a></div>

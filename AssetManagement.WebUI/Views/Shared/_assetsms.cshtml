@@ -33,6 +33,7 @@
     <link href="~/Content/AdminLayout/css/customcss.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/elusive-icons.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
+
 </head>
 <body>
     <header class="header dark-bg">
@@ -109,9 +110,9 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li>@Html.ActionLink("Add Stock", "Add", "Stock")</li>
                             <li>@Html.ActionLink("Available Stock", "Index", "Stock")</li>
                             <li>@Html.ActionLink("Suppliers", "Index", "Invoice")</li>
+                            <li>@Html.ActionLink("Repairs", "Index", "ReplacementParts")</li>
                         </ul>
                     </li>
                     <li class="sub-menu">
@@ -124,7 +125,6 @@
                             <li>@Html.Partial("_LoginPartial")</li>
                         </ul>
                     </li>
-
                 </ul>
                 <!-- sidebar menu end-->
             </div>
@@ -132,46 +132,48 @@
         <!--sidebar end-->
     </div>
     <div class="container body-content">
-
         @RenderBody()
-
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
         </footer>
     </div>
 
-    <script src="~/Content/AdminLayout/js/jquery.js"></script>
+    
+    @*<script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>*@
+    <script src="~/Content/AdminLayout/js/jquery-3.1.1.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery-ui-1.10.4.min.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
+    @*<script src="~/Scripts/Chart.bundle.js"></script>*@
     <script src="~/Content/AdminLayout/js/jquery.scrollTo.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.nicescroll.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.sparkline.js"></script>
+    @*<script src="~/Content/AdminLayout/js/jquery.sparkline.js"></script>*@
     <script src="~/Content/AdminLayout/js/owl.carousel.js"></script>
-    <script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>
-    <script src="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.slimscroll.min.js"></script>
+    @*<script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>*@
+    @*<script src="~/Content/AdminLayout/js/jquery.slimscroll.min.js"></script>
     <script src="~/Content/AdminLayout/js/charts.js"></script>
     <script src="~/Content/AdminLayout/js/sparklines.js"></script>
     <script src="~/Content/AdminLayout/js/morris.min.js"></script>
     <script src="~/Content/AdminLayout/js/gdp-data.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.placeholder.min.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.autosize.min.js"></script>
+    <script src="~/Content/AdminLayout/js/jquery.placeholder.min.js"></script>*@
+    @*<script src="~/Content/AdminLayout/js/jquery.autosize.min.js"></script>
     <script src="~/Content/AdminLayout/js/xcharts.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery-jvectormap-world-mill-en.js"></script>
     <script src="~/Content/AdminLayout/js/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="~/Content/AdminLayout/js/easy-pie-chart.js"></script>
-    <script src="~/Content/AdminLayout/js/sparkline-chart.js"></script>
+    <script src="~/Content/AdminLayout/js/sparkline-chart.js"></script>*@
     <script src="~/Content/AdminLayout/js/scripts.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
+    <script src="~/Scripts/Chart.bundle.js"></script>
+    @*<script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.rateit.min.js"></script>
     <script src="~/Content/AdminLayout/js/calendar-custom.js"></script>
     <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
     <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
-    <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>
-
+    <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>*@
+    @*<script src="~/Scripts/Chart.bundle.js"></script>*@
+ 
 
     <script>
 
@@ -222,6 +224,188 @@
 
 
     </script>
+    <script>
+        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+        var randomScalingFactor = function() {
+            return Math.round(Math.random() * 100);
+            //return 0;
+        };
+        var randomColorFactor = function() {
+            return Math.round(Math.random() * 255);
+        };
+        var randomColor = function(opacity) {
+            return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+        };
+
+        var config = {
+            type: 'line',
+            data: {
+                labels: ["July", "August", "September", "October", "November", "December"],
+                datasets: [{
+                    label: "Repairs",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+                    fill: false,
+                    borderDash: [5, 5],
+                }, {
+                    label: "Assets",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+                }]
+            },
+            options: {
+                responsive: true,
+                title:{
+                    display:true,
+                    text:'Finencial Report'
+                },
+                tooltips: {
+                    mode: 'label',
+                    callbacks: {
+                        // beforeTitle: function() {
+                        //     return '...beforeTitle';
+                        // },
+                        // afterTitle: function() {
+                        //     return '...afterTitle';
+                        // },
+                        // beforeBody: function() {
+                        //     return '...beforeBody';
+                        // },
+                        // afterBody: function() {
+                        //     return '...afterBody';
+                        // },
+                        // beforeFooter: function() {
+                        //     return '...beforeFooter';
+                        // },
+                        // footer: function() {
+                        //     return 'Footer';
+                        // },
+                        // afterFooter: function() {
+                        //     return '...afterFooter';
+                        // },
+                    }
+                },
+                hover: {
+                    mode: 'dataset'
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Month'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Value'
+                        },
+                        ticks: {
+                            suggestedMin: -10,
+                            suggestedMax: 250,
+                        }
+                    }]
+                }
+            }
+        };
+
+        $.each(config.data.datasets, function(i, dataset) {
+            dataset.borderColor = randomColor(0.4);
+            dataset.backgroundColor = randomColor(0.5);
+            dataset.pointBorderColor = randomColor(0.7);
+            dataset.pointBackgroundColor = randomColor(0.5);
+            dataset.pointBorderWidth = 1;
+        });
+
+        window.onload = function() {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myLine = new Chart(ctx, config);
+        };
+
+        $('#randomizeData').click(function() {
+            $.each(config.data.datasets, function(i, dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return randomScalingFactor();
+                });
+
+            });
+
+            window.myLine.update();
+        });
+
+        $('#changeDataObject').click(function() {
+            config.data = {
+                labels: ["July", "August", "September", "October", "November", "December"],
+                datasets: [{
+                    label: "Assets",
+                    data: [25, 184, 102, 42, 12, 89],
+                    fill: false,
+                }, {
+                    label: "Replacement Parts",
+                    fill: false,
+                    data: [230, 240, 69, 109, 87, 112],
+                }]
+            };
+
+            $.each(config.data.datasets, function(i, dataset) {
+                dataset.borderColor = randomColor(0.4);
+                dataset.backgroundColor = randomColor(0.5);
+                dataset.pointBorderColor = randomColor(0.7);
+                dataset.pointBackgroundColor = randomColor(0.5);
+                dataset.pointBorderWidth = 1;
+            });
+
+            // Update the chart
+            window.myLine.update();
+        });
+
+        $('#addDataset').click(function() {
+            var newDataset = {
+                label: 'Dataset ' + config.data.datasets.length,
+                borderColor: randomColor(0.4),
+                backgroundColor: randomColor(0.5),
+                pointBorderColor: randomColor(0.7),
+                pointBackgroundColor: randomColor(0.5),
+                pointBorderWidth: 1,
+                data: [],
+            };
+
+            for (var index = 0; index < config.data.labels.length; ++index) {
+                newDataset.data.push(randomScalingFactor());
+            }
+
+            config.data.datasets.push(newDataset);
+            window.myLine.update();
+        });
+
+        $('#addData').click(function() {
+            if (config.data.datasets.length > 0) {
+                var month = MONTHS[config.data.labels.length % MONTHS.length];
+                config.data.labels.push(month);
+
+                $.each(config.data.datasets, function(i, dataset) {
+                    dataset.data.push(randomScalingFactor());
+                });
+
+                window.myLine.update();
+            }
+        });
+
+        $('#removeDataset').click(function() {
+            config.data.datasets.splice(0, 1);
+            window.myLine.update();
+        });
+
+        $('#removeData').click(function() {
+            config.data.labels.splice(-1, 1); // remove the label first
+
+            config.data.datasets.forEach(function(dataset, datasetIndex) {
+                dataset.data.pop();
+            });
+
+            window.myLine.update();
+        });
+    </script>
 </body>
 </html>

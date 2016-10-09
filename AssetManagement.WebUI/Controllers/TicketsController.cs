@@ -35,13 +35,21 @@ namespace AssetManagement.WebUI.Controllers
         // GET: Tickets
         public ActionResult Index()
         {
-            ViewBag.MyTickets = _context.Tickets.Where(x => x.employeeNumber.Equals(User.Identity.Name)
-                && x.solution == null && x.ticketstatus == true).ToList().Count();
+
             ViewBag.MySolutions = _context.Tickets.Where(t => t.employeeNumber.Equals(User.Identity.Name)
                 && t.solution != null && t.ticketstatus == false)
                 .ToList().Count();
             ViewBag.KnowledgeBase = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList().Count();
-            return View();
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            TicketReportPerParticipant tr = hdl.getAllTickets();
+            TicketReportPerParticipant AdminTickets = hdl.GetParticipantReport(User.Identity.Name);
+            List<TicketReportPerParticipant> TicketsFilter = new List<TicketReportPerParticipant>();
+            TicketsFilter.Add(tr);
+            TicketsFilter.Add(AdminTickets);
+            ViewBag.OverDueTickets = hdl.GetOverDueTickets().Count.ToString();
+            ViewBag.ControllerName = "HelpDesk";
+            ViewData["Role"] = User.IsInRole("Administrator");
+            return View(TicketsFilter);
         }
         [AllowAnonymous]
         public ActionResult Ticket(string id)
@@ -50,14 +58,16 @@ namespace AssetManagement.WebUI.Controllers
             AssetManagementLogic aml = new AssetManagementLogic();
             var Ticket = hdl.GetTicket(int.Parse(id));
             var duration = new TimeSpan();
-            if (Ticket.accomplishstatus==true)
+            if (Ticket.accomplishstatus == true)
                 duration = Ticket.datecompleted.Value.Subtract(Ticket.datecreated);
             else
                 duration = DateTime.Now.Subtract(Ticket.datecreated);
             ViewData["duration"] = duration;
             ViewData["Asset"] = aml.GetAsset(Ticket.assetid.ToString());
+
             return View(Ticket);
         }
+       
         public ActionResult TicketsIndex(int? page)
         {
             var ticket = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList();
@@ -75,7 +85,6 @@ namespace AssetManagement.WebUI.Controllers
             employeenumber = Session["empNo"].ToString();
             subject = Session["Subject"].ToString();
             body = Session["Body"].ToString();
-
             var catergory = _context.Assets;
             if (Assets == null)
             {
@@ -253,7 +262,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(ticket);
         }
-        public ActionResult Acknowledge(int? id)
+        public ActionResult Acknowladge(int? id)
         {
             if (id == null)
             {
@@ -281,7 +290,7 @@ namespace AssetManagement.WebUI.Controllers
             TempData["Success"] = "You have acknowledged this ticket";
             return RedirectToAction("Details", new { id = ticket.ticketid });
         }
-        [Authorize(Roles ="Technician")]
+        [Authorize(Roles ="Technician,Administrator")]
         public ActionResult Accomplished(int? id)
         {
             if (id == null)
@@ -296,11 +305,11 @@ namespace AssetManagement.WebUI.Controllers
             return View(ticket);
         }
         [HttpPost, ActionName("Accomplished")]
+        [Authorize(Roles = "Technician,Administrator")]
         [ValidateAntiForgeryToken]
         public ActionResult Confirm_Accomplishment(int? id, string solution)
         {
             Ticket ticket = _context.Tickets.Find(id);
-
             ticket.datecompleted = DateTime.Now;
             ticket.accomplishstatus = true;
             ticket.ticketstatus = false;
@@ -316,10 +325,6 @@ namespace AssetManagement.WebUI.Controllers
                 .Select(a => a.assetNumber).ToList();
             return Json(assets, JsonRequestBehavior.AllowGet);
         }
-
-
-
-
 
         //Tickets assigned to the help desk
         public ActionResult MyTickets()
@@ -527,10 +532,8 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult OverDueTickets()
         {
-            DateTime now = System.DateTime.Now;
-            List<Ticket> tt = _context.Tickets.ToList().FindAll(x => x.datedue < now);
-
-            return View(tt);
+            var hdl = new HelpDeskLogic();
+            return View(hdl.GetOverDueTickets());
         }
 
         public ActionResult General()
@@ -644,6 +647,38 @@ namespace AssetManagement.WebUI.Controllers
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
             return PartialView("_TicketsPerParticipant",hdl.GetParticipantReport(id));
+        }
+        [HttpGet]
+        public ActionResult AcknowlageTicket(string id)
+        {
+            HelpDeskLogic hdl = new HelpDeskLogic();
+            var ticket = hdl.GetTicket(int.Parse(id));
+            return View(ticket);
+        }
+        [HttpPost]
+        [ActionName("AcknowlageTicket")]
+        public ActionResult Acknowlage_Ticket(string id)
+        {
+            Ticket ticket = _context.Tickets.Find(int.Parse(id));
+            ticket.acknowledgestatus = true;
+            TryUpdateModel(ticket);
+            _context.SaveChanges();
+            TempData["Success"] = "You have acknowledged this ticket";
+            return RedirectToAction("Ticket", "Tickets", new { id = ticket.ticketid });
+        }
+
+        [HttpPost]
+        [ActionName("CloseTicket")]
+        public ActionResult Ticket(string id, string solution)
+        {
+            Ticket ticket = _context.Tickets.Find(id);
+            ticket.datecompleted = DateTime.Now;
+            ticket.accomplishstatus = true;
+            ticket.ticketstatus = false;
+            ticket.solution = solution;
+            _context.SaveChanges();
+            TempData["Success"] = "Ticket has been completed";
+            return View();
         }
     }
 }

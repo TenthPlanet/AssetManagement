@@ -1,5 +1,5 @@
 function initializeJS() {
-
+    
     //tool tips
     jQuery('.tooltips').tooltip();
 

@@ -64,7 +64,7 @@
                     </li>
                     <li class="sub-menu">
                         <a href="~/Technician/Index">
-                            <i class="icon_genius"></i>
+                            <i class="icon_star_alt"></i>
                             <span>Tickets</span>
                         </a>
                     </li>
@@ -98,6 +98,21 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        <div id="TechnicianModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!--MODAL CONTENT-->
+                <div class="modal-content" style="border-radius:10px;background-color:rgba(50, 87, 234, 0.80);color:whitesmoke;">
+                    <!--MODAL HEADER-->
+                    <!--MODAL BODY-->
+                    <div class="modal-body" ;">
+                        <h3 style="padding-left:155px;padding-top:10px;">Confirm Acknowlagement</h3>
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a class="btn btn-primary" data-dismiss="modal" id="loadModal" onclick="ConfirmAcknowlagement()">Aknowlage</a>
+                    </div>
+                    <!--MODAL FOOTER-->
+                </div>
+            </div>
+        </div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
@@ -131,7 +146,51 @@
     <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
     <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
     <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>*@
- 
+    <script>
+    console.log('script loaded')
+    console.log(TicketTechnician)
+    Authenticate();
+    function ConfirmAcknowlagement() {
+        console.log('Modal clicked')
+        var myurl = "/Technician/AcknowlageTicket/" + currentTicketID;
+        console.log(myurl);
+        $.ajax({
+            cache: false,
+            async: true,
+            url: myurl,
+            type: "POST",
+            data: {},
+            datatype: "html",
+            success: refresh()
+        });
+        function refresh() {
+            console.log(myurl);
+            window.location.href = "/Technician/Index";
+        }
+    }
+    function Authenticate() {
+        if (user == TicketTechnician) {
+            $('.unAcknowlaged').show();
+            console.log('should be shown');
+        }
+        if (isAdmin == false) {
+            console.log(isAdmin);
+            console.log(typeof (isAdmin));
+            console.log(TicketTechnician);
+            $('.escalate').hide();
+        }
+    }
+
+    $('.acknowlageLink').click(function () {
+        $('#TechnicianModal').modal('show');
+        console.log('Modal shown');
+    })
+    function parseID(myID) {
+        currentTicketID = myID;
+        console.log(currentTicketID);
+    }
+
+    </script>
     <script>
         $(document).ready(function () {
             var tableAllDiv = $('#table-scroll-all');
@@ -224,10 +283,11 @@
                 }
             });
         });
-        $('#trigger').click(function () {
-            $('#myModal').modal('show');
-        });
+        //$('#trigger').click(function () {
+        //    $('#myModal').modal('show');
+        //});
 
     </script>
+
 </body>
 </html>

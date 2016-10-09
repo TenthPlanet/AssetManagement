@@ -1,12 +1,9 @@
-﻿@*@model AssetManagement.Domain.Entities.Comment*@
+﻿
 @model AssetManagement.Domain.Entities.Ticket
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-    
-     @*<img src="@Url.Content("~/Content/comment.png")" width="30" height="20" alt="like" />*@
-
     var imgUrl = Url.Content("~/Content/images/profile/" + User.Identity.Name + ".png") + "?time=" + DateTime.Now.ToString();
 
     <table>
@@ -17,7 +14,7 @@
                 <script>
                     CKEDITOR.replace('Newcomment1',
                        {
-                           customConfig: '/Scripts/ckEditorConfig1.js'
+                           customConfig: '~/Scripts/ckEditorConfig1.js'
                        });
 
                 </script>
@@ -27,14 +24,4 @@
             </td>
         </tr>
     </table>
-    @*@foreach (var comment in Model.Comments)
-    {
-        
-    }*@
-        @*<div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>*@
 }

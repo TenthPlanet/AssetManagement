@@ -40,11 +40,11 @@
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
-
     <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
@@ -56,12 +56,14 @@
     <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/customcss.css" rel="stylesheet" />
     <link href="~/Content/AdminLayout/css/elusive-icons.css" rel="stylesheet" />
+    <script src="~/Content/AdminLayout/js/jquery.js"></script>
+    <script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header dark-bg">
         <!----=============================================-->
-
 
         <div class="top-nav notification-row">
             <ul class="nav pull-right top-menu">
@@ -90,7 +92,7 @@
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
                         <i class="icon-bell-l"></i>
-                        <span class="badge bg-important">@Html.Partial("_TicketCounter")</span>
+                        <span class="badge bg-important">Not working</span>
                     </a>
                     <ul class="dropdown-menu extended notification">
                         <div class="notify-arrow notify-arrow-blue"></div>
@@ -179,7 +181,7 @@
 
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_genius"></i>
+                            <i class="icon_star_alt"></i>
                             <span>Tickets</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
@@ -207,28 +209,40 @@
         <!--sidebar end-->
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
-        </footer>
-    </div>
-
-    <script src="~/Content/AdminLayout/js/jquery.js"></script>
+            @*<div id="myModal" class="modal fade" role="dialog" style="z-index:99999999">
+                <div class="modal-dialog">
+                    <!--MODAL CONTENT-->
+                    <div class="modal-content" style="border-radius:10px;background-color:rgba(50, 87, 234, 0.80);color:whitesmoke;">
+                        <!--MODAL HEADER-->
+                        <!--MODAL BODY-->
+                        <div class="modal-body" ;">
+                            <h3 style="padding-left:155px;padding-top:10px;">Confirm Acknowlagement</h3>
+                            <a class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a class="btn btn-primary" data-dismiss="modal" onclick="loadMyURL()">Aknowlage</a>
+                        </div>
+                        <!--MODAL FOOTER-->
+                    </div>
+                </div>
+            </div>*@
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
+            </footer>
+        </div>
     <script src="~/Content/AdminLayout/js/jquery-ui-1.10.4.min.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>
+    @*<script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>*@
     <script src="~/Content/AdminLayout/js/jquery-ui-1.9.2.custom.min.js"></script>
-    <script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
+    @*<script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>*@
     <script src="~/Content/AdminLayout/js/jquery.scrollTo.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.nicescroll.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.sparkline.js"></script>
     <script src="~/Content/AdminLayout/js/owl.carousel.js"></script>
-    <script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>
+    @*<script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>*@
     <script src="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.slimscroll.min.js"></script>
-    <script src="~/Content/AdminLayout/js/charts.js"></script>
+    @*<script src="~/Content/AdminLayout/js/charts.js"></script>*@
     <script src="~/Content/AdminLayout/js/sparklines.js"></script>
-    <script src="~/Content/AdminLayout/js/morris.min.js"></script>
     <script src="~/Content/AdminLayout/js/gdp-data.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.placeholder.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.autosize.min.js"></script>
@@ -238,15 +252,61 @@
     <script src="~/Content/AdminLayout/js/easy-pie-chart.js"></script>
     <script src="~/Content/AdminLayout/js/sparkline-chart.js"></script>
     <script src="~/Content/AdminLayout/js/scripts.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
-    <script src="~/Content/AdminLayout/js/jquery.rateit.min.js"></script>
-    <script src="~/Content/AdminLayout/js/calendar-custom.js"></script>
-    <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
-    <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
-    <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>
-    
+    @*<script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
+        <script src="~/Content/AdminLayout/js/jquery.rateit.min.js"></script>
+        <script src="~/Content/AdminLayout/js/calendar-custom.js"></script>
+        <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
+        <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+        <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>*@
     <script>
-
+        $(document).ready(function () {
+            var tableAllDiv = $('#table-scroll-all');
+            var tabaleAll = $('#tableAll');
+            var tableScrollAllRows = $('#tableAll tr').length;
+            console.log("tableScrollAllRows : ", tableScrollAllRows);
+            console.log("#headerDivAll : ", $('#headerDivAll').css("padding-right"));
+            if (tableScrollAllRows <= 5) {
+                $('#headerDivAll').css("padding-right", 0)
+                $('#headerDivAll').css("margin-right", 0)
+                console.log("#headerDivAll padding right is now : ", $('#headerDivAll').css("padding-right"))
+                console.log("#headerDivAll margin right is now : ", $('#headerDivAll').css("margin-right"))
+            } else {
+                console.log("#headerDivAll padding right is still : ", $('#headerDivAll').css("padding-right"))
+                console.log("#table-scroll-all width : ", $('#table-scroll-all').css("height"))
+            }
+        });
+        $(document).ready(function () {
+            var tableUnAcknowlagedDiv = $('#table-scroll-unacknowlaged');
+            var tabaleAcknowlaged = $('#tableUnAcknowlaged');
+            var tableScrollAcknowlagedRows = $('#tableUnAcknowlaged tr').length;
+            console.log("tableScrollAcknowlagedRows : ", tableScrollAcknowlagedRows);
+            console.log("#HeaderDivUnAcknowlaged : ", $('#HeaderDivUnAcknowlaged').css("padding-right"));
+            if (tableScrollAcknowlagedRows <= 5) {
+                $('#HeaderDivUnAcknowlaged').css("padding-right", 0)
+                $('#HeaderDivUnAcknowlaged').css("margin-right", 0)
+                console.log("#HeaderDivUnAcknowlaged padding right is now : ", $('#HeaderDivUnAcknowlaged').css("padding-right"))
+                console.log("#HeaderDivUnAcknowlaged margin right is now : ", $('#HeaderDivUnAcknowlaged').css("margin-right"))
+            } else {
+                console.log("#HeaderDivUnAcknowlaged padding right is still : ", $('#HeaderDivUnAcknowlaged').css("padding-right"))
+                console.log("#table-scroll-unacknowlaged width : ", $('#table-scroll-unacknowlaged').css("height"))
+            }
+        });
+        $(document).ready(function () {
+            var tableCompletedDiv = $('#table-scroll-completed');
+            var tabaleCompleted = $('#tableCompleted');
+            var tableScrollCompletedRows = $('#tableCompleted tr').length;
+            console.log("tableScrollCompletedRows : ", tableScrollCompletedRows);
+            console.log("#HeaderDivCompleted : ", $('#HeaderDivCompleted').css("padding-right"));
+            if (tableScrollCompletedRows <= 5) {
+                $('#HeaderDivCompleted').css("padding-right", 0)
+                $('#HeaderDivCompleted').css("margin-right", 0)
+                console.log("#HeaderDivCompleted padding right is now : ", $('#HeaderDivCompleted').css("padding-right"))
+                console.log("#HeaderDivCompleted margin right is now : ", $('#HeaderDivCompleted').css("margin-right"))
+            } else {
+                console.log("#HeaderDivCompleted padding right is still : ", $('#HeaderDivCompleted').css("padding-right"))
+                console.log("#table-scroll-completed width : ", $('#table-scroll-completed').css("height"))
+            }
+        });
         //knob
         $(function () {
             $(".knob").knob({
@@ -290,6 +350,17 @@
                 }
             });
         });
+        //$('#trigger').click(function () {
+        //    $('#myModal').modal('show');
+        //});
+        $('.acknowlageLink').click(function () {
+            $('#myModalUnAcknowlaged').modal('show');
+            console.log('Modal shown');
+        })
+        function parseID(myID) {
+            currentTicketID = myID;
+            console.log(currentTicketID);
+        }
     </script>
 </body>
 </html>

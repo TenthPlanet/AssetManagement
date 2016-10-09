@@ -3,7 +3,9 @@
     ViewBag.Title = "FinencialReport";
     Layout = "~/Views/Shared/_assetsms.cshtml";
 }
-
+@*<script src="~/Content/AdminLayout/js/jquery.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/Chart.bundle.js"></script>*@
 <div style="margin-bottom:10%;"></div>
 <h3 class="page-header"><i class="fa fa-list-alt"></i>Finencial Report</h3>
 
@@ -11,7 +13,9 @@
     <li><i class="fa fa-home"></i>@Html.ActionLink("Home", "Dashboard", "Dashboard")</li>
     <li><i class="fa fa-file-text-o"></i>Report</li>
 </ol>
-
+<div style="width:900px;height:600px; padding-left:8%;">
+    <canvas id="canvas"></canvas>
+</div>
 <table class="table table-striped table-condensed table-bordered" data-spy="scroll">
     <thead>
         Finenial Analysis
@@ -28,7 +32,8 @@
         <td align="center">@Model.replacementParts.Count.ToString()</td>
         <td>@Model.TotalSparePartsCost.ToString("R0,00")</td>
         <td>@Model.TotalAssetCost.ToString("R0,00")</td>
-        <td>@Model.TotalCost.ToString("R00,00.00")</td>
+        <td>@Model.TotalCost.ToString("R0,00.00")</td>
     </tr>
 </table>
+
 

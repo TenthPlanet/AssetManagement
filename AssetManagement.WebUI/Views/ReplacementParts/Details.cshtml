@@ -1,0 +1,83 @@
+﻿@model AssetManagement.Domain.Entities.ReplacementPart
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReplacementPart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.associatedAsset)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.associatedAsset)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.associatedTicket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.associatedTicket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.invoiceNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.invoiceNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.supplier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.supplier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.partNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.partNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pruchaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pruchaseDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.replacementPartID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

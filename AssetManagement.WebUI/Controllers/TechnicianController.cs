@@ -14,6 +14,8 @@ using System.Web.Mvc;
 using PagedList.Mvc;
 using PagedList;
 using AssetManagement.Business.HelpDeskSystem;
+using AssetManagement.Business.AssetManagement;
+using System.Data.Entity;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -27,19 +29,43 @@ namespace AssetManagement.WebUI.Controllers
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
             ViewBag.UserID = User.Identity.Name;
-            Session["Role"] = User.IsInRole("Administrator");
+            ViewData["Role"] = User.IsInRole("Administrator");
+            ViewBag.Controller = "Technician";
             return View(hdl.GetParticipantReport(User.Identity.Name));
         }
-
+        [AllowAnonymous]
         public ActionResult Ticket(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
-            var ticket = hdl.GetTicket(int.Parse(id));
-            Session["AssetNumber"] = ticket.assetnumber;
-            Session["TicketID"] = id;
-            return View(ticket);
+            AssetManagementLogic aml = new AssetManagementLogic();
+            var Ticket = hdl.GetTicket(int.Parse(id));
+            var duration = new TimeSpan();
+            if (Ticket.accomplishstatus == true)
+                duration = Ticket.datecompleted.Value.Subtract(Ticket.datecreated);
+            else
+                duration = DateTime.Now.Subtract(Ticket.datecreated);
+            ViewData["duration"] = duration;
+            ViewData["Asset"] = aml.GetAsset(Ticket.assetid.ToString());
+            return View(Ticket);
         }
+        [HttpPost]
+        public ActionResult Ticket(string id, string solution)
+        {
+            var _context = new AssetManagementEntities();
+            var ticket = _context.Tickets.Find(int.Parse(id));
+            ticket.datecompleted = DateTime.Now;
+            ticket.accomplishstatus = true;
+            ticket.ticketstatus = true;
+            ticket.solution = solution;
+            _context.Entry(ticket).State = EntityState.Modified;
+            _context.SaveChanges();
+            TempData["Success"] = "Ticket has been completed";
+            return RedirectToAction("Ticket");
+        }
+
+
         [HttpGet]
+
         public ActionResult AcknowlageTicket(string id)
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
@@ -347,5 +373,6 @@ namespace AssetManagement.WebUI.Controllers
                               && x.employeenumber.Equals(User.Identity.Name)).ToList();
             return View(assets);
         }
+
 	}
 }
