@@ -25,7 +25,6 @@ namespace AssetManagement.WebUI.Controllers
         // GET: /Asset/
         public ActionResult Index(int?page)
         {
-
             var assets = (from a in list.Assets()
                           select new AssetListViewModel
                           {
@@ -163,6 +162,7 @@ namespace AssetManagement.WebUI.Controllers
         }
         public ActionResult FullyDepreciated(int? page)
         {
+            //var ass = context.Assets.ToList().Find(x=>x.assetID==id);
             var assets = (from a in list.Assets()
                           join e in list.Employees() on a.employeeNumber equals e.employeeNumber
                           select new AssetListViewModel
@@ -190,6 +190,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult FullyDepreciated(string search, int? page)
         {
+            //var ass = context.Assets.ToList().Find(x => x.assetID == id);
             if (search != "")
             {
 
@@ -215,7 +216,22 @@ namespace AssetManagement.WebUI.Controllers
             return View();
         }
 
+        public ActionResult FullyDAssets()
+        {
+            List<Asset> ass = context.Assets.ToList().FindAll(x=>x.depreciationcost==x.costprice&&x.assignstatus==1);
+            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==x.costprice && x.assignstatus == 1).ToList().Count();
+            ViewBag.fullydue = fullyCount;
+            return View(ass);
 
+        }
+        [HttpPost]
+        public ActionResult FullyDAssets(int id)
+        {
+            Asset asse = context.Assets.ToList().Find(x=>x.assetID==id);
+
+            return View(asse);
+
+        }
         public ActionResult Assign()
         {
 
@@ -375,7 +391,7 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View(asset);
         }
-
+    
         [HttpPost, ActionName("DisposeItem")]
         [ValidateAntiForgeryToken]
         public ActionResult DisposalConfirmed(int id)
@@ -474,7 +490,6 @@ namespace AssetManagement.WebUI.Controllers
                 context.Archives.Add(archive);
                 context.Printers.Remove(printer);
             }
-
 
             context.Assets.Remove(asset);
             context.SaveChanges();
@@ -593,6 +608,133 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View();
         }
+        public ActionResult TempDev()
+        {
+            return View(context.TemporalDevices.ToList());
+        }
+        [HttpPost]
+        public ActionResult TempDev(int id)
+        {
+            return View(context.TemporalDevices.ToList());
+        }
+
+        public ActionResult FullyDepreciatedAssets()
+        {
+            List<Asset> fullyassets = context.Assets.ToList().FindAll(x => x.depreciationcost == x.costprice);
+            int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==x.costprice && x.assignstatus==1).ToList().Count();
+            ViewBag.fullydue = fullyCount;
+            return View(fullyassets);
+        }
+
+        public ActionResult DeallocateTempDev(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var asset = context.TemporalDevices.Single(a => a.TempID == id);
+
+            if (asset == null)
+            {
+                return HttpNotFound();
+            }
+            return View(asset);
+        }
+        [HttpPost]
+        public ActionResult DeallocateTempDev(int id)
+        {
+            var asset = context.TemporalDevices.Single(a => a.TempID == id);
+            if(asset!=null)
+            {
+                asset.employeeFullname = "";
+                asset.employeeNumber = "";
+            }
+            context.SaveChanges();
+            return RedirectToAction("TempDev");
+        }
+        public ActionResult TempAssignAsset(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var asset = context.TemporalDevices.Single(a => a.TempID == id);
+
+            if (asset == null)
+            {
+                return HttpNotFound();
+            }
+            return View();
+        }
+        [HttpPost]
+        public ActionResult TempAssignAsset(int? id,string employeenumber)
+        {
+            var Employee = context.Employees.SingleOrDefault(emp => emp.employeeNumber.Equals(employeenumber));
+            var asset = context.TemporalDevices.Single(a => a.TempID == id);
+
+            var printer = context.TemporalDevices.Find(asset.category=="");
+            var laptop = context.TemporalDevices.Find(asset.category == "");
+            var monitor = context.TemporalDevices.Find(asset.category == "");
+            var pcs = context.TemporalDevices.Find(asset.category == "");
+            var keyboard = context.TemporalDevices.Find(asset.category == "");
+            var mouse = context.TemporalDevices.Find(asset.category == "");
+
+
+            return View();
+        }
+        public ActionResult AssignTempDev(int id)
+        {
+            var temp = context.TemporalDevices.ToList().Find(x => x.TempID == id);
+            return View(temp);
+        }
+        [HttpPost]
+        public ActionResult AssignTempDev(int?id, string employeenumber)
+        {
+            var Employee = context.Employees.SingleOrDefault(emp => emp.employeeNumber.Equals(employeenumber));
+            var temp = context.TemporalDevices.ToList().Find(x=>x.TempID==id);
+            if(Employee!=null)
+            {
+                temp.employeeNumber = Employee.employeeNumber;
+                temp.employeeFullname = Employee.fullname;
+            }
+            context.SaveChanges();
+            return RedirectToAction("TempDev");
+        }
+        public ActionResult DisposeTempDev(int id)
+        {
+            if (id == 0)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            TemporalDevice td = context.TemporalDevices.ToList().Find(x => x.TempID == id);
+            if (td == null)
+            {
+                return HttpNotFound();
+            }
+            
+            return View(td);
+        }
+        [HttpPost]
+        public ActionResult DisposeTempDev(int? id)
+        {
+            var tempDev = context.TemporalDevices.FirstOrDefault(x => x.TempID == id);
+
+
+            var archive = new Archive
+            {
+                assetNumber = tempDev.serialNumber,
+                category = tempDev.category,
+                dateAdded = tempDev.dateadded,
+                dateDisposed = DateTime.Now,
+                employeeName = "N/A",
+                employeeNumber = "N/A"
+            };
+
+            context.Archives.Add(archive);
+            context.TemporalDevices.Remove(tempDev);
+            context.SaveChanges();
+            return RedirectToAction("TempDev");
+        }
 
         public ActionResult Deallocate(int id)
         {
@@ -624,11 +766,14 @@ namespace AssetManagement.WebUI.Controllers
             var tower = context.PCBoxes.FirstOrDefault(x => x.assetID == id && x.assignStatus == 1);
 
 
+            AssetLogic al = new AssetLogic();
+
             if (asset != null && employee != null)
             {
+
                 if (laptop != null)
                 {
-
+                    
                     var ownership = new OwnershipHistory
                     {
                         assetNumber = laptop.assetNumber,
@@ -644,7 +789,27 @@ namespace AssetManagement.WebUI.Controllers
                     laptop.assignStatus = 0;
                     laptop.assigndate = null;
                     laptop.employeeNumber = null;
+                    
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) < 1)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = laptop.assetID,
+                            serialNumber=laptop.serialNumber,
+                            model = laptop.modelName,
+                            manufacturer = laptop.manufacturer,
+                            category = laptop.catergory,
+                            dateadded = laptop.dateAdded
+                        };
+     
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.Laptops.Remove(laptop);
+                    
+
                 }
 
                 if (monitor != null)
@@ -664,11 +829,30 @@ namespace AssetManagement.WebUI.Controllers
                     monitor.assignStatus = 0;
                     monitor.assigndate = null;
                     monitor.employeeNumber = null;
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) == 0)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = monitor.assetID,
+                            serialNumber = monitor.serialNumber,
+                            model = monitor.modelName,
+                            manufacturer = monitor.manufacturer,
+                            category = monitor.catergory,
+                            dateadded = monitor.dateAdded
+                        };
+
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.Monitors.Remove(monitor);
+
                 }
 
                 if (printer != null)
                 {
+                    
                     var ownership = new OwnershipHistory
                     {
                         assetNumber = printer.assetNumber,
@@ -684,7 +868,24 @@ namespace AssetManagement.WebUI.Controllers
                     printer.assignStatus = 0;
                     printer.assigndate = null;
                     printer.employeeNumber = null;
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) < 1)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = printer.assetID,
+                            serialNumber = printer.serialNumber,
+                            model = printer.modelName,
+                            manufacturer = printer.manufacturer,
+                            category = printer.catergory,
+                            dateadded = printer.dateAdded
+                        };
+
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.Printers.Remove(printer);
                 }
 
                 if (mouse != null)
@@ -704,11 +905,29 @@ namespace AssetManagement.WebUI.Controllers
                     mouse.assignStatus = 0;
                     mouse.assigndate = null;
                     mouse.employeeNumber = null;
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) == 0)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = mouse.assetID,
+                            serialNumber = mouse.serialNumber,
+                            model = mouse.modelName,
+                            manufacturer = mouse.manufacturer,
+                            category = mouse.catergory,
+                            dateadded = mouse.dateAdded
+                        }
+                        ;
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.Mice.Remove(mouse);
                 }
 
                 if (keyboard != null)
                 {
+                    
                     var ownership = new OwnershipHistory
                     {
                         assetNumber = keyboard.assetNumber,
@@ -724,7 +943,25 @@ namespace AssetManagement.WebUI.Controllers
                     keyboard.assignStatus = 0;
                     keyboard.assigndate = null;
                     keyboard.employeeNumber = null;
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) == 0)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = keyboard.assetID,
+                            serialNumber = keyboard.serialNumber,
+                            model = keyboard.modelName,
+                            manufacturer = keyboard.manufacturer,
+                            category = keyboard.catergory,
+                            dateadded = keyboard.dateAdded
+                        }
+                        ;
+
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.Keyboards.Remove(keyboard);
                 }
 
                 if (tower != null)
@@ -744,7 +981,24 @@ namespace AssetManagement.WebUI.Controllers
                     tower.assignStatus = 0;
                     tower.assigndate = null;
                     tower.employeeNumber = null;
+
+                    if (al.depreciationCost(asset.dateadded, asset.costprice) == 0)
+                    {
+                        var tempo = new TemporalDevice
+                        {
+                            assetID = tower.assetID,
+                            serialNumber = tower.serialNumber,
+                            model = tower.modelName,
+                            manufacturer = tower.manufacturer,
+                            category = tower.catergory,
+                            dateadded = tower.dateAdded
+                        }
+                        ;
+                        context.TemporalDevices.Add(tempo);
+                    }
                     context.Ownerships.Add(ownership);
+                    context.Assets.Remove(asset);
+                    context.PCBoxes.Remove(tower);
                 }
             }
             context.SaveChanges();

@@ -19,7 +19,7 @@ namespace AssetManagement.Business
             }
             if (cost - ((cost * 0.3) * (DateTime.Now.Year - dateadded.Year)) < 0)
             {
-                deprcost = 0;
+                deprcost = cost;
             }
             return deprcost;
         }

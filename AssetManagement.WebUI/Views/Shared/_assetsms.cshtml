@@ -37,6 +37,33 @@
 </head>
 <body>
     <header class="header dark-bg">
+       
+        <div class="top-nav notification-row">
+            <ul class="nav pull-right top-menu">
+               
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon_clock_alt" style="color:white"></i>
+                        <span class="badge bg-important">@Html.Partial("_FullyDAssetCounter")</span>
+                    </a>
+                    <ul class="dropdown-menu extended notification">
+                       
+                        <li>
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <p class="blue">Notifications</p>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("FullyDAssets", "Asset")">
+                                <span class="label label-warning"><i class="icon_clock_alt"></i></span>
+                                @Html.Partial("_fullyDepreciated") Fully Deprecitated Asset(s)
+                                <span class="small italic pull-right">High Priority</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
         <div class="toggle-nav">
             <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
         </div>
@@ -67,6 +94,7 @@
                             <li>@Html.ActionLink("Capture New Asset", "Add", "Printer")</li>
                             <li>@Html.ActionLink("Unssigned Assets", "Index", "Asset")</li>
                             <li>@Html.ActionLink("Search Asset", "Assigned", "Asset")</li>
+                            <li>@Html.ActionLink("Temporal Assets","TempDev","Asset")</li>
                         </ul>
                     </li>
                     <li class="sub-menu">
@@ -126,6 +154,7 @@
                         </ul>
                     </li>
                 </ul>
+                
                 <!-- sidebar menu end-->
             </div>
         </aside>

@@ -1,0 +1,47 @@
+﻿@model AssetManagement.Domain.Entities.TemporalDevice
+
+@if (User.IsInRole("Asset-Manager"))
+{
+
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@*@{
+        ViewBag.Title = "Dispose Item";
+        Layout = "~/Views/Shared/_assetsms.cshtml";
+    }*@
+<div style="margin-bottom:10%;"></div>
+<h3 class="page-header">
+    <i class="fa fa-file-text-o"></i>
+    Deallocate Temporal Device<br />
+    Deallocate Temporal Device from employee @Model.employeeNumber @Model.employeeFullname...?
+</h3>
+<ol class="breadcrumb">
+    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-desktop"></i>Assets</li>
+    <li><i class="fa fa-list-alt"></i>Dispose Asset</li>
+</ol><div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deallocate" class="btn btn-default" /> |
+            @Html.ActionLink("Cancel", "Assigned", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>

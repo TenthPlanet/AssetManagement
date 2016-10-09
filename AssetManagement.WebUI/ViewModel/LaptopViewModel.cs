@@ -44,6 +44,11 @@ namespace AssetManagement.WebUI.ViewModel
         [Required]
         [Display(Name = "RAM")]
         public string RAM { get; set; }
+
+        [Required]
+        [Display(Name = "Processor")]
+        public string processor { get; set; }
+
         [Required]
         [Display(Name = "HDD Capacity")]
         public string HDD { get; set; }

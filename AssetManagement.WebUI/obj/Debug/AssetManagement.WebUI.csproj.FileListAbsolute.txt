@@ -1730,10 +1730,7 @@ C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\Asse
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\August 2016\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
 C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGridMail.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
-C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.xml
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\roslyn\csc.exe
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\DS3 admin\Documents\GitHubVisualStudio\AssetManagement\AssetManagement.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -1905,5 +1902,15 @@ C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\Ass
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.pdb
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Newtonsoft.Json.xml
+<<<<<<< HEAD
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
 C:\Users\Lenovo\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
+=======
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\Rotativa.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\itextsharp.xml
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.Migrations.Kay.resources
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\obj\Debug\AssetManagement.WebUI.csproj.GenerateResource.Cache
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Gift Kay\Source\Repos\AssetManagement\AssetManagement.WebUI\bin\SendGrid.SmtpApi.dll
+>>>>>>> origin/master

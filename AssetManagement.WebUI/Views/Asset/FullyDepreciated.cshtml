@@ -79,6 +79,9 @@ else
         <th>
             @Html.DisplayName("Cost Price")
         </th>
+        <th>
+            @Html.DisplayName("Action")
+        </th>
     </tr>
     @foreach (var item in Model)
     {
@@ -107,6 +110,22 @@ else
             <th>
                 @Html.DisplayFor(modelItem => item.costprice)
             </th>
+            <td>
+                <div class="btn-group">
+                    <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
+                        <span class="icon_lightbulb_alt"></span>
+                        Options
+                    </a>
+                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">@Html.ActionLink("Dispose", "DisposeItem", new { id = item.assetID })</a></li>
+                        <li><a href="">@Html.ActionLink("Deallocate", "Deallocate", new { id = item.assetID })</a></li>
+                        <li><a href="">@Html.ActionLink("View Report", "Report", new { id = item.assetID })</a></li>
+                        <li class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
+                    </ul>
+                </div>
+            </td>
         </tr>
     }
 </table>

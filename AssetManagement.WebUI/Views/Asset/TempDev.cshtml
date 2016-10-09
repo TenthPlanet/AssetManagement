@@ -1,0 +1,91 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.TemporalDevice>
+
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "Assign";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "Assign";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<div style="margin-bottom:10%;"></div>
+<h2>Temporal Devices</h2>
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.assetID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model=>model.serialNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manufacturer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateadded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employeeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employeeFullname)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.assetID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.serialNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manufacturer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateadded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.employeeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employeeFullname)
+        </td>
+        <td>
+            <div class="btn-group">
+                <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
+                    <span class="icon_lightbulb_alt"></span>
+                    Options
+                </a>
+                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="">@Html.ActionLink("Assign", "AssignTempDev", new { id = item.TempID })</a></li>
+                    <li><a href="">@Html.ActionLink("Dispose", "DisposeTempDev", new { id = item.TempID })</a></li>
+                    <li><a href="">@Html.ActionLink("Deallocate", "DeallocateTempDev", new { id = item.TempID })</a></li>
+                    <li class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
+                </ul>
+            </div>
+        </td>
+        
+</tr>
+}
+
+</table>
