@@ -4004,11 +4004,6 @@ ul.amounts li {
     width: 175px;
 }
 
-.form-horizontal .form-group {
-    border-bottom: 1px solid #eff2f7;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
 
 .form-horizontal .form-group:last-child {
     border-bottom: none;

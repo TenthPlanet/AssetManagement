@@ -4,20 +4,20 @@
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-    var imgUrl = Url.Content("~/Content/images/profile/" + User.Identity.Name + ".png") + "?time=" + DateTime.Now.ToString();
+    //var imgUrl = Url.Content("~/Content/images/profile/" + User.Identity.Name + ".png") + "?time=" + DateTime.Now.ToString();
 
     <table>
         <tr>
-            <td style="width:50px;vertical-align: top;"><div class="comImg"><img src="@imgUrl" height="50" width="50" /></div></td>
+            <td style="width:50px;vertical-align: top;"><div class="comImg"><img src="@Url.Action("RenderImage", new { id = User.Identity.Name })" height="50" width="50" /></div></td>
             <td style="vertical-align:middle; min-height:40px;" class="comments" id="comments">
                 <textarea name="Newcomment" id="Newcomment1" style="width:300px"></textarea>
-                <script>
+                @*<script>
                     CKEDITOR.replace('Newcomment1',
                        {
                            customConfig: '~/Scripts/ckEditorConfig1.js'
                        });
 
-                </script>
+                </script>*@
                 <div class="comTextSub" style="width:250px">
                     <input type="submit" value="Comment" class="btn btn-sm btn-default" />
                 </div>

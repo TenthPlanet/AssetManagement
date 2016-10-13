@@ -26,7 +26,6 @@
                 @Html.ValidationMessageFor(model => model.InvoiceNumber, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.Retailer, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -34,11 +33,50 @@
                 @Html.ValidationMessageFor(model => model.Retailer, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.InvoiceDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.InvoiceDate,new{ htmlAttributes = new { @class = "form-control datePicker", } } )
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.totalCost, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.totalCost, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.totalCost, "", new { @class = "text-danger" })
+            </div>
+        </div>
         <div class="form-group">
             @Html.Label("Invoice Document", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <input type="file" id="pdfDoument" name="upload" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-md-2">Invoice Type</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.invoiceType, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.invoiceType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.invoiceType, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @{
+                    List<SelectListItem> type = new List<SelectListItem>();
+                    type.Add(new SelectListItem { Text = "Assets", Value = "Assets" });
+                    type.Add(new SelectListItem { Text = "Replacement Parts", Value = "Replacement Parts" });
+                }
+                @Html.DropDownListFor(m => m.invoiceType, type, "Select Capacity")
+                @Html.ValidationMessageFor(model => model.invoiceType)
             </div>
         </div>
 
@@ -53,3 +91,11 @@
 <div>
     @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-default" })
 </div>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Content/AdminLayout/js/jquery-ui-1.10.4.min.js"></script>
+<script>
+    $(function () {
+        $(".datePicker").datepicker();
+        console.log($('.datePicker').val());
+    });
+</script>

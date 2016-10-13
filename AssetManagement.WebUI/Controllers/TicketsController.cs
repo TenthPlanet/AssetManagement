@@ -67,6 +67,21 @@ namespace AssetManagement.WebUI.Controllers
 
             return View(Ticket);
         }
+        public ActionResult RenderImage(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var image = _context.Employees.FirstOrDefault(x => x.employeeNumber == id);
+
+            if (image == null)
+            {
+                return HttpNotFound();
+            }
+
+            return File(image.fileBytes, image.fileType);
+        }
        
         public ActionResult TicketsIndex(int? page)
         {
@@ -370,7 +385,7 @@ namespace AssetManagement.WebUI.Controllers
         [AllowAnonymous]
         public ActionResult Solutions()
         {
-            var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
+            var tickets = _context.Tickets.Where(x => x.solution != null).ToList()
                 .OrderByDescending(x => x.datecreated);
             return View(tickets);
         }
@@ -381,24 +396,82 @@ namespace AssetManagement.WebUI.Controllers
         {
             if (search != null)
             {
-                var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
+                var tickets = _context.Tickets.Where(x => x.solution != null).ToList()
                     .Where(x => x.solution.Contains(search) || x.subject.Contains(search) || x.description.Contains(search))
                     .OrderByDescending(x => x.datecreated);
                 return View(tickets);
             }
             return RedirectToAction("Index");
         }
-        public ActionResult SolutionPortal(string search)
+
+        public ActionResult SolutionPortal()
         {
-            if (search != null)
-            {
-                var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
-                    .Where(x => x.solution.Contains(search) || x.subject.Contains(search) || x.description.Contains(search))
-                    .OrderByDescending(x => x.datecreated);
-                return View(tickets);
-            }
-            return RedirectToAction("SolutionPortal");
+
+            var CategoryList = new List<string>();
+            var categortyQ = from D in _context.Tickets
+                             orderby D.category
+                             select D.category;
+            CategoryList.AddRange(categortyQ.Distinct());
+            ViewBag.Category = new SelectList(CategoryList);
+
+            var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList().OrderByDescending(x => x.datecreated);
+            return View(tickets);
         }
+
+        [HttpPost]
+        public ActionResult SolutionPortal(string search, string Category)
+        {
+
+            var CategoryList = new List<string>();
+            var categortyQ = from D in _context.Tickets
+                             orderby D.category
+                             select D.category;
+            CategoryList.AddRange(categortyQ.Distinct());
+            ViewBag.Category = new SelectList(CategoryList);
+
+            List<Ticket> AllCategory = new List<Ticket>();
+
+
+            var Find = (from t in _context.Tickets
+                        select t);
+
+            if (!String.IsNullOrEmpty(Category))
+            {
+                Find = Find.Where(v => v.category.Equals(Category));
+            }
+            if (!string.IsNullOrEmpty(search))
+            {
+                Find = Find.Where(v => v.subject.Contains(search) || v.description.Contains(search));
+            }
+
+            var GetList = Find.ToList();
+            foreach (var Collect in GetList)
+            {
+                AllCategory.Add(new Ticket()
+                {
+                    accomplishstatus = Collect.accomplishstatus,
+                    acknowledgestatus = Collect.acknowledgestatus,
+                    assetid = Collect.assetid,
+                    assetnumber = Collect.assetnumber,
+                    assetowner = Collect.assetowner,
+                    category = Collect.category,
+                    datecompleted = Collect.datecompleted,
+                    datecreated = Collect.datecreated,
+                    datedue = Collect.datedue,
+                    description = Collect.description,
+                    employeeNumber = Collect.employeeNumber,
+                    Employees = Collect.Employees,
+                    priority = Collect.priority,
+                    solution = Collect.solution,
+                    subject = Collect.subject,
+                    ticketid = Collect.ticketid,
+                    ticketstatus = Collect.ticketstatus
+                });
+            }
+            return View(AllCategory);
+        }
+     
+
         //Full solution details
         [AllowAnonymous]
         public ActionResult Info(int? id)
@@ -595,13 +668,13 @@ namespace AssetManagement.WebUI.Controllers
         public ActionResult TicketsCount()//Total to notify tickets
         {
             int tickets = _context.Tickets.Where(m => m.datecompleted == null && m.solution == null).ToList().Count();
-            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now).ToList().Count();
+            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now && x.solution==null).ToList().Count();
             ViewBag.Tickets = tickets + overdueCount;
             return View();
         }
         public ActionResult OverDue()
         {
-            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now).ToList().Count();
+            int overdueCount = _context.Tickets.ToList().FindAll(x => x.datedue < System.DateTime.Now && x.solution == null).ToList().Count();
             ViewBag.Overdue = overdueCount;
             return View();
         }

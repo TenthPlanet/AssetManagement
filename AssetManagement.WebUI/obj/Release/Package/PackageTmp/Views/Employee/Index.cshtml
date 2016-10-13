@@ -119,6 +119,7 @@ else
                     </a>
                     <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" title="Bootstrap 3 themes generator"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="">@Html.ActionLink("View", "EmployeeSummary", "Employee", new { id = item.employeeNumber }, null)</a></li>
                         <li><a href="">@Html.ActionLink("Modify", "Edit", new { id = item.employeeNumber })</a></li>
                         <li><a href="">@Html.ActionLink("View Assets", "EmployeeAssets","Asset", new { id = item.employeeNumber },null)</a></li>
                         <li class="divider"></li>

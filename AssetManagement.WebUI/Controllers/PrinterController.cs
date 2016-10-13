@@ -35,6 +35,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Printer");
             List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Printer"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)
@@ -59,6 +60,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(PrinterViewModel viewmodel)
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Printer");
             List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Printer"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)

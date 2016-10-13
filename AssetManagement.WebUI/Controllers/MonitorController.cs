@@ -37,6 +37,7 @@ namespace AssetManagement.WebUI.Controllers
 
         public ActionResult Add()
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Monitor");
             List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Monitor"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)
@@ -61,6 +62,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(MonitorViewModel viewmodel)
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Monitor");
             List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Monitor"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)

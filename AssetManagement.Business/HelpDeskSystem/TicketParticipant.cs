@@ -12,9 +12,22 @@ namespace AssetManagement.Business.HelpDeskSystem
     {
         public string Name { get; set; }
         public string employeeID { get; set; }
-        public IEnumerable<Ticket> OpenedTickets { get; set; }
-        public int CompletedTickets { get; set; }
-        public int UnAcknowalgedTickets { get; set; }
-        public int AllTickets { get; set; }    
+        public List<Ticket> OpenedTickets { get; set; }
+        public List<Ticket> CompletedTickets { get; set; }
+        public List<Ticket> UnAcknowalgedTickets { get; set; }
+        public List<Ticket> AllTickets { get; set; }   
+        
+        public TicketParticipant()
+        {
+
+        } 
+        public TicketParticipant(string Name, int EmployeeID,  List<Ticket> opened, List<Ticket> completed,  List<Ticket> UbAckowlaged,  List<Ticket> All)
+        {
+            this.Name = Name;
+            this.OpenedTickets = opened;
+            this.CompletedTickets = completed;
+            this.UnAcknowalgedTickets = UnAcknowalgedTickets;
+            this.AllTickets = All;
+        }
     }
 }

@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+    
+}
+<link href="~/Content/css/lobibox.css" rel="stylesheet" />
+<link href="~/Content/css/lobibox.css" rel="stylesheet" />
+<link href="~/Content/Notification_Library/css-popup/styles.css" rel="stylesheet" />
+<script src="~/Content/Notification_Library/css-popup/css-pop.js"></script>
+
+
+
+@if (@ViewBag.TotalStock < 10)
+{
+    <body>
+        <div>
+
+            <!--POPUP-->
+            <div id="blanket" style="display:none;"></div>
+            <div id="popUpDiv" style="display:none;">
+                <a href="~/Stock/Index" onclick="popup('popUpDiv')" class="btn btn-close" style="font-weight:bold">[Go to Stock]</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" onclick="popup('popUpDiv')" class="btn btn-close" style="font-weight:bold">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;[Close]
+                </a>
+            </div>
+            <a onclick="popup('popUpDiv')">
+                <div class="btn btn-danger">Stock Alert!</div>
+            </a>
+            <!-- / POPUP-->
+
+        </div>
+
+    </body>
+
+
+}
+else
+{
+     @ViewBag.Blank
+}
+
+

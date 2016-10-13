@@ -4,70 +4,96 @@
 
 <head>
     <meta name="viewport" content="width=device-width" />
-    
-    <title>Asset Management Sys..</title>
+
+    <title>Asset Management</title>
 
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-        <meta name="author" content="GeeksLabs">
-        <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-        <link rel="shortcut icon" href="img/favicon.png">
-
-
-        <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/xcharts.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
-        <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="~/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/widgets.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/xcharts.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/customcss.css" rel="stylesheet" />
+    <link href="~/Content/AdminLayout/css/elusive-icons.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
 </head>
 <body>
     <header class="header dark-bg">
+
+        <div class="top-nav notification-row">
+            <ul class="nav pull-right top-menu">
+
+                <li id="alert_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon_clock_alt" style="color:white"></i>
+                        <span class="badge bg-important">@Html.Partial("_FullyDAssetCounter")</span>
+                    </a>
+                    <ul class="dropdown-menu extended notification">
+
+                        <li>
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <p class="blue">Notifications</p>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("FullyDAssets", "Asset")">
+                                <span class="label label-warning"><i class="icon_clock_alt"></i></span>
+                                @Html.Partial("_fullyDepreciated") Fully Deprecitated Asset(s)
+                                <span class="small italic pull-right">High Priority</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div class="toggle-nav">
             <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
         </div>
         <div style="margin-top:20px">
             Admin : @User.Identity.Name
+            <div class="nav pull-right top-menu">@Html.Partial("_TotalStock")</div>
         </div>
     </header>
-    <div> 
+    <div>
         <!--sidebar start-->
         <aside>
             <div id="sidebar" class="nav-collapse ">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu">
                     <li class="active">
-                         <a href="~/Dashboard/Dashboard">
-                             <i class="icon_house_alt"></i>
-                             <span>Dashboard</span>
-                         </a>
-                             
-                        
+                        <a href="~/Dashboard/Dashboard">
+                            <i class="icon_house_alt"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_document_alt"></i>
+                            <i class="fa fa-laptop"></i>
                             <span>Asset</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
-                        <ul class="sub">  
+                        <ul class="sub">
                             <li>@Html.ActionLink("All Assets", "AllExistingAssets", "Asset")</li>
                             <li>@Html.ActionLink("Capture New Asset", "Add", "Printer")</li>
                             <li>@Html.ActionLink("Unssigned Assets", "Index", "Asset")</li>
                             <li>@Html.ActionLink("Search Asset", "Assigned", "Asset")</li>
+                            <li>@Html.ActionLink("Temporal Devices","TempDev","Asset")</li>
                         </ul>
                     </li>
                     <li class="sub-menu">
@@ -93,18 +119,15 @@
                             <li>@Html.ActionLink("Ownership History", "Index", "Archive")</li>
                             <li></li>
                         </ul>
-                    </li>          
+                    </li>
                     <li>
                         <a class="" href="">
-                            <i class="icon_piechart"></i>
+                            <i class="fa fa-bar-chart-o"></i>
                             <span>Report</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
-                        <ul class="sub">
-                            
-                        </ul>
+                        <ul class="sub"></ul>
                     </li>
-
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon_table"></i>
@@ -112,21 +135,23 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li>@Html.ActionLink("Add Stock", "Add", "Stock")</li>
-                            <li>@Html.ActionLink("Available Stock", "Index", "Stock")</li>
+                            <li>@Html.ActionLink("Assets", "Index", "Stock")</li>
                             <li>@Html.ActionLink("Suppliers", "Index", "Invoice")</li>
+                            <li>@Html.ActionLink("Repairs", "Index", "ReplacementParts")</li>
+                            <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
                         </ul>
                     </li>
-
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="fa fa-user"></i>
+                            <i class="el el-off"></i>
                             <span>Account</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                             
-                            @*<li>@Html.ActionLink("Logout", "Login", "Home")</li>*@
+                            @if (User.Identity.Name != "assets@admin.net")
+                            {
+                                @Html.ActionLink("Profile", "UserProfile", "Employee")
+                            }
                             <li>@Html.Partial("_LoginPartial")</li>
                         </ul>
                     </li>
@@ -138,7 +163,9 @@
         <!--sidebar end-->
     </div>
     <div class="container body-content">
+
         @RenderBody()
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Tenth PLANET</p>
@@ -175,8 +202,6 @@
     <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
     <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
     <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>
-
-
     <script>
 
         //knob
@@ -222,10 +247,6 @@
                 }
             });
         });
-
-
-
     </script>
-
 </body>
 </html>

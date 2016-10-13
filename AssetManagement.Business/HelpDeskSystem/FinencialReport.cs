@@ -9,12 +9,10 @@ namespace AssetManagement.Business.HelpDeskSystem
 {
     public class FinencialReport
     {
-        public double TotalSparePartsCost;
-        public double TotalAssetCost;
-        public List<Invoice> invoices { get; set; }
-        public List<Asset> assets { get; set; }
-        public List<ReplacementPart> replacementParts { get; set; }
-        public double TotalCost;
-        public double qty;
+        public int AssetsBought { get; set; }
+        public int ReplacementPartsBought { get; set; }
+        public double TotalRepairCost { get; set; }
+        public double TotalAssetsCost { get; set; }
+        public double FullCost { get; set; }
     }
 }

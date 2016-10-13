@@ -1,0 +1,154 @@
+﻿@model Tuple<AssetManagement.Domain.Entities.Ticket, IEnumerable<AssetManagement.Domain.Entities.Progress>>
+
+@{
+    ViewBag.Title = "Add a comment";
+    Layout = null;
+}
+<style>
+    fieldset {
+        padding-right: 20%;
+        width: 100%;
+        border: 2px 2px solid #000;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .tabs {
+        padding-top: 1%;
+    }
+
+        .tabs span {
+            display: inline-block;
+            padding-right: 4px;
+        }
+
+    strong span {
+        display: inline-block;
+        padding-right: 6px;
+    }
+
+    .linespace strong {
+        padding-right: 10px;
+    }
+
+    p.thumbspace {
+        padding: 2%;
+    }
+
+    .col-md-10 {
+        font-size: 1.1em;
+    }
+
+    div#progress {
+        width: 100%;
+        padding: 0;
+        margin: 3% 0 0 1.8%;
+    }
+
+    span#showpanel {
+        margin-left: 1.8%;
+    }
+
+        span#showpanel:hover {
+            cursor: pointer;
+        }
+
+    img#img-screen:hover {
+        width: 50%;
+    }
+
+    .alert-success {
+        width: 85%;
+        margin-left: 15%;
+        border-radius: 6px;
+        background: #f7f7f7;
+        color: inherit;
+        border: 4px solid #b2dba1;
+        margin-bottom: 1%;
+    }
+
+    .alert-info {
+        width: 85%;
+        margin-right: 15%;
+        border-radius: 6px;
+        background: #f7f7f7;
+        color: inherit;
+        border: 4px solid #9acfea;
+        margin-bottom: 1%;
+    }
+
+    div#user-reply {
+        margin-top: 3%;
+        padding: 0;
+        width: 100%;
+    }
+
+    textarea#comment {
+        width: 88%;
+        float: right;
+        margin-top: 4px;
+    }
+
+    img#profile-thumb {
+        width: 8%;
+        border-radius: 50px;
+    }
+
+    img.artwork {
+        width: 8%;
+    }
+
+    span.pull-left {
+        margin-top: 3.5%;
+        margin-left: 2%;
+    }
+
+    input#submit {
+        padding: 10px;
+        margin-left: 16px;
+        margin-top: -16px;
+    }
+</style>
+<fieldset>
+    <div class="col-md-10" id="user-reply">
+        @using (Html.BeginForm("TicketDetails", "HelpDesk", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <p>
+                <img id="profile-thumb" src="@Url.Action("RenderImage", new { id = User.Identity.Name })" />
+                <textarea id="comment" name="comment" placeholder="Add a comment..." rows="3"></textarea>
+            </p>
+            <input type="submit" value="Comment" class="btn btn-primary pull-right" id="submit" />
+        }
+    </div>
+    <div class="col-md-10" id="progress">
+        @foreach (var p in Model.Item2)
+        {
+            if (p.employeeNumber != User.Identity.Name)
+            {
+                <p class="alert alert-info thumbspace">
+                    <img class="artwork img-circle img-responsive pull-left" src="@Url.Action("RenderImage", new { id = p.employeeNumber })" />
+                    <span class="pull-left"><strong>@Html.ActionLink(p.employeeName, "EmployeeSummary", "Employee", new { id = p.employeeNumber }, null)</strong></span>
+                    <br /><br /><br />
+                    @Html.DisplayFor(item => p.comment)
+                    <br /><br />
+                    <span style="float:right;margin-top:-2%">@p.date</span>
+                </p>
+            }
+            else
+            {
+                <p class="alert alert-success thumbspace">
+                    <img class="artwork img-circle img-responsive pull-left" src="@Url.Action("RenderImage", new { id = p.employeeNumber })" />
+                    <span class="pull-left"><strong>@p.employeeName</strong></span>
+                    <br /><br /><br />
+                    @Html.DisplayFor(item => p.comment)
+                    <br /><br />
+                    <span style="float:right;margin-top:-2%">@p.date</span>
+                </p>
+            }
+        }
+    </div>
+</fieldset>

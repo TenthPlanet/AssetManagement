@@ -13,6 +13,7 @@ using System.Web.Hosting;
 using System.Web.Mvc;
 using PagedList.Mvc;
 using PagedList;
+using System.Data.Entity;
 
 namespace AssetManagement.WebUI.Controllers
 {
@@ -25,7 +26,7 @@ namespace AssetManagement.WebUI.Controllers
         //Knowledge base list
         public ActionResult Base(int?page)
         {
-            var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
+            var tickets = _context.Tickets.Where(x => x.solution != null).ToList()
                  .OrderByDescending(x => x.datecreated);
             int pageSize = 5;
             int pageNumber = (page ?? 1);
@@ -37,7 +38,7 @@ namespace AssetManagement.WebUI.Controllers
         {
             if (search != null)
             {
-                var tickets = _context.Tickets.Where(x => x.solution != null && x.ticketstatus == false).ToList()
+                var tickets = _context.Tickets.Where(x => x.solution != null).ToList()
                     .Where(x => x.solution.Contains(search) || x.subject.Contains(search) || x.description.Contains(search))
                      .OrderByDescending(x => x.datecreated);
                 return View(tickets);
@@ -46,6 +47,76 @@ namespace AssetManagement.WebUI.Controllers
             {
                 return RedirectToAction("Base");
             }
+        }
+        public ActionResult UserProfile()
+        {
+            return View(_context.Employees.Single(emp => emp.employeeNumber == User.Identity.Name));
+        }
+        public ActionResult Edit(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            Employee employee = _context.Employees.Find(id);
+
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.RoleID = new SelectList(_context.Roles, "RoleID", "RoleName");
+            ViewBag.departmentID = new SelectList(_context.Departments, "departmentID", "departmentName");
+            return View(employee);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Employee employee, HttpPostedFileBase file)
+        {
+            AssetLogic al = new AssetLogic();
+
+            if (ModelState.IsValid)
+            {
+                var _employee = _context.Employees.Find(employee.employeeNumber);
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    employee.fileName = System.IO.Path.GetFileName(file.FileName);
+                    employee.fileType = file.ContentType;
+                    employee.fileBytes = al.ConvertToBytes(file);
+                }
+                else
+                {
+                    employee.fileName = _employee.fileName;
+                    employee.fileType = _employee.fileType;
+                    employee.fileBytes = _employee.fileBytes;
+                }
+                employee.fullname = employee.firstName + " " + employee.lastName;
+
+                _context.Entry(_employee).State = EntityState.Detached;
+                _context.Entry(employee).State = EntityState.Modified;
+                _context.SaveChanges();
+                return RedirectToAction("UserProfile");
+            }
+            ViewBag.RoleID = new SelectList(_context.Roles, "RoleID", "RoleName", employee.RoleID);
+            ViewBag.departmentID = new SelectList(_context.Departments, "departmentID", "departmentName", employee.departmentID);
+            return View(employee);
+        }
+        //render employee profile
+        public ActionResult RenderImage(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var image = _context.Employees.FirstOrDefault(x => x.employeeNumber == id);
+
+            if (image == null)
+            {
+                return HttpNotFound();
+            }
+
+            return File(image.fileBytes, image.fileType);
         }
         //All asset owned by an employee
         public ActionResult Assets(int?page)
@@ -201,6 +272,10 @@ namespace AssetManagement.WebUI.Controllers
             BinaryReader reader = new BinaryReader(Image.InputStream);
             ImageBytes = reader.ReadBytes((int)Image.ContentLength);
             return ImageBytes;
+        }
+        public ActionResult Disqus()
+        {
+            return View();
         }
     }
 }

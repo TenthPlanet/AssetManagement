@@ -30,13 +30,17 @@ namespace AssetManagement.WebUI.Controllers
             ViewBag.getAssets = list.Assets().Count;
             ViewBag.getEmployee = list.Employees().Count;
             HelpDeskLogic hdl = new HelpDeskLogic();
+            ViewBag.AllTickets = hdl.getAllTickets();
+
             ViewBag.TicketParticipant = hdl.GetParticipantReport(User.Identity.Name);
             foreach (Stock st in context.Stocks.ToList())
             {
                 s+= st.quantity;             
             }
             ViewBag.getStock=s;
-            return View();                   
+            var ticketsPerDevice = new TicketsByDevicesReport();
+            ticketsPerDevice.AssignTickets();
+            return View(ticketsPerDevice); ;   
         }
 
     }

@@ -1,0 +1,46 @@
+﻿@model AssetManagement.Domain.Entities.Role
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<div style="margin-top:8%"></div>
+
+<h2>Add Role</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.Label("Role Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RoleName)
+                @Html.ValidationMessageFor(model => model.RoleName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Description", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <textarea cols="10" rows="10" name="Description" id="Description" placeholder="Role Description..."></textarea>
+                @*@Html.EditorFor(model => model.Description)
+                    @Html.ValidationMessageFor(model => model.Description)*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

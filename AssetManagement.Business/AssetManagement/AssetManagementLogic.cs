@@ -9,11 +9,12 @@ namespace AssetManagement.Business.AssetManagement
 {
     public class AssetManagementLogic
     {
-        private List<Laptop> laptops;
-        private List<Printer> printers;
-        private List<Mouse> mice;
-        private List<Keyboard> keyboards;
-        private List<PCBox> towers;
+        public List<Laptop> laptops;
+        public List<Printer> printers;
+        public List<Mouse> mice;
+        public List<Keyboard> keyboards;
+        public List<Monitor> monitors;
+        public List<PCBox> tower;
 
         private Domain.Context.AssetManagementEntities _context = new Domain.Context.AssetManagementEntities();
         public AssetManagementLogic()
@@ -22,7 +23,8 @@ namespace AssetManagement.Business.AssetManagement
             printers = _context.Printers.ToList();
             mice = _context.Mice.ToList();
             keyboards = _context.Keyboards.ToList();
-            towers = _context.PCBoxes.ToList();
+            monitors = _context.Monitors.ToList();
+            tower = _context.PCBoxes.ToList();
         }
 
         public Laptop getLaptop(string id)
@@ -44,7 +46,11 @@ namespace AssetManagement.Business.AssetManagement
 
         public PCBox getPC(string id)
         {
-            return towers.Find(l => l.assetNumber== id);
+            return tower.Find(l => l.assetNumber == id);
+        }
+        public Monitor getMonitor(string id)
+        {
+            return monitors.Find(l => l.assetNumber == id);
         }
 
         public object getAssetByType(string id,string category)

@@ -1,8 +1,8 @@
 ﻿@model Tuple<AssetManagement.Domain.Entities.Ticket, IEnumerable<AssetManagement.Domain.Entities.Progress>>
 
 @{
-    ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+    ViewBag.Title = "Add a comment";
+    Layout = null;
 }
 <style>
     fieldset {
@@ -32,30 +32,34 @@
     .linespace strong {
         padding-right: 10px;
     }
-    p.thumbspace{
+
+    p.thumbspace {
         padding: 2%;
     }
 
     .col-md-10 {
         font-size: 1.1em;
     }
+
     div#progress {
-        display: none;
         width: 100%;
         padding: 0;
         margin: 3% 0 0 1.8%;
     }
-    span#showpanel
-    {
+
+    span#showpanel {
         margin-left: 1.8%;
     }
-    span#showpanel:hover{
-        cursor:pointer;
-    }
-    img#img-screen:hover{
+
+        span#showpanel:hover {
+            cursor: pointer;
+        }
+
+    img#img-screen:hover {
         width: 50%;
     }
-    .alert-success{
+
+    .alert-success {
         width: 85%;
         margin-left: 15%;
         border-radius: 6px;
@@ -64,7 +68,8 @@
         border: 4px solid #b2dba1;
         margin-bottom: 1%;
     }
-    .alert-info{
+
+    .alert-info {
         width: 85%;
         margin-right: 15%;
         border-radius: 6px;
@@ -72,101 +77,62 @@
         color: inherit;
         border: 4px solid #9acfea;
         margin-bottom: 1%;
-        
+    }
+
+    div#user-reply {
+        margin-top: 3%;
+        padding: 0;
+        width: 100%;
+    }
+
+    textarea#comment {
+        width: 88%;
+        float: right;
+        margin-top: 4px;
+    }
+
+    img#profile-thumb {
+        width: 10%;
+        border-radius: 50px;
+    }
+
+    img.artwork {
+        width: 8%;
+    }
+
+    span.pull-left {
+        margin-top: 3.5%;
+        margin-left: 2%;
+    }
+
+    input#submit {
+        padding: 10px;
+        margin-left: 16px;
+        margin-top: 4px;
     }
 </style>
-<div style="margin-bottom:10%;"></div>
-
-<h2>Ticket Details</h2>
-
-@if (@TempData["Success"] != null)
-{
-    <div class="alert alert-success">@TempData["Success"]</div>
-}
-
-<div class="col-md-10">
-    <h3>
-        <strong>
-            @if (Model.Item1.ticketstatus == true)
-            {
-                if (Model.Item1.acknowledgestatus == false)
-                {
-                    <span>@Model.Item1.subject</span>
-                    <span><img src="~/Content/down.png" width="20" height="20" title="Waiting for aknowledgement..." /></span>
-                }
-                else
-                {
-                    <span>@Model.Item1.subject</span>
-                    <span><img src="~/Content/up.png" width="20" height="20" title="In progress..." /></span>
-                }
-            }
-            else
-            {
-                <span>@Model.Item1.subject</span>
-                <span><img src="~/Content/check.png" width="20" height="20" title="Completed" /></span>
-            }
-
-        </strong>
-    </h3>
-</div>
 <fieldset>
-    <legend></legend>
-    <div class="col-md-10 linespace">
-        <strong>Ticket Number :</strong>@Model.Item1.ticketid
-        <br/>
-        @if (Model.Item1.assetnumber != null)
+    <div class="col-md-10" id="user-reply">
+        @using (Html.BeginForm("TicketDetails", "Technician", FormMethod.Post))
         {
-        <strong>Asset Number    : </strong>@Model.Item1.assetnumber
-            <br />
+            @Html.AntiForgeryToken()
+
+            <p>
+                <img id="profile-thumb" src="@Url.Action("RenderImage", new { id = User.Identity.Name })" />
+                <textarea id="comment" name="comment" placeholder="Add a comment..." rows="3"></textarea>
+            </p>
+            <input type="submit" value="Comment" class="btn btn-primary pull-right" id="submit" />
         }
-                <strong>Employee Number : </strong>@Model.Item1.assetowner
-        <br />
-        <strong>Assigned To       : </strong>You
-        <br /><br />
     </div>
-    <div class="col-md-10">
-        <p>
-            @Html.DisplayFor(model => model.Item1.description)
-            <div class="tabs">
-                @if (Model.Item1.assetnumber != null)
-                {
-                    <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = @Model.Item1.assetid }, new { @class = "btn btn-sm btn-default" }) | </span>
-                }
-                @if (Model.Item1.acknowledgestatus == false)
-                {
-                    <span><a href="~/Technician/Acknowledge/@Model.Item1.ticketid" class="btn btn-sm btn-default">Acknowledge</a> | </span>
-                }
-                @if (Model.Item1.acknowledgestatus == true)
-                {
-                    if (Model.Item1.accomplishstatus != true)
-                    {
-                        <span><a href="~/Technician/Complete/@Model.Item1.ticketid" class="btn btn-sm btn-default">Notify completion</a> | </span>
-                        <span>@Html.ActionLink("Progress Report", "Progress", new { id = Model.Item1.ticketid }, new { @class = "btn btn-sm btn-default" })</span>
-                    }
-                }
-                <span>Created: @Html.DisplayFor(model => model.Item1.datecreated) | </span>
-                <span>Due: @Html.DisplayFor(model => model.Item1.datedue) </span>
-                @if (Model.Item1.datecompleted != null)
-                {
-                    <span>| COM: @Html.DisplayFor(model => model.Item1.datecompleted)</span>
-                }
-            </div>
-        </p>
-    </div>
-    <div style="clear: both;width:100%"></div>
-    <span class="btn btn-default" id="showpanel">Show Progress</span>
-    <div style="clear: both;width:100%"></div>
-
     <div class="col-md-10" id="progress">
-
         @foreach (var p in Model.Item2)
         {
             if (p.employeeNumber != User.Identity.Name)
             {
                 <p class="alert alert-info thumbspace">
-
-                    <span><strong>@p.employeeName</strong></span>
-                    <br /><br />
+                    <img class="artwork img-circle img-responsive pull-left" src="@Url.Action("RenderImage", new { id = p.employeeNumber })" />
+                    <span class="pull-left"><strong>@Html.ActionLink(p.employeeName, "EmployeeSummary", "Employee", new { id = p.employeeNumber }, null)</strong></span>
+                    <br /><br /><br />
                     @Html.DisplayFor(item => p.comment)
                     <br /><br />
                     <span style="float:right;margin-top:-2%">@p.date</span>
@@ -175,9 +141,9 @@
             else
             {
                 <p class="alert alert-success thumbspace">
-
-                    <span><strong>@p.employeeName</strong></span>
-                    <br /><br />
+                    <img class="artwork img-circle img-responsive pull-left" src="@Url.Action("RenderImage", new { id = p.employeeNumber })" />
+                    <span class="pull-left"><strong>@p.employeeName</strong></span>
+                    <br /><br /><br />
                     @Html.DisplayFor(item => p.comment)
                     <br /><br />
                     <span style="float:right;margin-top:-2%">@p.date</span>
@@ -186,16 +152,3 @@
         }
     </div>
 </fieldset>
-<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
-<script>
-    $('span#showpanel').on('click', function () {
-        $('div#progress').slideToggle(1000);
-        var $state = $('span#showpanel').text();
-
-        if ($state === 'Show Progress') {
-            $('span#showpanel').text('Hide Progress')
-        } else {
-            $('span#showpanel').text('Show Progress')
-        }
-    });
-</script>

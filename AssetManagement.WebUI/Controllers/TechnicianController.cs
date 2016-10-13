@@ -25,6 +25,81 @@ namespace AssetManagement.WebUI.Controllers
         private readonly AssetManagementEntities _context = new AssetManagementEntities();
         private AssetResolver list = new AssetResolver();
         AssetLogic al = new AssetLogic();
+
+        public ActionResult UserProfile()
+        {
+            return View(_context.Employees.Single(emp => emp.employeeNumber == User.Identity.Name));
+        }
+        //EDIT EMPLOYEE
+
+        public ActionResult Edit(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            Employee employee = _context.Employees.Find(id);
+
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.RoleID = new SelectList(_context.Roles, "RoleID", "RoleName");
+            ViewBag.departmentID = new SelectList(_context.Departments, "departmentID", "departmentName");
+            return View(employee);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Employee employee, HttpPostedFileBase file)
+        {
+            AssetLogic al = new AssetLogic();
+
+            if (ModelState.IsValid)
+            {
+                var _employee = _context.Employees.Find(employee.employeeNumber);
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    employee.fileName = System.IO.Path.GetFileName(file.FileName);
+                    employee.fileType = file.ContentType;
+                    employee.fileBytes = al.ConvertToBytes(file);
+                }
+                else
+                {
+                    employee.fileName = _employee.fileName;
+                    employee.fileType = _employee.fileType;
+                    employee.fileBytes = _employee.fileBytes;
+                }
+                employee.fullname = employee.firstName + " " + employee.lastName;
+
+                _context.Entry(_employee).State = EntityState.Detached;
+                _context.Entry(employee).State = EntityState.Modified;
+                _context.SaveChanges();
+                return RedirectToAction("UserProfile");
+            }
+            ViewBag.RoleID = new SelectList(_context.Roles, "RoleID", "RoleName", employee.RoleID);
+            ViewBag.departmentID = new SelectList(_context.Departments, "departmentID", "departmentName", employee.departmentID);
+            return View(employee);
+        }
+
+        //Render Image
+        [AllowAnonymous]
+        public ActionResult RenderImage(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var image = _context.Employees.FirstOrDefault(x => x.employeeNumber == id);
+
+            if (image == null)
+            {
+                return HttpNotFound();
+            }
+
+            return File(image.fileBytes, image.fileType);
+        }
         public ActionResult Index()
         {
             HelpDeskLogic hdl = new HelpDeskLogic();
@@ -210,20 +285,25 @@ namespace AssetManagement.WebUI.Controllers
             }
             return View();
         }
-        public ActionResult Progress(int? id)
+        [AllowAnonymous]
+        public ActionResult TicketDetails(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var ticket = _context.Tickets.Find(id);
+            var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
+            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
+
             if (ticket == null)
             {
                 return HttpNotFound();
             }
-            return View(ticket);
+            return View(model);
         }
-        [HttpPost, ActionName("Progress")]
+        [AllowAnonymous]
+        [HttpPost, ActionName("TicketDetails")]
         [ValidateAntiForgeryToken]
         public ActionResult WriteComment(int? id, string comment)
         {
@@ -241,7 +321,7 @@ namespace AssetManagement.WebUI.Controllers
                 };
                 _context.Progresses.Add(progress);
                 _context.SaveChanges();
-                return RedirectToAction("TicketDetails", new { id = ticket.ticketid});
+                return RedirectToAction("Ticket", new { id = ticket.ticketid.ToString() });
             }
             return View();
         }
@@ -331,22 +411,7 @@ namespace AssetManagement.WebUI.Controllers
                           }).SingleOrDefault(c => c.assetID == id && c.assetstatus == 1);
             return View(result);
         }
-        public ActionResult TicketDetails(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            var ticket = _context.Tickets.Find(id);
-            var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
-            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
-
-            if (ticket == null)
-            {
-                return HttpNotFound();
-            }
-            return View(model);
-        }
+        
         public ActionResult MyAssets()
         {
             var assets = (from a in _context.Assets.ToList()
@@ -372,6 +437,10 @@ namespace AssetManagement.WebUI.Controllers
                           .Where(x => x.assetstatus == 1
                               && x.employeenumber.Equals(User.Identity.Name)).ToList();
             return View(assets);
+        }
+        public ActionResult Disqus()
+        {
+            return View();
         }
 
 	}

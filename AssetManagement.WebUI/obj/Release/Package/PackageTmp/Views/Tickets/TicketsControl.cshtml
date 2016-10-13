@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "TicketsControl";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+
+ 
+<div style="margin-bottom:10%;"></div>
+
+<div class="form-horizontal" style="width:90%">
+
+    <ol class="breadcrumb">
+        <li><i class="fa fa-gears"></i><a href="#">Tickets Control</a></li>
+
+    </ol>
+</div>
+
+<div class="box box-primary">
+</div>
+<div class="box box-primary">
+    <div class="box-body">
+        <ul class="nav nav-tabs">
+
+            <li class="active"><a data-toggle="tab" href="#home">Open Tickets</a></li>
+            <li><a data-toggle="tab" href="#menu2">My Ticket</a></li>
+            <li><a data-toggle="tab" href="#menu3">My Solutions</a></li>
+            <li><a data-toggle="tab" href="#menu4">Knowledge Base</a></li>
+            <li><a data-toggle="tab" href="#menu5">Overdue Tickets</a></li>
+
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade Sin active">
+                @{
+                    Html.RenderAction("Index");
+                }
+            </div>
+
+            <div id="menu2" class="tab-pane fade">
+                @{
+                    Html.RenderAction("MyTickets");
+                }
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                @{
+                    Html.RenderAction("MySolutions");
+                }
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                @{
+                    Html.RenderAction("Solutions");
+                }
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                @{
+                    Html.RenderAction("OverDueTickets");
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

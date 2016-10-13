@@ -70,7 +70,7 @@
         <p>
             @Html.DisplayFor(model => model.description)
             <div class="tabs">
-                <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = @Model.assetid }, new { @class = "btn btn-sm btn-default" }) | </span>
+                <span>@Html.ActionLink("Asset details", "Report", "Technician", new { id = @Model.assetid }, new { @class = "btn btn-sm btn-primary" }) | </span>
                 @*<span><a href="/Tickets/Acknowledge/@Model.assetid" class="delete-link">Acknowledge</a> | </span>
                     <span><a href="/Tickets/Accomplish/@Model.assetid" class="delete-link">Notify completion</a> | </span>*@
                 <span>Created: @Html.DisplayFor(model => model.datecreated) | </span>
@@ -87,7 +87,7 @@
 
     <div class="form-actions no-color">
         <input type="submit" value="Acknowledge" class="btn btn-default" /> |
-        @Html.ActionLink("Cancel", "TicketDetails", new { id = Model.ticketid }, new { @class = "btn btn-default" })
+        @Html.ActionLink("Cancel", "TicketDetails", new { id = Model.ticketid }, new { @class = "btn btn-primary" })
     </div>
 }
 

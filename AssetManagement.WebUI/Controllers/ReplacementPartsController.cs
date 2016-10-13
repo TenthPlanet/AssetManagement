@@ -47,7 +47,7 @@ namespace AssetManagement.WebUI.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "replacementPartID,name,associatedAsset,associatedTicket,invoiceNumber,supplier,price,partNumber,pruchaseDate")] ReplacementPart replacementPart)
+        public ActionResult Create(ReplacementPart replacementPart)
         {
             if (ModelState.IsValid)
             {

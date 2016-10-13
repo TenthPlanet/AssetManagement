@@ -31,11 +31,13 @@ namespace AssetManagement.WebUI.Controllers
         // GET: /Laptop/
         public ActionResult Index()
         {
+
             return View();
         }
         
         public ActionResult Add()
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Laptop");
             List<Stock> slist =new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Laptop"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)
@@ -60,6 +62,7 @@ namespace AssetManagement.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Add(LaptopViewModel viewmodel, string modelName)
         {
+            ViewBag.LM = context.Stocks.ToList().Where(x => x.category == "Laptop");
             List<Stock> slist = new List<Stock>(context.Stocks.ToList().Where(x => x.category == "Laptop"));
             List<SelectListItem> li = new List<SelectListItem>();
             foreach (var item in slist)

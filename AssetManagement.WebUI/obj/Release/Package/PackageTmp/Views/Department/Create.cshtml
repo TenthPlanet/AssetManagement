@@ -1,0 +1,36 @@
+﻿@model AssetManagement.Domain.Entities.Department
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<div style="margin:8%"></div>
+<h2>Add Department</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.Label("Department", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.departmentName)
+                @Html.ValidationMessageFor(model => model.departmentName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

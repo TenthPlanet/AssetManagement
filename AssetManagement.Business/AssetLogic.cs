@@ -1,9 +1,11 @@
 ﻿using AssetManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace AssetManagement.Business
 {
@@ -22,6 +24,13 @@ namespace AssetManagement.Business
                 deprcost = cost;
             }
             return deprcost;
+        }
+        public byte[] ConvertToBytes(HttpPostedFileBase file)
+        {
+            byte[] ImageBytes = null;
+            BinaryReader reader = new BinaryReader(file.InputStream);
+            ImageBytes = reader.ReadBytes((int)file.ContentLength);
+            return ImageBytes;
         }
 
     }

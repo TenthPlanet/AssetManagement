@@ -46,7 +46,7 @@
     }
 
     #img-screen:hover {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 </style>
@@ -107,7 +107,6 @@ else
             <p>
                 @Model.Item1.body
                 <div class="tabs">
-                    <span>@Html.ActionLink("Create Asset Ticket", "Create", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
                     <span>@Html.ActionLink("Create General Ticket", "General", "Tickets", null, new { @class = "btn btn-sm btn-default" })</span>
                     @*|| <span>@Html.ActionLink("Delete", "DeleteMail", "Tickets", new { @class = "btn btn-sm btn-default" })</span>*@
                     <span>Sent: @Model.Item1.datesent</span>
@@ -120,8 +119,8 @@ else
                     <img class="img-thumbnail" id="img-screen" src="data:image/png;base64,@Convert.ToBase64String(image.ImageData)" width="100" height="100" />
                 </div>
             }
-
         </div>
     </fieldset>
 }
+                                                                    
 <script src="~/Content/customscripts/lightbox.js"></script>

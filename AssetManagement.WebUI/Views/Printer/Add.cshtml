@@ -1,5 +1,4 @@
 ﻿@model AssetManagement.WebUI.ViewModel.PrinterViewModel
-
 @if (User.IsInRole("Asset-Manager"))
 {
     ViewBag.Title = "Index";
@@ -20,14 +19,13 @@ else
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
+<script src="~/Content/customscripts/jquery-ui.js"></script>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
-<script type="text/javascript">
+@*<script type="text/javascript">
     $(function () {
         $("#ddlmanu").change(function () {
             $.get("/Printer/GetModel", { ddlmanu: $("#ddlmanu").val() }, function (data) {
@@ -39,8 +37,8 @@ else
             })
         });
     });
-</script>
-    
+</script>*@
+
 <style>
     #urlddl {
         width: 18%;
@@ -53,11 +51,8 @@ else
             padding: 5px;
         }
 </style>
-
 <div style="margin-bottom:10%;"></div>
-
 <div class="btn-group">
-
     <a class="btn btn-default" href="" title="Bootstrap 3 themes generator">
         <span class="icon_lightbulb_alt"></span>
         Choose Asset
@@ -74,105 +69,117 @@ else
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancel</a></li>
     </ul>
 </div>
-
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="form-horizontal">
-            
-            <h3>Add Printer</h3> 
-            <hr />
-            @Html.ValidationSummary(true)
-
-            @if (@TempData["Success"] != null)
+@using (Html.BeginForm())
 {
-    <div class="alert alert-success">@TempData["Success"]</div>
-}
-@if (@ViewBag.Message != null)
-{
-    <div class="alert alert-danger">@ViewBag.Message</div>
-}
-<div style="margin-bottom:4%;"></div>
-            <div class="form-group">
-                @Html.LabelFor(model => model.InvoiceNumber, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.InvoiceNumber)
-                    @Html.ValidationMessageFor(model => model.InvoiceNumber)
-                </div>
-            </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.serialNumber, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.serialNumber)
-                    @Html.ValidationMessageFor(model => model.serialNumber)
-                </div>
-            </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.manufacturer, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.manufacturer,ViewBag.PrM as List<SelectListItem>, "Select Manufacturer", new { id = "ddlmanu" })
-                    @Html.ValidationMessageFor(model => model.manufacturer)
-                </div>
-            </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    <select id="modelName" class="form-control" name="modelName"></select>
-                    @Html.ValidationMessageFor(model => model.modelName)
-                </div>
-            </div>
-    
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.warranty, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(m => m.warranty, new { htmlAttributes = new { placeholder = "Enter Number of Months Only" } })
-                    @Html.ValidationMessageFor(model => model.warranty)
-                </div>
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(model => model.costprice, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.costprice)
-                    @Html.ValidationMessageFor(model => model.costprice)
-                </div>
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(model => model.dateAdded, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.dateAdded)
-                    @Html.ValidationMessageFor(model => model.dateAdded)
-                </div>
-            </div>  
-    
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Add Printer" class="btn btn-primary" />
-                </div>
-            </div>
+    @Html.AntiForgeryToken()
 
-            <div>
-                @Html.ActionLink("Cancel", "Index", "Asset", null, new { @class = "btn btn-default"})
+    <div class="form-horizontal">
+
+        <h3>Add Printer</h3>
+        <hr />
+        @Html.ValidationSummary(true)
+        @if (@TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+        @if (@ViewBag.Message != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Message</div>
+        }
+        <div style="margin-bottom:4%;"></div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.InvoiceNumber, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.InvoiceNumber)
+                @Html.ValidationMessageFor(model => model.InvoiceNumber)
             </div>
         </div>
-       }
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.serialNumber, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.serialNumber)
+                @Html.ValidationMessageFor(model => model.serialNumber)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.manufacturer, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.manufacturer, ViewBag.PrM as List<SelectListItem>, "Select Manufacturer", new { id = "ddlmanu" })
+                @Html.ValidationMessageFor(model => model.manufacturer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.modelName, new SelectList(ViewBag.LM, "model", "model"), "Select Model", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.modelName)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.warranty, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.warranty, new { htmlAttributes = new { placeholder = "Enter Number of Months Only" } })
+                @Html.ValidationMessageFor(model => model.warranty)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.costprice, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.costprice)
+                @Html.ValidationMessageFor(model => model.costprice)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.dateAdded, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.dateAdded)
+                @Html.ValidationMessageFor(model => model.dateAdded)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add Printer" class="btn btn-primary" />
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("Cancel", "Index", "Asset", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+}
 <script type="text/javascript">
-    $(function () {
-        $('#urlddl').change(function () {
-            var url = $(this).val();
-            if (url != null && url != '') {
-                window.location.href = url;
-            }
+        $(function () {
+            $("#ddlmanu").change(function () {
+                $.get("/Printer/GetModel", { ddlmanu: $("#ddlmanu").val() }, function (data) {
+
+                    $("#modelName").empty();
+                    $.each(data, function (index, row) {
+                        $("#modelName").append("<option value='" + row.model + "'>" + row.model + "</option>")
+                    });
+                })
+            });
         });
-    });
-</script>
-<script>
-  $(function() {
-      $("#dateAdded").datepicker();
-  });
-</script>
-    
+    </script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#urlddl').change(function () {
+                var url = $(this).val();
+                if (url != null && url != '') {
+                    console.log(url);
+                    //window.location.href = url;
+                }
+            });
+        });
+    </script>
+    <script>
+      $(function() {
+          $("#dateAdded").datepicker();
+      });
+    </script>
+

@@ -62,6 +62,20 @@
     <script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
 </head>
 <body>
+    @using Microsoft.AspNet.Identity
+    @{
+        AssetManagement.Domain.Context.AssetManagementEntities context = new AssetManagement.Domain.Context.AssetManagementEntities();
+
+        string newname = User.Identity.GetUserName();
+
+        foreach (var name in context.Employees)
+        {
+            if (name.employeeNumber.Equals(User.Identity.GetUserName()))
+            {
+                newname = name.firstName.Substring(0, 1) + ". " + name.lastName;
+            }
+        }
+    }
     <header class="header dark-bg">
         <!----=============================================-->
 
@@ -90,24 +104,18 @@
 
                 <li id="alert_notificatoin_bar" class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
                         <i class="icon-bell-l"></i>
-<<<<<<< HEAD
-                        <span class="badge bg-important">Not working</span>
-=======
                         <span>@Html.Partial("_TicketCounter")</span>
->>>>>>> origin/master
                     </a>
                     <ul class="dropdown-menu extended notification">
                         <div class="notify-arrow notify-arrow-blue"></div>
                         <li>
                             <p class="blue">Notifications</p>
                         </li>
-
                         <li>
                             <a href="@Url.Action("Index", "Tickets")">
                                 <span class="label label-danger"><i class="icon_book_alt"></i></span>
-                                @Html.Partial("_DueTicketsCounter") unassigned Tickets
+                                @Html.Partial("_DueTicketsCounter") Open Tickets
                                 <span class="small italic pull-right">High Priority</span>
                             </a>
                         </li>
@@ -119,7 +127,6 @@
                             </a>
                         </li>
                     </ul>
-
                 </li>
             </ul>
         </div>
@@ -128,7 +135,7 @@
             <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
         </div>
         <div style="margin-top:20px">
-            Admin : @User.Identity.Name
+            Admin :  @newname
         </div>
     </header>
     <div>
@@ -166,7 +173,8 @@
                         <ul class="sub">
                             <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
                             <li>@Html.ActionLink("List of Employee", "Index", "Employee")</li>
-                            <li></li>
+                            <li>@Html.ActionLink("Departments", "Index", "Department")</li>
+                            <li>@Html.ActionLink("Roles", "Index", "Role")</li>
                         </ul>
                     </li>
 
@@ -193,6 +201,7 @@
                             <li>@Html.ActionLink("Self Service Inbox", "AllMessages", "Tickets")</li>
                             <li>@Html.ActionLink("Tickets Control", "Index", "Tickets")</li>
                             <li>@Html.ActionLink("Create Ticket", "SelectType", "Asset")</li>
+                            <li>@Html.ActionLink("Knowledge Base", "SolutionPortal", "Tickets")</li>
                         </ul>
                     </li>
                     <li class="sub-menu">
@@ -202,6 +211,10 @@
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
+                            @if (User.Identity.Name != "helpdesk@admin.net")
+                            {
+                                @Html.ActionLink("Profile", "UserProfile", "Employee")
+                            }
                             <li>@Html.Partial("_LoginPartial")</li>
                         </ul>
                     </li>
@@ -235,17 +248,17 @@
             </footer>
         </div>
     <script src="~/Content/AdminLayout/js/jquery-ui-1.10.4.min.js"></script>
-    @*<script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>*@
+    <script src="~/Content/AdminLayout/js/jquery-1.8.3.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery-ui-1.9.2.custom.min.js"></script>
-    @*<script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>*@
+    <script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.scrollTo.min.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.nicescroll.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.sparkline.js"></script>
     <script src="~/Content/AdminLayout/js/owl.carousel.js"></script>
-    @*<script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>*@
+    <script src="~/Content/AdminLayout/assets/jquery-knob/js/jquery.knob.js"></script>
     <script src="~/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.slimscroll.min.js"></script>
-    @*<script src="~/Content/AdminLayout/js/charts.js"></script>*@
+    <script src="~/Content/AdminLayout/js/charts.js"></script>
     <script src="~/Content/AdminLayout/js/sparklines.js"></script>
     <script src="~/Content/AdminLayout/js/gdp-data.js"></script>
     <script src="~/Content/AdminLayout/js/jquery.placeholder.min.js"></script>
@@ -256,12 +269,12 @@
     <script src="~/Content/AdminLayout/js/easy-pie-chart.js"></script>
     <script src="~/Content/AdminLayout/js/sparkline-chart.js"></script>
     <script src="~/Content/AdminLayout/js/scripts.js"></script>
-    @*<script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
+    <script src="~/Content/AdminLayout/js/jquery.customSelect.min.js"></script>
         <script src="~/Content/AdminLayout/js/jquery.rateit.min.js"></script>
         <script src="~/Content/AdminLayout/js/calendar-custom.js"></script>
         <script src="~/Content/AdminLayout/js/fullcalendar.min.js"></script>
         <script src="~/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
-        <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>*@
+        <script src="~/Content/AdminLayout/assets/chart-master/Chart.js"></script>
     <script>
         $(document).ready(function () {
             var tableAllDiv = $('#table-scroll-all');

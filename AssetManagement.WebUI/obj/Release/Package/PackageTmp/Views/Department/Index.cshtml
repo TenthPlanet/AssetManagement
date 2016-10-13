@@ -1,0 +1,34 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Department>
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_helpd.cshtml";
+    }
+    <div style="margin:8%"></div>
+    <h2>Departments</h2>
+
+    <p>
+        @Html.ActionLink("Add Department", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <table class="table table-bordered table-striped table-responsive table-advance">
+        <tr>
+            <th>
+                @Html.DisplayName("Department")
+            </th>
+            <th>@Html.DisplayName("Actions")</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.departmentName)
+                </td>
+                <td>
+                    @Html.ActionLink("Update", "Edit", new { id = item.departmentID }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.departmentID }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>

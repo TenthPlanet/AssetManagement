@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
     var doughnutData = [
         {
             value: 30,

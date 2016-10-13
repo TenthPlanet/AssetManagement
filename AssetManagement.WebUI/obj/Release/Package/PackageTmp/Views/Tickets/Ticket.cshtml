@@ -1,0 +1,18 @@
+﻿@model AssetManagement.Domain.Entities.Ticket
+@{
+    ViewBag.Title = "Ticket";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+<div style="margin-bottom:20px;"></div>
+<script>
+</script>
+<ol class="breadcrumb" style="margin-left:5%;">
+    <li><i class="icon_house_alt"></i>Home</li>
+    <li><i class="icon_genius"></i>Ticket</li>
+</ol>
+<div class="container body-content">
+    @Html.Partial("_Ticket", Model)
+    @Html.ActionLink("Back", "Index", "Technician")
+</div>
+
+

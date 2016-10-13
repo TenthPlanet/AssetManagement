@@ -19,6 +19,8 @@ namespace AssetManagement.WebUI.ViewModel
         public string assetowner { get; set; }
         [DisplayName("Subject")]
         public string subject { get; set; }
+        [DisplayName("Category")]
+        public string category { get; set; }
         [DisplayName("Priority")]
         public string priority { get; set; }
         [DisplayName("Description")]

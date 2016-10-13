@@ -89,18 +89,18 @@
                         <ul class="sub">
                             <li>@Html.ActionLink("Knowledge Base", "Base", "User")</li>
                             <li>@Html.ActionLink("Self Service", "ContactUs", "User")</li>
-                            @*<li>@Html.ActionLink("Knowledge Base", "Base", "Technician")</li>*@
+                            <li>@Html.ActionLink("Forum", "Disqus", "User")</li>
                         </ul>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="fa fa-user"></i>
-                            <span>Done</span>
+                            <span>Account</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
 
-                            @*<li>@Html.ActionLink("Logout", "Login", "Home")</li>*@
+                            <li>@Html.ActionLink("Profile", "UserProfile", "User")</li>
                             <li>@Html.Partial("_LoginPartial")</li>
                         </ul>
                     </li>

@@ -20,19 +20,7 @@ namespace AssetManagement.WebUI.Controllers
         
         public ActionResult FinencialReport()
         {
-            var hdl = new HelpDeskLogic();
-            var rpt = new Business.HelpDeskSystem.FinencialReport()
-            {
-                invoices = hdl.invoices,
-                replacementParts = hdl.spareParts,
-                TotalAssetCost = hdl.TotalAssetsCost(),
-                TotalSparePartsCost = hdl.TotalPartsCost(),
-                assets = hdl.assets,
-                TotalCost = hdl.TotalCost(),
-                qty = hdl.Qunatity()
-            };
-            ViewBag.count = rpt.qty + rpt.assets.Count;
-            return View(rpt);
+            return View(new ReportMonthFilter());
         }
         public ActionResult ExportPDF()
         {

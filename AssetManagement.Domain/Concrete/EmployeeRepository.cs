@@ -10,26 +10,31 @@ using System.Threading.Tasks;
 
 namespace AssetManagement.Domain.Concrete
 {
-    public class EmployeeRepository : GenericRepository<AssetManagementEntities, Department, Employee>, IEmployeeRepository
+    public class EmployeeRepository : GenericEntity<AssetManagementEntities, Employee>, IEmployeeRepository
     {
         public Employee FindEmployee(string employeeNumber)
         {
             return Context.Employees.FirstOrDefault(x => x.employeeNumber.Equals(employeeNumber));
         }
-
-        public override void Insert(Department entity, Employee dependent)
+        public override void Insert(Employee dependent)
         {
-            base.Insert(entity, dependent);
+            base.Insert(dependent);
         }
         public List<Employee> Employees()
         {
             return Context.Employees.ToList();
         }
-
         public List<Department> Departments()
         {
             return Context.Departments.ToList();
         }
-
+        public List<Role> Roles()
+        {
+            return Context.Roles.ToList();
+        }
+        public Role FindRoles(int? id)
+        {
+            return Context.Roles.FirstOrDefault(r => r.RoleID == id);
+        }
     }
 }

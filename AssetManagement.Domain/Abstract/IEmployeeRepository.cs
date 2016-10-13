@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace AssetManagement.Domain.Abstract
 {
-    public interface IEmployeeRepository : IGenericRepository<Department, Employee>
+    public interface IEmployeeRepository : IGenericEntity<Employee>
     {
         Employee FindEmployee(string employeeNumber);
         List<Employee> Employees();
         List<Department> Departments();
+        List<Role> Roles();
+        Role FindRoles(int? id);
     }
 }

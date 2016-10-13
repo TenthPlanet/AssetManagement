@@ -1,0 +1,34 @@
+﻿@model AssetManagement.Domain.Entities.Department
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+<div style="margin:8%"></div>
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete department?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Department Name : ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departmentName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

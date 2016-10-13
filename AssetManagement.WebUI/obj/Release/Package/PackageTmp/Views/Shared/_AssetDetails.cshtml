@@ -1,0 +1,24 @@
+﻿@model AssetManagement.Domain.Entities.Asset
+
+@switch (Model.catergory)
+{
+    case "Laptop":
+        Html.RenderPartial("_Laptop", Model.Laptops.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+    case "Printer":
+        Html.RenderPartial("_Printer", Model.Printers.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+    case "Mouse":
+        Html.RenderPartial("_Mouse", Model.Mice.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+    case "Keyboard":
+        Html.RenderPartial("_Keyboard", Model.Keyboards.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+    case "PCBox":
+        Html.RenderPartial("_PC", Model.PCBoxes.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+    case "Monitor":
+        Html.RenderPartial("_Monitor", Model.Monitors.Single(i => i.assetNumber == Model.assetNumber));
+        break;
+}
+

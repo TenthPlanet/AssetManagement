@@ -4,9 +4,9 @@
     ViewBag.Title = "SelectType";
     Layout = "~/Views/Shared/_helpd.cshtml";
 }
-<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
-<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
-<script src="~/Content/customscripts/jquery-ui.js"></script>
+@*<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/customscripts/jquery-ui.js"></script>*@
+<script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
 
 <script type="text/javascript">
@@ -15,6 +15,14 @@
             source: '@Url.Action("GetEmployeesA")'
         });
     });
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("employeenumber").value;
+        document.getElementById("empl").innerHTML = "You selected: " + x;
+        window.location.reload();
+    }
+
 </script>
 
 <hr />
@@ -34,9 +42,11 @@
         <div class="form-group">
             @Html.Label("Employee Number", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBox("employeenumber")
+                <input type="text" name="employeenumber" id="employeenumber" onchange="myFunction()" />
+                <p id="empl"></p>
+                @*@Html.TextBox("employeenumber")*@
                 @*<input type="text" name="employeenumber" id="employeenumber" />*@
-                <input type="submit" class="btn btn-default" value="Search">
+                @*<input type="submit" class="btn btn-default" value="Search">*@
             </div>
         </div>
     </th>
@@ -55,6 +65,7 @@
         <div class="form-group">
             @Html.Label("Asset", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
+
                 @Html.DropDownList("Assets", new SelectList(ViewBag.empassets, "catergory", "catergory"), "Select asset...", new { @class = "form-control" })
             </div>
 
@@ -88,7 +99,6 @@
     $('#assetticket').click(function () {
         if (this.checked)
             $('#assetT').show("fast") && $('#genT').hide("fast");
-
         else
             $('#assetT').hide("fast") && $('#genT').show("fast");
     });

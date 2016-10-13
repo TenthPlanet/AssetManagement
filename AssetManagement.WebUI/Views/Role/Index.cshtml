@@ -1,0 +1,37 @@
+﻿@model IEnumerable<AssetManagement.Domain.Entities.Role>
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_helpd.cshtml";
+    }
+    <div style="margin-top:8%"></div>
+    <h2>Roles</h2>
+
+    <p>
+        @Html.ActionLink("Add Role", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <table class="table table-bordered table-bordered table-responsive table-advance">
+        <tr>
+            <th>
+                @Html.DisplayName("Role")
+            </th>
+            <th>
+                @Html.DisplayName("Options")
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleName)
+                </td>
+                <td>
+                    @Html.ActionLink("Update", "Edit", new { id = item.RoleID }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.RoleID }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.RoleID }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>

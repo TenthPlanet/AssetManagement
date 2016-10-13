@@ -1,10 +1,17 @@
 ﻿@if (User.IsInRole("Asset-Manager"))
 {
     Layout = "~/Views/Shared/_assetsms.cshtml";
+    <link href="~/Content/Notification_Library/css-popup/styles.css" rel="stylesheet" />
+    <script src="~/Content/Notification_Library/css-popup/css-pop.js"></script>
+
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+
+    <body onload="popup('popUpDiv')"></body>
+    
 }
 else if (User.IsInRole("Administrator"))
 {
-    Layout = "~/Views/Shared/_helpd.cshtml";
+    Layout = "~/Views/Shared/_helpdExtras.cshtml";
 }
 else if (User.IsInRole("Technician"))
 {

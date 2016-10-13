@@ -1,0 +1,162 @@
+﻿@model AssetManagement.Domain.Entities.Employee
+@if (User.IsInRole("Asset-Manager"))
+{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_assetsms.cshtml";
+}
+else if (User.IsInRole("Administrator"))
+{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_helpd.cshtml";
+}
+else if (User.IsInRole("Technician"))
+{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_TechnicianLayout.cshtml";
+}
+else
+{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div style="margin-top:8%;"></div>
+<style>
+    img.img-profile {
+        width: 30%;
+    }
+</style>
+
+<h1>@Model.fullname's Details</h1>
+<hr />
+<div>
+    <div class="form-group">
+        <img src="data:image/png;base64,@Convert.ToBase64String(Model.fileBytes)" alt="Profile Image" class="img-profile img-circle img-responsive pull-left" />
+        <div style="position:relative;">
+        </div>
+        @if (User.IsInRole("Administrator") || Model.employeeNumber == User.Identity.Name)
+        {
+        <p class="pull-right">
+            @Html.ActionLink("Update", "Edit", new { id = Model.employeeNumber }, new { @class = "btn btn-primary" }) |
+        </p>
+        }
+    </div>
+    <div class="clearfix"></div>
+    <h2>Personal Information</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("First Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sex")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gender)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h2>Work Information</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Employee Number")
+        </dt>
+        <dd>
+            @Html.DisplayName(User.Identity.Name)
+        </dd>
+        <dt>
+            @Html.DisplayName("Department")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departments.departmentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Date Hired")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Position")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Roles.RoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Office Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.officeNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Telephone Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephoneNumber)
+        </dd>
+    </dl>
+</div>
+
+
+<div>
+    <h2>Contact Information</h2>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayName("Telephone")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Mobile Number")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mobileNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Email Address")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailAddress)
+        </dd>
+
+    </dl>
+</div>
+@if (!(User.IsInRole("General Staff")))
+{
+<p>
+    @Html.ActionLink("Back", "Index", "Employee", null, new { @class = "btn btn-primary" })
+</p>
+}

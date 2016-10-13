@@ -30,14 +30,21 @@
             padding-right: 6px;
         }
     </style>
-    <div style="margin-bottom:2%;"></div>
-@using (Html.BeginForm("SolutionPortal", "Tickets", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    <div style="margin-top:10%;"></div>
+<h2>Knowledge Base</h2>
+@*@using (Html.BeginForm("SolutionPortal - Copy", "Tickets", FormMethod.Get, new { @class = "form-horizontal", role = "form" }))
 {
-    @Html.AntiForgeryToken()
-    <div class="col-lg-7">
-        <span><input type="search" name="search" placeholder="Enter keyword" /> <input type="submit" class="btn btn-default" value="Search" /></span>
-    </div>
-}
+            <p>
+               
+                 Category: @Html.DropDownList("Category")
+                Keyword: @Html.TextBox("search")
+
+                <input type="submit" value="search" />
+            </p>
+      
+    }*@
+
+
 
     @foreach (var i in Model)
     {

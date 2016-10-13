@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -25,13 +26,14 @@ namespace AssetManagement.WebUI.Controllers
             HelpDeskLogic hdl = new HelpDeskLogic();
             AssetManagementLogic aml = new AssetManagementLogic();
             var Ticket = hdl.GetTicket(int.Parse(id));
+            var TicketAsset = aml.GetAsset(Ticket.assetid.ToString());
             var duration = new TimeSpan();
             if (Ticket.accomplishstatus == true)
                 duration = Ticket.datecompleted.Value.Subtract(Ticket.datecreated);
             else
                 duration = DateTime.Now.Subtract(Ticket.datecreated);
             ViewData["duration"] = duration;
-            ViewData["Asset"] = aml.GetAsset(Ticket.assetid.ToString());
+            ViewData["Asset"] = TicketAsset;
             ViewData["ControllerName"] = "HelpDesk";
             Session["Role"] = User.IsInRole("Administrator");
             return View(Ticket);
@@ -71,5 +73,65 @@ namespace AssetManagement.WebUI.Controllers
                 _context.SaveChanges();
             }
         }
+        [AllowAnonymous]
+        public ActionResult TicketDetails(int? id)
+        {
+            var _context = new AssetManagementEntities();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var ticket = _context.Tickets.Find(id);
+            var progress = _context.Progresses.Where(x => x.ticketid == ticket.ticketid);
+            var model = new Tuple<Ticket, IEnumerable<Progress>>(ticket, progress);
+
+            if (ticket == null)
+            {
+                return HttpNotFound();
+            }
+            return View(model);
+        }
+        [AllowAnonymous]
+        [HttpPost, ActionName("TicketDetails")]
+        [ValidateAntiForgeryToken]
+        public ActionResult WriteComment(int? id, string comment)
+        {
+            var _context = new AssetManagementEntities();
+            if (id != null)
+            {
+                var ticket = _context.Tickets.Find(id);
+                var name = _context.Employees.Single(e => e.employeeNumber == User.Identity.Name);
+                var progress = new Progress
+                {
+                    ticketid = ticket.ticketid,
+                    comment = comment,
+                    date = DateTime.Now,
+                    employeeNumber = User.Identity.Name,
+                    employeeName = name.fullname
+                };
+                _context.Progresses.Add(progress);
+                _context.SaveChanges();
+                return RedirectToAction("Ticket", new { id = ticket.ticketid.ToString() });
+            }
+            return View();
+        }
+        [AllowAnonymous]
+        public ActionResult RenderImage(string id)
+        {
+            var _context = new AssetManagementEntities();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var image = _context.Employees.FirstOrDefault(x => x.employeeNumber == id);
+
+            if (image == null)
+            {
+                return HttpNotFound();
+            }
+
+            return File(image.fileBytes, image.fileType);
+        }
+
     }
 }

@@ -21,10 +21,28 @@ else
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+
+<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
+<script src="~/Content/customscripts/jquery-ui.js"></script>
+<!--<script src="~/Scripts/jquery-1.10.2.min.js"></script>-->
+
+@*<script type="text/javascript">
+    $(function () {
+        $("#ddlmanu").change(function () {
+            $.get("/Laptop/GetModel", { ddlmanu: $("#ddlmanu").val() }, function (data) {
+
+                $("#modelName").empty();
+                $.each(data, function (index, row) {
+                    $("#modelName").append("<option value='" + row.model + "'>" + row.model + "</option>")
+                });
+            })
+        });
+    });
+</script>*@
+
+
 <style>
     #urlddl {
         width: 18%;
@@ -97,8 +115,16 @@ else
         <div class="form-group">
             @Html.LabelFor(model => model.manufacturer, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.manufacturer, new SelectList(ViewBag.LM, "manufacturer", "manufacturer"), "Select Manufacturer", new { @class = "form-control" })
+                @Html.DropDownListFor(model => model.manufacturer,ViewBag.LL as List<SelectListItem>, "Select Manufacturer",new {id="ddlmanu" })
                 @Html.ValidationMessageFor(model => model.manufacturer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.modelName, new SelectList(ViewBag.LM, "model", "model"), "Select Model", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.modelName)
             </div>
         </div>
         <div class="form-group">
@@ -124,13 +150,7 @@ else
                 @Html.ValidationMessageFor(model => model.dateAdded)
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownListFor(model => model.modelName, new SelectList(ViewBag.LM, "model", "model"), "Select Model", new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.modelName)
-            </div>
-        </div>
+       
 
         <div class="form-group">
             @Html.LabelFor(model => model.screenSize, new { @class = "control-label col-md-2" })
@@ -145,15 +165,14 @@ else
             <div class="col-md-10">
                 @{
                     List<SelectListItem> os = new List<SelectListItem>();
-
-                    os.Add(new SelectListItem { Text = "Windows 7", Value = "Windows 7" });
-                    os.Add(new SelectListItem { Text = "Windows 8", Value = "Windows 8" });
-                    os.Add(new SelectListItem { Text = "Windows 8.1", Value = "Windows 8.1" });
-                    os.Add(new SelectListItem { Text = "Windows 10", Value = "Windows 10" });
+                    os.Add(new SelectListItem { Text = "Ubuntu - 14.04.5", Value = "Ubuntu - 14.04.5" });
+                    os.Add(new SelectListItem { Text = "Windows 8 Home", Value = "Windows 8 Home" });
+                    os.Add(new SelectListItem { Text = "Windows 10 Proffesional ", Value = "Windows 10 Proffesional" });
+                    os.Add(new SelectListItem { Text = "Windows 10 Enterprise", Value = "Windows 10 Enterprise" });
                     os.Add(new SelectListItem { Text = "iOS", Value = "iOS" });
                     os.Add(new SelectListItem { Text = "Linux", Value = "Linux" });
                 }
-                @Html.DropDownListFor(m => m.OS, os, "Select...")
+                @Html.DropDownListFor(m => m.OS, os, "Select Operating System")
                 @Html.ValidationMessageFor(model => model.OS)
             </div>
         </div>
@@ -163,14 +182,20 @@ else
             <div class="col-md-10">
                 @{
                     List<SelectListItem> ram = new List<SelectListItem>();
-
-                    ram.Add(new SelectListItem { Text = "1GB", Value = "1GB" });
-                    ram.Add(new SelectListItem { Text = "2GB", Value = "2GB" });
-                    ram.Add(new SelectListItem { Text = "4GB", Value = "4GB" });
-                    ram.Add(new SelectListItem { Text = "8GB", Value = "8GB" });
+                    ram.Add(new SelectListItem { Text = "2.00 GB", Value = "2.00 GB" });
+                    ram.Add(new SelectListItem { Text = "4.00 GB", Value = "4.00 GB" });
+                    ram.Add(new SelectListItem { Text = "8.00 GB", Value = "8.00 GB" });
+                    ram.Add(new SelectListItem { Text = "16.00 GB", Value = "16.00 GB" });
                 }
-                @Html.DropDownListFor(m => m.RAM, ram, "Select...")
+                @Html.DropDownListFor(m => m.RAM, ram, "Select Memory")
                 @Html.ValidationMessageFor(model => model.RAM)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.processor, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.processor)
+                @Html.ValidationMessageFor(model => model.processor)
             </div>
         </div>
 
@@ -179,13 +204,11 @@ else
             <div class="col-md-10">
                 @{
                     List<SelectListItem> hdd = new List<SelectListItem>();
-
-                    hdd.Add(new SelectListItem { Text = "40GB", Value = "40GB" });
-                    hdd.Add(new SelectListItem { Text = "80GB", Value = "80GB" });
+                    hdd.Add(new SelectListItem { Text = "250GB", Value = "250GB" });
                     hdd.Add(new SelectListItem { Text = "500GB", Value = "500GB" });
                     hdd.Add(new SelectListItem { Text = "1TB", Value = "1TB" });
                 }
-                @Html.DropDownListFor(m => m.HDD, hdd, "Select...")
+                @Html.DropDownListFor(m => m.HDD, hdd, "Select Capacity")
                 @Html.ValidationMessageFor(model => model.HDD)
             </div>
         </div>
@@ -212,6 +235,7 @@ else
         });
     });
 </script>
+
 <script>
     $(function () {
         $("#dateAdded").datepicker();

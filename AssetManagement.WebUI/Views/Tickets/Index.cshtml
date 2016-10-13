@@ -5,6 +5,7 @@
     AssetManagement.Business.HelpDeskSystem.TicketReportPerParticipant AllTickets = Model[0];
     AssetManagement.Business.HelpDeskSystem.TicketReportPerParticipant AdminTickets = Model[1];
 }
+<script src="~/Content/AdminLayout/js/bootstrap.min.js"></script>
 <div style="margin-bottom:10%;"></div>
 <div class="form-horizontal" style="width:90%">
     <ol class="breadcrumb">
@@ -19,7 +20,7 @@
             <li class="active"><a data-toggle="tab" href="#all">All Tickets <span class="badge">@AllTickets.All.Count</span></a></li>
             <li><a data-toggle="tab" href="#myTickets">My Ticket <span class="badge">@AdminTickets.All.Count</span></a></li>
             <li><a data-toggle="tab" href="#mySolutions">My Solutions <span class="badge">@ViewBag.MySolutions</span></a></li>
-            <li><a data-toggle="tab" href="#KnwolageBase">Knowledge Base <span class="badge">@ViewBag.KnowledgeBase</span></a></li>
+            @*<li><a data-toggle="tab" href="#KnwolageBase">Knowledge Base <span class="badge">@ViewBag.KnowledgeBase</span></a></li>*@
             <li><a data-toggle="tab" href="#OverdueTickets">Overdue Tickets <span class="badge">@ViewBag.OverDueTickets</span></a></li>
         </ul>
         <div style="margin-bottom:2%;"></div>
@@ -39,11 +40,11 @@
                     Html.RenderAction("MySolutions");
                 }
             </div>
-            <div id="KnwolageBase" class="tab-pane fade">
+            @*<div id="KnwolageBase" class="tab-pane fade">
                 @{
-                    Html.RenderAction("Solutions");
+                    Html.RenderAction("SolutionPortal");
                 }
-            </div>
+            </div>*@
             <div id="OverdueTickets" class="tab-pane fade">
                 @{
                     Html.RenderAction("OverDueTickets");

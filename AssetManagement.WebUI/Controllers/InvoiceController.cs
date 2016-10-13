@@ -45,12 +45,9 @@ namespace AssetManagement.WebUI.Controllers
                         {
                             invoice.Content = reader.ReadBytes(upload.ContentLength);
                         }
-                        InvoiceModel.invoiceType = invoice.invoiceType;
-                        InvoiceModel.InvoiceDate = invoice.InvoiceDate;
                         InvoiceModel.Content = invoice.Content;
                         InvoiceModel.ContentType = invoice.ContentType;
                         InvoiceModel.FileName = invoice.FileName;
-                        InvoiceModel.totalCost = invoice.totalCost;
                     }
                     AME.Invoices.Add(InvoiceModel);
                     AME.SaveChanges();

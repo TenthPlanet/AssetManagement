@@ -195,6 +195,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HelpDeskController.cs" />
     <Compile Include="Controllers\ArchiveController.cs" />
     <Compile Include="Controllers\AssetController.cs" />
@@ -212,6 +213,7 @@
     <Compile Include="Controllers\PrinterController.cs" />
     <Compile Include="Controllers\ReplacementPartsController.cs" />
     <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\StockController.cs" />
     <Compile Include="Controllers\TechnicianController.cs" />
     <Compile Include="Controllers\TicketsController.cs" />
@@ -219,9 +221,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610070129016_Kay.cs" />
-    <Compile Include="Migrations\201610070129016_Kay.Designer.cs">
-      <DependentUpon>201610070129016_Kay.cs</DependentUpon>
+    <Compile Include="Migrations\201610110840231_Clean.cs" />
+    <Compile Include="Migrations\201610110840231_Clean.Designer.cs">
+      <DependentUpon>201610110840231_Clean.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -458,6 +460,7 @@
     <Content Include="Content\AdminLayout\css\bootstrap-theme.css" />
     <Content Include="Content\AdminLayout\css\bootstrap.css" />
     <Content Include="Content\AdminLayout\css\bootstrap.min.css" />
+    <Content Include="Content\AdminLayout\css\datepicker.css" />
     <Content Include="Content\AdminLayout\css\elegant-icons-style.css" />
     <Content Include="Content\AdminLayout\css\elusive-icons.css" />
     <Content Include="Content\AdminLayout\css\elusive-icons.min.css" />
@@ -1275,6 +1278,12 @@
     <Content Include="Content\check.png" />
     <Content Include="Content\closed.png" />
     <Content Include="Content\closedenvelope.png" />
+    <Content Include="Content\css-popup\css-pop.js" />
+    <Content Include="Content\css-popup\css-popup.html" />
+    <Content Include="Content\css-popup\pop-back.jpg" />
+    <Content Include="Content\css-popup\p.jpg" />
+    <Content Include="Content\css-popup\styles.css" />
+    <Content Include="Content\css-popup\wds-demo.png" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
@@ -1297,6 +1306,7 @@
     <Content Include="Content\customscripts\jquery-ui.css" />
     <Content Include="Content\customscripts\jquery-ui.js" />
     <Content Include="Content\customscripts\lightbox.js" />
+    <Content Include="Content\default-placeholder.png" />
     <Content Include="Content\down.png" />
     <Content Include="Content\fonts\ElegantIcons.svg" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
@@ -1305,6 +1315,29 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\lightbox.css" />
+    <Content Include="Content\Notification_Library\css-popup\pop-back.jpg" />
+    <Content Include="Content\Notification_Library\css-popup\css-pop.js" />
+    <Content Include="Content\Notification_Library\css-popup\css-popup.html" />
+    <Content Include="Content\Notification_Library\css-popup\pop-back1.jpg" />
+    <Content Include="Content\Notification_Library\css-popup\pop-back11.jpg" />
+    <Content Include="Content\Notification_Library\css-popup\styles.css" />
+    <Content Include="Content\Notification_Library\css-popup\wds-demo.png" />
+    <Content Include="Content\Notification_Library\css\lobibox.css" />
+    <Content Include="Content\Notification_Library\demo\demo.css" />
+    <Content Include="Content\Notification_Library\demo\demo.js" />
+    <Content Include="Content\Notification_Library\dist\css\lobibox.css" />
+    <Content Include="Content\Notification_Library\dist\css\lobibox.min.css" />
+    <Content Include="Content\Notification_Library\dist\js\lobibox.js" />
+    <Content Include="Content\Notification_Library\dist\js\lobibox.min.js" />
+    <Content Include="Content\Notification_Library\dist\js\messageboxes.js" />
+    <Content Include="Content\Notification_Library\dist\js\messageboxes.min.js" />
+    <Content Include="Content\Notification_Library\dist\js\notifications.js" />
+    <Content Include="Content\Notification_Library\dist\js\notifications.min.js" />
+    <Content Include="Content\Notification_Library\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Notification_Library\js\lobibox.js" />
+    <Content Include="Content\Notification_Library\lib\jquery.1.11.js" />
+    <Content Include="Content\Notification_Library\lib\jquery.1.11.min.js" />
     <Content Include="Content\open.png" />
     <Content Include="Content\openenvelope.png" />
     <Content Include="Content\PagedList.css" />
@@ -1318,6 +1351,7 @@
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\bootstrap-confirm.js" />
     <Content Include="Scripts\bootstrap-confirmation.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\AdminLayout\assets\chart-master\component.json" />
@@ -1399,6 +1433,13 @@
     <Content Include="fonts\elusiveicons-webfont.eot" />
     <Content Include="fonts\elusiveicons-webfont.ttf" />
     <Content Include="fonts\elusiveicons-webfont.woff" />
+    <Content Include="Content\css-popup\.DS_Store" />
+    <Content Include="Content\Notification_Library\css-popup\.DS_Store" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Notification_Library\font-awesome\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\CX.pubxml" />
     <None Include="Properties\PublishProfiles\dutweb.pubxml" />
     <None Include="Properties\PublishProfiles\FileDeploy.pubxml" />
@@ -1413,6 +1454,7 @@
     <None Include="Properties\PublishProfiles\izingcweti - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\izingcweti - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\izingcweti2016.pubxml" />
+    <None Include="Properties\PublishProfiles\LJASLJ.pubxml" />
     <None Include="Properties\PublishProfiles\Segragate.pubxml" />
     <None Include="Properties\PublishProfiles\TenthPlanet10.pubxml" />
     <Content Include="Scripts\Chart.bundle.js" />
@@ -1527,7 +1569,7 @@
     <Content Include="Views\Tickets\unReadmail.cshtml" />
     <Content Include="Views\Tickets\OpenedMail.cshtml" />
     <Content Include="Views\Shared\_assetsms1.cshtml" />
-    <Content Include="Views\Shared\_helpd.cshtml" />
+    <Content Include="Views\Shared\_helpdExtras.cshtml" />
     <Content Include="Views\Invoice\Create.cshtml" />
     <Content Include="Views\Invoice\Index.cshtml" />
     <Content Include="Views\Invoice\ViewInvoice.cshtml" />
@@ -1583,7 +1625,6 @@
     <Content Include="Views\Technician\Home.cshtml" />
     <Content Include="Views\Technician\Index.cshtml" />
     <Content Include="Views\Technician\MyAssets.cshtml" />
-    <Content Include="Views\Technician\Progress.cshtml" />
     <Content Include="Views\Technician\Report.cshtml" />
     <Content Include="Views\Technician\Solutions.cshtml" />
     <Content Include="Views\Technician\TicketDetails.cshtml" />
@@ -1597,8 +1638,6 @@
     <Content Include="Views\ReplacementParts\Edit.cshtml" />
     <Content Include="Views\ReplacementParts\Index.cshtml" />
     <Content Include="Views\Tickets\Ticket.cshtml" />
-<<<<<<< HEAD
-=======
     <Content Include="Views\Technician\AcknowlageTicket.cshtml" />
     <Content Include="Views\Tickets\KnowlageBase.cshtml" />
     <Content Include="Views\Asset\TempDev.cshtml" />
@@ -1609,7 +1648,29 @@
     <Content Include="Views\Shared\_FullyDAssetCounter.cshtml" />
     <Content Include="Views\Asset\FullyDepreciatedAssets.cshtml" />
     <Content Include="Views\Asset\FullyDAssets.cshtml" />
->>>>>>> origin/master
+    <Content Include="Views\Shared\_TicketCounter.cshtml" />
+    <Content Include="Views\Shared\_TotalStock.cshtml" />
+    <Content Include="Views\Role\Index.cshtml" />
+    <Content Include="Views\Role\Delete.cshtml" />
+    <Content Include="Views\Role\Details.cshtml" />
+    <Content Include="Views\Role\Edit.cshtml" />
+    <Content Include="Views\Role\Create.cshtml" />
+    <Content Include="Views\Employee\UserProfile.cshtml" />
+    <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\Create.cshtml" />
+    <Content Include="Views\Department\Edit.cshtml" />
+    <Content Include="Views\Department\Delete.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\UserProfile.cshtml" />
+    <Content Include="Views\Technician\UserProfile.cshtml" />
+    <Content Include="Views\Technician\Edit.cshtml" />
+    <Content Include="Views\Employee\EmployeeSummary.cshtml" />
+    <Content Include="Views\Technician\Disqus.cshtml" />
+    <Content Include="Views\User\Disqus.cshtml" />
+    <Content Include="Views\Tickets\TicketsCount.cshtml" />
+    <Content Include="Views\Shared\_helpd.cshtml" />
+    <Content Include="Views\HelpDesk\TicketDetails.cshtml" />
+    <Content Include="Views\Stock\totalStock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1669,8 +1730,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610070129016_Kay.resx">
-      <DependentUpon>201610070129016_Kay.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610110840231_Clean.resx">
+      <DependentUpon>201610110840231_Clean.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

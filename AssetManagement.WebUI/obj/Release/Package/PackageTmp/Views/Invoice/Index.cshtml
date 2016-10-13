@@ -1,7 +1,6 @@
 ﻿@model PagedList.IPagedList<AssetManagement.Domain.Entities.Invoice>
 @using PagedList.Mvc
 @using PagedList
-
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_assetsms.cshtml";
@@ -12,33 +11,36 @@
     <i class="fa fa-file-text"></i>
     Suppliers
 </h3>
-
 <ol class="breadcrumb">
-    <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+    <li><i class="fa fa-home"></i>@Html.ActionLink("Home", "Dashboard", "Dashboard")</li>
     <li><i class="fa fa-desktop"></i>Stock</li>
     <li><i class="fa fa-list-alt"></i>Invoices</li>
 </ol>
-
 <p>
     @Html.ActionLink("Add Invoice", "Create", null, new { @class = "btn btn-default" })
 </p>
-
 <table class="table table-striped table-condensed table-bordered">
     <tr>
-        <th>
-            @Html.DisplayName("Invoice Number")
+        <th align="center">
+            Invoice Number
         </th>
-        <th>
-            <p>Supplier</p>
+        <th align="center">
+            Supplier
         </th>
-        <th>
-            @Html.DisplayName("Capture Date")
+        <th align="center">
+            Quantity
         </th>
-        <th>
-           
+        <th align="center">
+            Type
         </th>
+        <th align="center">
+            Invoice Date
+        </th>
+        <th align="center"> 
+            Total Cost
+        </th>
+        <th>Options</th>
     </tr>
-
     @foreach (var item in Model)
     {
         <tr>
@@ -49,16 +51,23 @@
                 @Html.DisplayFor(modelItem => item.Retailer)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CaptureDate)
+                @item.Quantity
             </td>
             <td>
-                @Html.ActionLink("View", "ViewInvoice", new { id = item.InvoiceId })
+                @item.invoiceType
+            </td>
+            <td>
+                @item.InvoiceDate.ToLongDateString()
+            </td>
+            <td>
+                @item.totalCost.ToString("R0,0")
+            </td>
+            <td>
+                @Html.ActionLink(item.FileName, "ViewInvoice", new { id = item.InvoiceId })
             </td>
         </tr>
     }
-
 </table>
-
 <br />
 <div style="text-align: center">
     <p>

@@ -22,6 +22,7 @@ namespace AssetManagement.Domain.Context
         public DbSet<Laptop> Laptops { get; set; }
         public DbSet<Monitor> Monitors { get; set; }
         public DbSet<Mouse> Mice { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }

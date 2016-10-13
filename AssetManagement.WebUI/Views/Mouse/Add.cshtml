@@ -20,13 +20,13 @@ else
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+<link href="~/Content/customscripts/jquery-ui.css" rel="stylesheet" />
+<script src="~/Content/customscripts/jquery-1.10.2.js"></script>
+<script src="~/Content/customscripts/jquery-ui.js"></script>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
-<script type="text/javascript">
+@*<script type="text/javascript">
     $(function () {
         $("#ddlmanu").change(function () {
             $.get("/Mouse/GetModel", { ddlmanu: $("#ddlmanu").val() }, function (data) {
@@ -38,7 +38,7 @@ else
             })
         });
     });
-</script>
+</script>*@
 
 <style>
     #urlddl {
@@ -118,7 +118,7 @@ else
             <div class="form-group">
                 @Html.LabelFor(model => model.modelName, new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    <select id="modelName" class="form-control" name="modelName"></select>
+                    @Html.DropDownListFor(model => model.modelName, new SelectList(ViewBag.LM, "model", "model"), "Select Model", new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.modelName)
                 </div>
             </div>

@@ -87,23 +87,23 @@ namespace AssetManagement.Domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int replacementPartID { get; set; }
+        public int ReplacementID { get; set; }
         [Display(Name = "Name")]
-        public string name { get; set; }
+        public string Name { get; set; }
         [Display(Name = "Assciated Asset")]
-        public string associatedAsset { get; set; }
+        public string AssociatedtedAsset { get; set; }
         [Display(Name = "Assciated Ticket")]
-        public int associatedTicket { get; set; }
+        public int AssociatedTicket { get; set; }
         [Display(Name = "Invoice Number")]
-        public string invoiceNumber { get; set; }
+        public string InvoiceNumber { get; set; }
         [Display(Name = "Supplier")]
-        public string supplier { get; set; }
+        public string Supplier { get; set; }
         [Display(Name = "Price")]
-        public double price { get; set; }
+        public double Price { get; set; }
         [Display(Name = "Part Number")]
-        public string partNumber { get; set; }
+        public string PartNumber { get; set; }
         [Display(Name = "Purchase Date")]
-        public DateTime pruchaseDate { get; set; }
+        public DateTime PurchaseDate { get; set; }
 
     }
 }
