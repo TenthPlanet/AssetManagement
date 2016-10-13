@@ -1671,6 +1671,11 @@
     <Content Include="Views\Shared\_helpd.cshtml" />
     <Content Include="Views\HelpDesk\TicketDetails.cshtml" />
     <Content Include="Views\Stock\totalStock.cshtml" />
+    <Content Include="Views\Asset\EditProblem.cshtml" />
+    <Content Include="Views\User\TicketInfo.cshtml" />
+    <Content Include="Views\User\Tickets.cshtml" />
+    <Content Include="Views\Tickets\EscalateTicket.cshtml" />
+    <Content Include="Views\Tickets\OverDueCount.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

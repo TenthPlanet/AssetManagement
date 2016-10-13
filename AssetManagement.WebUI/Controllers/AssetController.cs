@@ -216,20 +216,61 @@ namespace AssetManagement.WebUI.Controllers
             return View();
         }
 
-        public ActionResult FullyDAssets()
+        public ActionResult FullyDAssets(int? page)
         {
             List<Asset> ass = context.Assets.ToList().FindAll(x=>x.depreciationcost==x.costprice&&x.assignstatus==1);
             int fullyCount = context.Assets.ToList().FindAll(x => x.depreciationcost ==x.costprice && x.assignstatus == 1).ToList().Count();
             ViewBag.fullydue = fullyCount;
-            return View(ass);
 
+            var assets = (from a in list.Assets()
+                          join e in list.Employees() on a.employeeNumber equals e.employeeNumber
+                          select new AssetListViewModel
+                          {
+                              serialNumber = a.serialNumber,
+                              assetNumber = a.assetNumber,
+                              catergory = a.catergory,
+                              warranty = a.warranty,
+                              manufacturer = a.manufacturer,
+                              dateadded = a.dateadded,
+                              depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                              assetstatus = a.assignstatus,
+                              costprice = (a.costprice).ToString("R0.00")
+                          })
+                         .ToList()
+                         .Where(x => x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)) && x.depreciationcost.Equals(x.costprice));
+            ViewBag.Category = context.Categories.ToList();
+            int PageSize = 6;
+            int PageNumber = (page ?? 1);
+            return View(assets.ToPagedList(PageNumber, PageSize));
         }
         [HttpPost]
-        public ActionResult FullyDAssets(int id)
+        public ActionResult FullyDAssets(string search, int? page)
         {
-            Asset asse = context.Assets.ToList().Find(x=>x.assetID==id);
+            //Asset asse = context.Assets.ToList().Find(x=>x.assetID==id);
 
-            return View(asse);
+            if (search != "")
+            {
+
+                var asset = (from a in list.Assets()
+                             select new AssetListViewModel
+                             {
+                                 serialNumber = a.serialNumber,
+                                 assetNumber = a.assetNumber,
+                                 catergory = a.catergory,
+                                 warranty = a.warranty,
+                                 manufacturer = a.manufacturer,
+                                 dateadded = a.dateadded,
+                                 depreciationcost = (al.depreciationCost(a.dateadded, a.costprice)).ToString("R0.00"),
+                                 assetstatus = a.assignstatus,
+                                 costprice = a.costprice.ToString("R0.00")
+                             })
+                         .Where(x => x.assetNumber.Contains(search.ToUpper()) && x.assetstatus == 1 && (!((DateTime.Now.Year - x.dateadded.Year) < 1)) && x.depreciationcost.Equals(x.costprice))
+                         .ToList();
+                int PageSize = 6;
+                int PageNumber = (page ?? 1);
+                return View(asset.ToPagedList(PageNumber, PageSize));
+            }
+            return View();
 
         }
         public ActionResult Assign()

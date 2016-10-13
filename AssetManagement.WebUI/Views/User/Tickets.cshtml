@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<AssetManagement.Domain.Entities.Ticket>
 
-
 @{
     ViewBag.Title = "Employee Tickets";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
@@ -35,7 +34,7 @@
 </style>
 <div style="margin-bottom:10%;"></div>
 <h2>@User.Identity.Name Tickets</h2>
-<hr/>
+<hr />
 @foreach (var i in Model)
 {
 
