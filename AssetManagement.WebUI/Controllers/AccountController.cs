@@ -320,7 +320,7 @@ namespace AssetManagement.WebUI.Controllers
 
 
                 // Create a Web transport, using API Key
-                var transportWeb = new Web("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");
+                
                 // Send the email.
                 await transportWeb.DeliverAsync(myMessage);
 
